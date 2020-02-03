@@ -1,0 +1,18 @@
+--- 
+title: "Polish Language(s) and Digital Humanities Using R"
+author: "G. Moroz"
+bibliography:
+- bibliography.bib
+editor_options:
+  chunk_output_type: console
+link-citations: yes
+documentclass: book
+site: bookdown::bookdown_site
+biblio-style: apalike
+---
+
+# Prerequisites
+
+I expect everybody to install R and Rstudio, following the instructions:
+
+...

@@ -1,0 +1,10 @@
+[
+["index.html", "Polish Language(s) and Digital Humanities Using R 1 Prerequisites", " Polish Language(s) and Digital Humanities Using R G. Moroz 1 Prerequisites I expect everybody to install R and Rstudio, following the instructions: … "],
+["intro.html", "2 Introduction to R", " 2 Introduction to R "],
+["dplyr.html", "3 Data manipulation: dplyr", " 3 Data manipulation: dplyr "],
+["ggplot2.html", "4 Data visualisation: ggplot2", " 4 Data visualisation: ggplot2 "],
+["stringr.html", "5 Strings manipulation: stringr", " 5 Strings manipulation: stringr "],
+["texts.html", "6 Text manipulation: gutenbergr, tidytext, udpipe", " 6 Text manipulation: gutenbergr, tidytext, udpipe "],
+["stylo.html", "7 Stylometric analysis: stylo", " 7 Stylometric analysis: stylo "],
+["references.html", "References", " References "]
+]

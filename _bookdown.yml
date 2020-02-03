@@ -1,0 +1,8 @@
+book_filename: "DS_for_DH"
+delete_merged_file: true
+language:
+  ui:
+    edit: Edit
+    chapter_name: ''
+output_dir: "docs"
+

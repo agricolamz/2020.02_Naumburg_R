@@ -1,0 +1,24 @@
+bookdown::gitbook:
+  df_print: paged
+  css: style.css
+  always_allow_html: yes
+  config:
+    self_contained: yes
+    toc:
+      collapse: section
+      before: |
+        <li><a href="./">Polish Language(s) and Digital Humanities Using R</a></li>
+    download: ["pdf", "epub"]
+    sharing: no
+    edit:
+      link: https://github.com/agricolamz/2020.02_Naumburg_R/edit/master/%s
+      text: "Edit"
+bookdown::pdf_book:
+  includes:
+    in_header: preamble.tex
+  latex_engine: xelatex
+  citation_package: natbib
+  fig_width: 7
+  fig_height: 4
+  highlight: tango
+bookdown::epub_book: default
