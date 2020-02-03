@@ -1,2 +1,40 @@
-# Introduction to R {#intro}
+# Introduction to R and RStudio {#intro}
+
+## Introduction
+### Why data science?
+### Why R?
+
+## Introduction to RStudio
+
+## R as a calculator
+
+## Functions
+
+## Variables
+
+## Variable types
+
+## Vector
+
+### Vector coercion
+
+### Vector operations
+
+### Vector recycling
+
+### Indexing vectors
+
+### `NA` value
+
+## Dataframe (tibble)
+
+### Indexing dataframes
+
+## Packages
+
+## Data import
+### `.csv` files
+### `.xls` and `.xlsx` files
+
+## Rmarkdown
 
