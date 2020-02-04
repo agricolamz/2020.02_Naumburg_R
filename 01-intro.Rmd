@@ -1,3 +1,8 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
 # Introduction to R and RStudio {#intro}
 
 ## Introduction
@@ -53,7 +58,36 @@ When you press ![](images/01.02.rstudio_button.png) button at the top of the lef
 
 ## R as a calculator
 
+Lets first start with a calculator. Press in R console
+
+```{r}
+2+9
+50*(9-20)
+3^3
+9^0.5
+9+0.5
+9+.5
+pi
+```
+
+Remeinder after division
+
+```{r}
+10 %% 3
+```
+
+
 ## Functions
+
+```{r}
+sqrt(4)
+abs(-5)
+sin(pi/2)
+cos(pi)
+sum(2, 3, 9)
+prod(5, 3, 9)
+```
+
 
 ## Variables
 
