@@ -20,7 +20,7 @@ Before the classes I would like to ask you to follow the instructions mentioned 
 * install **RStudio** from the following link: <https://rstudio.com/products/rstudio/download/#download> (FREE version, no need to pay!)
 * after the installation run the RStudio program, type `2+2`, and press `Enter`.
 
-![](images/00.rstudio_view.png)
+![](images/00.rstudio-view.png)
 
 If you see something like this, then you are well prepared for classes.
 

@@ -8,7 +8,7 @@ bookdown::gitbook:
       collapse: section
       before: |
         <li><a href="./">Polish Language(s) and Digital Humanities Using R</a></li>
-    download: ["pdf", "epub"]
+    download: ["pdf"]
     sharing: no
     edit:
       link: https://github.com/agricolamz/2020.02_Naumburg_R/edit/master/%s
@@ -21,4 +21,3 @@ bookdown::pdf_book:
   fig_width: 7
   fig_height: 4
   highlight: tango
-bookdown::epub_book: default

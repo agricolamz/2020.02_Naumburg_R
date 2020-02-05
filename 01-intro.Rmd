@@ -41,6 +41,7 @@ R [@r19] is a programing language with a big infrastructure of packages that hel
 There are several alternatives:
 
 * Python [@vanderplas16; @grus19]
+* Julia [@bezanson17]
 * bash [@janssens14]
 * java [@brzustowicz17]
 * ...
@@ -76,8 +77,51 @@ Remeinder after division
 10 %% 3
 ```
 
+```{block, type = "rmdtask"}
+So you are ready to solve some really hard equations (round it four decimal places):
+```
+
+
+$$\frac{\pi+2}{2^{3-\pi}}$$
+
+
+```{r, include = FALSE}
+(pi+3)/(2^(3-pi))
+```
+
+<form name="Form1" onsubmit="return validateForm1()" method="post">
+<input type="text" name="answer1">
+<input type="submit" value="check">
+</form><br>
+
+<details> <summary> 📋 list of hints ➡ </summary> 
+
+<details> <summary> 👁 Are you sure that you rounded the result? ➡ </summary>
+I expect the answer to be rounded to four decimal places: `0.87654321` becomes `0.8765`.<br>
+</details>
+
+<details> <summary> 👁 Are you sure you didn't get into the brackets trap? ➡ </summary>
+Even though there is no any brackets in the mathematical notation, you need to add them in R, otherwise the operation order will be wrong. <br>
+</details>
+
+
+</details>
+
+## Comments
+
+All text after the hash `#` within the same line is considered a comment. 
+
+```{r}
+2+2 # it is four
+
+# you can put any comments here
+3+3
+```
+
 
 ## Functions
+
+The most important part of R is functions: here are some of them:
 
 ```{r}
 sqrt(4)
@@ -88,8 +132,94 @@ sum(2, 3, 9)
 prod(5, 3, 9)
 ```
 
+Each function has a name and zero or more arguments. All arguments of the function should be listed in parenthesis and separated by comma:
+
+```{r}
+pi
+round(pi, 2)
+```
+
+Each function's argument has its own name and serial number. If you use names of the function's arguments, you can put them in any order. If you do not use names of the function's arguments, you should put them according the serial number.
+
+```{r}
+round(x = pi, digits = 2)
+round(digits = 2, x = pi)
+round(x = pi, d = 2)
+round(d = 2, x = pi)
+round(pi, 2)
+round(2, pi) # this is not the same as all previouse!
+```
+
+There are some functions without any arguments, but you still should use parenthesis:
+
+```{r}
+Sys.Date() # correct
+Sys.Date # wrong
+```
+
+Each function in R is documented. You can read its documentation typing question mark befor the function name:
+
+```{r, eval = FALSE}
+?Sys.Date
+```
+
+```{block, type = "rmdtask"}
+Explore the function `log()` and calculate the following logarithm:
+```
+
+$$\log_3(3486784401)$$
+
+```{r, include=FALSE}
+log(3486784401, base = 3)
+```
+
+<form name="Form2" onsubmit="return validateForm2()" method="post">
+<input type="text" name="answer2">
+<input type="submit" value="check">
+</form><br>
+
+<details> <summary> 📋 list of hints ➡ </summary> 
+
+<details> <summary> 👁 A-a-a! I don't remmember anything about logarithms... ➡</summary>
+The logarithm is the inverse function to exponentiation. That means the logarithm of a given number *x* is the exponent to which another fixed number, the base *b*, must be raised, to produce that number *x*.
+
+$$10^n = 1000,\text{ what is n?}$$
+$$n = \log_{10}(1000)$$
+<br>
+</details>
+
+<details> <summary> 👁 What is this small 3 in the task means? ➡</summary>
+This is the base of the logarithm. So the task is: what is the exponent to which another fixed number, the base *3*, must be raised, to produce that number *3486784401*. <br>
+</details>
+
+</details>
 
 ## Variables
+
+Everything in R can be stored in a variable:
+
+```{r}
+x <- 5 + 6
+```
+
+![](images/01.04.variable.png)
+As a result, no output in the Console, and a new variable *x* appear in the Environment window. From now on I can use this new variable:
+
+```{r}
+x + x
+sum(x, x, 7)
+```
+
+All those operation don't change the variable value. In order to change the variable value you need to make a new assignment:
+
+```{r}
+x <- 5 + 6 + 7
+```
+
+The fast way for creating `<-` in RStudio is to press `Alt -` on your keyboard.
+
+It is possible to use equal sign `=` for assignment operation, but the recomendations are use arrow `<-` for the assignment, and equal sign `=` for giving arguments' value inside the functions.
+
 
 ## Variable types
 
@@ -117,3 +247,25 @@ prod(5, 3, 9)
 
 ## Rmarkdown
 
+<script>
+function validateForm1() {
+    var x = document.forms["Form1"]["answer1"].value;
+    if (x != "6.7749") {
+        alert("I have a different answer...");
+        return false;
+    } else {
+        alert("Correct!");
+        return false;
+    }
+}
+function validateForm2() {
+    var x = document.forms["Form2"]["answer2"].value;
+    if (x != "20") {
+        alert("I have a different answer...");
+        return false;
+    } else {
+        alert("Correct!");
+        return false;
+    }
+}
+</script>
