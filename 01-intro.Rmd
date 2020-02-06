@@ -67,7 +67,7 @@ When you press ![](images/01.02.rstudio_button.png) button at the top of the lef
 
 ## R as a calculator
 
-Lets first start with a calculator. Press in R console
+Lets first start with the calculator. Press in R console
 
 ```{r}
 2+9
