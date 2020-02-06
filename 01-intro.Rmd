@@ -626,8 +626,52 @@ moore_filmography[moore_filmography$year > 2014,]
 
 ### `.csv` files
 
+A `.csv`  files (comma-separated values) is a delimited text file that uses a comma (or other delemeters such as tabulation or semicolon) to separate values. It is broadly used bacause it is possible to parse such a file using computers and people can edit it in the Office programs (Microsoft Excel, LibreOffice Calc, Numbers on Mac). Here is our `moore_filmography` dataset in the `.csv` format:
+
+```
+title,year,director,producer
+The Secret of Kells,2009,TRUE,TRUE
+Song of the Sea,2014,TRUE,TRUE
+Kahlil Gibran's The Prophet,2014,TRUE,FALSE
+The Breadwinner,2017,FALSE,TRUE
+Wolfwalkers,2020,TRUE,TRUE
+```
+
+Let's create a variable with this file:
+
+```{r}
+our_csv <- "title,year,director,producer
+The Secret of Kells,2009,TRUE,TRUE
+Song of the Sea,2014,TRUE,TRUE
+Kahlil Gibran's The Prophet,2014,TRUE,FALSE
+The Breadwinner,2017,FALSE,TRUE
+Wolfwalkers,2020,TRUE,TRUE"
+```
+
+Now we are ready to use `read_csv()` function:
+
+```{r}
+read_csv(our_csv)
+```
+
+
+It is also possible to read files from your computer. Download this file on your computer and read into R:
+
+
+```{r, eval=FALSE}
+read_csv("C:/path/to/your/file/moore_filmography.csv")
+```
+
+```{r, echo=FALSE}
+read_csv(our_csv)
+```
+
+
+It is also possible to read files from the Internet:
+
+
 ```{block, type = "rmdtask"}
-Because of the 2019–20 Wuhan coronavirus outbreak the city of Wuhan is on media everywhere. [In Russian](https://nplus1.ru/blog/2020/02/03/wuhan) for some reason Wuhan is sometimes masculine  and sometimes it's feminin. I looked into other Slavic languages and recorded obtained data into the [`.csv` file](https://gist.githubusercontent.com/agricolamz/c280527d6b5d79693b85d8fcf8d35bc3/raw/c46a32a218bc5d6933703ae677b81ff5a4a1dcaa/wuhan.csv). Download this files to R. What variables does it have?
+Because of the 2019–20 Wuhan coronavirus outbreak the city of Wuhan is on media everywhere. [In Russian](https://nplus1.ru/blog/2020/02/03/wuhan) for some reason Wuhan is sometimes masculine  and sometimes it is feminin. I looked into other Slavic languages and recorded obtained data into the [`.csv` file](https://gist.githubusercontent.com/agricolamz/c280527d6b5d79693b85d8fcf8d35bc3/raw/c46a32a218bc5d6933703ae677b81ff5a4a1dcaa/wuhan.csv). Download this files to R. What variables does it have?
 ```
 
 ### `.xls` and `.xlsx` files

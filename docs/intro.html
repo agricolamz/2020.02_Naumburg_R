@@ -214,7 +214,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>fraud detection <span class="citation">(Baesens, Van Vlasselaer, and Verbeke <a href="#ref-baesens15" role="doc-biblioref">2015</a>)</span></li>
 <li>…</li>
 </ul>
-<p>Data scientist need to be able to:</p>
+<p>Data scientists need to be able to:</p>
 <ul>
 <li>gather data</li>
 <li>transform data</li>
@@ -255,7 +255,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="r-as-a-calculator" class="section level2">
 <h2><span class="header-section-number">2.3</span> R as a calculator</h2>
-<p>Lets first start with a calculator. Press in R console</p>
+<p>Lets first start with the calculator. Press in R console</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="intro.html#cb1-1"></a><span class="dv">2</span><span class="op">+</span><span class="dv">9</span></span></code></pre></div>
 <pre><code>## [1] 11</code></pre>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="intro.html#cb3-1"></a><span class="dv">50</span><span class="op">*</span>(<span class="dv">9-20</span>)</span></code></pre></div>
@@ -298,7 +298,7 @@ Even though there isn’t any brackets in the mathematical notation, you need to
 </div>
 <div id="comments" class="section level2">
 <h2><span class="header-section-number">2.4</span> Comments</h2>
-<p>The whole text after the hash <code>#</code> within the same line is considered a comment.</p>
+<p>Any text after a hash <code>#</code> within the same line is considered a comment.</p>
 <div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="intro.html#cb17-1"></a><span class="dv">2</span><span class="op">+</span><span class="dv">2</span> <span class="co"># it is four</span></span></code></pre></div>
 <pre><code>## [1] 4</code></pre>
 <div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="intro.html#cb19-1"></a><span class="co"># you can put any comments here</span></span>
@@ -338,7 +338,7 @@ Even though there isn’t any brackets in the mathematical notation, you need to
 <pre><code>## [1] 3.14</code></pre>
 <div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="intro.html#cb47-1"></a><span class="kw">round</span>(pi, <span class="dv">2</span>)</span></code></pre></div>
 <pre><code>## [1] 3.14</code></pre>
-<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="intro.html#cb49-1"></a><span class="kw">round</span>(<span class="dv">2</span>, pi) <span class="co"># this is not the same as all previouse!</span></span></code></pre></div>
+<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="intro.html#cb49-1"></a><span class="kw">round</span>(<span class="dv">2</span>, pi) <span class="co"># this is not the same as all previous!</span></span></code></pre></div>
 <pre><code>## [1] 2</code></pre>
 <p>There are some functions without any arguments, but you still should use parenthesis:</p>
 <div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="intro.html#cb51-1"></a><span class="kw">Sys.Date</span>() <span class="co"># correct</span></span></code></pre></div>
@@ -346,9 +346,9 @@ Even though there isn’t any brackets in the mathematical notation, you need to
 <div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="intro.html#cb53-1"></a>Sys.Date <span class="co"># wrong</span></span></code></pre></div>
 <pre><code>## function () 
 ## as.Date(as.POSIXlt(Sys.time()))
-## &lt;bytecode: 0x595fdf5d5438&gt;
+## &lt;bytecode: 0x57bdae4add30&gt;
 ## &lt;environment: namespace:base&gt;</code></pre>
-<p>Each function in R is documented. You can read its documentation typing question mark before the function name:</p>
+<p>Each function in R is documented. You can read its documentation typing a question mark before the function name:</p>
 <div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="intro.html#cb55-1"></a>?Sys.Date</span></code></pre></div>
 <div class="rmdtask">
 <p>
@@ -371,7 +371,7 @@ The logarithm is the inverse function to exponentiation. That means the logarith
 <br>
 </details>
 <details>
-<summary> 👁 What is this small 3 in the task means? ➡</summary>
+<summary> 👁 What does this small 3 in the task mean? ➡</summary>
 This is the base of the logarithm. So the task is: what is the exponent to which another fixed number, the base <em>3</em>, must be raised, to produce that number <em>3486784401</em>. <br>
 </details>
 </details>
@@ -623,7 +623,7 @@ How many elements in the vector <code>g</code> if expression <code>g[pi &lt; 100
 <pre><code>## ── Conflicts ─────────────────
 ## x dplyr::filter() masks stats::filter()
 ## x dplyr::lag()    masks stats::lag()</code></pre>
-<p>Not turning on an R package is the most popular mistake of my students. So remmember:</p>
+<p>Not turning on an R package is the most popular mistake of my students. So remember:</p>
 <ul>
 <li><code>install.packages("...")</code> is like you are buying a screwdriver set;</li>
 <li><code>library("...")</code> is like you are start using your screwdriver.</li>
@@ -798,9 +798,38 @@ How many columns in the <code>mtcars</code> dataframe?
 <h2><span class="header-section-number">2.10</span> Data import</h2>
 <div id="csv-files" class="section level3">
 <h3><span class="header-section-number">2.10.1</span> <code>.csv</code> files</h3>
+<p>A <code>.csv</code> files (comma-separated values) is a delimited text file that uses a comma (or other delemeters such as tabulation or semicolon) to separate values. It is broadly used bacause it is possible to parse such a file using computers and people can edit it in the Office programs (Microsoft Excel, LibreOffice Calc, Numbers on Mac). Here is our <code>moore_filmography</code> dataset in the <code>.csv</code> format:</p>
+<pre><code>title,year,director,producer
+The Secret of Kells,2009,TRUE,TRUE
+Song of the Sea,2014,TRUE,TRUE
+Kahlil Gibran&#39;s The Prophet,2014,TRUE,FALSE
+The Breadwinner,2017,FALSE,TRUE
+Wolfwalkers,2020,TRUE,TRUE</code></pre>
+<p>Let’s create a variable with this file:</p>
+<div class="sourceCode" id="cb227"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb227-1"><a href="intro.html#cb227-1"></a>our_csv &lt;-<span class="st"> &quot;title,year,director,producer</span></span>
+<span id="cb227-2"><a href="intro.html#cb227-2"></a><span class="st">The Secret of Kells,2009,TRUE,TRUE</span></span>
+<span id="cb227-3"><a href="intro.html#cb227-3"></a><span class="st">Song of the Sea,2014,TRUE,TRUE</span></span>
+<span id="cb227-4"><a href="intro.html#cb227-4"></a><span class="st">Kahlil Gibran&#39;s The Prophet,2014,TRUE,FALSE</span></span>
+<span id="cb227-5"><a href="intro.html#cb227-5"></a><span class="st">The Breadwinner,2017,FALSE,TRUE</span></span>
+<span id="cb227-6"><a href="intro.html#cb227-6"></a><span class="st">Wolfwalkers,2020,TRUE,TRUE&quot;</span></span></code></pre></div>
+<p>Now we are ready to use <code>read_csv()</code> function:</p>
+<div class="sourceCode" id="cb228"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb228-1"><a href="intro.html#cb228-1"></a><span class="kw">read_csv</span>(our_csv)</span></code></pre></div>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["title"],"name":[1],"type":["chr"],"align":["left"]},{"label":["year"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["director"],"name":[3],"type":["lgl"],"align":["right"]},{"label":["producer"],"name":[4],"type":["lgl"],"align":["right"]}],"data":[{"1":"The Secret of Kells","2":"2009","3":"TRUE","4":"TRUE"},{"1":"Song of the Sea","2":"2014","3":"TRUE","4":"TRUE"},{"1":"Kahlil Gibran's The Prophet","2":"2014","3":"TRUE","4":"FALSE"},{"1":"The Breadwinner","2":"2017","3":"FALSE","4":"TRUE"},{"1":"Wolfwalkers","2":"2020","3":"TRUE","4":"TRUE"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<p>It is also possible to read files from your computer. Download this file on your computer and read into R:</p>
+<div class="sourceCode" id="cb229"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb229-1"><a href="intro.html#cb229-1"></a><span class="kw">read_csv</span>(<span class="st">&quot;C:/path/to/your/file/moore_filmography.csv&quot;</span>)</span></code></pre></div>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["title"],"name":[1],"type":["chr"],"align":["left"]},{"label":["year"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["director"],"name":[3],"type":["lgl"],"align":["right"]},{"label":["producer"],"name":[4],"type":["lgl"],"align":["right"]}],"data":[{"1":"The Secret of Kells","2":"2009","3":"TRUE","4":"TRUE"},{"1":"Song of the Sea","2":"2014","3":"TRUE","4":"TRUE"},{"1":"Kahlil Gibran's The Prophet","2":"2014","3":"TRUE","4":"FALSE"},{"1":"The Breadwinner","2":"2017","3":"FALSE","4":"TRUE"},{"1":"Wolfwalkers","2":"2020","3":"TRUE","4":"TRUE"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<p>It is also possible to read files from the Internet:</p>
 <div class="rmdtask">
 <p>
-Because of 2019–20 Wuhan coronavirus outbreak the city of Wuhan is everywhere on media. <a href="https://nplus1.ru/blog/2020/02/03/wuhan">In Russian</a> for some reason Wuhan is masculine sometimes and sometimes it’s feminin. I looked into other Slavic languages and recorded obtained data into the <a href="https://gist.githubusercontent.com/agricolamz/c280527d6b5d79693b85d8fcf8d35bc3/raw/c46a32a218bc5d6933703ae677b81ff5a4a1dcaa/wuhan.csv"><code>.csv</code> file</a>. Download this files to R. What variables does it have?
+Because of the 2019–20 Wuhan coronavirus outbreak the city of Wuhan is on media everywhere. <a href="https://nplus1.ru/blog/2020/02/03/wuhan">In Russian</a> for some reason Wuhan is sometimes masculine and sometimes it is feminin. I looked into other Slavic languages and recorded obtained data into the <a href="https://gist.githubusercontent.com/agricolamz/c280527d6b5d79693b85d8fcf8d35bc3/raw/c46a32a218bc5d6933703ae677b81ff5a4a1dcaa/wuhan.csv"><code>.csv</code> file</a>. Download this files to R. What variables does it have?
 </p>
 </div>
 </div>
