@@ -497,6 +497,11 @@ The [`tidyverse`](https://blog.rstudio.org/2016/09/15/tidyverse-1-0-0/) is a set
 
 ## Dataframe (tibble)
 
+A data frame is a collection of variables of the same number of rows with unique row names.
+
+```{r}
+tibble(name = c("Małgorzata", ""))
+```
 
 
 ### Indexing dataframes
