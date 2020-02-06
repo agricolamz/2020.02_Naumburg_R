@@ -1,1 +1,39 @@
 # Data manipulation: `dplyr` {#dplyr}
+
+First, load the library:
+
+```{r, message=FALSE}
+library(tidyverse)
+```
+
+## Data
+
+In this chapter we will use the following datasets.
+
+### Misspelling dataset
+This dataset I gathered after some manipulations with data from [The Gyllenhaal Experiment](https://pudding.cool/2019/02/gyllenhaal/) By Russell Goldenberg and Matt Daniels for [pudding](https://pudding.cool). They analysed mistakes in spellings of celebrities during the search.
+
+```{r}
+misspellings <- read_csv("https://raw.githubusercontent.com/agricolamz/DS_for_DH/master/data/misspelling_dataset.csv")
+```
+  
+
+```{r}
+misspellings
+```
+
+There are the following variables in this dataset:
+
+* `correct` --- correct spelling
+* `spelling` --- user's spelling
+* `count` --- number of cases of user's spelling
+
+### `diamonds`
+
+`diamonds` --- is the dataset built-in `tidyverse` package.
+
+```{r}
+diamonds
+?diamonds
+```
+
