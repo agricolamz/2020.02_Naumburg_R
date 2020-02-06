@@ -227,9 +227,9 @@ x <- 5 + 6 + 7
 
 The fast way for creating `<-` in RStudio is to press `Alt -` on your keyboard.
 
-It is possible to use equal sign `=` for assignment operation, but the recommendations are use arrow `<-` for the assignment, and equal sign `=` for giving arguments' value inside the functions.
+It is possible to use equal sign `=` for assignment operation, but the recommendations are to use arrow `<-` for the assignment, and equal sign `=` for giving arguments' value inside the functions.
 
-For removing vector you need to use function `rm()`:
+For removing vector you need to use the function `rm()`:
 
 ```{r error = TRUE}
 rm(x)
@@ -254,7 +254,7 @@ x != 18
 
 ### Variable types
 
-There are several types of variable in R. In this course the only important types will be `double` (all numbers), `character` (or strings), and `logical`:
+There are several types of variables in R. In this course the only important types will be `double` (all numbers), `character` (or strings), and `logical`:
 
 ```{r}
 x <- 2+3
@@ -266,7 +266,7 @@ typeof(z)
 ```
 
 ## Vector
-R object that contain multiple values of the same type is called **vector**. It could be created with the command `c()`:
+An R object that contains multiple values of the same type is called **vector**. It could be created with the command `c()`:
 
 ```{r}
 c(3, 0, pi, 23.4, -53)
