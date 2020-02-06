@@ -419,7 +419,7 @@ x > 2
 ```
 
 ```{block, type = "rmdtask"}
-How many elements in the vector `g` if expression `g[pi < 1000]` does not return an error?
+How many elements in the vector `g` if expression `g[pi < 1000]` do not return an error?
 ```
 
 <form name="Form3" onsubmit="return validateForm3()" method="post">
@@ -449,9 +449,9 @@ is.na(y)
 ## Packages
 
 
-The most important and useful part of R is hidden in its packages. Everything that we discussed so far is basic R functionality invented back in 1979. Since then a lot of different things changed, so all new practicies for data analysis, visualisation and manipulation are packed in packages. During our class we will learn the most popular *"dialect"* of R called `tidyverse`.
+The most important and useful part of R is hidden in its packages. Everything that we discussed so far is basic R functionality invented back in 1979. Since then a lot of different things changed, so all new practices for data analysis, visualisation and manipulation are packed in packages. During our class we will learn the most popular *"dialect"* of R called `tidyverse`.
 
-In order to install packages you need to use command. Let's install the `tidyverse` package:
+In order to install packages you need to use a command. Let's install the `tidyverse` package:
 
 ```{r, eval=FALSE}
 install.packages("tidyverse")
@@ -469,7 +469,7 @@ After you have downloaded packages nothing will change. You can not use any fucn
 library("tidyverse")
 ```
 
-Not turning on R package is the most popular mistake of my students. So remmember:
+Not turning on an R package is the most popular mistake of my students. So remmember:
 
 * `install.packages("...")` is like you are buying a screwdriver set;
 * `library("...")` is like you are start using your screwdriver.
@@ -504,7 +504,7 @@ The [`tidyverse`](https://blog.rstudio.org/2016/09/15/tidyverse-1-0-0/) is a set
 ### `.csv` files
 
 ```{block, type = "rmdtask"}
-Because of 2019–20 Wuhan coronavirus outbreak the city of Wuhan is evrywhere on media. [In Russian](https://nplus1.ru/blog/2020/02/03/wuhan) for some reason Wuhan is masculsometimes ine and sometimes is feminin. I looked into other Slavic languages and recorded obtained data into the [`.csv` file](https://gist.githubusercontent.com/agricolamz/c280527d6b5d79693b85d8fcf8d35bc3/raw/c46a32a218bc5d6933703ae677b81ff5a4a1dcaa/wuhan.csv). Download this files to R. What variables does it have?
+Because of 2019–20 Wuhan coronavirus outbreak the city of Wuhan is everywhere on media. [In Russian](https://nplus1.ru/blog/2020/02/03/wuhan) for some reason Wuhan is masculine sometimes and sometimes it's feminin. I looked into other Slavic languages and recorded obtained data into the [`.csv` file](https://gist.githubusercontent.com/agricolamz/c280527d6b5d79693b85d8fcf8d35bc3/raw/c46a32a218bc5d6933703ae677b81ff5a4a1dcaa/wuhan.csv). Download this files to R. What variables does it have?
 ```
 
 ### `.xls` and `.xlsx` files
