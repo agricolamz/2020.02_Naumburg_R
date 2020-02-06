@@ -302,7 +302,7 @@ seq(from = 2, to = 100, by = 13)
 
 
 ```{block, type = "rmdtask"}
-Use argument `length.out` of function `seq()` and create an arithmetic sequence from $\pi$ to $2\pi$ of length 50.
+Use the argument `length.out` of function `seq()` and create an arithmetic sequence from $\pi$ to $2\pi$ of length 50.
 
 ```
 
@@ -320,7 +320,7 @@ month.abb
 ```
 
 ### Vector coercion
-Vectors are R objects that contain multiple values of **the same type**. But what if we merge together different types?
+Vectors are R objects that contain multiple values of **the same type**. But what if we merged together different types?
 
 ```{r}
 c(1, "34")
