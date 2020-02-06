@@ -446,10 +446,11 @@ is.na(x)
 is.na(y)
 ```
 
-## Packages
+## PacSome functions doesn't work with 
 
+Some f
 
-The mst important and useful part of R is hidden in its packages. Everything that we discussed so far is base R functionality invented back in 1979. Since then a lot of different things changed, so all new practicies for data analysis, visualisation and manipulation are packed in packages. During our class we will learn the most popular *"dialect"* of R called `tidyverse`.
+The mt impoortant and useful part of R is hidden in its packages. Everything that we discussed so far is base R functionality invented back in 1979. Since then a lot of different things changed, so all new practicies for data analysis, visualisation and manipulation are packed in packages. During our class we will learn the most popular *"dialect"* of R called `tidyverse`.
 
 In order to install packages you need to use command. Let's install the `tidyverse` package:
 
