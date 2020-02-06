@@ -7,7 +7,7 @@ editor_options:
 
 ## Introduction
 ### Why data science?
-Data science is a new field that actively developing lately. This field merges computer science, math, statistics, and it is hard to say how much science in data science. In many scientific fields a new data science paradigm arises and even forms a new sub-field:
+Data science is a new field that is actively developing lately. This field merges computer science, maths, statistics, and it is hard to say how much science in data science. In many scientific fields a new data science paradigm arises and even forms a new sub-field:
 
 * Bioinformatics
 * Crime data analysis
@@ -25,14 +25,14 @@ There are a lot of new books "Data Science for ...":
 * fraud detection [@baesens15]
 * ...
 
-Data scientist need to be able:
+Data scientist need to be able to:
 
 * gather data
 * transform data
 * visualize data
 * create a statistical model based on data
 * share and represent the results of this work
-* organize the whole workflow in the reproducible way
+* organize the whole workflow in a reproducible way
 
 ### Why R?
 
@@ -61,7 +61,7 @@ When you open RStudio for the first time you can see something like this:
 
 ![](images/01.01.rstudio.png)
 
-When you press ![](images/01.02.rstudio_button.png) button at the top of the left window you will be able to see all four panels of the RStudio.
+When you press ![](images/01.02.rstudio_button.png) button at the top of the left window you will be able to see all four panels of RStudio.
 
 ![](images/01.03.rstudio.png)
 
@@ -109,7 +109,7 @@ I expect the answer to be rounded to four decimal places: `0.87654321` becomes `
 </details>
 
 <details> <summary> 👁 Are you sure you didn't get into the brackets trap? ➡ </summary>
-Even though there is no any brackets in the mathematical notation, you need to add them in R, otherwise the operation order will be wrong. <br>
+Even though there isn't any brackets in the mathematical notation, you need to add them in R, otherwise the operation order will be wrong. <br>
 </details>
 
 
@@ -117,7 +117,7 @@ Even though there is no any brackets in the mathematical notation, you need to a
 
 ## Comments
 
-All text after the hash `#` within the same line is considered a comment. 
+The whole text after the hash `#` within the same line is considered a comment. 
 
 ```{r}
 2+2 # it is four
@@ -219,7 +219,7 @@ x + x
 sum(x, x, 7)
 ```
 
-All those operation don't change the variable value. In order to change the variable value you need to make a new assignment:
+All those operations don't change the variable value. In order to change the variable value you need to make a new assignment:
 
 ```{r}
 x <- 5 + 6 + 7
