@@ -328,7 +328,7 @@ c(1, TRUE)
 c(TRUE, "34")
 ```
 
-It is clear that there is hierarchy: strings > double > logical. It is not universal across different programming languages. It doesn't correspond to amount of values of particular type:
+It is clear that there is a hierarchy: strings > double > logical. It is not universal across different programming languages. It doesn't correspond to the amount of values of particular type:
 
 ```{r}
 c(1, 2, 3, "34")
@@ -343,7 +343,7 @@ The same story could happen during other operations:
 
 ### Vector operations
 
-All operation that we discussed earlier could be done with vectors of the same length:
+All operations, that we discussed earlier, could be done with vectors of the same length:
 
 ```{r}
 1:5 + 6:10
@@ -351,7 +351,7 @@ All operation that we discussed earlier could be done with vectors of the same l
 1:5 * 6:10
 ```
 
-There are operation where the vector of any length and vector of length one is involved:
+There are operations where the vector of any length and vector of length one is involved:
 
 ```{r}
 1:5 + 7
@@ -359,7 +359,7 @@ There are operation where the vector of any length and vector of length one is i
 1:5 / 7
 ```
 
-There are a lot of functions in R that are **vectorised**. That means that applying this function to a vector is the same as apply this function to each ellement of the vector:
+There are a lot of functions in R that are **vectorised**. That means that applying this function to a vector is the same as applying this function to each element of the vector:
 
 ```{r}
 sin(1:5)
