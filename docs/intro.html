@@ -346,7 +346,7 @@ Even though there isn’t any brackets in the mathematical notation, you need to
 <div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="intro.html#cb53-1"></a>Sys.Date <span class="co"># wrong</span></span></code></pre></div>
 <pre><code>## function () 
 ## as.Date(as.POSIXlt(Sys.time()))
-## &lt;bytecode: 0x5a5ce9382f80&gt;
+## &lt;bytecode: 0x5a505f05cce8&gt;
 ## &lt;environment: namespace:base&gt;</code></pre>
 <p>Each function in R is documented. You can read its documentation typing a question mark before the function name:</p>
 <div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="intro.html#cb55-1"></a>?Sys.Date</span></code></pre></div>
@@ -615,12 +615,12 @@ How many elements in the vector <code>g</code> if expression <code>g[pi &lt; 100
 <div class="sourceCode" id="cb195"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb195-1"><a href="intro.html#cb195-1"></a><span class="kw">install.packages</span>(<span class="st">&quot;tidyverse&quot;</span>)</span></code></pre></div>
 <p>After you have downloaded packages nothing will change. You can not use any fucntionality from packages unless you load the package with the <code>library()</code> function:</p>
 <div class="sourceCode" id="cb196"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb196-1"><a href="intro.html#cb196-1"></a><span class="kw">library</span>(<span class="st">&quot;tidyverse&quot;</span>)</span></code></pre></div>
-<pre><code>## ── Attaching packages ────────</code></pre>
+<pre><code>## ── Attaching packages ────────────────────────────────────────────── tidyverse 1.3.0 ──</code></pre>
 <pre><code>## ✓ ggplot2 3.2.1     ✓ purrr   0.3.3
 ## ✓ tibble  2.1.3     ✓ dplyr   0.8.3
 ## ✓ tidyr   1.0.0     ✓ stringr 1.4.0
 ## ✓ readr   1.3.1     ✓ forcats 0.4.0</code></pre>
-<pre><code>## ── Conflicts ─────────────────
+<pre><code>## ── Conflicts ───────────────────────────────────────────────── tidyverse_conflicts() ──
 ## x dplyr::filter() masks stats::filter()
 ## x dplyr::lag()    masks stats::lag()</code></pre>
 <p>Not turning on an R package is the most popular mistake of my students. So remember:</p>
@@ -849,6 +849,7 @@ Because of the 2019–20 Wuhan coronavirus outbreak the city of Wuhan is on medi
 <div class="sourceCode" id="cb232"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb232-1"><a href="intro.html#cb232-1"></a><span class="kw">read_csv</span>(<span class="st">&quot;moore_filmography.csv&quot;</span>)</span></code></pre></div>
 <p>The same simple function will create your <code>.csv</code> file:</p>
 <div class="sourceCode" id="cb233"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb233-1"><a href="intro.html#cb233-1"></a><span class="kw">write_csv</span>(moore_filmography, <span class="st">&quot;moore_filmography_v2.csv&quot;</span>)</span></code></pre></div>
+<p>Sometimes reading <code>.csv</code> files into Microsoft Excel is complicated, please follow the <a href="https://www.thewindowsclub.com/how-to-convert-a-text-txt-csv-file-into-an-excel-file">following instructions</a>.</p>
 </div>
 <div id="xls-and-.xlsx-files" class="section level3">
 <h3><span class="header-section-number">2.10.2</span> <code>.xls</code> and <code>.xlsx</code> files</h3>

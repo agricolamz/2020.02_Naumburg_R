@@ -690,21 +690,23 @@ write_csv(moore_filmography, "moore_filmography_v2.csv")
 ```
 
 
+Somet
+mes reading `.csv` files into Microsoft Excel is complicated, please follow the [following instructions](https://www.thewindowsclub.com/how-to-convert-a-text-txt-csv-file-into-an-excel-file).
+
 ### `.xls` and `.xlsx` files
 
 ## Rmarkdown
 
 `r if (knitr::is_html_output()) '
 <script>
-function validateForm1() {
+functifunction validateForm1() {
     var x = document.forms["Form1"]["answer1"].value;
     if (x != "6.7749") {
         alert("I have a different answer...");
         return false;
     } else {
         alert("Correct!");
-        return false;
-    }
+        return false}
 }
 function validateForm2() {
     var x = document.forms["Form2"]["answer2"].value;
