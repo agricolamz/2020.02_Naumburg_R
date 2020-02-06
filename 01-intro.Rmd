@@ -156,7 +156,7 @@ round(digits = 2, x = pi)
 round(x = pi, d = 2)
 round(d = 2, x = pi)
 round(pi, 2)
-round(2, pi) # this is not the same as all previouse!
+round(2, pi) # this is not the same as all previous!
 ```
 
 There are some functions without any arguments, but you still should use parenthesis:
@@ -166,7 +166,7 @@ Sys.Date() # correct
 Sys.Date # wrong
 ```
 
-Each function in R is documented. You can read its documentation typing question mark before the function name:
+Each function in R is documented. You can read its documentation typing a question mark before the function name:
 
 ```{r, eval = FALSE}
 ?Sys.Date
@@ -197,7 +197,7 @@ $$n = \log_{10}(1000)$$
 <br>
 </details>
 
-<details> <summary> 👁 What is this small 3 in the task means? ➡</summary>
+<details> <summary> 👁 What does this small 3 in the task mean? ➡</summary>
 This is the base of the logarithm. So the task is: what is the exponent to which another fixed number, the base *3*, must be raised, to produce that number *3486784401*. <br>
 </details>
 
