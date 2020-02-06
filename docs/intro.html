@@ -153,17 +153,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.7.1" data-path="intro.html"><a href="intro.html#vector-coercion"><i class="fa fa-check"></i><b>2.7.1</b> Vector coercion</a></li>
 <li class="chapter" data-level="2.7.2" data-path="intro.html"><a href="intro.html#vector-operations"><i class="fa fa-check"></i><b>2.7.2</b> Vector operations</a></li>
 <li class="chapter" data-level="2.7.3" data-path="intro.html"><a href="intro.html#indexing-vectors"><i class="fa fa-check"></i><b>2.7.3</b> Indexing vectors</a></li>
+<li class="chapter" data-level="2.7.4" data-path="intro.html"><a href="intro.html#na"><i class="fa fa-check"></i><b>2.7.4</b> <code>NA</code></a></li>
 </ul></li>
-<li class="chapter" data-level="2.8" data-path="intro.html"><a href="intro.html#packages"><i class="fa fa-check"></i><b>2.8</b> Packages</a></li>
-<li class="chapter" data-level="2.9" data-path="intro.html"><a href="intro.html#datfor-the-further-lectures-we-will-need-tidyverse-package."><i class="fa fa-check"></i><b>2.9</b> DatFor the further lectures we will need <code>tidyverse</code> package.</a></li>
-<li class="chapter" data-level="2.10" data-path="intro.html"><a href="intro.html#ame-tibble"><i class="fa fa-check"></i><b>2.10</b> ame (tibble)</a><ul>
-<li class="chapter" data-level="2.10.1" data-path="intro.html"><a href="intro.html#indexing-dataframes"><i class="fa fa-check"></i><b>2.10.1</b> Indexing dataframes</a></li>
+<li class="chapter" data-level="2.8" data-path="intro.html"><a href="intro.html#packages"><i class="fa fa-check"></i><b>2.8</b> Packages</a><ul>
+<li class="chapter" data-level="2.8.1" data-path="intro.html"><a href="intro.html#tidyverse"><i class="fa fa-check"></i><b>2.8.1</b> <code>tidyverse</code></a></li>
 </ul></li>
-<li class="chapter" data-level="2.11" data-path="intro.html"><a href="intro.html#data-import"><i class="fa fa-check"></i><b>2.11</b> Data import</a><ul>
-<li class="chapter" data-level="2.11.1" data-path="intro.html"><a href="intro.html#csv-files"><i class="fa fa-check"></i><b>2.11.1</b> <code>.csv</code> files</a></li>
-<li class="chapter" data-level="2.11.2" data-path="intro.html"><a href="intro.html#xls-and-.xlsx-files"><i class="fa fa-check"></i><b>2.11.2</b> <code>.xls</code> and <code>.xlsx</code> files</a></li>
+<li class="chapter" data-level="2.9" data-path="intro.html"><a href="intro.html#dataframe-tibble"><i class="fa fa-check"></i><b>2.9</b> Dataframe (tibble)</a><ul>
+<li class="chapter" data-level="2.9.1" data-path="intro.html"><a href="intro.html#indexing-dataframes"><i class="fa fa-check"></i><b>2.9.1</b> Indexing dataframes</a></li>
 </ul></li>
-<li class="chapter" data-level="2.12" data-path="intro.html"><a href="intro.html#rmarkdown"><i class="fa fa-check"></i><b>2.12</b> Rmarkdown</a></li>
+<li class="chapter" data-level="2.10" data-path="intro.html"><a href="intro.html#data-import"><i class="fa fa-check"></i><b>2.10</b> Data import</a><ul>
+<li class="chapter" data-level="2.10.1" data-path="intro.html"><a href="intro.html#csv-files"><i class="fa fa-check"></i><b>2.10.1</b> <code>.csv</code> files</a></li>
+<li class="chapter" data-level="2.10.2" data-path="intro.html"><a href="intro.html#xls-and-.xlsx-files"><i class="fa fa-check"></i><b>2.10.2</b> <code>.xls</code> and <code>.xlsx</code> files</a></li>
+</ul></li>
+<li class="chapter" data-level="2.11" data-path="intro.html"><a href="intro.html#rmarkdown"><i class="fa fa-check"></i><b>2.11</b> Rmarkdown</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="dplyr.html"><a href="dplyr.html"><i class="fa fa-check"></i><b>3</b> Data manipulation: <code>dplyr</code></a></li>
 <li class="chapter" data-level="4" data-path="ggplot2.html"><a href="ggplot2.html"><i class="fa fa-check"></i><b>4</b> Data visualisation: <code>ggplot2</code></a></li>
@@ -344,7 +346,7 @@ Even though there is no any brackets in the mathematical notation, you need to a
 <div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="intro.html#cb53-1"></a>Sys.Date <span class="co"># wrong</span></span></code></pre></div>
 <pre><code>## function () 
 ## as.Date(as.POSIXlt(Sys.time()))
-## &lt;bytecode: 0x6423cbb31f48&gt;
+## &lt;bytecode: 0x5b4841ea8320&gt;
 ## &lt;environment: namespace:base&gt;</code></pre>
 <p>Each function in R is documented. You can read its documentation typing question mark before the function name:</p>
 <div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="intro.html#cb55-1"></a>?Sys.Date</span></code></pre></div>
@@ -462,82 +464,94 @@ As a result, no output in the Console, and a new variable <em>x</em> appear in t
 Use argument <code>length.out</code> of function <code>seq()</code> and create an arithmetic sequence from <span class="math inline"><span class="math inline">\(\pi\)</span></span> to <span class="math inline"><span class="math inline">\(2\pi\)</span></span> of length 50.
 </p>
 </div>
+<p>There are also some built-in vectors:</p>
+<div class="sourceCode" id="cb104"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb104-1"><a href="intro.html#cb104-1"></a>letters</span></code></pre></div>
+<pre><code>##  [1] &quot;a&quot; &quot;b&quot; &quot;c&quot; &quot;d&quot; &quot;e&quot; &quot;f&quot; &quot;g&quot; &quot;h&quot; &quot;i&quot; &quot;j&quot; &quot;k&quot; &quot;l&quot; &quot;m&quot; &quot;n&quot; &quot;o&quot; &quot;p&quot; &quot;q&quot; &quot;r&quot; &quot;s&quot;
+## [20] &quot;t&quot; &quot;u&quot; &quot;v&quot; &quot;w&quot; &quot;x&quot; &quot;y&quot; &quot;z&quot;</code></pre>
+<div class="sourceCode" id="cb106"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb106-1"><a href="intro.html#cb106-1"></a>LETTERS</span></code></pre></div>
+<pre><code>##  [1] &quot;A&quot; &quot;B&quot; &quot;C&quot; &quot;D&quot; &quot;E&quot; &quot;F&quot; &quot;G&quot; &quot;H&quot; &quot;I&quot; &quot;J&quot; &quot;K&quot; &quot;L&quot; &quot;M&quot; &quot;N&quot; &quot;O&quot; &quot;P&quot; &quot;Q&quot; &quot;R&quot; &quot;S&quot;
+## [20] &quot;T&quot; &quot;U&quot; &quot;V&quot; &quot;W&quot; &quot;X&quot; &quot;Y&quot; &quot;Z&quot;</code></pre>
+<div class="sourceCode" id="cb108"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb108-1"><a href="intro.html#cb108-1"></a>month.name</span></code></pre></div>
+<pre><code>##  [1] &quot;January&quot;   &quot;February&quot;  &quot;March&quot;     &quot;April&quot;     &quot;May&quot;       &quot;June&quot;     
+##  [7] &quot;July&quot;      &quot;August&quot;    &quot;September&quot; &quot;October&quot;   &quot;November&quot;  &quot;December&quot;</code></pre>
+<div class="sourceCode" id="cb110"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb110-1"><a href="intro.html#cb110-1"></a>month.abb</span></code></pre></div>
+<pre><code>##  [1] &quot;Jan&quot; &quot;Feb&quot; &quot;Mar&quot; &quot;Apr&quot; &quot;May&quot; &quot;Jun&quot; &quot;Jul&quot; &quot;Aug&quot; &quot;Sep&quot; &quot;Oct&quot; &quot;Nov&quot; &quot;Dec&quot;</code></pre>
 <div id="vector-coercion" class="section level3">
 <h3><span class="header-section-number">2.7.1</span> Vector coercion</h3>
 <p>Vectors are R objects that contain multiple values of <strong>the same type</strong>. But what if we merge together different types?</p>
-<div class="sourceCode" id="cb104"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb104-1"><a href="intro.html#cb104-1"></a><span class="kw">c</span>(<span class="dv">1</span>, <span class="st">&quot;34&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb112"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb112-1"><a href="intro.html#cb112-1"></a><span class="kw">c</span>(<span class="dv">1</span>, <span class="st">&quot;34&quot;</span>)</span></code></pre></div>
 <pre><code>## [1] &quot;1&quot;  &quot;34&quot;</code></pre>
-<div class="sourceCode" id="cb106"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb106-1"><a href="intro.html#cb106-1"></a><span class="kw">c</span>(<span class="dv">1</span>, <span class="ot">TRUE</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb114"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb114-1"><a href="intro.html#cb114-1"></a><span class="kw">c</span>(<span class="dv">1</span>, <span class="ot">TRUE</span>)</span></code></pre></div>
 <pre><code>## [1] 1 1</code></pre>
-<div class="sourceCode" id="cb108"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb108-1"><a href="intro.html#cb108-1"></a><span class="kw">c</span>(<span class="ot">TRUE</span>, <span class="st">&quot;34&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb116"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb116-1"><a href="intro.html#cb116-1"></a><span class="kw">c</span>(<span class="ot">TRUE</span>, <span class="st">&quot;34&quot;</span>)</span></code></pre></div>
 <pre><code>## [1] &quot;TRUE&quot; &quot;34&quot;</code></pre>
 <p>It is clear that there is hierarchy: strings &gt; double &gt; logical. It is not universal across different programming languages. It doesn’t correspond to amount of values of particular type:</p>
-<div class="sourceCode" id="cb110"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb110-1"><a href="intro.html#cb110-1"></a><span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="st">&quot;34&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb118"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb118-1"><a href="intro.html#cb118-1"></a><span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="st">&quot;34&quot;</span>)</span></code></pre></div>
 <pre><code>## [1] &quot;1&quot;  &quot;2&quot;  &quot;3&quot;  &quot;34&quot;</code></pre>
-<div class="sourceCode" id="cb112"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb112-1"><a href="intro.html#cb112-1"></a><span class="kw">c</span>(<span class="dv">1</span>, <span class="ot">TRUE</span>, <span class="ot">FALSE</span>, <span class="ot">FALSE</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb120"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb120-1"><a href="intro.html#cb120-1"></a><span class="kw">c</span>(<span class="dv">1</span>, <span class="ot">TRUE</span>, <span class="ot">FALSE</span>, <span class="ot">FALSE</span>)</span></code></pre></div>
 <pre><code>## [1] 1 1 0 0</code></pre>
 <p>The same story could happen during other operations:</p>
-<div class="sourceCode" id="cb114"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb114-1"><a href="intro.html#cb114-1"></a><span class="dv">5</span><span class="op">+</span><span class="ot">TRUE</span></span></code></pre></div>
+<div class="sourceCode" id="cb122"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb122-1"><a href="intro.html#cb122-1"></a><span class="dv">5</span><span class="op">+</span><span class="ot">TRUE</span></span></code></pre></div>
 <pre><code>## [1] 6</code></pre>
 </div>
 <div id="vector-operations" class="section level3">
 <h3><span class="header-section-number">2.7.2</span> Vector operations</h3>
 <p>All operation that we discussed earlier could be done with vectors of the same length:</p>
-<div class="sourceCode" id="cb116"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb116-1"><a href="intro.html#cb116-1"></a><span class="dv">1</span><span class="op">:</span><span class="dv">5</span> <span class="op">+</span><span class="st"> </span><span class="dv">6</span><span class="op">:</span><span class="dv">10</span></span></code></pre></div>
+<div class="sourceCode" id="cb124"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb124-1"><a href="intro.html#cb124-1"></a><span class="dv">1</span><span class="op">:</span><span class="dv">5</span> <span class="op">+</span><span class="st"> </span><span class="dv">6</span><span class="op">:</span><span class="dv">10</span></span></code></pre></div>
 <pre><code>## [1]  7  9 11 13 15</code></pre>
-<div class="sourceCode" id="cb118"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb118-1"><a href="intro.html#cb118-1"></a><span class="dv">1</span><span class="op">:</span><span class="dv">5</span> <span class="op">-</span><span class="st"> </span><span class="dv">6</span><span class="op">:</span><span class="dv">10</span></span></code></pre></div>
+<div class="sourceCode" id="cb126"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb126-1"><a href="intro.html#cb126-1"></a><span class="dv">1</span><span class="op">:</span><span class="dv">5</span> <span class="op">-</span><span class="st"> </span><span class="dv">6</span><span class="op">:</span><span class="dv">10</span></span></code></pre></div>
 <pre><code>## [1] -5 -5 -5 -5 -5</code></pre>
-<div class="sourceCode" id="cb120"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb120-1"><a href="intro.html#cb120-1"></a><span class="dv">1</span><span class="op">:</span><span class="dv">5</span> <span class="op">*</span><span class="st"> </span><span class="dv">6</span><span class="op">:</span><span class="dv">10</span></span></code></pre></div>
+<div class="sourceCode" id="cb128"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb128-1"><a href="intro.html#cb128-1"></a><span class="dv">1</span><span class="op">:</span><span class="dv">5</span> <span class="op">*</span><span class="st"> </span><span class="dv">6</span><span class="op">:</span><span class="dv">10</span></span></code></pre></div>
 <pre><code>## [1]  6 14 24 36 50</code></pre>
 <p>There are operation where the vector of any length and vector of length one is involved:</p>
-<div class="sourceCode" id="cb122"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb122-1"><a href="intro.html#cb122-1"></a><span class="dv">1</span><span class="op">:</span><span class="dv">5</span> <span class="op">+</span><span class="st"> </span><span class="dv">7</span></span></code></pre></div>
+<div class="sourceCode" id="cb130"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb130-1"><a href="intro.html#cb130-1"></a><span class="dv">1</span><span class="op">:</span><span class="dv">5</span> <span class="op">+</span><span class="st"> </span><span class="dv">7</span></span></code></pre></div>
 <pre><code>## [1]  8  9 10 11 12</code></pre>
-<div class="sourceCode" id="cb124"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb124-1"><a href="intro.html#cb124-1"></a><span class="dv">1</span><span class="op">:</span><span class="dv">5</span> <span class="op">-</span><span class="st"> </span><span class="dv">7</span></span></code></pre></div>
+<div class="sourceCode" id="cb132"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb132-1"><a href="intro.html#cb132-1"></a><span class="dv">1</span><span class="op">:</span><span class="dv">5</span> <span class="op">-</span><span class="st"> </span><span class="dv">7</span></span></code></pre></div>
 <pre><code>## [1] -6 -5 -4 -3 -2</code></pre>
-<div class="sourceCode" id="cb126"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb126-1"><a href="intro.html#cb126-1"></a><span class="dv">1</span><span class="op">:</span><span class="dv">5</span> <span class="op">/</span><span class="st"> </span><span class="dv">7</span></span></code></pre></div>
+<div class="sourceCode" id="cb134"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb134-1"><a href="intro.html#cb134-1"></a><span class="dv">1</span><span class="op">:</span><span class="dv">5</span> <span class="op">/</span><span class="st"> </span><span class="dv">7</span></span></code></pre></div>
 <pre><code>## [1] 0.1428571 0.2857143 0.4285714 0.5714286 0.7142857</code></pre>
 <p>There are a lot of functions in R that are <strong>vectorised</strong>. That means that applying this function to a vector is the same as apply this function to each ellement of the vector:</p>
-<div class="sourceCode" id="cb128"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb128-1"><a href="intro.html#cb128-1"></a><span class="kw">sin</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">5</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb136"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb136-1"><a href="intro.html#cb136-1"></a><span class="kw">sin</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">5</span>)</span></code></pre></div>
 <pre><code>## [1]  0.8414710  0.9092974  0.1411200 -0.7568025 -0.9589243</code></pre>
-<div class="sourceCode" id="cb130"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb130-1"><a href="intro.html#cb130-1"></a><span class="kw">sqrt</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">5</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb138"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb138-1"><a href="intro.html#cb138-1"></a><span class="kw">sqrt</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">5</span>)</span></code></pre></div>
 <pre><code>## [1] 1.000000 1.414214 1.732051 2.000000 2.236068</code></pre>
-<div class="sourceCode" id="cb132"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb132-1"><a href="intro.html#cb132-1"></a><span class="kw">abs</span>(<span class="op">-</span><span class="dv">5</span><span class="op">:</span><span class="dv">3</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb140"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb140-1"><a href="intro.html#cb140-1"></a><span class="kw">abs</span>(<span class="op">-</span><span class="dv">5</span><span class="op">:</span><span class="dv">3</span>)</span></code></pre></div>
 <pre><code>## [1] 5 4 3 2 1 0 1 2 3</code></pre>
 </div>
 <div id="indexing-vectors" class="section level3">
 <h3><span class="header-section-number">2.7.3</span> Indexing vectors</h3>
 <p>How to get some value or banch of values from a vector? You need to index them:</p>
-<div class="sourceCode" id="cb134"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb134-1"><a href="intro.html#cb134-1"></a>x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">3</span>, <span class="dv">0</span>, pi, <span class="fl">23.4</span>, <span class="dv">-53</span>)</span>
-<span id="cb134-2"><a href="intro.html#cb134-2"></a>y &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;Kraków&quot;, &quot;</span>Warszawa<span class="st">&quot;, &quot;</span>Cieszyn<span class="st">&quot;)</span></span>
-<span id="cb134-3"><a href="intro.html#cb134-3"></a></span>
-<span id="cb134-4"><a href="intro.html#cb134-4"></a><span class="st">x[4]</span></span></code></pre></div>
+<div class="sourceCode" id="cb142"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb142-1"><a href="intro.html#cb142-1"></a>x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">3</span>, <span class="dv">0</span>, pi, <span class="fl">23.4</span>, <span class="dv">-53</span>)</span>
+<span id="cb142-2"><a href="intro.html#cb142-2"></a>y &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;Kraków&quot;, &quot;</span>Warszawa<span class="st">&quot;, &quot;</span>Cieszyn<span class="st">&quot;)</span></span>
+<span id="cb142-3"><a href="intro.html#cb142-3"></a></span>
+<span id="cb142-4"><a href="intro.html#cb142-4"></a><span class="st">x[4]</span></span></code></pre></div>
 <pre><code>## [1] 23.4</code></pre>
-<div class="sourceCode" id="cb136"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb136-1"><a href="intro.html#cb136-1"></a>y[<span class="dv">2</span>]</span></code></pre></div>
+<div class="sourceCode" id="cb144"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb144-1"><a href="intro.html#cb144-1"></a>y[<span class="dv">2</span>]</span></code></pre></div>
 <pre><code>## [1] &quot;Warszawa&quot;</code></pre>
 <p>It is possible to have a vector as index:</p>
-<div class="sourceCode" id="cb138"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb138-1"><a href="intro.html#cb138-1"></a>x[<span class="dv">1</span><span class="op">:</span><span class="dv">2</span>]</span></code></pre></div>
+<div class="sourceCode" id="cb146"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb146-1"><a href="intro.html#cb146-1"></a>x[<span class="dv">1</span><span class="op">:</span><span class="dv">2</span>]</span></code></pre></div>
 <pre><code>## [1] 3 0</code></pre>
-<div class="sourceCode" id="cb140"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb140-1"><a href="intro.html#cb140-1"></a>y[<span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">3</span>)]</span></code></pre></div>
+<div class="sourceCode" id="cb148"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb148-1"><a href="intro.html#cb148-1"></a>y[<span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">3</span>)]</span></code></pre></div>
 <pre><code>## [1] &quot;Kraków&quot;  &quot;Cieszyn&quot;</code></pre>
 <p>It is possible to index something that you <strong>do not</strong> want to see in the result:</p>
-<div class="sourceCode" id="cb142"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb142-1"><a href="intro.html#cb142-1"></a>y[<span class="op">-</span><span class="dv">2</span>]</span></code></pre></div>
+<div class="sourceCode" id="cb150"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb150-1"><a href="intro.html#cb150-1"></a>y[<span class="op">-</span><span class="dv">2</span>]</span></code></pre></div>
 <pre><code>## [1] &quot;Kraków&quot;  &quot;Cieszyn&quot;</code></pre>
-<div class="sourceCode" id="cb144"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb144-1"><a href="intro.html#cb144-1"></a>x[<span class="op">-</span><span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">4</span>)]</span></code></pre></div>
+<div class="sourceCode" id="cb152"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb152-1"><a href="intro.html#cb152-1"></a>x[<span class="op">-</span><span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">4</span>)]</span></code></pre></div>
 <pre><code>## [1]   0.000000   3.141593 -53.000000</code></pre>
 <p>It is possible to have other variables as an index</p>
-<div class="sourceCode" id="cb146"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb146-1"><a href="intro.html#cb146-1"></a>z &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">3</span>, <span class="dv">2</span>)</span>
-<span id="cb146-2"><a href="intro.html#cb146-2"></a>x[z]</span></code></pre></div>
+<div class="sourceCode" id="cb154"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb154-1"><a href="intro.html#cb154-1"></a>z &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">3</span>, <span class="dv">2</span>)</span>
+<span id="cb154-2"><a href="intro.html#cb154-2"></a>x[z]</span></code></pre></div>
 <pre><code>## [1] 3.141593 0.000000</code></pre>
-<div class="sourceCode" id="cb148"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb148-1"><a href="intro.html#cb148-1"></a>y[z]</span></code></pre></div>
+<div class="sourceCode" id="cb156"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb156-1"><a href="intro.html#cb156-1"></a>y[z]</span></code></pre></div>
 <pre><code>## [1] &quot;Cieszyn&quot;  &quot;Warszawa&quot;</code></pre>
 <p>It is possible to index with logical vector:</p>
-<div class="sourceCode" id="cb150"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb150-1"><a href="intro.html#cb150-1"></a>x[<span class="kw">c</span>(<span class="ot">TRUE</span>, <span class="ot">FALSE</span>, <span class="ot">TRUE</span>, <span class="ot">TRUE</span>, <span class="ot">FALSE</span>)]</span></code></pre></div>
+<div class="sourceCode" id="cb158"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb158-1"><a href="intro.html#cb158-1"></a>x[<span class="kw">c</span>(<span class="ot">TRUE</span>, <span class="ot">FALSE</span>, <span class="ot">TRUE</span>, <span class="ot">TRUE</span>, <span class="ot">FALSE</span>)]</span></code></pre></div>
 <pre><code>## [1]  3.000000  3.141593 23.400000</code></pre>
 <p>That means that we could use <code>TRUE/FALSE</code>-vector produced by comparison:</p>
-<div class="sourceCode" id="cb152"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb152-1"><a href="intro.html#cb152-1"></a>x[x <span class="op">&gt;</span><span class="st"> </span><span class="dv">2</span>]</span></code></pre></div>
+<div class="sourceCode" id="cb160"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb160-1"><a href="intro.html#cb160-1"></a>x[x <span class="op">&gt;</span><span class="st"> </span><span class="dv">2</span>]</span></code></pre></div>
 <pre><code>## [1]  3.000000  3.141593 23.400000</code></pre>
 <p>It works because <code>x &gt; 2</code> is a vector of logical values:</p>
-<div class="sourceCode" id="cb154"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb154-1"><a href="intro.html#cb154-1"></a>x <span class="op">&gt;</span><span class="st"> </span><span class="dv">2</span></span></code></pre></div>
+<div class="sourceCode" id="cb162"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb162-1"><a href="intro.html#cb162-1"></a>x <span class="op">&gt;</span><span class="st"> </span><span class="dv">2</span></span></code></pre></div>
 <pre><code>## [1]  TRUE FALSE  TRUE  TRUE FALSE</code></pre>
 <div class="rmdtask">
 <p>
@@ -550,16 +564,35 @@ How many ellements in the vector <code>g</code> if expression <code>g[pi &lt; 10
 </form>
 <p><br></p>
 </div>
+<div id="na" class="section level3">
+<h3><span class="header-section-number">2.7.4</span> <code>NA</code></h3>
+<p>Some times there are some missing values in data, so it is represent with <code>NA</code></p>
+<div class="sourceCode" id="cb164"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb164-1"><a href="intro.html#cb164-1"></a><span class="ot">NA</span></span></code></pre></div>
+<pre><code>## [1] NA</code></pre>
+<div class="sourceCode" id="cb166"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb166-1"><a href="intro.html#cb166-1"></a><span class="kw">c</span>(<span class="dv">1</span>, <span class="ot">NA</span>, <span class="dv">9</span>)</span></code></pre></div>
+<pre><code>## [1]  1 NA  9</code></pre>
+<div class="sourceCode" id="cb168"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb168-1"><a href="intro.html#cb168-1"></a><span class="kw">c</span>(<span class="st">&quot;Kraków&quot;, NA, &quot;</span>Cieszyn<span class="st">&quot;)</span></span></code></pre></div>
+<pre><code>## [1] &quot;Kraków&quot;  NA        &quot;Cieszyn&quot;</code></pre>
+<div class="sourceCode" id="cb170"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb170-1"><a href="intro.html#cb170-1"></a><span class="kw">c</span>(<span class="ot">TRUE</span>, <span class="ot">FALSE</span>, <span class="ot">NA</span>)</span></code></pre></div>
+<pre><code>## [1]  TRUE FALSE    NA</code></pre>
+<p>It is possible to check, whether there are missing values</p>
+<div class="sourceCode" id="cb172"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb172-1"><a href="intro.html#cb172-1"></a>x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;Kraków&quot;, NA, &quot;</span>Cieszyn<span class="st">&quot;)</span></span>
+<span id="cb172-2"><a href="intro.html#cb172-2"></a><span class="st">y &lt;- c(&quot;</span>Kraków&quot;, <span class="st">&quot;Warszawa&quot;</span>, <span class="st">&quot;Cieszyn&quot;</span>)</span>
+<span id="cb172-3"><a href="intro.html#cb172-3"></a><span class="kw">is.na</span>(x)</span></code></pre></div>
+<pre><code>## [1] FALSE  TRUE FALSE</code></pre>
+<div class="sourceCode" id="cb174"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb174-1"><a href="intro.html#cb174-1"></a><span class="kw">is.na</span>(y)</span></code></pre></div>
+<pre><code>## [1] FALSE FALSE FALSE</code></pre>
+</div>
 </div>
 <div id="packages" class="section level2">
 <h2><span class="header-section-number">2.8</span> Packages</h2>
-<p>The most important and useful part of R is hidden in its packages. Everything that we discussed so far is base R functionality invented back in 1979. Since then a lot of different things changed, so all new practicies for data analysis, visualisation and manipulation are packed in packages. During our class we will learn the most popular <em>“dialect”</em> of R called <code>tidyverse</code>.</p>
+<p>The mst important and useful part of R is hidden in its packages. Everything that we discussed so far is base R functionality invented back in 1979. Since then a lot of different things changed, so all new practicies for data analysis, visualisation and manipulation are packed in packages. During our class we will learn the most popular <em>“dialect”</em> of R called <code>tidyverse</code>.</p>
 <p>In order to install packages you need to use command. Let’s install the <code>tidyverse</code> package:</p>
-<div class="sourceCode" id="cb156"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb156-1"><a href="intro.html#cb156-1"></a><span class="kw">install.packages</span>(<span class="st">&quot;tidyverse&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb176"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb176-1"><a href="intro.html#cb176-1"></a><span class="kw">install.packages</span>(<span class="st">&quot;tidyverse&quot;</span>)</span></code></pre></div>
 <p>For today we also will need the <code>readxl</code> package:</p>
-<div class="sourceCode" id="cb157"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb157-1"><a href="intro.html#cb157-1"></a><span class="kw">install.packages</span>(<span class="st">&quot;tidyverse&quot;</span>)</span></code></pre></div>
-<p>After you have downloaded packages nothing will change. You can not use any fucntionality from packages unless you turn the package on with the <code>library()</code> function:</p>
-<div class="sourceCode" id="cb158"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb158-1"><a href="intro.html#cb158-1"></a><span class="kw">library</span>(<span class="st">&quot;tidyverse&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb177"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb177-1"><a href="intro.html#cb177-1"></a><span class="kw">install.packages</span>(<span class="st">&quot;tidyverse&quot;</span>)</span></code></pre></div>
+<p>After you have downloaded packages nothing will change. You can not use any fucntionality from packages unless you load the package with the <code>library()</code> function:</p>
+<div class="sourceCode" id="cb178"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb178-1"><a href="intro.html#cb178-1"></a><span class="kw">library</span>(<span class="st">&quot;tidyverse&quot;</span>)</span></code></pre></div>
 <pre><code>## ── Attaching packages ────────</code></pre>
 <pre><code>## ✓ ggplot2 3.2.1     ✓ purrr   0.3.3
 ## ✓ tibble  2.1.3     ✓ dplyr   0.8.3
@@ -574,21 +607,35 @@ How many ellements in the vector <code>g</code> if expression <code>g[pi &lt; 10
 <li><code>library("...")</code> is like you are start using your screwdriver.</li>
 </ul>
 <p><img src="images/01.05.install-packages-vs-library.png" /></p>
+<p>For the further lectures we will need <code>tidyverse</code> package.</p>
+<div class="rmdtask">
+<p>
+Please install <code>tidyverse</code> package and load it.
+</p>
 </div>
-<div id="datfor-the-further-lectures-we-will-need-tidyverse-package." class="section level2">
-<h2><span class="header-section-number">2.9</span> DatFor the further lectures we will need <code>tidyverse</code> package.</h2>
-<p>af# <code>tidyverse</code></p>
+<div id="tidyverse" class="section level3">
+<h3><span class="header-section-number">2.8.1</span> <code>tidyverse</code></h3>
+<p>The <a href="https://blog.rstudio.org/2016/09/15/tidyverse-1-0-0/"><code>tidyverse</code></a> is a set of packages:</p>
+<ul>
+<li><code>tibble</code>, for tibbles, a modern re-imagining of data frames — analugue of tables in R</li>
+<li><code>readr</code>, for data import</li>
+<li><code>dplyr</code>, for data manipulation</li>
+<li><code>tidyr</code>, for data tidying (we will discuss it later today)</li>
+<li><code>ggplot2</code>, for data visualisation</li>
+<li><code>purrr</code>, for functional programming</li>
+</ul>
 </div>
-<div id="ame-tibble" class="section level2">
-<h2><span class="header-section-number">2.10</span> ame (tibble)</h2>
+</div>
+<div id="dataframe-tibble" class="section level2">
+<h2><span class="header-section-number">2.9</span> Dataframe (tibble)</h2>
 <div id="indexing-dataframes" class="section level3">
-<h3><span class="header-section-number">2.10.1</span> Indexing dataframes</h3>
+<h3><span class="header-section-number">2.9.1</span> Indexing dataframes</h3>
 </div>
 </div>
 <div id="data-import" class="section level2">
-<h2><span class="header-section-number">2.11</span> Data import</h2>
+<h2><span class="header-section-number">2.10</span> Data import</h2>
 <div id="csv-files" class="section level3">
-<h3><span class="header-section-number">2.11.1</span> <code>.csv</code> files</h3>
+<h3><span class="header-section-number">2.10.1</span> <code>.csv</code> files</h3>
 <div class="rmdtask">
 <p>
 Because of 2019–20 Wuhan coronavirus outbreak the city of Wuhan is evrywhere on media. <a href="https://nplus1.ru/blog/2020/02/03/wuhan">In Russian</a> for some reason Wuhan is masculine and sometimes is feminin. I looked into other Slavic languages and recorded obtained data into the <a href="https://gist.githubusercontent.com/agricolamz/c280527d6b5d79693b85d8fcf8d35bc3/raw/c46a32a218bc5d6933703ae677b81ff5a4a1dcaa/wuhan.csv"><code>.csv</code> file</a>. Download this files to R. What variables does it have?
@@ -596,11 +643,11 @@ Because of 2019–20 Wuhan coronavirus outbreak the city of Wuhan is evrywhere o
 </div>
 </div>
 <div id="xls-and-.xlsx-files" class="section level3">
-<h3><span class="header-section-number">2.11.2</span> <code>.xls</code> and <code>.xlsx</code> files</h3>
+<h3><span class="header-section-number">2.10.2</span> <code>.xls</code> and <code>.xlsx</code> files</h3>
 </div>
 </div>
 <div id="rmarkdown" class="section level2">
-<h2><span class="header-section-number">2.12</span> Rmarkdown</h2>
+<h2><span class="header-section-number">2.11</span> Rmarkdown</h2>
 <script>
 function validateForm1() {
     var x = document.forms["Form1"]["answer1"].value;

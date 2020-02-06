@@ -310,6 +310,15 @@ Use argument `length.out` of function `seq()` and create an arithmetic sequence 
 seq(pi, 2*pi, length.out = 50)
 ```
 
+There are also some built-in vectors:
+
+```{r}
+letters
+LETTERS
+month.name
+month.abb
+```
+
 ### Vector coercion
 Vectors are R objects that contain multiple values of **the same type**. But what if we merge together different types?
 
@@ -418,9 +427,29 @@ How many ellements in the vector `g` if expression `g[pi < 1000]` does not retur
 <input type="submit" value="check">
 </form><br>
 
+### `NA`
+
+Some times there are some missing values in data, so it is represent with `NA`
+```{r}
+NA
+c(1, NA, 9)
+c("Kraków", NA, "Cieszyn")
+c(TRUE, FALSE, NA)
+```
+
+It is possible to check, whether there are missing values
+
+```{r}
+x <- c("Kraków", NA, "Cieszyn")
+y <- c("Kraków", "Warszawa", "Cieszyn")
+is.na(x)
+is.na(y)
+```
+
 ## Packages
 
-The most important and useful part of R is hidden in its packages. Everything that we discussed so far is base R functionality invented back in 1979. Since then a lot of different things changed, so all new practicies for data analysis, visualisation and manipulation are packed in packages. During our class we will learn the most popular *"dialect"* of R called `tidyverse`.
+
+The mst important and useful part of R is hidden in its packages. Everything that we discussed so far is base R functionality invented back in 1979. Since then a lot of different things changed, so all new practicies for data analysis, visualisation and manipulation are packed in packages. During our class we will learn the most popular *"dialect"* of R called `tidyverse`.
 
 In order to install packages you need to use command. Let's install the `tidyverse` package:
 
@@ -434,7 +463,7 @@ For today we also will need the `readxl` package:
 install.packages("tidyverse")
 ```
 
-After you have downloaded packages nothing will change. You can not use any fucntionality from packages unless you turn the package on with the `library()` function:
+After you have downloaded packages nothing will change. You can not use any fucntionality from packages unless you load the package with the `library()` function:
 
 ```{r}
 library("tidyverse")
@@ -447,11 +476,27 @@ Not turning on R package is the most popular mistake of my students. So remmembe
 
 ![](images/01.05.install-packages-vs-library.png)
 
-## DatFor the further lectures we will need `tidyverse` package.
+For the further lectures we will need `tidyverse` package.
 
-af# `tidyverse`
+```{block, type = "rmdtask"}
+Please install `tidyverse` package and load it.
+```
 
-## ame (tibble)
+
+### `tidyverse`
+
+The [`tidyverse`](https://blog.rstudio.org/2016/09/15/tidyverse-1-0-0/) is a set of packages:
+
+* `tibble`, for tibbles, a modern re-imagining of data frames --- analugue of tables in R
+* `readr`, for data import
+* `dplyr`, for data manipulation
+* `tidyr`, for data tidying (we will discuss it later today)
+* `ggplot2`, for data visualisation
+* `purrr`, for functional programming
+
+## Dataframe (tibble)
+
+
 
 ### Indexing dataframes
 
