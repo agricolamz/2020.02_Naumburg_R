@@ -690,23 +690,39 @@ write_csv(moore_filmography, "moore_filmography_v2.csv")
 ```
 
 
-Somet
-mes reading `.csv` files into Microsoft Excel is complicated, please follow the [following instructions](https://www.thewindowsclub.com/how-to-convert-a-text-txt-csv-file-into-an-excel-file).
+Sometimes reading `.csv` files into Microsoft Excel is complicated, please follow the [following instructions](https://www.thewindowsclub.com/how-to-convert-a-text-txt-csv-file-into-an-excel-file).
 
 ### `.xls` and `.xlsx` files
+
+
+There is a package `readxl` that allow to open and save `.xsl` and `.xslx` files. Install and load the package:
+
+
+```{r}
+library(readxl)
+```
+
+Here is a [test file](https://github.com/agricolamz/2020.02_Naumburg_R/raw/master/data/moore_filmography.xlsx). Download it to your computer and put it to your working directory:
+
+
+```{r, eval= FALSE}
+read_xlsx("moore_filmography.xlsx")
+```
+
 
 ## Rmarkdown
 
 `r if (knitr::is_html_output()) '
 <script>
-functifunction validateForm1() {
+function validateForm1() {
     var x = document.forms["Form1"]["answer1"].value;
     if (x != "6.7749") {
         alert("I have a different answer...");
         return false;
     } else {
         alert("Correct!");
-        return false}
+        return false;
+    }
 }
 function validateForm2() {
     var x = document.forms["Form2"]["answer2"].value;

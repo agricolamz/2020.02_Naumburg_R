@@ -346,7 +346,7 @@ Even though there isn’t any brackets in the mathematical notation, you need to
 <div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="intro.html#cb53-1"></a>Sys.Date <span class="co"># wrong</span></span></code></pre></div>
 <pre><code>## function () 
 ## as.Date(as.POSIXlt(Sys.time()))
-## &lt;bytecode: 0x5a505f05cce8&gt;
+## &lt;bytecode: 0x574a8e9d9c38&gt;
 ## &lt;environment: namespace:base&gt;</code></pre>
 <p>Each function in R is documented. You can read its documentation typing a question mark before the function name:</p>
 <div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="intro.html#cb55-1"></a>?Sys.Date</span></code></pre></div>
@@ -853,6 +853,10 @@ Because of the 2019–20 Wuhan coronavirus outbreak the city of Wuhan is on medi
 </div>
 <div id="xls-and-.xlsx-files" class="section level3">
 <h3><span class="header-section-number">2.10.2</span> <code>.xls</code> and <code>.xlsx</code> files</h3>
+<p>There is a package <code>readxl</code> that allow to open and save <code>.xsl</code> and <code>.xslx</code> files. Install and load the package:</p>
+<div class="sourceCode" id="cb234"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb234-1"><a href="intro.html#cb234-1"></a><span class="kw">library</span>(readxl)</span></code></pre></div>
+<p>Here is a <a href="https://github.com/agricolamz/2020.02_Naumburg_R/raw/master/data/moore_filmography.xlsx">test file</a>. Download it to your computer and put it to your working directory:</p>
+<div class="sourceCode" id="cb235"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb235-1"><a href="intro.html#cb235-1"></a><span class="kw">read_xlsx</span>(<span class="st">&quot;moore_filmography.xlsx&quot;</span>)</span></code></pre></div>
 </div>
 </div>
 <div id="rmarkdown" class="section level2">
