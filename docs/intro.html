@@ -351,7 +351,7 @@ Even though there isn’t any brackets in the mathematical notation, you need to
 <div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="intro.html#cb53-1"></a>Sys.Date <span class="co"># wrong</span></span></code></pre></div>
 <pre><code>## function () 
 ## as.Date(as.POSIXlt(Sys.time()))
-## &lt;bytecode: 0x5e3b37efc308&gt;
+## &lt;bytecode: 0x598a6edc3308&gt;
 ## &lt;environment: namespace:base&gt;</code></pre>
 <p>Each function in R is documented. You can read its documentation typing a question mark before the function name:</p>
 <div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="intro.html#cb55-1"></a>?Sys.Date</span></code></pre></div>
@@ -628,10 +628,10 @@ How many elements in the vector <code>g</code> if expression <code>g[pi &lt; 100
 <pre><code>## ── Conflicts ─────────────────
 ## x dplyr::filter() masks stats::filter()
 ## x dplyr::lag()    masks stats::lag()</code></pre>
-<p>Not turning on an R package is the most popular mistake of my students. So remember:</p>
+<p>Not turninloadingpackage is the most popular mistake of my students. So remember:</p>
 <ul>
 <li><code>install.packages("...")</code> is like you are buying a screwdriver set;</li>
-<li><code>library("...")</code> is like you are stusing your screwdriver.</li>
+<li><code>library("...")</code> is like you are stusing art your screwdriver.</li>
 </ul>
 <p><img src="images/01.05.install-packages-vs-library.png" /></p>
 <p>For the further lectures we will need <code>tidyverse</code> package.</p>
@@ -700,7 +700,7 @@ Please install <code>tidyverse</code> package and load it.
 {"columns":[{"label":["title"],"name":[1],"type":["chr"],"align":["left"]},{"label":["year"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["director"],"name":[3],"type":["lgl"],"align":["right"]},{"label":["producer"],"name":[4],"type":["lgl"],"align":["right"]}],"data":[{"1":"The Secret of Kells","2":"2009","3":"TRUE","4":"TRUE"},{"1":"Song of the Sea","2":"2014","3":"TRUE","4":"TRUE"},{"1":"Kahlil Gibran's The Prophet","2":"2014","3":"TRUE","4":"FALSE"},{"1":"The Breadwinner","2":"2017","3":"FALSE","4":"TRUE"},{"1":"Wolfwalkers","2":"2020","3":"TRUE","4":"TRUE"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
-<p>There some useful functions that tell you somethig about dataframe:</p>
+<p>There are some useful functions that tell you somethig about a dataframe:</p>
 <div class="sourceCode" id="cb209"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb209-1"><a href="intro.html#cb209-1"></a><span class="kw">nrow</span>(moore_filmography)</span></code></pre></div>
 <pre><code>## [1] 5</code></pre>
 <div class="sourceCode" id="cb211"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb211-1"><a href="intro.html#cb211-1"></a><span class="kw">ncol</span>(moore_filmography)</span></code></pre></div>
@@ -722,7 +722,7 @@ Please install <code>tidyverse</code> package and load it.
 <p>We will work exclusively with dataframes. But it is not the only data structure in R.</p>
 <div class="rmdtask">
 <p>
-How many rows in the <code>iris</code> dataframe?
+How many rows are in the <code>iris</code> dataframe?
 </p>
 </div>
 <form name="Form4" onsubmit="return validateForm4()" method="post">
@@ -732,7 +732,7 @@ How many rows in the <code>iris</code> dataframe?
 <p><br></p>
 <div class="rmdtask">
 <p>
-How many columns in the <code>mtcars</code> dataframe?
+How many columns are in the <code>mtcars</code> dataframe?
 </p>
 </div>
 <form name="Form4" onsubmit="return validateForm4()" method="post">
@@ -850,7 +850,7 @@ Wolfwalkers,2020,TRUE,TRUE</code></pre>
 Because of the 2019–20 Wuhan coronavirus outbreak the city of Wuhan is on media everywhere. <a href="https://nplus1.ru/blog/2020/02/03/wuhan">In Russian</a> for some reason Wuhan is sometimes masculine and sometimes it is feminin. I looked into other Slavic languages and recorded obtained data into the <a href="https://gist.githubusercontent.com/agricolamz/c280527d6b5d79693b85d8fcf8d35bc3/raw/c46a32a218bc5d6933703ae677b81ff5a4a1dcaa/wuhan.csv"><code>.csv</code> file</a>. Download this files to R. What variables does it have?
 </p>
 </div>
-<p>All file manipulations in R connected somehow with space on your computer via working directory. You can get information about your current working directory using <code>getwd()</code> function. You can change your working directory using <code>setwd()</code> function. If a file you want to read is in the working directory you don need to write the whole path to file:</p>
+<p>All file manipulations in R are somehow connected with space on your computer via working directory. You can get information about your current working directory using <code>getwd()</code> function. You can change your working directory using <code>setwd()</code> function. If a file you want to read is in the working directory you don’t need to write the whole path to file:</p>
 <div class="sourceCode" id="cb232"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb232-1"><a href="intro.html#cb232-1"></a><span class="kw">read_csv</span>(<span class="st">&quot;moore_filmography.csv&quot;</span>)</span></code></pre></div>
 <p>The same simple function will create your <code>.csv</code> file:</p>
 <div class="sourceCode" id="cb233"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb233-1"><a href="intro.html#cb233-1"></a><span class="kw">write_csv</span>(moore_filmography, <span class="st">&quot;moore_filmography_v2.csv&quot;</span>)</span></code></pre></div>
@@ -858,7 +858,7 @@ Because of the 2019–20 Wuhan coronavirus outbreak the city of Wuhan is on medi
 </div>
 <div id="xls-and-.xlsx-files" class="section level3">
 <h3><span class="header-section-number">2.10.2</span> <code>.xls</code> and <code>.xlsx</code> files</h3>
-<p>There is a package <code>readxl</code> that allow to open and save <code>.xsl</code> and <code>.xslx</code> files. Install and load the package:</p>
+<p>There is a package <code>readxl</code> that allows to open and save <code>.xsl</code> and <code>.xslx</code> files. Install and load the package:</p>
 <div class="sourceCode" id="cb234"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb234-1"><a href="intro.html#cb234-1"></a><span class="kw">library</span>(readxl)</span></code></pre></div>
 <p>Here is a <a href="https://github.com/agricolamz/2020.02_Naumburg_R/raw/master/data/moore_filmography.xlsx">test file</a>. Download it to your computer and put it to your working directory:</p>
 <div class="sourceCode" id="cb235"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb235-1"><a href="intro.html#cb235-1"></a><span class="kw">read_xlsx</span>(<span class="st">&quot;moore_filmography.xlsx&quot;</span>)</span></code></pre></div>
@@ -880,7 +880,7 @@ Because of the 2019–20 Wuhan coronavirus outbreak the city of Wuhan is on medi
 <h2><span class="header-section-number">2.11</span> Rmarkdown</h2>
 <p>If you press <code>Ctrl S</code> or <code>Cmd S</code> then you will save your script. There is also another useful type of coding in R: <code>rmarkown</code>. First install this package:</p>
 <div class="sourceCode" id="cb237"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb237-1"><a href="intro.html#cb237-1"></a><span class="kw">install.packages</span>(<span class="st">&quot;rmarkdown&quot;</span>)</span></code></pre></div>
-<p>Thent will be possible to create a new file: <code>File &gt; New File &gt; R Markdown...</code>.</p>
+<p>Then it will be possible to create a new file: <code>File &gt; New File &gt; R Markdown...</code>.</p>
 <p><img src="images/01.06.rmarkdown.png" /></p>
 <p>Press <code>OK</code> in the following menu and you will get the template of your R Markdown file. You can modify it, then press <img src="images/01.07.knit.png" /> and the result file will be created in your working directory. <code>rmarkdown</code> package is a really popular and well developed package that creates output into:</p>
 <ul>
