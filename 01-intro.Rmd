@@ -219,7 +219,7 @@ x + x
 sum(x, x, 7)
 ```
 
-All those operation don't change the variable value. In order to change the variable value you need to make a new assignment:
+All those operations don't change the variable value. In order to change the variable value you need to make a new assignment:
 
 ```{r}
 x <- 5 + 6 + 7
