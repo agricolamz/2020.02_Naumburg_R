@@ -1,3 +1,33 @@
+--- 
+title: "Polish Language(s) and Digital Humanities Using R"
+author: "G. Moroz"
+date: "2020"
+bibliography:
+- bibliography.bib
+editor_options:
+  chunk_output_type: console
+link-citations: yes
+documentclass: book
+site: bookdown::bookdown_site
+biblio-style: apalike
+---
+
+# Prerequisites
+
+Before the classes I would like to ask you to follow the instructions mentioned below to prepare your device for the class work:
+
+* install **R** from the following link: <https://cloud.r-project.org/>
+* install **RStudio** from the following link: <https://rstudio.com/products/rstudio/download/#download> (FREE version, no need to pay!)
+* after the installation run the RStudio program, type `2+2`, and press `Enter`.
+
+![](images/00.rstudio-view.png)
+
+If you see something like this, then you are well prepared for classes.
+
+* Go to the <https://rstudio.cloud/> website and sign up there. This is optional, but it will be a backup version, if something will not work on your computer.
+
+<!--chapter:end:index.Rmd-->
+
 ---
 output: html_document
 editor_options: 
@@ -748,3 +778,35 @@ function validateForm5() {
 }
 </script>
 '`
+
+<!--chapter:end:01-intro.Rmd-->
+
+# Data manipulation: `dplyr` {#dplyr}
+
+<!--chapter:end:02-dplyr-tidyr.Rmd-->
+
+# Data visualisation: `ggplot2` {#ggplot2}
+
+
+<!--chapter:end:03-ggplot2.Rmd-->
+
+# Strings manipulation: `stringr` {#stringr}
+
+<!--chapter:end:04-stringr.Rmd-->
+
+# Text manipulation: `gutenbergr`, `tidytext`, `udpipe` {#texts}
+
+
+<!--chapter:end:05-gutenbergr-tidytext-udpipe.Rmd-->
+
+# Stylometric analysis: `stylo` {#stylo}
+
+
+<!--chapter:end:06-stylo.Rmd-->
+
+`r if (knitr::is_html_output()) '
+# References {-}
+'`
+
+<!--chapter:end:07-references.Rmd-->
+

@@ -1,0 +1,69 @@
+\begin{thebibliography}{}
+
+\bibitem[Baesens et~al., 2015]{baesens15}
+Baesens, B., Van~Vlasselaer, V., and Verbeke, W. (2015).
+\newblock {\em Fraud analytics using descriptive, predictive, and social
+  network techniques: a guide to data science for fraud detection}.
+\newblock John Wiley \& Sons.
+
+\bibitem[Bezanson et~al., 2017]{bezanson17}
+Bezanson, J., Edelman, A., Karpinski, S., and Shah, V.~B. (2017).
+\newblock Julia: A fresh approach to numerical computing.
+\newblock {\em SIAM review}, 59(1):65--98.
+
+\bibitem[Brooks and Cooper, 2013]{brooks13}
+Brooks, H. and Cooper, C.~L. (2013).
+\newblock {\em Science for public policy}.
+\newblock Elsevier.
+
+\bibitem[Brzustowicz, 2017]{brzustowicz17}
+Brzustowicz, M.~R. (2017).
+\newblock {\em Data Science with Java: Practical Methods for Scientists and
+  Engineers}.
+\newblock O'Reilly Media, Inc.
+
+\bibitem[Grus, 2019]{grus19}
+Grus, J. (2019).
+\newblock {\em Data science from scratch: first principles with python}.
+\newblock O'Reilly Media, Inc.
+
+\bibitem[Hansjörg, 2019]{hansjoerg19}
+Hansjörg, N. (2019).
+\newblock {\em Data Science for Psychologists}.
+\newblock self published.
+
+\bibitem[Janssens, 2014]{janssens14}
+Janssens, J. (2014).
+\newblock {\em Data Science at the Command Line: Facing the Future with
+  Time-tested Tools}.
+\newblock O'Reilly Media, Inc.
+
+\bibitem[Provost and Fawcett, 2013]{provost13}
+Provost, F. and Fawcett, T. (2013).
+\newblock {\em Data Science for Business: What you need to know about data
+  mining and data-analytic thinking}.
+\newblock O'Reilly Media, Inc.
+
+\bibitem[{R Core Team}, 2019]{r19}
+{R Core Team} (2019).
+\newblock {\em R: A Language and Environment for Statistical Computing}.
+\newblock R Foundation for Statistical Computing, Vienna, Austria.
+
+\bibitem[Thomas and Pallett, 2019]{thomas19}
+Thomas, N. and Pallett, L. (2019).
+\newblock {\em Data Science for Immunologists}.
+\newblock CreateSpace Independent Publishing Platform.
+
+\bibitem[VanderPlas, 2016]{vanderplas16}
+VanderPlas, J. (2016).
+\newblock {\em Python data science handbook: Essential tools for working with
+  data}.
+\newblock O'Reilly Media, Inc.
+
+\bibitem[Wickham and Grolemund, 2016]{wickham16}
+Wickham, H. and Grolemund, G. (2016).
+\newblock {\em R for data science: import, tidy, transform, visualize, and
+  model data}.
+\newblock O'Reilly Media, Inc.
+
+\end{thebibliography}

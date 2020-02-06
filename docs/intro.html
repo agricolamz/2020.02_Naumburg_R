@@ -346,7 +346,7 @@ Even though there isn’t any brackets in the mathematical notation, you need to
 <div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="intro.html#cb53-1"></a>Sys.Date <span class="co"># wrong</span></span></code></pre></div>
 <pre><code>## function () 
 ## as.Date(as.POSIXlt(Sys.time()))
-## &lt;bytecode: 0x57bdae4add30&gt;
+## &lt;bytecode: 0x5a5ce9382f80&gt;
 ## &lt;environment: namespace:base&gt;</code></pre>
 <p>Each function in R is documented. You can read its documentation typing a question mark before the function name:</p>
 <div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="intro.html#cb55-1"></a>?Sys.Date</span></code></pre></div>
@@ -819,7 +819,7 @@ Wolfwalkers,2020,TRUE,TRUE</code></pre>
 {"columns":[{"label":["title"],"name":[1],"type":["chr"],"align":["left"]},{"label":["year"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["director"],"name":[3],"type":["lgl"],"align":["right"]},{"label":["producer"],"name":[4],"type":["lgl"],"align":["right"]}],"data":[{"1":"The Secret of Kells","2":"2009","3":"TRUE","4":"TRUE"},{"1":"Song of the Sea","2":"2014","3":"TRUE","4":"TRUE"},{"1":"Kahlil Gibran's The Prophet","2":"2014","3":"TRUE","4":"FALSE"},{"1":"The Breadwinner","2":"2017","3":"FALSE","4":"TRUE"},{"1":"Wolfwalkers","2":"2020","3":"TRUE","4":"TRUE"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
-<p>It is also possible to read files from your computer. Download this file on your computer and read into R:</p>
+<p>It is also possible to read files from your computer. Download <a href="https://raw.githubusercontent.com/agricolamz/2020.02_Naumburg_R/master/data/moore_filmography.csv">this</a> file on your computer (press <code>Ctrl S</code> or <code>Cmd S</code>) and read into R:</p>
 <div class="sourceCode" id="cb229"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb229-1"><a href="intro.html#cb229-1"></a><span class="kw">read_csv</span>(<span class="st">&quot;C:/path/to/your/file/moore_filmography.csv&quot;</span>)</span></code></pre></div>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
@@ -827,11 +827,28 @@ Wolfwalkers,2020,TRUE,TRUE</code></pre>
   </script>
 </div>
 <p>It is also possible to read files from the Internet:</p>
+<div class="sourceCode" id="cb230"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb230-1"><a href="intro.html#cb230-1"></a><span class="kw">read_csv</span>(<span class="st">&quot;https://raw.githubusercontent.com/agricolamz/2020.02_Naumburg_R/master/data/moore_filmography.csv&quot;</span>)</span></code></pre></div>
+<pre><code>## Parsed with column specification:
+## cols(
+##   title = col_character(),
+##   year = col_double(),
+##   director = col_logical(),
+##   producer = col_logical()
+## )</code></pre>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["title"],"name":[1],"type":["chr"],"align":["left"]},{"label":["year"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["director"],"name":[3],"type":["lgl"],"align":["right"]},{"label":["producer"],"name":[4],"type":["lgl"],"align":["right"]}],"data":[{"1":"The Secret of Kells","2":"2009","3":"TRUE","4":"TRUE"},{"1":"Song of the Sea","2":"2014","3":"TRUE","4":"TRUE"},{"1":"Kahlil Gibran's The Prophet","2":"2014","3":"TRUE","4":"FALSE"},{"1":"The Breadwinner","2":"2017","3":"FALSE","4":"TRUE"},{"1":"Wolfwalkers","2":"2020","3":"TRUE","4":"TRUE"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
 <div class="rmdtask">
 <p>
 Because of the 2019–20 Wuhan coronavirus outbreak the city of Wuhan is on media everywhere. <a href="https://nplus1.ru/blog/2020/02/03/wuhan">In Russian</a> for some reason Wuhan is sometimes masculine and sometimes it is feminin. I looked into other Slavic languages and recorded obtained data into the <a href="https://gist.githubusercontent.com/agricolamz/c280527d6b5d79693b85d8fcf8d35bc3/raw/c46a32a218bc5d6933703ae677b81ff5a4a1dcaa/wuhan.csv"><code>.csv</code> file</a>. Download this files to R. What variables does it have?
 </p>
 </div>
+<p>All file manipulations in R connected somehow with space on your computer via working directory. You can get information about your current working directory using <code>getwd()</code> function. You can change your working directory using <code>setwd()</code> function. If a file you want to read is in the working directory you don need to write the whole path to file:</p>
+<div class="sourceCode" id="cb232"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb232-1"><a href="intro.html#cb232-1"></a><span class="kw">read_csv</span>(<span class="st">&quot;moore_filmography.csv&quot;</span>)</span></code></pre></div>
+<p>The same simple function will create your <code>.csv</code> file:</p>
+<div class="sourceCode" id="cb233"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb233-1"><a href="intro.html#cb233-1"></a><span class="kw">write_csv</span>(moore_filmography, <span class="st">&quot;moore_filmography_v2.csv&quot;</span>)</span></code></pre></div>
 </div>
 <div id="xls-and-.xlsx-files" class="section level3">
 <h3><span class="header-section-number">2.10.2</span> <code>.xls</code> and <code>.xlsx</code> files</h3>
