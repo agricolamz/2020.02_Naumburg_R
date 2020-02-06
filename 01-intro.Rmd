@@ -25,7 +25,7 @@ There are a lot of new books "Data Science for ...":
 * fraud detection [@baesens15]
 * ...
 
-Data scientist need to be able to:
+Data scientists need to be able to:
 
 * gather data
 * transform data
@@ -67,7 +67,7 @@ When you press ![](images/01.02.rstudio_button.png) button at the top of the lef
 
 ## R as a calculator
 
-Lets first start with a calculator. Press in R console
+Lets first start with the calculator. Press in R console
 
 ```{r}
 2+9
@@ -117,7 +117,7 @@ Even though there isn't any brackets in the mathematical notation, you need to a
 
 ## Comments
 
-The whole text after the hash `#` within the same line is considered a comment. 
+Any text after a hash `#` within the same line is considered a comment. 
 
 ```{r}
 2+2 # it is four
@@ -156,7 +156,7 @@ round(digits = 2, x = pi)
 round(x = pi, d = 2)
 round(d = 2, x = pi)
 round(pi, 2)
-round(2, pi) # this is not the same as all previouse!
+round(2, pi) # this is not the same as all previous!
 ```
 
 There are some functions without any arguments, but you still should use parenthesis:
@@ -166,7 +166,7 @@ Sys.Date() # correct
 Sys.Date # wrong
 ```
 
-Each function in R is documented. You can read its documentation typing question mark before the function name:
+Each function in R is documented. You can read its documentation typing a question mark before the function name:
 
 ```{r, eval = FALSE}
 ?Sys.Date
@@ -197,7 +197,7 @@ $$n = \log_{10}(1000)$$
 <br>
 </details>
 
-<details> <summary> 👁 What is this small 3 in the task means? ➡</summary>
+<details> <summary> 👁 What does this small 3 in the task mean? ➡</summary>
 This is the base of the logarithm. So the task is: what is the exponent to which another fixed number, the base *3*, must be raised, to produce that number *3486784401*. <br>
 </details>
 
@@ -498,7 +498,7 @@ After you have downloaded packages nothing will change. You can not use any fucn
 library("tidyverse")
 ```
 
-Not turning on an R package is the most popular mistake of my students. So remmember:
+Not turning on an R package is the most popular mistake of my students. So remember:
 
 * `install.packages("...")` is like you are buying a screwdriver set;
 * `library("...")` is like you are start using your screwdriver.
@@ -627,7 +627,7 @@ moore_filmography[moore_filmography$year > 2014,]
 ### `.csv` files
 
 ```{block, type = "rmdtask"}
-Because of 2019–20 Wuhan coronavirus outbreak the city of Wuhan is everywhere on media. [In Russian](https://nplus1.ru/blog/2020/02/03/wuhan) for some reason Wuhan is masculine sometimes and sometimes it's feminin. I looked into other Slavic languages and recorded obtained data into the [`.csv` file](https://gist.githubusercontent.com/agricolamz/c280527d6b5d79693b85d8fcf8d35bc3/raw/c46a32a218bc5d6933703ae677b81ff5a4a1dcaa/wuhan.csv). Download this files to R. What variables does it have?
+Because of the 2019–20 Wuhan coronavirus outbreak the city of Wuhan is on media everywhere. [In Russian](https://nplus1.ru/blog/2020/02/03/wuhan) for some reason Wuhan is sometimes masculine  and sometimes it's feminin. I looked into other Slavic languages and recorded obtained data into the [`.csv` file](https://gist.githubusercontent.com/agricolamz/c280527d6b5d79693b85d8fcf8d35bc3/raw/c46a32a218bc5d6933703ae677b81ff5a4a1dcaa/wuhan.csv). Download this files to R. What variables does it have?
 ```
 
 ### `.xls` and `.xlsx` files
