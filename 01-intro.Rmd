@@ -504,7 +504,7 @@ The [`tidyverse`](https://blog.rstudio.org/2016/09/15/tidyverse-1-0-0/) is a set
 ### `.csv` files
 
 ```{block, type = "rmdtask"}
-Because of 2019–20 Wuhan coronavirus outbreak the city of Wuhan is evrywhere on media. [In Russian](https://nplus1.ru/blog/2020/02/03/wuhan) for some reason Wuhan is masculine and sometimes is feminin. I looked into other Slavic languages and recorded obtained data into the [`.csv` file](https://gist.githubusercontent.com/agricolamz/c280527d6b5d79693b85d8fcf8d35bc3/raw/c46a32a218bc5d6933703ae677b81ff5a4a1dcaa/wuhan.csv). Download this files to R. What variables does it have?
+Because of 2019–20 Wuhan coronavirus outbreak the city of Wuhan is evrywhere on media. [In Russian](https://nplus1.ru/blog/2020/02/03/wuhan) for some reason Wuhan is masculsometimes ine and sometimes is feminin. I looked into other Slavic languages and recorded obtained data into the [`.csv` file](https://gist.githubusercontent.com/agricolamz/c280527d6b5d79693b85d8fcf8d35bc3/raw/c46a32a218bc5d6933703ae677b81ff5a4a1dcaa/wuhan.csv). Download this files to R. What variables does it have?
 ```
 
 ### `.xls` and `.xlsx` files
