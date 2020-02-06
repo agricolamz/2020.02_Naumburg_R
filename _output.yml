@@ -21,3 +21,4 @@ bookdown::pdf_book:
   fig_width: 7
   fig_height: 4
   highlight: tango
+  
