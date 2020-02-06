@@ -567,7 +567,7 @@ moore_filmography$producer <- c(TRUE, TRUE, FALSE, TRUE, TRUE)
 moore_filmography
 ```
 
-There some useful functions that tell you somethig about dataframe:
+There are some useful functions that tell you somethig about a dataframe:
 
 ```{r}
 nrow(moore_filmography)
@@ -580,7 +580,7 @@ We will work exclusively with dataframes. But it is not the only data structure 
 
 
 ```{block, type = "rmdtask"}
-How many rows in the `iris` dataframe?
+How many rows are in the `iris` dataframe?
 ```
 
 <form name="Form4" onsubmit="return validateForm4()" method="post">
@@ -593,7 +593,7 @@ nrow(iris)
 ```
 
 ```{block, type = "rmdtask"}
-How many columns in the `mtcars` dataframe?
+How many columns are in the `mtcars` dataframe?
 ```
 
 <form name="Form4" onsubmit="return validateForm4()" method="post">
@@ -674,10 +674,10 @@ read_csv("https://raw.githubusercontent.com/agricolamz/2020.02_Naumburg_R/master
 ```
 
 ```{block, type = "rmdtask"}
-Because of the 2019–20 Wuhan coronavirus outbreak the city of Wuhan is on media everywhere. [In Russian](https://nplus1.ru/blog/2020/02/03/wuhan) for some reason Wuhan is sometimes masculine  and sometimes it is feminin. I looked into other Slavic languages and recorded obtained data into the [`.csv` file](https://gist.githubusercontent.com/agricolamz/c280527d6b5d79693b85d8fcf8d35bc3/raw/c46a32a218bc5d6933703ae677b81ff5a4a1dcaa/wuhan.csv). Download this files to R. What variables does it have?
+Because of the 2019–20 Wuhan coronavirus outbreak the city of Wuhan is on media everywhere. [In Russian](https://nplus1.ru/blog/2020/02/03/wuhan) for some reason Wuhan is sometimes masculine and sometimes it is feminin. I looked into other Slavic languages and recorded obtained data into the [`.csv` file](https://gist.githubusercontent.com/agricolamz/c280527d6b5d79693b85d8fcf8d35bc3/raw/c46a32a218bc5d6933703ae677b81ff5a4a1dcaa/wuhan.csv). Download this files to R. What variables does it have?
 ```
 
-All file manipulations in R connected somehow with space on your computer via working directory. You can get information about your current working directory using `getwd()` function. You can change your working directory using `setwd()` function. If a file you want to read is in the working directory you don need to write the whole path to file:
+All file manipulations in R are somehow connected with space on your computer via working directory. You can get information about your current working directory using `getwd()` function. You can change your working directory using `setwd()` function. If a file you want to read is in the working directory you don't need to write the whole path to file:
 
 ```{r, eval = FALSE}
 read_csv("moore_filmography.csv")
@@ -695,7 +695,7 @@ Sometimes reading `.csv` files into Microsoft Excel is complicated, please follo
 ### `.xls` and `.xlsx` files
 
 
-There is a package `readxl` that allow to open and save `.xsl` and `.xslx` files. Install and load the package:
+There is a package `readxl` that allows to open and save `.xsl` and `.xslx` files. Install and load the package:
 
 
 ```{r}
@@ -734,7 +734,7 @@ install.packages("rmarkdown")
 
 
 
-Thent will be possible to create a new file: `File > New File > R Markdown...`.
+Then it will be possible to create a new file: `File > New File > R Markdown...`.
 
 ![](images/01.06.rmarkdown.png)
 
