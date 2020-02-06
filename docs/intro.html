@@ -154,15 +154,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.7.2" data-path="intro.html"><a href="intro.html#vector-operations"><i class="fa fa-check"></i><b>2.7.2</b> Vector operations</a></li>
 <li class="chapter" data-level="2.7.3" data-path="intro.html"><a href="intro.html#indexing-vectors"><i class="fa fa-check"></i><b>2.7.3</b> Indexing vectors</a></li>
 </ul></li>
-<li class="chapter" data-level="2.8" data-path="intro.html"><a href="intro.html#dataframe-tibble"><i class="fa fa-check"></i><b>2.8</b> Dataframe (tibble)</a><ul>
-<li class="chapter" data-level="2.8.1" data-path="intro.html"><a href="intro.html#indexing-dataframes"><i class="fa fa-check"></i><b>2.8.1</b> Indexing dataframes</a></li>
+<li class="chapter" data-level="2.8" data-path="intro.html"><a href="intro.html#packages"><i class="fa fa-check"></i><b>2.8</b> Packages</a></li>
+<li class="chapter" data-level="2.9" data-path="intro.html"><a href="intro.html#datfor-the-further-lectures-we-will-need-tidyverse-package."><i class="fa fa-check"></i><b>2.9</b> DatFor the further lectures we will need <code>tidyverse</code> package.</a></li>
+<li class="chapter" data-level="2.10" data-path="intro.html"><a href="intro.html#ame-tibble"><i class="fa fa-check"></i><b>2.10</b> ame (tibble)</a><ul>
+<li class="chapter" data-level="2.10.1" data-path="intro.html"><a href="intro.html#indexing-dataframes"><i class="fa fa-check"></i><b>2.10.1</b> Indexing dataframes</a></li>
 </ul></li>
-<li class="chapter" data-level="2.9" data-path="intro.html"><a href="intro.html#packages"><i class="fa fa-check"></i><b>2.9</b> Packages</a></li>
-<li class="chapter" data-level="2.10" data-path="intro.html"><a href="intro.html#data-import"><i class="fa fa-check"></i><b>2.10</b> Data import</a><ul>
-<li class="chapter" data-level="2.10.1" data-path="intro.html"><a href="intro.html#csv-files"><i class="fa fa-check"></i><b>2.10.1</b> <code>.csv</code> files</a></li>
-<li class="chapter" data-level="2.10.2" data-path="intro.html"><a href="intro.html#xls-and-.xlsx-files"><i class="fa fa-check"></i><b>2.10.2</b> <code>.xls</code> and <code>.xlsx</code> files</a></li>
+<li class="chapter" data-level="2.11" data-path="intro.html"><a href="intro.html#data-import"><i class="fa fa-check"></i><b>2.11</b> Data import</a><ul>
+<li class="chapter" data-level="2.11.1" data-path="intro.html"><a href="intro.html#csv-files"><i class="fa fa-check"></i><b>2.11.1</b> <code>.csv</code> files</a></li>
+<li class="chapter" data-level="2.11.2" data-path="intro.html"><a href="intro.html#xls-and-.xlsx-files"><i class="fa fa-check"></i><b>2.11.2</b> <code>.xls</code> and <code>.xlsx</code> files</a></li>
 </ul></li>
-<li class="chapter" data-level="2.11" data-path="intro.html"><a href="intro.html#rmarkdown"><i class="fa fa-check"></i><b>2.11</b> Rmarkdown</a></li>
+<li class="chapter" data-level="2.12" data-path="intro.html"><a href="intro.html#rmarkdown"><i class="fa fa-check"></i><b>2.12</b> Rmarkdown</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="dplyr.html"><a href="dplyr.html"><i class="fa fa-check"></i><b>3</b> Data manipulation: <code>dplyr</code></a></li>
 <li class="chapter" data-level="4" data-path="ggplot2.html"><a href="ggplot2.html"><i class="fa fa-check"></i><b>4</b> Data visualisation: <code>ggplot2</code></a></li>
@@ -339,11 +340,11 @@ Even though there is no any brackets in the mathematical notation, you need to a
 <pre><code>## [1] 2</code></pre>
 <p>There are some functions without any arguments, but you still should use parenthesis:</p>
 <div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="intro.html#cb51-1"></a><span class="kw">Sys.Date</span>() <span class="co"># correct</span></span></code></pre></div>
-<pre><code>## [1] &quot;2020-02-05&quot;</code></pre>
+<pre><code>## [1] &quot;2020-02-06&quot;</code></pre>
 <div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="intro.html#cb53-1"></a>Sys.Date <span class="co"># wrong</span></span></code></pre></div>
 <pre><code>## function () 
 ## as.Date(as.POSIXlt(Sys.time()))
-## &lt;bytecode: 0x6046b5996c68&gt;
+## &lt;bytecode: 0x6423cbb31f48&gt;
 ## &lt;environment: namespace:base&gt;</code></pre>
 <p>Each function in R is documented. You can read its documentation typing question mark before the function name:</p>
 <div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="intro.html#cb55-1"></a>?Sys.Date</span></code></pre></div>
@@ -535,12 +536,12 @@ Use argument <code>length.out</code> of function <code>seq()</code> and create a
 <p>That means that we could use <code>TRUE/FALSE</code>-vector produced by comparison:</p>
 <div class="sourceCode" id="cb152"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb152-1"><a href="intro.html#cb152-1"></a>x[x <span class="op">&gt;</span><span class="st"> </span><span class="dv">2</span>]</span></code></pre></div>
 <pre><code>## [1]  3.000000  3.141593 23.400000</code></pre>
-<p>It works because</p>
+<p>It works because <code>x &gt; 2</code> is a vector of logical values:</p>
 <div class="sourceCode" id="cb154"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb154-1"><a href="intro.html#cb154-1"></a>x <span class="op">&gt;</span><span class="st"> </span><span class="dv">2</span></span></code></pre></div>
 <pre><code>## [1]  TRUE FALSE  TRUE  TRUE FALSE</code></pre>
 <div class="rmdtask">
 <p>
-How many ellements in the vector <code>g</code> if expression <code>g[pi &lt; 1000]</code> doesn’t return error?
+How many ellements in the vector <code>g</code> if expression <code>g[pi &lt; 1000]</code> does not return an error?
 </p>
 </div>
 <form name="Form3" onsubmit="return validateForm3()" method="post">
@@ -548,51 +549,80 @@ How many ellements in the vector <code>g</code> if expression <code>g[pi &lt; 10
 <input type="submit" value="check">
 </form>
 <p><br></p>
-<p>``<code>{r}A</code> value</p>
-</div>
-</div>
-<div id="dataframe-tibble" class="section level2">
-<h2><span class="header-section-number">2.8</span> Dataframe (tibble)</h2>
-<div id="indexing-dataframes" class="section level3">
-<h3><span class="header-section-number">2.8.1</span> Indexing dataframes</h3>
 </div>
 </div>
 <div id="packages" class="section level2">
-<h2><span class="header-section-number">2.9</span> Packages</h2>
+<h2><span class="header-section-number">2.8</span> Packages</h2>
+<p>The most important and useful part of R is hidden in its packages. Everything that we discussed so far is base R functionality invented back in 1979. Since then a lot of different things changed, so all new practicies for data analysis, visualisation and manipulation are packed in packages. During our class we will learn the most popular <em>“dialect”</em> of R called <code>tidyverse</code>.</p>
+<p>In order to install packages you need to use command. Let’s install the <code>tidyverse</code> package:</p>
+<div class="sourceCode" id="cb156"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb156-1"><a href="intro.html#cb156-1"></a><span class="kw">install.packages</span>(<span class="st">&quot;tidyverse&quot;</span>)</span></code></pre></div>
+<p>For today we also will need the <code>readxl</code> package:</p>
+<div class="sourceCode" id="cb157"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb157-1"><a href="intro.html#cb157-1"></a><span class="kw">install.packages</span>(<span class="st">&quot;tidyverse&quot;</span>)</span></code></pre></div>
+<p>After you have downloaded packages nothing will change. You can not use any fucntionality from packages unless you turn the package on with the <code>library()</code> function:</p>
+<div class="sourceCode" id="cb158"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb158-1"><a href="intro.html#cb158-1"></a><span class="kw">library</span>(<span class="st">&quot;tidyverse&quot;</span>)</span></code></pre></div>
+<pre><code>## ── Attaching packages ────────</code></pre>
+<pre><code>## ✓ ggplot2 3.2.1     ✓ purrr   0.3.3
+## ✓ tibble  2.1.3     ✓ dplyr   0.8.3
+## ✓ tidyr   1.0.0     ✓ stringr 1.4.0
+## ✓ readr   1.3.1     ✓ forcats 0.4.0</code></pre>
+<pre><code>## ── Conflicts ─────────────────
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()</code></pre>
+<p>Not turning on R package is the most popular mistake of my students. So remmember:</p>
+<ul>
+<li><code>install.packages("...")</code> is like you are buying a screwdriver set;</li>
+<li><code>library("...")</code> is like you are start using your screwdriver.</li>
+</ul>
+<p><img src="images/01.05.install-packages-vs-library.png" /></p>
+</div>
+<div id="datfor-the-further-lectures-we-will-need-tidyverse-package." class="section level2">
+<h2><span class="header-section-number">2.9</span> DatFor the further lectures we will need <code>tidyverse</code> package.</h2>
+<p>af# <code>tidyverse</code></p>
+</div>
+<div id="ame-tibble" class="section level2">
+<h2><span class="header-section-number">2.10</span> ame (tibble)</h2>
+<div id="indexing-dataframes" class="section level3">
+<h3><span class="header-section-number">2.10.1</span> Indexing dataframes</h3>
+</div>
 </div>
 <div id="data-import" class="section level2">
-<h2><span class="header-section-number">2.10</span> Data import</h2>
+<h2><span class="header-section-number">2.11</span> Data import</h2>
 <div id="csv-files" class="section level3">
-<h3><span class="header-section-number">2.10.1</span> <code>.csv</code> files</h3>
+<h3><span class="header-section-number">2.11.1</span> <code>.csv</code> files</h3>
+<div class="rmdtask">
+<p>
+Because of 2019–20 Wuhan coronavirus outbreak the city of Wuhan is evrywhere on media. <a href="https://nplus1.ru/blog/2020/02/03/wuhan">In Russian</a> for some reason Wuhan is masculine and sometimes is feminin. I looked into other Slavic languages and recorded obtained data into the <a href="https://gist.githubusercontent.com/agricolamz/c280527d6b5d79693b85d8fcf8d35bc3/raw/c46a32a218bc5d6933703ae677b81ff5a4a1dcaa/wuhan.csv"><code>.csv</code> file</a>. Download this files to R. What variables does it have?
+</p>
+</div>
 </div>
 <div id="xls-and-.xlsx-files" class="section level3">
-<h3><span class="header-section-number">2.10.2</span> <code>.xls</code> and <code>.xlsx</code> files</h3>
+<h3><span class="header-section-number">2.11.2</span> <code>.xls</code> and <code>.xlsx</code> files</h3>
 </div>
 </div>
 <div id="rmarkdown" class="section level2">
-<h2><span class="header-section-number">2.11</span> Rmarkdown</h2>
+<h2><span class="header-section-number">2.12</span> Rmarkdown</h2>
 <script>
-<p>function validateForm1() {
-var x = document.forms[“Form1”][“answer1”].value;
-if (x != “6.7749”) {
-alert(“I have a different answer…”);
-return false;
-} else {
-alert(“Correct!”);
-return false;
-}
+function validateForm1() {
+    var x = document.forms["Form1"]["answer1"].value;
+    if (x != "6.7749") {
+        alert("I have a different answer...");
+        return false;
+    } else {
+        alert("Correct!");
+        return false;
+    }
 }
 function validateForm2() {
-var x = document.forms[“Form2”][“answer2”].value;
-if (x != “20”) {
-alert(“I have a different answer…”);
-return false;
-} else {
-alert(“Correct!”);
-return false;
+    var x = document.forms["Form2"]["answer2"].value;
+    if (x != "20") {
+        alert("I have a different answer...");
+        return false;
+    } else {
+        alert("Correct!");
+        return false;
+    }
 }
-}
-</scrifunction validateForm3() {
+function validateForm3() {
     var x = document.forms["Form3"]["answer3"].value;
     if (x != "1") {
         alert("I have a different answer...");
@@ -602,7 +632,7 @@ return false;
         return false;
     }
 }
-pt></p>
+</script>
 
 </div>
 </div>

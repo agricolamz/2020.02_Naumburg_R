@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>6 Text manipulation: gutenbergr, tidytext, udpipe | Polish Language(s) and Digital Humanities Using R</title>
-  <meta name="description" content="6 Text manipulation: gutenbergr, tidytext, udpipe | Polish Language(s) and Digital Humanities Using R" />
+  <title>3 Dataframe (tibble) | Polish Language(s) and Digital Humanities Using R</title>
+  <meta name="description" content="3 Dataframe (tibble) | Polish Language(s) and Digital Humanities Using R" />
   <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="6 Text manipulation: gutenbergr, tidytext, udpipe | Polish Language(s) and Digital Humanities Using R" />
+  <meta property="og:title" content="3 Dataframe (tibble) | Polish Language(s) and Digital Humanities Using R" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="6 Text manipulation: gutenbergr, tidytext, udpipe | Polish Language(s) and Digital Humanities Using R" />
+  <meta name="twitter:title" content="3 Dataframe (tibble) | Polish Language(s) and Digital Humanities Using R" />
   
   
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="stringr.html"/>
-<link rel="next" href="stylo.html"/>
+<link rel="prev" href="intro.html"/>
+<link rel="next" href="dplyr.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -153,23 +153,22 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.7.1" data-path="intro.html"><a href="intro.html#vector-coercion"><i class="fa fa-check"></i><b>2.7.1</b> Vector coercion</a></li>
 <li class="chapter" data-level="2.7.2" data-path="intro.html"><a href="intro.html#vector-operations"><i class="fa fa-check"></i><b>2.7.2</b> Vector operations</a></li>
 <li class="chapter" data-level="2.7.3" data-path="intro.html"><a href="intro.html#indexing-vectors"><i class="fa fa-check"></i><b>2.7.3</b> Indexing vectors</a></li>
+<li class="chapter" data-level="2.7.4" data-path="intro.html"><a href="intro.html#packages"><i class="fa fa-check"></i><b>2.7.4</b> Packages</a></li>
 </ul></li>
-<li class="chapter" data-level="2.8" data-path="intro.html"><a href="intro.html#packages"><i class="fa fa-check"></i><b>2.8</b> Packages</a></li>
-<li class="chapter" data-level="2.9" data-path="intro.html"><a href="intro.html#datfor-the-further-lectures-we-will-need-tidyverse-package."><i class="fa fa-check"></i><b>2.9</b> DatFor the further lectures we will need <code>tidyverse</code> package.</a></li>
-<li class="chapter" data-level="2.10" data-path="intro.html"><a href="intro.html#ame-tibble"><i class="fa fa-check"></i><b>2.10</b> ame (tibble)</a><ul>
-<li class="chapter" data-level="2.10.1" data-path="intro.html"><a href="intro.html#indexing-dataframes"><i class="fa fa-check"></i><b>2.10.1</b> Indexing dataframes</a></li>
 </ul></li>
-<li class="chapter" data-level="2.11" data-path="intro.html"><a href="intro.html#data-import"><i class="fa fa-check"></i><b>2.11</b> Data import</a><ul>
-<li class="chapter" data-level="2.11.1" data-path="intro.html"><a href="intro.html#csv-files"><i class="fa fa-check"></i><b>2.11.1</b> <code>.csv</code> files</a></li>
-<li class="chapter" data-level="2.11.2" data-path="intro.html"><a href="intro.html#xls-and-.xlsx-files"><i class="fa fa-check"></i><b>2.11.2</b> <code>.xls</code> and <code>.xlsx</code> files</a></li>
+<li class="chapter" data-level="3" data-path="dataframe-tibble.html"><a href="dataframe-tibble.html"><i class="fa fa-check"></i><b>3</b> Dataframe (tibble)</a><ul>
+<li class="chapter" data-level="3.0.1" data-path="dataframe-tibble.html"><a href="dataframe-tibble.html#indexing-dataframes"><i class="fa fa-check"></i><b>3.0.1</b> Indexing dataframes</a></li>
+<li class="chapter" data-level="3.1" data-path="dataframe-tibble.html"><a href="dataframe-tibble.html#packagmport"><i class="fa fa-check"></i><b>3.1</b> Packagmport</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="dataframe-tibble.html"><a href="dataframe-tibble.html#csv-files"><i class="fa fa-check"></i><b>3.1.1</b> <code>.csv</code> files</a></li>
+<li class="chapter" data-level="3.1.2" data-path="dataframe-tibble.html"><a href="dataframe-tibble.html#xls-and-.xlsx-files"><i class="fa fa-check"></i><b>3.1.2</b> <code>.xls</code> and <code>.xlsx</code> files</a></li>
 </ul></li>
-<li class="chapter" data-level="2.12" data-path="intro.html"><a href="intro.html#rmarkdown"><i class="fa fa-check"></i><b>2.12</b> Rmarkdown</a></li>
+<li class="chapter" data-level="3.2" data-path="dataframe-tibble.html"><a href="dataframe-tibble.html#rmarkdown"><i class="fa fa-check"></i><b>3.2</b> Rmarkdown</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="dplyr.html"><a href="dplyr.html"><i class="fa fa-check"></i><b>3</b> Data manipulation: <code>dplyr</code></a></li>
-<li class="chapter" data-level="4" data-path="ggplot2.html"><a href="ggplot2.html"><i class="fa fa-check"></i><b>4</b> Data visualisation: <code>ggplot2</code></a></li>
-<li class="chapter" data-level="5" data-path="stringr.html"><a href="stringr.html"><i class="fa fa-check"></i><b>5</b> Strings manipulation: <code>stringr</code></a></li>
-<li class="chapter" data-level="6" data-path="texts.html"><a href="texts.html"><i class="fa fa-check"></i><b>6</b> Text manipulation: <code>gutenbergr</code>, <code>tidytext</code>, <code>udpipe</code></a></li>
-<li class="chapter" data-level="7" data-path="stylo.html"><a href="stylo.html"><i class="fa fa-check"></i><b>7</b> Stylometric analysis: <code>stylo</code></a></li>
+<li class="chapter" data-level="4" data-path="dplyr.html"><a href="dplyr.html"><i class="fa fa-check"></i><b>4</b> Data manipulation: <code>dplyr</code></a></li>
+<li class="chapter" data-level="5" data-path="ggplot2.html"><a href="ggplot2.html"><i class="fa fa-check"></i><b>5</b> Data visualisation: <code>ggplot2</code></a></li>
+<li class="chapter" data-level="6" data-path="stringr.html"><a href="stringr.html"><i class="fa fa-check"></i><b>6</b> Strings manipulation: <code>stringr</code></a></li>
+<li class="chapter" data-level="7" data-path="texts.html"><a href="texts.html"><i class="fa fa-check"></i><b>7</b> Text manipulation: <code>gutenbergr</code>, <code>tidytext</code>, <code>udpipe</code></a></li>
+<li class="chapter" data-level="8" data-path="stylo.html"><a href="stylo.html"><i class="fa fa-check"></i><b>8</b> Stylometric analysis: <code>stylo</code></a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 </ul>
 
@@ -188,17 +187,69 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="texts" class="section level1">
-<h1><span class="header-section-number">6</span> Text manipulation: <code>gutenbergr</code>, <code>tidytext</code>, <code>udpipe</code></h1>
+<div id="dataframe-tibble" class="section level1">
+<h1><span class="header-section-number">3</span> Dataframe (tibble)</h1>
+<div id="indexing-dataframes" class="section level3">
+<h3><span class="header-section-number">3.0.1</span> Indexing dataframes</h3>
+</div>
+<div id="packagmport" class="section level2">
+<h2><span class="header-section-number">3.1</span> Packagmport</h2>
+<div id="csv-files" class="section level3">
+<h3><span class="header-section-number">3.1.1</span> <code>.csv</code> files</h3>
+<div class="rmdtask">
+<p>
+Because of 2019–20 Wuhan coronavirus outbreak the city of Wuhan is evrywhere on media. <a href="https://nplus1.ru/blog/2020/02/03/wuhan">In Russian</a> for some reason Wuhan is masculine and sometimes is feminin. I looked into other Slavic languages and recorded obtained data into the <a href="https://gist.githubusercontent.com/agricolamz/c280527d6b5d79693b85d8fcf8d35bc3/raw/c46a32a218bc5d6933703ae677b81ff5a4a1dcaa/wuhan.csv"><code>.csv</code> file</a>. Download this files to R. What variables does it have?
+</p>
+</div>
+</div>
+<div id="xls-and-.xlsx-files" class="section level3">
+<h3><span class="header-section-number">3.1.2</span> <code>.xls</code> and <code>.xlsx</code> files</h3>
+</div>
+</div>
+<div id="rmarkdown" class="section level2">
+<h2><span class="header-section-number">3.2</span> Rmarkdown</h2>
+<script>
+function validateForm1() {
+    var x = document.forms["Form1"]["answer1"].value;
+    if (x != "6.7749") {
+        alert("I have a different answer...");
+        return false;
+    } else {
+        alert("Correct!");
+        return false;
+    }
+}
+function validateForm2() {
+    var x = document.forms["Form2"]["answer2"].value;
+    if (x != "20") {
+        alert("I have a different answer...");
+        return false;
+    } else {
+        alert("Correct!");
+        return false;
+    }
+}
+function validateForm3() {
+    var x = document.forms["Form3"]["answer3"].value;
+    if (x != "1") {
+        alert("I have a different answer...");
+        return false;
+    } else {
+        alert("Correct!");
+        return false;
+    }
+}
+</script>
 
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="stringr.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="stylo.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="intro.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="dplyr.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -220,7 +271,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/agricolamz/2020.02_Naumburg_R/edit/master/05-gutenbergr-tidytext-udpipe.Rmd",
+"link": "https://github.com/agricolamz/2020.02_Naumburg_R/edit/master/01-intro.Rmd",
 "text": "Edit"
 },
 "history": {

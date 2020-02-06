@@ -403,14 +403,14 @@ That means that we could use `TRUE/FALSE`-vector produced by comparison:
 x[x > 2]
 ```
 
-It works because
+It works because `x > 2` is a vector of logical values:
 
 ```{r}
 x > 2
 ```
 
 ```{block, type = "rmdtask"}
-How many ellements in the vector `g` if expression `g[pi < 1000]` doesn't return error?
+How many ellements in the vector `g` if expression `g[pi < 1000]` does not return an error?
 ```
 
 <form name="Form3" onsubmit="return validateForm3()" method="post">
@@ -418,20 +418,55 @@ How many ellements in the vector `g` if expression `g[pi < 1000]` doesn't return
 <input type="submit" value="check">
 </form><br>
 
-```{r}A` value
+## Packages
 
-## Dataframe (tibble)
+The most important and useful part of R is hidden in its packages. Everything that we discussed so far is base R functionality invented back in 1979. Since then a lot of different things changed, so all new practicies for data analysis, visualisation and manipulation are packed in packages. During our class we will learn the most popular *"dialect"* of R called `tidyverse`.
+
+In order to install packages you need to use command. Let's install the `tidyverse` package:
+
+```{r, eval=FALSE}
+install.packages("tidyverse")
+```
+
+For today we also will need the `readxl` package:
+
+```{r, eval=FALSE}
+install.packages("tidyverse")
+```
+
+After you have downloaded packages nothing will change. You can not use any fucntionality from packages unless you turn the package on with the `library()` function:
+
+```{r}
+library("tidyverse")
+```
+
+Not turning on R package is the most popular mistake of my students. So remmember:
+
+* `install.packages("...")` is like you are buying a screwdriver set;
+* `library("...")` is like you are start using your screwdriver.
+
+![](images/01.05.install-packages-vs-library.png)
+
+## DatFor the further lectures we will need `tidyverse` package.
+
+af# `tidyverse`
+
+## ame (tibble)
 
 ### Indexing dataframes
 
-## Packages
-
 ## Data import
 ### `.csv` files
+
+```{block, type = "rmdtask"}
+Because of 2019–20 Wuhan coronavirus outbreak the city of Wuhan is evrywhere on media. [In Russian](https://nplus1.ru/blog/2020/02/03/wuhan) for some reason Wuhan is masculine and sometimes is feminin. I looked into other Slavic languages and recorded obtained data into the [`.csv` file](https://gist.githubusercontent.com/agricolamz/c280527d6b5d79693b85d8fcf8d35bc3/raw/c46a32a218bc5d6933703ae677b81ff5a4a1dcaa/wuhan.csv). Download this files to R. What variables does it have?
+```
+
 ### `.xls` and `.xlsx` files
 
 ## Rmarkdown
 
+`r if (knitr::is_html_output()) '
 <script>
 function validateForm1() {
     var x = document.forms["Form1"]["answer1"].value;
@@ -453,7 +488,7 @@ function validateForm2() {
         return false;
     }
 }
-</scrifunction validateForm3() {
+function validateForm3() {
     var x = document.forms["Form3"]["answer3"].value;
     if (x != "1") {
         alert("I have a different answer...");
@@ -463,4 +498,5 @@ function validateForm2() {
         return false;
     }
 }
-pt>
+</script>
+'`
