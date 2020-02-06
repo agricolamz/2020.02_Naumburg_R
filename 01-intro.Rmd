@@ -501,7 +501,7 @@ library("tidyverse")
 Not turning on an R package is the most popular mistake of my students. So remember:
 
 * `install.packages("...")` is like you are buying a screwdriver set;
-* `library("...")` is like you are start using your screwdriver.
+* `library("...")` is like you are stusing your screwdriver.
 
 ![](images/01.05.install-packages-vs-library.png)
 
@@ -723,8 +723,35 @@ read_xlsx("moore_filmography.xlsx", sheet = "iris")
 read_xlsx("data/moore_filmography.xlsx", sheet = "iris")
 ```
 
+## Rmarkdown
 
-## Rmrkdown
+If you press `Ctrl S` or `Cmd S` then you will save your script. There is also another useful type of coding in R: `rmarkown`. First install this package:
+
+
+```{r, eval=FALSE}
+install.packages("rmarkdown")
+```
+
+
+
+Thent will be possible to create a new file: `File > New File > R Markdown...`.
+
+![](images/01.06.rmarkdown.png)
+
+Press `OK` in the following menu and you will get the template of your R Markdown file. You can modify it, then press ![](images/01.07.knit.png) and the result file will be created in your working directory. `rmarkdown` package is a really popular and well developed package that creates output into:
+
+
+* markdown
+* html
+* docx
+* pdf
+* beamer presentation
+* pptx presentation
+* epub
+* ...
+* multiple templates for different scientific journals (package `rticsles` and `papaja`)
+* ...
+
 
 `r if (knitr::is_html_output()) '
 <script>
