@@ -285,7 +285,7 @@ For the number sequences there is an easy way:
 3:-5
 ```
 
-From now you can understand that all we have seen before is a vector of length one. That is why there is `[1]` in all outputs: it is just an index of elements in vector. Have a look here:
+From now on you can understand that everything we have seen before is a vector of length one. That is why there is `[1]` in all outputs: it is just an index of elements in a vector. Have a look here:
 
 ```{r}
 1:60
