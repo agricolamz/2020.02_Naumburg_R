@@ -25,7 +25,7 @@ There are a lot of new books "Data Science for ...":
 * fraud detection [@baesens15]
 * ...
 
-Data scientist need to be able to:
+Data scientists need to be able to:
 
 * gather data
 * transform data
