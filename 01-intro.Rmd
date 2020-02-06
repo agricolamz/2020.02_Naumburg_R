@@ -117,7 +117,7 @@ Even though there isn't any brackets in the mathematical notation, you need to a
 
 ## Comments
 
-The whole text after the hash `#` within the same line is considered a comment. 
+Any text after a hash `#` within the same line is considered a comment. 
 
 ```{r}
 2+2 # it is four
