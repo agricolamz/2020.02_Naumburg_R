@@ -227,9 +227,9 @@ x <- 5 + 6 + 7
 
 The fast way for creating `<-` in RStudio is to press `Alt -` on your keyboard.
 
-It is possible to use equal sign `=` for assignment operation, but the recommendations are use arrow `<-` for the assignment, and equal sign `=` for giving arguments' value inside the functions.
+It is possible to use equal sign `=` for assignment operation, but the recommendations are to use arrow `<-` for the assignment, and equal sign `=` for giving arguments' value inside the functions.
 
-For removing vector you need to use function `rm()`:
+For removing vector you need to use the function `rm()`:
 
 ```{r error = TRUE}
 rm(x)
@@ -254,7 +254,7 @@ x != 18
 
 ### Variable types
 
-There are several types of variable in R. In this course the only important types will be `double` (all numbers), `character` (or strings), and `logical`:
+There are several types of variables in R. In this course the only important types will be `double` (all numbers), `character` (or strings), and `logical`:
 
 ```{r}
 x <- 2+3
@@ -266,7 +266,7 @@ typeof(z)
 ```
 
 ## Vector
-R object that contain multiple values of the same type is called **vector**. It could be created with the command `c()`:
+An R object that contains multiple values of the same type is called **vector**. It could be created with the command `c()`:
 
 ```{r}
 c(3, 0, pi, 23.4, -53)
@@ -285,7 +285,7 @@ For the number sequences there is an easy way:
 3:-5
 ```
 
-From now you can understand that all we have seen before is a vector of length one. That is why there is `[1]` in all outputs: it is just an index of elements in vector. Have a look here:
+From now on you can understand that everything we have seen before is a vector of length one. That is why there is `[1]` in all outputs: it is just an index of elements in a vector. Have a look here:
 
 ```{r}
 1:60
@@ -302,7 +302,7 @@ seq(from = 2, to = 100, by = 13)
 
 
 ```{block, type = "rmdtask"}
-Use argument `length.out` of function `seq()` and create an arithmetic sequence from $\pi$ to $2\pi$ of length 50.
+Use the argument `length.out` of function `seq()` and create an arithmetic sequence from $\pi$ to $2\pi$ of length 50.
 
 ```
 
@@ -320,7 +320,7 @@ month.abb
 ```
 
 ### Vector coercion
-Vectors are R objects that contain multiple values of **the same type**. But what if we merge together different types?
+Vectors are R objects that contain multiple values of **the same type**. But what if we merged together different types?
 
 ```{r}
 c(1, "34")
