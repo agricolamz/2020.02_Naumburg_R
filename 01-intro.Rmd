@@ -386,7 +386,7 @@ x[1:2]
 y[c(1, 3)]
 ```
 
-It is possible to index something that you **do not** want  to see in the result:
+It is possible to index something that you **do not** want to see in the result:
 ```{r}
 y[-2]
 x[-c(1, 4)]
@@ -400,7 +400,7 @@ x[z]
 y[z]
 ```
 
-It is possible to index with logical vector:
+It is possible to index with a logical vector:
 
 ```{r}
 x[c(TRUE, FALSE, TRUE, TRUE, FALSE)]
@@ -419,7 +419,7 @@ x > 2
 ```
 
 ```{block, type = "rmdtask"}
-How many ellements in the vector `g` if expression `g[pi < 1000]` does not return an error?
+How many elements in the vector `g` if expression `g[pi < 1000]` does not return an error?
 ```
 
 <form name="Form3" onsubmit="return validateForm3()" method="post">
@@ -429,7 +429,7 @@ How many ellements in the vector `g` if expression `g[pi < 1000]` does not retur
 
 ### `NA`
 
-Some times there are some missing values in data, so it is represent with `NA`
+Sometimes there are some missing values in the data, so it is represented with `NA`
 ```{r}
 NA
 c(1, NA, 9)
@@ -437,7 +437,7 @@ c("Kraków", NA, "Cieszyn")
 c(TRUE, FALSE, NA)
 ```
 
-It is possible to check, whether there are missing values
+It is possible to check, whether there are missing values or not
 
 ```{r}
 x <- c("Kraków", NA, "Cieszyn")
@@ -449,7 +449,7 @@ is.na(y)
 ## Packages
 
 
-The mst important and useful part of R is hidden in its packages. Everything that we discussed so far is base R functionality invented back in 1979. Since then a lot of different things changed, so all new practicies for data analysis, visualisation and manipulation are packed in packages. During our class we will learn the most popular *"dialect"* of R called `tidyverse`.
+The most important and useful part of R is hidden in its packages. Everything that we discussed so far is basic R functionality invented back in 1979. Since then a lot of different things changed, so all new practicies for data analysis, visualisation and manipulation are packed in packages. During our class we will learn the most popular *"dialect"* of R called `tidyverse`.
 
 In order to install packages you need to use command. Let's install the `tidyverse` package:
 
