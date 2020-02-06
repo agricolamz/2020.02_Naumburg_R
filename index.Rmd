@@ -25,3 +25,5 @@ Before the classes I would like to ask you to follow the instructions mentioned 
 If you see something like this, then you are well prepared for classes.
 
 * Go to the <https://rstudio.cloud/> website and sign up there. This is optional, but it will be a backup version, if something will not work on your computer.
+
+Special thanks to Helena Link for the workshop orgonisation and for correcting typos in this text.

@@ -30,10 +30,14 @@ There are the following variables in this dataset:
 
 ### `diamonds`
 
-`diamonds` --- is the dataset built-in `tidyverse` package.
+`diamonds` --- is the dataset built-in in `tidyverse` package.
 
 ```{r}
 diamonds
 ?diamonds
 ```
+
+## `dplyr`
+
+[Here](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf) and [here](https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf) is a cheatsheet on dplyr.
 
