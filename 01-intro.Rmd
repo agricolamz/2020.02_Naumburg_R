@@ -434,7 +434,7 @@ x[!(x > 2)]
 
 
 ```{block, type = "rmdtask"}
-How many elements in the vector `g` if expression `g[pi < 1000]` do not return an error?
+How many elements in the vector `g` if expression `g[pi < 1000]` does not return an error?
 ```
 
 <form name="Form3" onsubmit="return validateForm3()" method="post">
@@ -525,16 +525,105 @@ The [`tidyverse`](https://blog.rstudio.org/2016/09/15/tidyverse-1-0-0/) is a set
 
 ## Dataframe (tibble)
 
-A data frame is a collection of variables of the same number of rows with unique row names.
+
+A data frame is a collection of variables of the same number of rows with unique row names. Here is an example dataframe with the Tomm Moore filmography:
 
 ```{r}
-tibble(name = c("Małgorzata"))
+moore_filmography <- tibble(title = c("The Secret of Kells", 
+                                      "Song of the Sea", 
+                                      "Kahlil Gibran's The Prophet", 
+                                      "The Breadwinner", 
+                                      "Wolfwalkers"),
+                            year = c(2009, 2014, 2014, 2017, 2020),
+                            director = c(TRUE, TRUE, TRUE, FALSE, TRUE))
+moore_filmography
+```
+
+There are a lot of built-in dataframes:
+
+```{r}
+mtcars
+iris
+```
+
+You can find information about them:
+
+```{r, eval = FALSE}
+?mtcars
+?iris
+```
+
+Dataframe consists of vectors that could be called using `$` sign:
+
+```{r}
+moore_filmography$year
+moore_filmography$title
+```
+
+It is possible to add a vector to an existing dataframe:
+
+```{r}
+moore_filmography$producer <- c(TRUE, TRUE, FALSE, TRUE, TRUE)
+moore_filmography
+```
+
+There some useful functions that tell you somethig about dataframe:
+
+```{r}
+nrow(moore_filmography)
+ncol(moore_filmography)
+summary(moore_filmography)
+str(moore_filmography)
+```
+
+We will work exclusively with dataframes. But it is not the only data structure in R.
+
+
+```{block, type = "rmdtask"}
+How many rows in the `iris` dataframe?
+```
+
+<form name="Form4" onsubmit="return validateForm4()" method="post">
+<input type="text" name="answer4">
+<input type="submit" value="check">
+</form><br>
+
+```{r, include = FALSE}
+nrow(iris)
+```
+
+```{block, type = "rmdtask"}
+How many columns in the `mtcars` dataframe?
+```
+
+<form name="Form4" onsubmit="return validateForm4()" method="post">
+<input type="text" name="answer4">
+<input type="submit" value="check">
+</form><br>
+
+```{r, include = FALSE}
+ncol(mtcars)
 ```
 
 
 ### Indexing dataframes
 
+Since dataframes are two-dimensional objects it is possible to index its rows and columns. Rows are the first index, columns are the second index:
+
+```{r}
+moore_filmography[3, 2]
+moore_filmography[3,]
+moore_filmography[,2]
+moore_filmography[,1:2]
+moore_filmography[,-3]
+moore_filmography[,-c(1:2)]
+moore_filmography[,"year"]
+moore_filmography[,c("title", "year")]
+moore_filmography[moore_filmography$year > 2014,]
+```
+
 ## Data import
+
 ### `.csv` files
 
 ```{block, type = "rmdtask"}
@@ -570,6 +659,26 @@ function validateForm2() {
 function validateForm3() {
     var x = document.forms["Form3"]["answer3"].value;
     if (x != "1") {
+        alert("I have a different answer...");
+        return false;
+    } else {
+        alert("Correct!");
+        return false;
+    }
+}
+function validateForm4() {
+    var x = document.forms["Form4"]["answer4"].value;
+    if (x != "150") {
+        alert("I have a different answer...");
+        return false;
+    } else {
+        alert("Correct!");
+        return false;
+    }
+}
+function validateForm5() {
+    var x = document.forms["Form5"]["answer5"].value;
+    if (x != "11") {
         alert("I have a different answer...");
         return false;
     } else {
