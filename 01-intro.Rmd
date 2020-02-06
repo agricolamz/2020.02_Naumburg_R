@@ -580,7 +580,7 @@ We will work exclusively with dataframes. But it is not the only data structure 
 
 
 ```{block, type = "rmdtask"}
-How many rows in the `iris` dataframe?
+How many rows are in the `iris` dataframe?
 ```
 
 <form name="Form4" onsubmit="return validateForm4()" method="post">
@@ -593,7 +593,7 @@ nrow(iris)
 ```
 
 ```{block, type = "rmdtask"}
-How many columns in the `mtcars` dataframe?
+How many columns are in the `mtcars` dataframe?
 ```
 
 <form name="Form4" onsubmit="return validateForm4()" method="post">
