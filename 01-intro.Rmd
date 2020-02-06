@@ -36,7 +36,7 @@ Data scientist need to be able:
 
 ### Why R?
 
-R [@r19] is a programing language with a big infrastructure of packages that helps to work in different fields of science and computer technology.
+R [@r19] is a programming language with a big infrastructure of packages that helps to work in different fields of science and computer technology.
 
 There are several alternatives:
 
@@ -44,6 +44,14 @@ There are several alternatives:
 * Julia [@bezanson17]
 * bash [@janssens14]
 * java [@brzustowicz17]
+* ...
+
+You can find some R answers here:
+
+* R for data science [@wickham16], it is online
+* [R community](https://community.rstudio.com/)
+* [stackoverflow](https://stackoverflow.com)
+* any search engine you use
 * ...
 
 ## Introduction to RStudio
@@ -71,7 +79,7 @@ Lets first start with a calculator. Press in R console
 pi
 ```
 
-Remeinder after division
+Reminder after division
 
 ```{r}
 10 %% 3
@@ -130,6 +138,7 @@ sin(pi/2)
 cos(pi)
 sum(2, 3, 9)
 prod(5, 3, 9)
+sin(cos(pi))
 ```
 
 Each function has a name and zero or more arguments. All arguments of the function should be listed in parenthesis and separated by comma:
@@ -157,7 +166,7 @@ Sys.Date() # correct
 Sys.Date # wrong
 ```
 
-Each function in R is documented. You can read its documentation typing question mark befor the function name:
+Each function in R is documented. You can read its documentation typing question mark before the function name:
 
 ```{r, eval = FALSE}
 ?Sys.Date
@@ -180,7 +189,7 @@ log(3486784401, base = 3)
 
 <details> <summary> 📋 list of hints ➡ </summary> 
 
-<details> <summary> 👁 A-a-a! I don't remmember anything about logarithms... ➡</summary>
+<details> <summary> 👁 A-a-a! I don't remember anything about logarithms... ➡</summary>
 The logarithm is the inverse function to exponentiation. That means the logarithm of a given number *x* is the exponent to which another fixed number, the base *b*, must be raised, to produce that number *x*.
 
 $$10^n = 1000,\text{ what is n?}$$
@@ -218,22 +227,198 @@ x <- 5 + 6 + 7
 
 The fast way for creating `<-` in RStudio is to press `Alt -` on your keyboard.
 
-It is possible to use equal sign `=` for assignment operation, but the recomendations are use arrow `<-` for the assignment, and equal sign `=` for giving arguments' value inside the functions.
+It is possible to use equal sign `=` for assignment operation, but the recommendations are use arrow `<-` for the assignment, and equal sign `=` for giving arguments' value inside the functions.
+
+For removing vector you need to use function `rm()`:
+
+```{r error = TRUE}
+rm(x)
+x
+```
 
 
-## Variable types
+### Variable comparison
+
+It is possible to compare different variables
+
+```{r}
+x <- 18
+x > 18
+x >= 18
+x < 100
+x <= 18
+x == 18
+x != 18
+```
+
+
+### Variable types
+
+There are several types of variable in R. In this course the only important types will be `double` (all numbers), `character` (or strings), and `logical`:
+
+```{r}
+x <- 2+3
+typeof(x)
+y <- "Cześć"
+typeof(y)
+z <- TRUE
+typeof(z)
+```
 
 ## Vector
+R object that contain multiple values of the same type is called **vector**. It could be created with the command `c()`:
+
+```{r}
+c(3, 0, pi, 23.4, -53)
+c("Kraków", "Warszawa", "Cieszyn")
+c(FALSE, FALSE, TRUE)
+
+a <- c(2, 3, 4)
+b <- c(5, 6, 7)
+c(a, b)
+```
+
+For the number sequences there is an easy way:
+
+```{r}
+1:10
+3:-5
+```
+
+From now you can understand that all we have seen before is a vector of length one. That is why there is `[1]` in all outputs: it is just an index of elements in vector. Have a look here:
+
+```{r}
+1:60
+60:1
+```
+
+There is also a function `sec()` for creation of arithmetic progressions:
+
+```{r}
+1:20
+seq(from = 1, to = 20, by = 1)
+seq(from = 2, to = 100, by = 13)
+```
+
+
+```{block, type = "rmdtask"}
+Use argument `length.out` of function `seq()` and create an arithmetic sequence from $\pi$ to $2\pi$ of length 50.
+
+```
+
+```{r, include=FALSE}
+seq(pi, 2*pi, length.out = 50)
+```
 
 ### Vector coercion
+Vectors are R objects that contain multiple values of **the same type**. But what if we merge together different types?
+
+```{r}
+c(1, "34")
+c(1, TRUE)
+c(TRUE, "34")
+```
+
+It is clear that there is hierarchy: strings > double > logical. It is not universal across different programming languages. It doesn't correspond to amount of values of particular type:
+
+```{r}
+c(1, 2, 3, "34")
+c(1, TRUE, FALSE, FALSE)
+```
+
+The same story could happen during other operations:
+
+```{r}
+5+TRUE
+```
 
 ### Vector operations
 
-### Vector recycling
+All operation that we discussed earlier could be done with vectors of the same length:
+
+```{r}
+1:5 + 6:10
+1:5 - 6:10
+1:5 * 6:10
+```
+
+There are operation where the vector of any length and vector of length one is involved:
+
+```{r}
+1:5 + 7
+1:5 - 7
+1:5 / 7
+```
+
+There are a lot of functions in R that are **vectorised**. That means that applying this function to a vector is the same as apply this function to each ellement of the vector:
+
+```{r}
+sin(1:5)
+sqrt(1:5)
+abs(-5:3)
+```
 
 ### Indexing vectors
 
-### `NA` value
+How to get some value or banch of values from a vector? You need to index them:
+
+```{r}
+x <- c(3, 0, pi, 23.4, -53)
+y <- c("Kraków", "Warszawa", "Cieszyn")
+
+x[4]
+y[2]
+```
+
+It is possible to have a vector as index:
+
+```{r}
+x[1:2]
+y[c(1, 3)]
+```
+
+It is possible to index something that you **do not** want  to see in the result:
+```{r}
+y[-2]
+x[-c(1, 4)]
+```
+
+It is possible to have other variables as an index
+
+```{r}
+z <- c(3, 2)
+x[z]
+y[z]
+```
+
+It is possible to index with logical vector:
+
+```{r}
+x[c(TRUE, FALSE, TRUE, TRUE, FALSE)]
+```
+
+That means that we could use `TRUE/FALSE`-vector produced by comparison:
+
+```{r}
+x[x > 2]
+```
+
+It works because
+
+```{r}
+x > 2
+```
+
+```{block, type = "rmdtask"}
+How many ellements in the vector `g` if expression `g[pi < 1000]` doesn't return error?
+```
+
+<form name="Form3" onsubmit="return validateForm3()" method="post">
+<input type="text" name="answer3">
+<input type="submit" value="check">
+</form><br>
+
+```{r}A` value
 
 ## Dataframe (tibble)
 
@@ -268,4 +453,14 @@ function validateForm2() {
         return false;
     }
 }
-</script>
+</scrifunction validateForm3() {
+    var x = document.forms["Form3"]["answer3"].value;
+    if (x != "1") {
+        alert("I have a different answer...");
+        return false;
+    } else {
+        alert("Correct!");
+        return false;
+    }
+}
+pt>
