@@ -708,9 +708,23 @@ Here is a [test file](https://github.com/agricolamz/2020.02_Naumburg_R/raw/maste
 ```{r, eval= FALSE}
 read_xlsx("moore_filmography.xlsx")
 ```
+```{r, echo=FALSE}
+read_xlsx("data/moore_filmography.xlsx")
+```
+
+`.xls` and `.xlsx` files could have multiple tables on different sheets:
 
 
-## Rmarkdown
+```{r, eval=FALSE}
+read_xlsx("moore_filmography.xlsx", sheet = "iris")
+```
+
+```{r, echo=FALSE}
+read_xlsx("data/moore_filmography.xlsx", sheet = "iris")
+```
+
+
+## Rmrkdown
 
 `r if (knitr::is_html_output()) '
 <script>
