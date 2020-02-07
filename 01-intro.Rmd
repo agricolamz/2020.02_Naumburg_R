@@ -79,7 +79,7 @@ Lets first start with the calculator. Press in R console
 pi
 ```
 
-Reminder after division
+Remainder after division
 
 ```{r}
 10 %% 3
@@ -757,8 +757,7 @@ Press `OK` in the following menu and you will get the template of your R Markdow
 <script>
 function validateForm1() {
     var x = document.forms["Form1"]["answer1"].value;
-    if (x != "6.7749") {
-        alert("I have a different answer...");
+    if (x != "6.77495.6718       alert("I have a different answer...");
         return false;
     } else {
         alert("Correct!");
