@@ -437,11 +437,6 @@ x[!(x > 2)]
 How many elements in the vector `g` if expression `g[pi < 1000]` does not return an error?
 ```
 
-<form name="Form3" onsubmit="return validateForm3()" method="post">
-<input type="text" name="answer3">
-<input type="submit" value="check">
-</form><br>
-
 ### `NA`
 
 Sometimes there are some missing values in the data, so it is represented with `NA`
@@ -489,7 +484,7 @@ install.packages("tidyverse")
 For today we also will need the `readxl` package:
 
 ```{r, eval=FALSE}
-install.packages("tidyverse")
+install.packages("readxl")
 ```
 
 After you have downloaded packages nothing will change. You can not use any fucntionality from packages unless you load the package with the `library()` function:
@@ -498,7 +493,7 @@ After you have downloaded packages nothing will change. You can not use any fucn
 library("tidyverse")
 ```
 
-Not turninloadingpackage is the most popular mistake of my students. So remember:
+Not loading package is the most popular mistake of my students. So remember:
 
 * `install.packages("...")` is like you are buying a screwdriver set;
 * `library("...")` is like you are stusing art your screwdriver.
@@ -767,16 +762,6 @@ function validateForm1() {
 function validateForm2() {
     var x = document.forms["Form2"]["answer2"].value;
     if (x != "20") {
-        alert("I have a different answer...");
-        return false;
-    } else {
-        alert("Correct!");
-        return false;
-    }
-}
-function validateForm3() {
-    var x = document.forms["Form3"]["answer3"].value;
-    if (x != "1") {
         alert("I have a different answer...");
         return false;
     } else {
