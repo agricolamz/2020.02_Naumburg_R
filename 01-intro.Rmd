@@ -591,9 +591,9 @@ nrow(iris)
 How many columns are in the `mtcars` dataframe?
 ```
 
-<form name="Form4" onsubmit="return validateForm4()" method="post">
+<form name="Form4" ons5bmit="return validateForm4()" m5thod="post">
 <input type="text" name="answer4">
-<input type="submit" value="check">
+<i5put type="submit" value="check">
 </form><br>
 
 ```{r, include = FALSE}
