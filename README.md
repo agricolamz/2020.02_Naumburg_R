@@ -14,18 +14,18 @@ Domstift Naumburg, Seminar room Petrus / Seminar room Paulus, Südklausur of the
 
 * **(7.02.2020)** 
     * (15 minutes) Meet and quick discussion about your projects 
-    * (3 h.) Introduction to R and RStudio
-    * (3 h.) Data manipulation: dplyr, tidyr
+    * (6 h.) Introduction to R and RStudio
 * **(14.02.2020)** 
+    * (3 h.) Data manipulation: dplyr, tidyr
     * (3 h.) Data visualisation: ggplot2 
-    * (3 h.) Working with strings: stringr
 * **(21.02.2020)**
-    * (3 h.) Working with texts: gutenbergr, tidytext, udpipe 
-    * (3 h.) Authorship detection: stylo
+    * (2 h.) Working with strings: stringr
+    * (2 h.) Working with texts: gutenbergr, tidytext, udpipe 
+    * (2 h.) Authorship detection: stylo
 
 * **(28.02.2020)** [HACKATHON](https://en.wikipedia.org/wiki/Hackathon) (day of intensive work in groups with instructors help) 
     * 9:30 -- 12:00 start of work 
     * 12:00 -- 13:00 lunch 
     * 13:00 -- 15:00 continuation of work 
     * 16:00 -- 17:00 preparation of presentations
-    * 16:00 -- 17:00 project presentations 
+    * 16:00 -- 17:00 project presentations
