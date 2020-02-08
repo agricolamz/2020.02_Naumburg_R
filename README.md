@@ -1,4 +1,4 @@
-# [Polish Language(s) and Digital Humanities Using R](https://agricolamz.github.io/2020.02_Naumburg_R/), [abstrct](http://www.aleksander-brueckner-zentrum.org/veranstaltungen/detail/datum/2020/01/21/polish-languages-and-digital-humanities-using-r/)
+# [Polish Language(s) and Digital Humanities Using R](https://agricolamz.github.io/2020.02_Naumburg_R/), [abstract](http://www.aleksander-brueckner-zentrum.org/veranstaltungen/detail/datum/2020/01/21/polish-languages-and-digital-humanities-using-r/)
 
 Block Seminar - Four Fridays in February 2020 in Naumburg.
 
