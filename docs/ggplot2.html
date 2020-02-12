@@ -187,7 +187,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="3.4" data-path="dplyr.html"><a href="dplyr.html#tidyr-package"><i class="fa fa-check"></i><b>3.4</b> <code>tidyr</code> package</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="ggplot2.html"><a href="ggplot2.html"><i class="fa fa-check"></i><b>4</b> Data visualisation: <code>ggplot2</code></a></li>
+<li class="chapter" data-level="4" data-path="ggplot2.html"><a href="ggplot2.html"><i class="fa fa-check"></i><b>4</b> Data visualisation: <code>ggplot2</code></a><ul>
+<li class="chapter" data-level="4.1" data-path="ggplot2.html"><a href="ggplot2.html#why-visualise-data"><i class="fa fa-check"></i><b>4.1</b> Why visualise data?</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="ggplot2.html"><a href="ggplot2.html#anscombes-quartet"><i class="fa fa-check"></i><b>4.1.1</b> Anscombe’s Quartet</a></li>
+</ul></li>
+</ul></li>
 <li class="chapter" data-level="5" data-path="stringr.html"><a href="stringr.html"><i class="fa fa-check"></i><b>5</b> Strings manipulation: <code>stringr</code></a></li>
 <li class="chapter" data-level="6" data-path="texts.html"><a href="texts.html"><i class="fa fa-check"></i><b>6</b> Text manipulation: <code>gutenbergr</code>, <code>tidytext</code>, <code>udpipe</code></a></li>
 <li class="chapter" data-level="7" data-path="stylo.html"><a href="stylo.html"><i class="fa fa-check"></i><b>7</b> Stylometric analysis: <code>stylo</code></a></li>
@@ -211,7 +215,38 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="ggplot2" class="section level1">
 <h1><span class="header-section-number">4</span> Data visualisation: <code>ggplot2</code></h1>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="ggplot2.html#cb1-1"></a><span class="kw">library</span>(<span class="st">&quot;tidyverse&quot;</span>)</span></code></pre></div>
+<div id="why-visualise-data" class="section level2">
+<h2><span class="header-section-number">4.1</span> Why visualise data?</h2>
+<div id="anscombes-quartet" class="section level3">
+<h3><span class="header-section-number">4.1.1</span> Anscombe’s Quartet</h3>
+<p>In Anscombe, F. J. (1973). “Graphs in Statistical Analysis” there were the following dataset:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="ggplot2.html#cb2-1"></a>quartet &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;https://raw.githubusercontent.com/agricolamz/DS_for_DH/master/data/anscombe.csv&quot;</span>)</span>
+<span id="cb2-2"><a href="ggplot2.html#cb2-2"></a>quartet</span></code></pre></div>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["id"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["dataset"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["x"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["y"],"name":[4],"type":["dbl"],"align":["right"]}],"data":[{"1":"1","2":"1","3":"10","4":"8.04"},{"1":"1","2":"2","3":"10","4":"9.14"},{"1":"1","2":"3","3":"10","4":"7.46"},{"1":"1","2":"4","3":"8","4":"6.58"},{"1":"2","2":"1","3":"8","4":"6.95"},{"1":"2","2":"2","3":"8","4":"8.14"},{"1":"2","2":"3","3":"8","4":"6.77"},{"1":"2","2":"4","3":"8","4":"5.76"},{"1":"3","2":"1","3":"13","4":"7.58"},{"1":"3","2":"2","3":"13","4":"8.74"},{"1":"3","2":"3","3":"13","4":"12.74"},{"1":"3","2":"4","3":"8","4":"7.71"},{"1":"4","2":"1","3":"9","4":"8.81"},{"1":"4","2":"2","3":"9","4":"8.77"},{"1":"4","2":"3","3":"9","4":"7.11"},{"1":"4","2":"4","3":"8","4":"8.84"},{"1":"5","2":"1","3":"11","4":"8.33"},{"1":"5","2":"2","3":"11","4":"9.26"},{"1":"5","2":"3","3":"11","4":"7.81"},{"1":"5","2":"4","3":"8","4":"8.47"},{"1":"6","2":"1","3":"14","4":"9.96"},{"1":"6","2":"2","3":"14","4":"8.10"},{"1":"6","2":"3","3":"14","4":"8.84"},{"1":"6","2":"4","3":"8","4":"7.04"},{"1":"7","2":"1","3":"6","4":"7.24"},{"1":"7","2":"2","3":"6","4":"6.13"},{"1":"7","2":"3","3":"6","4":"6.08"},{"1":"7","2":"4","3":"8","4":"5.25"},{"1":"8","2":"1","3":"4","4":"4.26"},{"1":"8","2":"2","3":"4","4":"3.10"},{"1":"8","2":"3","3":"4","4":"5.39"},{"1":"8","2":"4","3":"19","4":"12.50"},{"1":"9","2":"1","3":"12","4":"10.84"},{"1":"9","2":"2","3":"12","4":"9.13"},{"1":"9","2":"3","3":"12","4":"8.15"},{"1":"9","2":"4","3":"8","4":"5.56"},{"1":"10","2":"1","3":"7","4":"4.82"},{"1":"10","2":"2","3":"7","4":"7.26"},{"1":"10","2":"3","3":"7","4":"6.42"},{"1":"10","2":"4","3":"8","4":"7.91"},{"1":"11","2":"1","3":"5","4":"5.68"},{"1":"11","2":"2","3":"5","4":"4.74"},{"1":"11","2":"3","3":"5","4":"5.73"},{"1":"11","2":"4","3":"8","4":"6.89"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="ggplot2.html#cb3-1"></a>quartet <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb3-2"><a href="ggplot2.html#cb3-2"></a><span class="st">  </span><span class="kw">group_by</span>(dataset) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb3-3"><a href="ggplot2.html#cb3-3"></a><span class="st">  </span><span class="kw">summarise</span>(<span class="dt">mean_X =</span> <span class="kw">mean</span>(x),</span>
+<span id="cb3-4"><a href="ggplot2.html#cb3-4"></a>            <span class="dt">mean_Y =</span> <span class="kw">mean</span>(y),</span>
+<span id="cb3-5"><a href="ggplot2.html#cb3-5"></a>            <span class="dt">sd_X =</span> <span class="kw">sd</span>(x),</span>
+<span id="cb3-6"><a href="ggplot2.html#cb3-6"></a>            <span class="dt">sd_Y =</span> <span class="kw">sd</span>(y),</span>
+<span id="cb3-7"><a href="ggplot2.html#cb3-7"></a>            <span class="dt">cor =</span> <span class="kw">cor</span>(x, y),</span>
+<span id="cb3-8"><a href="ggplot2.html#cb3-8"></a>            <span class="dt">n_obs =</span> <span class="kw">n</span>()) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb3-9"><a href="ggplot2.html#cb3-9"></a><span class="st">  </span><span class="kw">select</span>(<span class="op">-</span>dataset) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb3-10"><a href="ggplot2.html#cb3-10"></a><span class="st">  </span><span class="kw">round</span>(<span class="dv">2</span>)</span></code></pre></div>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["mean_X"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["mean_Y"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["sd_X"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["sd_Y"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["cor"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["n_obs"],"name":[6],"type":["dbl"],"align":["right"]}],"data":[{"1":"9","2":"7.5","3":"3.32","4":"2.03","5":"0.82","6":"11"},{"1":"9","2":"7.5","3":"3.32","4":"2.03","5":"0.82","6":"11"},{"1":"9","2":"7.5","3":"3.32","4":"2.03","5":"0.82","6":"11"},{"1":"9","2":"7.5","3":"3.32","4":"2.03","5":"0.82","6":"11"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<p><img src="moroz-2020-Polish-Language-and-Digital-Humanities-Using-R_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 
+</div>
+</div>
 </div>
             </section>
 
@@ -261,20 +296,6 @@ gitbook.start({
 });
 </script>
 
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:")
-      if (/^https?:/.test(src))
-        src = src.replace(/^https?:/, '');
-    script.src = src;
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
 </body>
 
 </html>

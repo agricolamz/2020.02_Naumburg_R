@@ -1,2 +1,64 @@
 # Data visualisation: `ggplot2` {#ggplot2}
 
+```{r, message = FALSE}
+library("tidyverse")
+```
+
+## Why visualise data?
+### The Anscombe’s Quartet
+In Anscombe, F. J. (1973). "Graphs in Statistical Analysis" there were the following dataset:
+
+```{r, message= FALSE}
+quartet <- read_csv("https://raw.githubusercontent.com/agricolamz/2020.02_Naumburg_R/master/data/anscombe.csv")
+quartet
+quartet %>% 
+  group_by(dataset) %>% 
+  summarise(mean_X = mean(x),
+            mean_Y = mean(y),
+            sd_X = sd(x),
+            sd_Y = sd(y),
+            cor = cor(x, y),
+            n_obs = n()) %>% 
+  select(-dataset) %>% 
+  round(2)
+```
+
+Lets visualise those datasets:
+
+```{r, echo = FALSE, message=FALSE}
+quartet %>% 
+  ggplot(aes(x, y))+
+  geom_point()+
+  geom_smooth(method = "lm", se = F)+
+  facet_wrap(~dataset)+
+  theme_bw()
+```
+
+### The DataSaurus
+In [Matejka and Fitzmaurice (2017) "Same Stats, Different Graphs"](https://www.autodeskresearch.com/sites/default/files/SameStats-DifferentGraphs.pdf) there are the following datasets:
+
+```{r, message= FALSE}
+datasaurus <- read_csv("https://raw.githubusercontent.com/agricolamz/2020.02_Naumburg_R/master/data/datasaurus.csv")
+datasaurus
+```
+
+```{r, echo=FALSE, message= FALSE}
+datasaurus %>% 
+  ggplot(aes(x, y))+
+  geom_point()+
+  facet_wrap(~dataset)+
+  theme_bw()
+```
+
+```{r}
+datasaurus %>% 
+  group_by(dataset) %>% 
+  summarise(mean_X = mean(x),
+            mean_Y = mean(y),
+            sd_X = sd(x),
+            sd_Y = sd(y),
+            cor = cor(x, y),
+            n_obs = n()) %>% 
+  select(-dataset) %>% 
+  round(1)
+```
