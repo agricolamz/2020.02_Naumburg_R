@@ -78,14 +78,29 @@ are usually created with a `geom_...()` function.
 
 ### Scaterplot
 
-I downloaded a polish dictionary from [here](https://sjp.pl/slownik/odmiany/). I removed all abbreviations and proper name and took only one form from the paradigm. After this I calculated the number of syllables (simply by countyng vowels, combinations of *i* and other vowels I counted as one) and number of symbols in each word. Here is the [result dataset](https://raw.githubusercontent.com/agricolamz/2020.02_Naumburg_R/master/data/polish_dictionary.csv).
+I downloaded a Polish dictionary from [here](https://sjp.pl/slownik/odmiany/). I removed all abbreviations and proper names and took only one form from the paradigm. After all this I calculated the number of syllables (simply by countyng vowels, combinations of *i* and other vowels I counted as one) and number of symbols in each word. Here is the [result dataset](https://raw.githubusercontent.com/agricolamz/2020.02_Naumburg_R/master/data/polish_dictionary.csv).
 
 ```{block, type = "rmdtask"}
-Download this dataset and name it `polish_dictionary`. How many words there?
+Download this dataset to the variable `polish_dictionary`. How many words are there?
 ```
 
 ```{r, include=FALSE}
 polish_dictionary <- read_csv("https://raw.githubusercontent.com/agricolamz/2020.02_Naumburg_R/master/data/polish_dictionary.csv")
+```
+
+So this data could be visualised using the following code:
+
+* `ggplot2`
+```{r, eval = FALSE}
+ggplot(data = polish_dictionary, aes(n_char, n_vowels)) +
+  geom_point()
+```
+
+* `dplyr`, `ggplot2`
+```{r first_ggplot, cache=TRUE}
+polish_dictionary %>%
+  ggplot(aes(n_char, n_vowels))+
+  geom_point()
 ```
 
 
