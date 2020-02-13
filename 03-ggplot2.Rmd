@@ -1,6 +1,10 @@
 # Data visualisation: `ggplot2` {#ggplot2}
 
-```{r, message = FALSE}
+```{r, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+```{r}
 library("tidyverse")
 ```
 
@@ -8,7 +12,7 @@ library("tidyverse")
 ### The Anscombe’s Quartet
 In Anscombe, F. J. (1973). "Graphs in Statistical Analysis" there was the following dataset:
 
-```{r, message= FALSE}
+```{r}
 quartet <- read_csv("https://raw.githubusercontent.com/agricolamz/2020.02_Naumburg_R/master/data/anscombe.csv")
 quartet
 quartet %>% 
@@ -25,7 +29,7 @@ quartet %>%
 
 Lets visualise those datasets:
 
-```{r, echo = FALSE, message=FALSE}
+```{r, echo = FALSE}
 quartet %>% 
   ggplot(aes(x, y))+
   geom_point()+
@@ -37,12 +41,12 @@ quartet %>%
 ### The DataSaurus
 In [Matejka and Fitzmaurice (2017) "Same Stats, Different Graphs"](https://www.autodeskresearch.com/sites/default/files/SameStats-DifferentGraphs.pdf) there are the following datasets:
 
-```{r, message= FALSE}
+```{r}
 datasaurus <- read_csv("https://raw.githubusercontent.com/agricolamz/2020.02_Naumburg_R/master/data/datasaurus.csv")
 datasaurus
 ```
 
-```{r, echo=FALSE, message= FALSE}
+```{r, echo=FALSE}
 datasaurus %>% 
   ggplot(aes(x, y))+
   geom_point()+
