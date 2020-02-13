@@ -293,7 +293,7 @@ full_join(country_population, languages)
 
 ## `tidyr` package
 
-Here is a dataset with number of speakers of some language of India according census 2001 (data from Wikipedia):
+Here is a dataset with the number of speakers of some language of India according the census 2001 (data from Wikipedia):
 
 
 ```{r}
@@ -336,7 +336,7 @@ langs_in_india_short
 
 
 ```{block, type = "rmdtask"}
-[Here](https://github.com/agricolamz/2020.02_Naumburg_R/raw/master/data/daghestan_census.xlsx) is data, that contain information about villages of Daghestan in `.xlsx` format. Data separated by different sheets and contain the following variables (data obtained from different sources, so they have suffixes `_s1` -- first source and `_s2` -- second source):
+[Here](https://github.com/agricolamz/2020.02_Naumburg_R/raw/master/data/daghestan_census.xlsx) is data, that contains information about villages of Daghestan in `.xlsx` format. The data is separated by different sheets and contains the following variables (data obtained from different sources, so they have suffixes `_s1` -- first source and `_s2` -- second source):
 
 * `id_s1` -- (s1) identification number from first source;
 * `name_1885` -- (s1) name of the village according the 1885 census
@@ -377,7 +377,7 @@ head(merged)
 ```
 
 ```{block, type = "rmdtask"}
-Second, caclulate how many times language name is the same in both sources.
+Second, caclulate how many times the language name is the same in both sources.
 ```
 
 ```{r,  include=FALSE}
@@ -397,7 +397,7 @@ merged %>%
 ```
 
 ```{block, type = "rmdtask"}
-Fourth, calculate population for languages from the second source in each census.
+Fourth, calculate the population for languages from the second source in each census.
 Show the values obtained for the Lak language:
 ```
 
