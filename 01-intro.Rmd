@@ -93,7 +93,7 @@ So you are ready to solve some really hard equations (round it four decimal plac
 $$\frac{\pi+2}{2^{3-\pi}}$$
 
 ```{r, results='asis', echo = FALSE, eval = knitr::is_html_output()}
-checkdown::autocheck_question(question_id = "1_1", answer =  (pi+3)/(2^(3-pi)))
+checkdown::autocheck_question(question_id = "1_1", answer =  round((pi+2)/(2^(3-pi)), 4))
 ```
 
 

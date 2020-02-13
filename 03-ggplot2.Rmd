@@ -92,7 +92,6 @@ polish_dictionary <- read_csv("https://raw.githubusercontent.com/agricolamz/2020
 checkdown::autocheck_question(question_id = "3_1", answer =  nrow(polish_dictionary))
 ```
 
-
 So this data could be visualised using the following code:
 
 * `ggplot2`
