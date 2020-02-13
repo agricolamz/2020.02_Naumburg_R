@@ -299,7 +299,7 @@ From now on you can understand that everything we have seen before is a vector o
 60:1
 ```
 
-There is also a function `sec()` for creation of arithmetic progressions:
+There is also a function `seq()` for creation of arithmetic progressions:
 
 ```{r}
 1:20
@@ -493,10 +493,10 @@ After you have downloaded packages nothing will change. You can not use any fucn
 library("tidyverse")
 ```
 
-Not loading package is the most popular mistake of my students. So remember:
+Not loading a package is the most popular mistake of my students. So remember:
 
 * `install.packages("...")` is like you are buying a screwdriver set;
-* `library("...")` is like you are stusing art your screwdriver.
+* `library("...")` is like you are starting to use your screwdriver.
 
 ![](images/01.05.install-packages-vs-library.png)
 
@@ -511,7 +511,7 @@ Please install `tidyverse` package and load it.
 
 The [`tidyverse`](https://blog.rstudio.org/2016/09/15/tidyverse-1-0-0/) is a set of packages:
 
-* `tibble`, for tibbles, a modern re-imagining of data frames --- analugue of tables in R
+* `tibble`, for tibbles, a modern re-imagining of data frames --- analogue of tables in R
 * `readr`, for data import
 * `dplyr`, for data manipulation
 * `tidyr`, for data tidying (we will discuss it later today)
