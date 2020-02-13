@@ -188,7 +188,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.4" data-path="dplyr.html"><a href="dplyr.html#tidyr-package"><i class="fa fa-check"></i><b>3.4</b> <code>tidyr</code> package</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="ggplot2.html"><a href="ggplot2.html"><i class="fa fa-check"></i><b>4</b> Data visualisation: <code>ggplot2</code></a><ul>
-<li class="chapter" data-level="4.1" data-path="ggplot2.html"><a href="ggplot2.html#why-visualise-data"><i class="fa fa-check"></i><b>4.1</b> Why visualise data?</a><ul>
+<li class="chapter" data-level="4.1" data-path="ggplot2.html"><a href="ggplot2.html#why-visualising-data"><i class="fa fa-check"></i><b>4.1</b> Why visualising data?</a><ul>
 <li class="chapter" data-level="4.1.1" data-path="ggplot2.html"><a href="ggplot2.html#the-anscombes-quartet"><i class="fa fa-check"></i><b>4.1.1</b> The Anscombe’s Quartet</a></li>
 <li class="chapter" data-level="4.1.2" data-path="ggplot2.html"><a href="ggplot2.html#the-datasaurus"><i class="fa fa-check"></i><b>4.1.2</b> The DataSaurus</a></li>
 </ul></li>
@@ -220,11 +220,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="ggplot2" class="section level1">
 <h1><span class="header-section-number">4</span> Data visualisation: <code>ggplot2</code></h1>
 <div class="sourceCode" id="cb296"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb296-1"><a href="ggplot2.html#cb296-1"></a><span class="kw">library</span>(<span class="st">&quot;tidyverse&quot;</span>)</span></code></pre></div>
-<div id="why-visualise-data" class="section level2">
-<h2><span class="header-section-number">4.1</span> Why visualise data?</h2>
+<div id="why-visualising-data" class="section level2">
+<h2><span class="header-section-number">4.1</span> Why visualising data?</h2>
 <div id="the-anscombes-quartet" class="section level3">
 <h3><span class="header-section-number">4.1.1</span> The Anscombe’s Quartet</h3>
-<p>In Anscombe, F. J. (1973). “Graphs in Statistical Analysis” there were the following dataset:</p>
+<p>In Anscombe, F. J. (1973). “Graphs in Statistical Analysis” there was the following dataset:</p>
 <div class="sourceCode" id="cb297"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb297-1"><a href="ggplot2.html#cb297-1"></a>quartet &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;https://raw.githubusercontent.com/agricolamz/2020.02_Naumburg_R/master/data/anscombe.csv&quot;</span>)</span>
 <span id="cb297-2"><a href="ggplot2.html#cb297-2"></a>quartet</span></code></pre></div>
 <div data-pagedtable="false">
@@ -281,7 +281,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="basic-ggplot2" class="section level2">
 <h2><span class="header-section-number">4.2</span> Basic <code>ggplot2</code></h2>
-<p><code>ggplot2</code> is a modern tool for data visualisation. There are <a href="http://www.ggplot2-exts.org/gallery/">a lot of extentions</a> for <code>ggplot2</code>. There is also <a href="https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf">a cheatsheet on <code>ggplot2</code></a>. There is also a whole book about <code>ggplot2</code> <span class="citation">(Wickham and Grolemund <a href="#ref-wickham16" role="doc-biblioref">2016</a>)</span>.</p>
+<p><code>ggplot2</code> is a modern tool for data visualisation. There are <a href="http://www.ggplot2-exts.org/gallery/">a lot of extentions</a> for <code>ggplot2</code>. There is also <a href="https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf">a cheatsheet on <code>ggplot2</code></a>. There is also a whole book about <code>ggplot2</code> <span class="citation">(Wickham <a href="#ref-wickham16" role="doc-biblioref">2016</a>)</span>.</p>
 <p>Every <code>ggplot2</code> plot has three key components:</p>
 <ul>
 <li>data,</li>
@@ -291,12 +291,17 @@ are usually created with a <code>geom_...()</code> function.</li>
 </ul>
 <div id="scaterplot" class="section level3">
 <h3><span class="header-section-number">4.2.1</span> Scaterplot</h3>
-<p>I downloaded a Polish dictionary from <a href="https://sjp.pl/slownik/odmiany/">here</a>. I removed all abbreviations and proper names and took only one form from the paradigm. After all this I calculated the number of syllables (simply by countyng vowels, combinations of <em>i</em> and other vowels I counted as one) and number of symbols in each word. Here is the <a href="https://raw.githubusercontent.com/agricolamz/2020.02_Naumburg_R/master/data/polish_dictionary.csv">result dataset</a>.</p>
+<p>I downloaded a Polish dictionary from <a href="https://sjp.pl/slownik/odmiany/">here</a>. I removed all abbreviations and proper names and took only one form from the paradigm. After all this I calculated the number of syllables (simply by counting vowels, combinations of <em>i</em> and other vowels I counted as one) and number of symbols in each word. Here is the <a href="https://raw.githubusercontent.com/agricolamz/2020.02_Naumburg_R/master/data/polish_dictionary.csv">result dataset</a>.</p>
 <div class="rmdtask">
 <p>
 Download this dataset to the variable <code>polish_dictionary</code>. How many words are there?
 </p>
 </div>
+<form name="form_3_1" onsubmit="return validate_form_3_1()" method="post">
+<input type="text" name="answer_3_1"><input type="submit" value="check">
+</form>
+<br>
+<script> function validate_form_3_1() {var x = document.forms["form_3_1"]["answer_3_1"].value;if (x == "176944"){alert("Correct");return false;} else {alert("I have a different answer");return false;}} </script>
 <p>So this data could be visualised using the following code:</p>
 <ul>
 <li><code>ggplot2</code></li>
@@ -317,7 +322,7 @@ Download this dataset to the variable <code>polish_dictionary</code>. How many w
 <h3>References</h3>
 <div id="refs" class="references">
 <div id="ref-wickham16">
-<p>Wickham, Hadley, and Garrett Grolemund. 2016. <em>R for Data Science: Import, Tidy, Transform, Visualize, and Model Data</em>. O’Reilly Media, Inc.</p>
+<p>Wickham, Hadley. 2016. <em>Ggplot2: Elegant Graphics for Data Analysis</em>. Springer-Verlag New York. <a href="https://ggplot2.tidyverse.org">https://ggplot2.tidyverse.org</a>.</p>
 </div>
 </div>
             </section>

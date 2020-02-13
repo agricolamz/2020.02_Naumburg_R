@@ -88,6 +88,11 @@ Download this dataset to the variable `polish_dictionary`. How many words are th
 polish_dictionary <- read_csv("https://raw.githubusercontent.com/agricolamz/2020.02_Naumburg_R/master/data/polish_dictionary.csv")
 ```
 
+```{r, results='asis', echo = FALSE, eval = knitr::is_html_output()}
+checkdown::autocheck_question(question_id = "3_1", answer =  nrow(polish_dictionary))
+```
+
+
 So this data could be visualised using the following code:
 
 * `ggplot2`
@@ -102,6 +107,5 @@ polish_dictionary %>%
   ggplot(aes(n_char, n_vowels))+
   geom_point()
 ```
-
 
 

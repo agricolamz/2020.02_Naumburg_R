@@ -188,7 +188,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.4" data-path="dplyr.html"><a href="dplyr.html#tidyr-package"><i class="fa fa-check"></i><b>3.4</b> <code>tidyr</code> package</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="ggplot2.html"><a href="ggplot2.html"><i class="fa fa-check"></i><b>4</b> Data visualisation: <code>ggplot2</code></a><ul>
-<li class="chapter" data-level="4.1" data-path="ggplot2.html"><a href="ggplot2.html#why-visualise-data"><i class="fa fa-check"></i><b>4.1</b> Why visualise data?</a><ul>
+<li class="chapter" data-level="4.1" data-path="ggplot2.html"><a href="ggplot2.html#why-visualising-data"><i class="fa fa-check"></i><b>4.1</b> Why visualising data?</a><ul>
 <li class="chapter" data-level="4.1.1" data-path="ggplot2.html"><a href="ggplot2.html#the-anscombes-quartet"><i class="fa fa-check"></i><b>4.1.1</b> The Anscombe’s Quartet</a></li>
 <li class="chapter" data-level="4.1.2" data-path="ggplot2.html"><a href="ggplot2.html#the-datasaurus"><i class="fa fa-check"></i><b>4.1.2</b> The DataSaurus</a></li>
 </ul></li>
@@ -264,7 +264,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <p>You can find some R answers here:</p>
 <ul>
-<li>R for data science <span class="citation">(Wickham and Grolemund <a href="#ref-wickham16" role="doc-biblioref">2016</a>)</span>, it is online</li>
+<li>R for data science <span class="citation">(Wickham <a href="#ref-wickham16" role="doc-biblioref">2016</a>)</span>, it is online</li>
 <li><a href="https://community.rstudio.com/">R community</a></li>
 <li><a href="https://stackoverflow.com">stackoverflow</a></li>
 <li>any search engine you use</li>
@@ -306,11 +306,11 @@ So you are ready to solve some really hard equations (round it four decimal plac
 </p>
 </div>
 <p><span class="math display">\[\frac{\pi+2}{2^{3-\pi}}\]</span></p>
-<form name="Form1" onsubmit="return validateForm1()" method="post">
-<input type="text" name="answer1">
-<input type="submit" value="check">
+<form name="form_1_1" onsubmit="return validate_form_1_1()" method="post">
+<input type="text" name="answer_1_1"><input type="submit" value="check">
 </form>
-<p><br></p>
+<br>
+<script> function validate_form_1_1() {var x = document.forms["form_1_1"]["answer_1_1"].value;if (x == "6.77492737385807"){alert("Correct");return false;} else {alert("I have a different answer");return false;}} </script>
 <details>
 <p><summary> 📋 list of hints ➡ </summary></p>
 <details>
@@ -369,11 +369,11 @@ Even though there isn’t any brackets in the mathematical notation, you need to
 <pre><code>## [1] 2</code></pre>
 <p>There are some functions without any arguments, but you still should use parenthesis:</p>
 <div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="intro.html#cb51-1"></a><span class="kw">Sys.Date</span>() <span class="co"># correct</span></span></code></pre></div>
-<pre><code>## [1] &quot;2020-02-12&quot;</code></pre>
+<pre><code>## [1] &quot;2020-02-13&quot;</code></pre>
 <div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="intro.html#cb53-1"></a>Sys.Date <span class="co"># wrong</span></span></code></pre></div>
 <pre><code>## function () 
 ## as.Date(as.POSIXlt(Sys.time()))
-## &lt;bytecode: 0x61b8c7bc0fd0&gt;
+## &lt;bytecode: 0x601b55a8b560&gt;
 ## &lt;environment: namespace:base&gt;</code></pre>
 <p>Each function in R is documented. You can read its documentation typing a question mark before the function name:</p>
 <div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="intro.html#cb55-1"></a>?Sys.Date</span></code></pre></div>
@@ -383,11 +383,11 @@ Explore the function <code>log()</code> and calculate the following logarithm:
 </p>
 </div>
 <p><span class="math display">\[\log_3(3486784401)\]</span></p>
-<form name="Form2" onsubmit="return validateForm2()" method="post">
-<input type="text" name="answer2">
-<input type="submit" value="check">
+<form name="form_1_2" onsubmit="return validate_form_1_2()" method="post">
+<input type="text" name="answer_1_2"><input type="submit" value="check">
 </form>
-<p><br></p>
+<br>
+<script> function validate_form_1_2() {var x = document.forms["form_1_2"]["answer_1_2"].value;if (x == "20"){alert("Correct");return false;} else {alert("I have a different answer");return false;}} </script>
 <details>
 <p><summary> 📋 list of hints ➡ </summary></p>
 <details>
@@ -484,7 +484,7 @@ As a result, no output in the Console, and a new variable <em>x</em> appear in t
 <pre><code>##  [1] 60 59 58 57 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36
 ## [26] 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11
 ## [51] 10  9  8  7  6  5  4  3  2  1</code></pre>
-<p>There is also a function <code>sec()</code> for creation of arithmetic progressions:</p>
+<p>There is also a function <code>seq()</code> for creation of arithmetic progressions:</p>
 <div class="sourceCode" id="cb102"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb102-1"><a href="intro.html#cb102-1"></a><span class="dv">1</span><span class="op">:</span><span class="dv">20</span></span></code></pre></div>
 <pre><code>##  [1]  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20</code></pre>
 <div class="sourceCode" id="cb104"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb104-1"><a href="intro.html#cb104-1"></a><span class="kw">seq</span>(<span class="dt">from =</span> <span class="dv">1</span>, <span class="dt">to =</span> <span class="dv">20</span>, <span class="dt">by =</span> <span class="dv">1</span>)</span></code></pre></div>
@@ -645,10 +645,10 @@ How many elements in the vector <code>g</code> if expression <code>g[pi &lt; 100
 <pre><code>## ── Conflicts ───────────────────────── tidyverse_conflicts() ──
 ## x dplyr::filter() masks stats::filter()
 ## x dplyr::lag()    masks stats::lag()</code></pre>
-<p>Not loading package is the most popular mistake of my students. So remember:</p>
+<p>Not loading a package is the most popular mistake of my students. So remember:</p>
 <ul>
 <li><code>install.packages("...")</code> is like you are buying a screwdriver set;</li>
-<li><code>library("...")</code> is like you are stusing art your screwdriver.</li>
+<li><code>library("...")</code> is like you are starting to use your screwdriver.</li>
 </ul>
 <p><img src="images/01.05.install-packages-vs-library.png" /></p>
 <p>For the further lectures we will need <code>tidyverse</code> package.</p>
@@ -661,7 +661,7 @@ Please install <code>tidyverse</code> package and load it.
 <h3><span class="header-section-number">2.8.1</span> <code>tidyverse</code></h3>
 <p>The <a href="https://blog.rstudio.org/2016/09/15/tidyverse-1-0-0/"><code>tidyverse</code></a> is a set of packages:</p>
 <ul>
-<li><code>tibble</code>, for tibbles, a modern re-imagining of data frames — analugue of tables in R</li>
+<li><code>tibble</code>, for tibbles, a modern re-imagining of data frames — analogue of tables in R</li>
 <li><code>readr</code>, for data import</li>
 <li><code>dplyr</code>, for data manipulation</li>
 <li><code>tidyr</code>, for data tidying (we will discuss it later today)</li>
@@ -742,21 +742,21 @@ Please install <code>tidyverse</code> package and load it.
 How many rows are in the <code>iris</code> dataframe?
 </p>
 </div>
-<form name="Form4" onsubmit="return validateForm4()" method="post">
-<input type="text" name="answer4">
-<input type="submit" value="check">
+<form name="form_1_3" onsubmit="return validate_form_1_3()" method="post">
+<input type="text" name="answer_1_3"><input type="submit" value="check">
 </form>
-<p><br></p>
+<br>
+<script> function validate_form_1_3() {var x = document.forms["form_1_3"]["answer_1_3"].value;if (x == "150"){alert("Correct");return false;} else {alert("I have a different answer");return false;}} </script>
 <div class="rmdtask">
 <p>
 How many columns are in the <code>mtcars</code> dataframe?
 </p>
 </div>
-<form name="Form4" ons5bmit="return validateForm4()" m5thod="post">
-<input type="text" name="answer4">
-<i5put type="submit" value="check">
+<form name="form_1_4" onsubmit="return validate_form_1_4()" method="post">
+<input type="text" name="answer_1_4"><input type="submit" value="check">
 </form>
-<p><br></p>
+<br>
+<script> function validate_form_1_4() {var x = document.forms["form_1_4"]["answer_1_4"].value;if (x == "11"){alert("Correct");return false;} else {alert("I have a different answer");return false;}} </script>
 <div id="indexing-dataframes" class="section level3">
 <h3><span class="header-section-number">2.9.1</span> Indexing dataframes</h3>
 <p>Since dataframes are two-dimensional objects it is possible to index its rows and columns. Rows are the first index, columns are the second index:</p>
@@ -912,47 +912,6 @@ Because of the 2019–20 Wuhan coronavirus outbreak the city of Wuhan is on medi
 <li>multiple templates for different scientific journals (package <code>rticsles</code> and <code>papaja</code>)</li>
 <li>…</li>
 </ul>
-<script>
-function validateForm1() {
-    var x = document.forms["Form1"]["answer1"].value;
-    if (x != "6.77495.6718       alert("I have a different answer...");
-        return false;
-    } else {
-        alert("Correct!");
-        return false;
-    }
-}
-function validateForm2() {
-    var x = document.forms["Form2"]["answer2"].value;
-    if (x != "20") {
-        alert("I have a different answer...");
-        return false;
-    } else {
-        alert("Correct!");
-        return false;
-    }
-}
-function validateForm4() {
-    var x = document.forms["Form4"]["answer4"].value;
-    if (x != "150") {
-        alert("I have a different answer...");
-        return false;
-    } else {
-        alert("Correct!");
-        return false;
-    }
-}
-function validateForm5() {
-    var x = document.forms["Form5"]["answer5"].value;
-    if (x != "11") {
-        alert("I have a different answer...");
-        return false;
-    } else {
-        alert("Correct!");
-        return false;
-    }
-}
-</script>
 
 </div>
 </div>
@@ -992,7 +951,7 @@ function validateForm5() {
 <p>VanderPlas, Jake. 2016. <em>Python Data Science Handbook: Essential Tools for Working with Data</em>. O’Reilly Media, Inc.</p>
 </div>
 <div id="ref-wickham16">
-<p>Wickham, Hadley, and Garrett Grolemund. 2016. <em>R for Data Science: Import, Tidy, Transform, Visualize, and Model Data</em>. O’Reilly Media, Inc.</p>
+<p>Wickham, Hadley. 2016. <em>Ggplot2: Elegant Graphics for Data Analysis</em>. Springer-Verlag New York. <a href="https://ggplot2.tidyverse.org">https://ggplot2.tidyverse.org</a>.</p>
 </div>
 </div>
             </section>

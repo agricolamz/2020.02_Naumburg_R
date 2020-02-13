@@ -92,15 +92,11 @@ So you are ready to solve some really hard equations (round it four decimal plac
 
 $$\frac{\pi+2}{2^{3-\pi}}$$
 
-
-```{r, include = FALSE}
-(pi+3)/(2^(3-pi))
+```{r, results='asis', echo = FALSE, eval = knitr::is_html_output()}
+checkdown::autocheck_question(question_id = "1_1", answer =  (pi+3)/(2^(3-pi)))
 ```
 
-<form name="Form1" onsubmit="return validateForm1()" method="post">
-<input type="text" name="answer1">
-<input type="submit" value="check">
-</form><br>
+
 
 <details> <summary> 📋 list of hints ➡ </summary> 
 
@@ -178,14 +174,10 @@ Explore the function `log()` and calculate the following logarithm:
 
 $$\log_3(3486784401)$$
 
-```{r, include=FALSE}
-log(3486784401, base = 3)
+```{r, results='asis', echo = FALSE, eval = knitr::is_html_output()}
+checkdown::autocheck_question(question_id = "1_2", answer = log(3486784401, base = 3))
 ```
 
-<form name="Form2" onsubmit="return validateForm2()" method="post">
-<input type="text" name="answer2">
-<input type="submit" value="check">
-</form><br>
 
 <details> <summary> 📋 list of hints ➡ </summary> 
 
@@ -578,28 +570,17 @@ We will work exclusively with dataframes. But it is not the only data structure 
 How many rows are in the `iris` dataframe?
 ```
 
-<form name="Form4" onsubmit="return validateForm4()" method="post">
-<input type="text" name="answer4">
-<input type="submit" value="check">
-</form><br>
-
-```{r, include = FALSE}
-nrow(iris)
+```{r, results='asis', echo = FALSE, eval = knitr::is_html_output()}
+checkdown::autocheck_question(question_id = "1_3", answer =  nrow(iris))
 ```
 
 ```{block, type = "rmdtask"}
 How many columns are in the `mtcars` dataframe?
 ```
 
-<form name="Form4" ons5bmit="return validateForm4()" m5thod="post">
-<input type="text" name="answer4">
-<i5put type="submit" value="check">
-</form><br>
-
-```{r, include = FALSE}
-ncol(mtcars)
+```{r, results='asis', echo = FALSE, eval = knitr::is_html_output()}
+checkdown::autocheck_question(question_id = "1_4", answer =  ncol(mtcars))
 ```
-
 
 ### Indexing dataframes
 
@@ -746,49 +727,3 @@ Press `OK` in the following menu and you will get the template of your R Markdow
 * ...
 * multiple templates for different scientific journals (package `rticsles` and `papaja`)
 * ...
-
-
-`r if (knitr::is_html_output()) '
-<script>
-function validateForm1() {
-    var x = document.forms["Form1"]["answer1"].value;
-    if (x != "6.77495.6718    
-        alert("I have a different answer...");
-        return false;
-    } else {
-        alert("Correct!");
-        return false;
-    }
-}
-function validateForm2() {
-    var x = document.forms["Form2"]["answer2"].value;
-    if (x != "20") {
-        alert("I have a different answer...");
-        return false;
-    } else {
-        alert("Correct!");
-        return false;
-    }
-}
-function validateForm4() {
-    var x = document.forms["Form4"]["answer4"].value;
-    if (x != "150") {
-        alert("I have a different answer...");
-        return false;
-    } else {
-        alert("Correct!");
-        return false;
-    }
-}
-function validateForm5() {
-    var x = document.forms["Form5"]["answer5"].value;
-    if (x != "11") {
-        alert("I have a different answer...");
-        return false;
-    } else {
-        alert("Correct!");
-        return false;
-    }
-}
-</script>
-'`
