@@ -4,9 +4,9 @@
 library("tidyverse")
 ```
 
-## Why visualise data?
+## Why visualising data?
 ### The Anscombe’s Quartet
-In Anscombe, F. J. (1973). "Graphs in Statistical Analysis" there were the following dataset:
+In Anscombe, F. J. (1973). "Graphs in Statistical Analysis" there was the following dataset:
 
 ```{r, message= FALSE}
 quartet <- read_csv("https://raw.githubusercontent.com/agricolamz/2020.02_Naumburg_R/master/data/anscombe.csv")
@@ -78,7 +78,7 @@ are usually created with a `geom_...()` function.
 
 ### Scaterplot
 
-I downloaded a Polish dictionary from [here](https://sjp.pl/slownik/odmiany/). I removed all abbreviations and proper names and took only one form from the paradigm. After all this I calculated the number of syllables (simply by countyng vowels, combinations of *i* and other vowels I counted as one) and number of symbols in each word. Here is the [result dataset](https://raw.githubusercontent.com/agricolamz/2020.02_Naumburg_R/master/data/polish_dictionary.csv).
+I downloaded a Polish dictionary from [here](https://sjp.pl/slownik/odmiany/). I removed all abbreviations and proper names and took only one form from the paradigm. After all this I calculated the number of syllables (simply by counting vowels, combinations of *i* and other vowels I counted as one) and number of symbols in each word. Here is the [result dataset](https://raw.githubusercontent.com/agricolamz/2020.02_Naumburg_R/master/data/polish_dictionary.csv).
 
 ```{block, type = "rmdtask"}
 Download this dataset to the variable `polish_dictionary`. How many words are there?
