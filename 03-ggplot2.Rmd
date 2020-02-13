@@ -96,15 +96,57 @@ So this data could be visualised using the following code:
 
 * `ggplot2`
 ```{r, eval = FALSE}
-ggplot(data = polish_dictionary, aes(n_char, n_vowels)) +
+ggplot(data = polish_dictionary, aes(x = n_char, y = n_vowels)) +
   geom_point()
 ```
 
-* `dplyr`, `ggplot2`
+* `dplyr` and `ggplot2`
 ```{r first_ggplot, cache=TRUE}
 polish_dictionary %>%
-  ggplot(aes(n_char, n_vowels))+
+  ggplot(aes(x = n_char, y = n_vowels))+
   geom_point()
 ```
 
+### Layers
+
+All commands in `ggplot2` are separated by `+` sign (author of the package, Hadley Wickham, [is deeply regrets that it is not `%>%`](https://www.youtube.com/watch?v=vYwXMnC03I4)), but their order matters:
+
+```{r layers_1, cache=TRUE}
+polish_dictionary %>%
+  ggplot(aes(n_char, n_vowels))+
+  geom_point()+
+  geom_smooth()
+```
+
+```{r layers_2, cache=TRUE}
+polish_dictionary %>%
+  ggplot(aes(n_char, n_vowels))+
+  geom_smooth()+
+  geom_point()
+```
+
+### `aes()`
+
+Since every `ggplot2` plot has data as a key components there is a function `aes()` that maps variables from dataframe onto visual properties of the graph. There is a simple rule:
+
+**If values are from dataframe put them into `aes()`, otherwise --- don't.**
+
+```{r, cache=TRUE}
+polish_dictionary %>%
+  ggplot(aes(n_char, n_vowels))+
+  geom_smooth()+
+  geom_point()
+```
+
+```{r, cache=TRUE}
+diamonds %>%
+  ggplot(aes(carat, price))+
+  geom_point(color = "green")
+```
+
+```{r, cache=TRUE}
+diamonds %>%
+  ggplot(aes(carat, price))+
+  geom_point(aes(color = cut))
+```
 
