@@ -134,13 +134,17 @@ diamonds %>%
 ```
 
 ```{block, type = "rmdtask"}
-In built-in dataset `starwars` filters those characters that are higher then 180 (`height`) and weigh less then 80 (`mass`). Then get a unique name of their homeworlds (`homeworld`).
+In built-in dataset `starwars` filter those characters that are higher then 180 (`height`) and weigh less then 80 (`mass`). How many unique names of their homeworlds (`homeworld`) is there?
 ```
 
-```{r, include=FALSE}
+```{r, results='asis', echo = FALSE, eval = knitr::is_html_output()}
 starwars %>% 
   filter(height > 180, mass < 80) %>% 
-  distinct(homeworld)
+  distinct(homeworld) %>% 
+  nrow() ->
+  answer
+  
+checkdown::autocheck_question(question_id = "2_1", answer =  answer)
 ```
 
 
@@ -157,17 +161,20 @@ misspellings %>%
 ```
 
 ```{block2, type = "rmdtask"}
-Creates a variable with body mass index [индексом Кетле](https://en.wikipedia.org/wiki/Body_mass_index):  $\frac{mass}{height^2}$ for all characters from `starwars` dataset. How many charachters have obesity (have body mass index greater 30)? (Don't forget to convert height from centimetres to metres).
+Create a variable with body mass index [индексом Кетле](https://en.wikipedia.org/wiki/Body_mass_index):  $\frac{mass}{height^2}$ for all characters from `starwars` dataset. How many charachters have obesity (have body mass index greater 30)? (Don't forget to convert height from centimetres to metres).
 ```
 
-```{r,include=FALSE}
+```{r, results='asis', echo = FALSE, eval = knitr::is_html_output()}
 starwars %>% 
   mutate(height = height/100,
          BMI = mass/(height^2)) %>% 
   select(name, height, mass, BMI) %>% 
-  filter(BMI >= 30)
+  filter(BMI >= 30) %>% 
+  nrow() ->
+  answer
+  
+checkdown::autocheck_question(question_id = "2_2", answer =  answer)
 ```
-
 
 ### `group_by(...) %>% summarise(...)`
 
@@ -380,20 +387,32 @@ head(merged)
 Second, caclulate how many times the language name is the same in both sources.
 ```
 
-```{r,  include=FALSE}
+```{r, results='asis', echo = FALSE, eval = knitr::is_html_output()}
 merged %>% 
-  count(language_s1 == language_s2)
+  count(language_s1 == language_s2) %>% 
+  slice(2) %>% 
+  select(n) %>% 
+  unlist() ->
+  answer
+  
+checkdown::autocheck_question(question_id = "2_3", answer =  answer)
 ```
 
 ```{block, type = "rmdtask"}
-Third, calculate mena altitude for languages from the first source. Which is the highest?
+Third, calculate mean altitude for languages from the first source. Which is the highest?
 ```
 
-```{r,  include=FALSE}
+```{r, results='asis', echo = FALSE, eval = knitr::is_html_output()}
 merged %>% 
   group_by(language_s1) %>% 
   summarise(m_el = mean(elevation)) %>% 
-  arrange(-m_el)
+  arrange(-m_el) %>% 
+  head(1) %>% 
+  select(m_el) %>% 
+  unlist() ->
+  answer
+  
+checkdown::autocheck_question(question_id = "2_4", answer =  answer)
 ```
 
 ```{block, type = "rmdtask"}
@@ -407,5 +426,6 @@ merged %>%
   summarise(s_1885 <- sum(census_1885),
             s_1895 <- sum(census_1895),
             s_1926 <- sum(census_1926),
-            s_2010 <- sum(census_2010))
+            s_2010 <- sum(census_2010)) %>% 
+  filter(language_s2 == "Lak")
 ```
