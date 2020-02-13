@@ -78,7 +78,7 @@ are usually created with a `geom_...()` function.
 
 ### Scaterplot
 
-I downloaded a Polish dictionary from [here](https://sjp.pl/slownik/odmiany/). I removed all abbreviations and proper names and took only one form from the paradigm. After all this I calculated the number of syllables (simply by counting vowels, combinations of *i* and other vowels I counted as one) and number of symbols in each word. Here is the [result dataset](https://raw.githubusercontent.com/agricolamz/2020.02_Naumburg_R/master/data/polish_dictionary.csv).
+I downloaded a Polish dictionary from [here](https://sjp.pl/slownik/odmiany/). I removed all abbreviations and proper names and took only one form from the paradigm. After all this I calculated the number of syllables (simply by counting vowels, combinations of *i* and other vowels I counted as one), number of symbols in each word and extracted the first letter. Here is the [result dataset](https://raw.githubusercontent.com/agricolamz/2020.02_Naumburg_R/master/data/polish_dictionary.csv).
 
 ```{block, type = "rmdtask"}
 Download this dataset to the variable `polish_dictionary`. How many words are there?
@@ -87,6 +87,7 @@ Download this dataset to the variable `polish_dictionary`. How many words are th
 ```{r, include=FALSE}
 polish_dictionary <- read_csv("https://raw.githubusercontent.com/agricolamz/2020.02_Naumburg_R/master/data/polish_dictionary.csv")
 ```
+
 
 ```{r, results='asis', echo = FALSE, eval = knitr::is_html_output()}
 checkdown::autocheck_question(question_id = "3_1", answer =  nrow(polish_dictionary))
@@ -131,22 +132,21 @@ Since every `ggplot2` plot has data as a key components there is a function `aes
 
 **If values are from dataframe put them into `aes()`, otherwise --- don't.**
 
-```{r, cache=TRUE}
+```{r aes_1, cache=TRUE}
 polish_dictionary %>%
-  ggplot(aes(n_char, n_vowels))+
-  geom_smooth()+
+  ggplot(aes(n_char, n_vowels, color = first_letter))+
   geom_point()
 ```
 
 ```{r, cache=TRUE}
-diamonds %>%
-  ggplot(aes(carat, price))+
+polish_dictionary %>%
+  ggplot(aes(n_char, n_vowels))+
   geom_point(color = "green")
 ```
 
 ```{r, cache=TRUE}
-diamonds %>%
-  ggplot(aes(carat, price))+
-  geom_point(aes(color = cut))
+polish_dictionary %>%
+  ggplot(aes(n_char, n_vowels))+
+  geom_point(aes(color = first_letter))
 ```
 
