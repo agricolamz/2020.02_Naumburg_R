@@ -1,3 +1,8 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
 # Data visualisation: `ggplot2` {#ggplot2}
 
 ```{r, include=FALSE}
@@ -142,7 +147,7 @@ polish_dictionary %>%
   geom_point()
 ```
 
-```{r, cache=TRUE}
+```{r aes_2, cache=TRUE}
 polish_dictionary %>%
   ggplot(aes(n_char, n_vowels))+
   geom_point(color = "green")
@@ -152,5 +157,26 @@ polish_dictionary %>%
 polish_dictionary %>%
   ggplot(aes(n_char, n_vowels))+
   geom_point(aes(color = first_letter))
+```
+
+There are some other possibilities to mark categories:
+
+* with `shape` argument
+
+```{r shape, cache=TRUE}
+polish_dictionary %>%
+  filter(first_letter == "a" |
+           first_letter == "i" |
+           first_letter == "u") %>% 
+  ggplot(aes(n_char, n_vowels, shape = first_letter))+
+  geom_point()
+```
+
+* with `label` argument and `geom_text()`
+
+```{r label, cache=TRUE}
+diamonds %>%
+  ggplot(aes(carat, price, label = color))+
+  geom_text()
 ```
 

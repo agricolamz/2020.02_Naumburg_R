@@ -1,3 +1,8 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
 # Data manipulation: `dplyr` {#dplyr}
 
 First, load the library:
@@ -68,6 +73,29 @@ sort(sqrt(abs(sin(1:22))), decreasing = TRUE)
 Pipes that are used in `tidyverse` are from the package `magrittr`. Sometimes pipe could work not well with functions outside the `tidyverse`.
 
 ![](images/02.02.magrittr.png)
+
+So `filter()` function returns rows with matching conditions:
+
+```{r}
+misspellings %>%
+  filter(count < 10)
+```
+
+It is possible to use multiple conditions. How many wrong spellings of `Deschanel` were used by less then 10 users?
+
+```{r}
+misspellings %>%
+  filter(count < 10,
+         correct == "deschanel")
+```
+
+It is possible to use OR conditions. How many wrong spellings were used by less then 10 OR more then 500 users?
+
+```{r}
+misspellings %>%
+  filter(count < 10 |
+           count > 500)
+```
 
 ### `slice()`
 
