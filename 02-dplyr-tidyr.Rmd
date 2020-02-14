@@ -59,7 +59,7 @@ misspellings %>%
   filter(count < 10)
 ```
 
-`%>%` it is **pipe**. It allows to chain operations, putting the output of one function into the input of another:
+`%>%` it is **pipe** (hot key is `Ctrl Shift M`). It allows to chain operations, putting the output of one function into the input of another:
 
 ```{r}
 sort(sqrt(abs(sin(1:22))), decreasing = TRUE)
@@ -189,7 +189,7 @@ misspellings %>%
 ```
 
 ```{block2, type = "rmdtask"}
-Create a variable with body mass index [индексом Кетле](https://en.wikipedia.org/wiki/Body_mass_index):  $\frac{mass}{height^2}$ for all characters from `starwars` dataset. How many charachters have obesity (have body mass index greater 30)? (Don't forget to convert height from centimetres to metres).
+Create a variable with body mass index [Body mass index](https://en.wikipedia.org/wiki/Body_mass_index):  $\frac{mass}{height^2}$ for all characters from `starwars` dataset. How many charachters have obesity (have body mass index greater 30)? (Don't forget to convert height from centimetres to metres).
 ```
 
 ```{r, results='asis', echo = FALSE, eval = knitr::is_html_output()}
@@ -197,7 +197,7 @@ starwars %>%
   mutate(height = height/100,
          BMI = mass/(height^2)) %>% 
   select(name, height, mass, BMI) %>% 
-  filter(BMI >= 30) %>% 
+  filter(BMI >= 20)
   nrow() ->
   answer
   
