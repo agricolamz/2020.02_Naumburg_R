@@ -335,7 +335,7 @@ Here is a dataset with the number of speakers of some language of India accordin
 langs_in_india_short <- read_csv("https://raw.githubusercontent.com/agricolamz/2020.02_Naumburg_R/master/data/languages_in_india.csv")
 ```
 
-* Short format
+* Wide format
 
 ```{r}
 langs_in_india_short
@@ -350,7 +350,9 @@ langs_in_india_short %>%
 langs_in_india_long
 ```
 
-* Short format → Long format: `tidyr::pivot_longer()`
+* Wide format → Long format: `tidyr::pivot_longer()`
+
+![](images/02.08.tidy_long.png)
 
 ```{r}
 langs_in_india_short %>% 
@@ -360,7 +362,9 @@ langs_in_india_short %>%
 langs_in_india_long
 ```
 
-* Long format → Short format: `tidyr::pivot_wider()`
+* Long format → Wide format: `tidyr::pivot_wider()`
+
+![](images/02.09.tidy_wide.png)
 
 ```{r}
 langs_in_india_long %>% 
@@ -369,6 +373,13 @@ langs_in_india_long %>%
 langs_in_india_short
 ```
 
+### Tidy data
+
+You can represent the same underlying data in multiple ways. The whole `tidyverse` phylosophy built upon the tidy datasets, that are datasets where:
+
+* Each variable must have its own column.
+* Each observation must have its own row.
+* Each value must have its own cell.
 
 ```{block, type = "rmdtask"}
 [Here](https://github.com/agricolamz/2020.02_Naumburg_R/raw/master/data/daghestan_census.xlsx) is data, that contains information about villages of Daghestan in `.xlsx` format. The data is separated by different sheets and contains the following variables (data obtained from different sources, so they have suffixes `_s1` -- first source and `_s2` -- second source):

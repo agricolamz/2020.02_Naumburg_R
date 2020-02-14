@@ -117,7 +117,7 @@ polish_dictionary %>%
   geom_point()
 ```
 
-### Layers
+#### Layers
 
 All commands in `ggplot2` are separated by `+` sign (author of the package, Hadley Wickham, [is deeply regrets that it is not `%>%`](https://www.youtube.com/watch?v=vYwXMnC03I4)), but their order matters:
 
@@ -135,7 +135,7 @@ polish_dictionary %>%
   geom_point()
 ```
 
-### `aes()`
+#### `aes()`
 
 Since every `ggplot2` plot has data as a key components there is a function `aes()` that maps variables from dataframe onto visual properties of the graph. There is a simple rule:
 
@@ -175,8 +175,72 @@ polish_dictionary %>%
 * with `label` argument and `geom_text()`
 
 ```{r label, cache=TRUE}
-diamonds %>%
-  ggplot(aes(carat, price, label = color))+
+polish_dictionary %>%
+  filter(first_letter == "a" |
+           first_letter == "i" |
+           first_letter == "u") %>% 
+  ggplot(aes(n_char, n_vowels, label = first_letter))+
   geom_text()
 ```
 
+Sometimes annotations overlap:
+```{r}
+polish_dictionary %>%
+  slice(8400:8450) %>%  # lets pick 50 words from our dictionary
+  ggplot(aes(n_char, n_vowels, label = word))+
+  geom_text()
+```
+
+Then it is better to use `geom_text_repel()` from the `ggrepel` library (do not forget to download it using `install.packages("ggrepel")`):
+```{r}
+library("ggrepel")
+polish_dictionary %>%
+  slice(8400:8450) %>% 
+  ggplot(aes(n_char, n_vowels, label = word))+
+  geom_text_repel()
+```
+
+It looks better, when you add some points:
+
+```{r}
+polish_dictionary %>%
+  slice(8400:8450) %>% 
+  ggplot(aes(n_char, n_vowels, label = word))+
+  geom_text_repel()+
+  geom_point()
+```
+
+#### Annotate labels, axis, caption etc.
+
+```{r}
+polish_dictionary %>%
+  slice(8400:8450) %>% 
+  ggplot(aes(n_char, n_vowels, label = word))+
+  geom_text_repel()+
+  geom_point()+
+  labs(x = "number of characters",
+       y = "number of vowels",
+       title = "Correlation of number of characters and vowels",
+       subtitle = "data from sjp.pl",
+       caption = "this graph is created with ggplot2")
+```
+
+```{block, type = "rmdtask"}
+Download [this dataset](https://raw.githubusercontent.com/agricolamz/DS_for_DH/master/data/first_scatterplot.csv) and create a scatterplot. What is there?
+```
+
+```{r, results='asis', echo = FALSE, eval = knitr::is_html_output()}
+checkdown::autocheck_question(question_id = "3_2", answer =  "DH")
+```
+
+### Barplots
+
+The same data can be aggregated and non-aggregated:
+
+```{r}
+misspelling <- read_csv("https://raw.githubusercontent.com/agricolamz/DS_for_DH/master/data/misspelling_dataset.csv")
+misspelling
+```
+
+* variable `spelling` is **aggregated**: for each value of `speeling` variable there is a corresponging value in `count` variable.
+* variable `correct` is **non-aggregated**: there is no any variable associated with counts of `correct` variable
