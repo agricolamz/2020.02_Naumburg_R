@@ -528,11 +528,11 @@ moore_filmography
 
 There are a lot of built-in dataframes:
 
-```{r}
+```{r, eval = knitr::is_html_output()}
 mtcars
 iris
 ```
-
+  
 You can find information about them:
 
 ```{r, eval = FALSE}

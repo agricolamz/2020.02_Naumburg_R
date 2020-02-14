@@ -185,7 +185,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.3.1" data-path="dplyr.html"><a href="dplyr.html#bind_..."><i class="fa fa-check"></i><b>3.3.1</b> <code>bind_...</code></a></li>
 <li class="chapter" data-level="3.3.2" data-path="dplyr.html"><a href="dplyr.html#join"><i class="fa fa-check"></i><b>3.3.2</b> <code>.._join()</code></a></li>
 </ul></li>
-<li class="chapter" data-level="3.4" data-path="dplyr.html"><a href="dplyr.html#tidyr-package"><i class="fa fa-check"></i><b>3.4</b> <code>tidyr</code> package</a></li>
+<li class="chapter" data-level="3.4" data-path="dplyr.html"><a href="dplyr.html#tidyr-package"><i class="fa fa-check"></i><b>3.4</b> <code>tidyr</code> package</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="dplyr.html"><a href="dplyr.html#tidy-data"><i class="fa fa-check"></i><b>3.4.1</b> Tidy data</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="ggplot2.html"><a href="ggplot2.html"><i class="fa fa-check"></i><b>4</b> Data visualisation: <code>ggplot2</code></a><ul>
 <li class="chapter" data-level="4.1" data-path="ggplot2.html"><a href="ggplot2.html#why-visualising-data"><i class="fa fa-check"></i><b>4.1</b> Why visualising data?</a><ul>
@@ -194,9 +196,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="4.2" data-path="ggplot2.html"><a href="ggplot2.html#basic-ggplot2"><i class="fa fa-check"></i><b>4.2</b> Basic <code>ggplot2</code></a><ul>
 <li class="chapter" data-level="4.2.1" data-path="ggplot2.html"><a href="ggplot2.html#scaterplot"><i class="fa fa-check"></i><b>4.2.1</b> Scaterplot</a></li>
-<li class="chapter" data-level="4.2.2" data-path="ggplot2.html"><a href="ggplot2.html#layers"><i class="fa fa-check"></i><b>4.2.2</b> Layers</a></li>
-<li class="chapter" data-level="4.2.3" data-path="ggplot2.html"><a href="ggplot2.html#aes"><i class="fa fa-check"></i><b>4.2.3</b> <code>aes()</code></a></li>
+<li class="chapter" data-level="4.2.2" data-path="ggplot2.html"><a href="ggplot2.html#barplots"><i class="fa fa-check"></i><b>4.2.2</b> Barplots</a></li>
 </ul></li>
+<li class="chapter" data-level="4.3" data-path="ggplot2.html"><a href="ggplot2.html#faceting"><i class="fa fa-check"></i><b>4.3</b> Faceting</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="stringr.html"><a href="stringr.html"><i class="fa fa-check"></i><b>5</b> Strings manipulation: <code>stringr</code></a></li>
 <li class="chapter" data-level="6" data-path="texts.html"><a href="texts.html"><i class="fa fa-check"></i><b>6</b> Text manipulation: <code>gutenbergr</code>, <code>tidytext</code>, <code>udpipe</code></a></li>
@@ -375,7 +377,7 @@ Even though there isn’t any brackets in the mathematical notation, you need to
 <div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="intro.html#cb53-1"></a>Sys.Date <span class="co"># wrong</span></span></code></pre></div>
 <pre><code>## function () 
 ## as.Date(as.POSIXlt(Sys.time()))
-## &lt;bytecode: 0x5a5dafa0c990&gt;
+## &lt;bytecode: 0x62cf3233e580&gt;
 ## &lt;environment: namespace:base&gt;</code></pre>
 <p>Each function in R is documented. You can read its documentation typing a question mark before the function name:</p>
 <div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="intro.html#cb55-1"></a>?Sys.Date</span></code></pre></div>

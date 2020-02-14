@@ -97,7 +97,6 @@ Download this dataset to the variable `polish_dictionary`. How many words are th
 polish_dictionary <- read_csv("https://raw.githubusercontent.com/agricolamz/2020.02_Naumburg_R/master/data/polish_dictionary.csv")
 ```
 
-
 ```{r, results='asis', echo = FALSE, eval = knitr::is_html_output()}
 checkdown::autocheck_question(question_id = "3_1", answer =  nrow(polish_dictionary))
 ```
@@ -183,6 +182,18 @@ polish_dictionary %>%
   geom_text()
 ```
 
+* with `opacity` argument
+
+```{r}
+polish_dictionary %>%
+  filter(first_letter == "a" |
+           first_letter == "i" |
+           first_letter == "u") %>% 
+  ggplot(aes(n_char, n_vowels))+
+  geom_point(alpha = 0.1)
+```
+
+
 Sometimes annotations overlap:
 ```{r}
 polish_dictionary %>%
@@ -244,3 +255,203 @@ misspelling
 
 * variable `spelling` is **aggregated**: for each value of `speeling` variable there is a corresponging value in `count` variable.
 * variable `correct` is **non-aggregated**: there is no any variable associated with counts of `correct` variable
+
+In order to create a bar plot from aggregated data you need to use `geom_col()`:
+```{r}
+misspelling %>% 
+  slice(1:20) %>% 
+  ggplot(aes(spelling, count))+
+  geom_col()
+```
+
+Lets flip axes:
+```{r}
+misspelling %>% 
+  slice(1:20) %>% 
+  ggplot(aes(spelling, count))+
+  geom_col()+
+  coord_flip()
+```
+
+In order to create a bar plot from aggregated data you need to use `geom_bar()`:
+
+```{r}
+misspelling %>% 
+  ggplot(aes(correct))+
+  geom_bar()
+```
+
+Lets flip axes:
+```{r}
+misspelling %>% 
+  ggplot(aes(correct))+
+  geom_bar()+
+  coord_flip()
+```
+
+Non-aggregated data could be transform into aggregated
+```{r}
+misspelling %>% 
+  count(correct)
+```
+
+Aggregated data could be transform into non-aggregated
+```{r, eval = knitr::is_html_output()}
+misspelling %>% 
+  uncount(count)
+```
+
+#### Factors
+
+All variables in the previous section are ordered alphabetically. In order to create your own orders we need to look at factors:
+
+```{r}
+my_factor <- factor(misspelling$correct)
+head(my_factor)
+levels(my_factor)
+levels(my_factor) <- rev(levels(my_factor))
+head(my_factor)
+
+misspelling %>% 
+  mutate(correct = factor(correct, levels = c("deschanel",
+                                              "galifianakis",
+                                              "johansson",
+                                              "kaepernick",
+                                              "labeouf",
+                                              "macaulay",
+                                              "mcgwire",
+                                              "mclachlan",
+                                              "minaj",
+                                              "morissette",
+                                              "palahniuk",
+                                              "picabo",
+                                              "poehler",
+                                              "shyamalan",
+                                              "mcconaughey"))) %>% 
+  ggplot(aes(correct))+
+  geom_bar()+
+  coord_flip()
+```
+
+There is a package `forcats` for factors (it in `tidyverse`, [here is a cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/factors.pdf)). There are a lot of useful functions in `forcats`, but the one I use the most is the `fct_reorder()` function:
+
+```{r}
+misspelling %>% 
+  count(correct)
+
+misspelling %>% 
+  count(correct) %>% 
+  ggplot(aes(fct_reorder(correct, n), n))+
+  geom_col()+
+  coord_flip()
+```
+
+```{block, type = "rmdtask"}
+There is an [article](https://pudding.cool/2019/10/pubs/) on Pudding about English pubs. [Here](https://raw.githubusercontent.com/agricolamz/DS_for_DH/master/data/UK_pubs.csv) is an aggregated dataset, that they used. Visualise the 30 most popular pub's names in Great Britain. 
+```
+
+```{r, echo=FALSE, message = FALSE}
+read_csv("https://raw.githubusercontent.com/agricolamz/DS_for_DH/master/data/UK_pubs.csv") %>% 
+  count(pub_name, sort = TRUE) %>% 
+  mutate(pub_name = reorder(pub_name, n)) %>% 
+  slice(1:30) %>% 
+  ggplot(aes(pub_name, n, label = n))+
+  geom_col()+
+  geom_text(nudge_y = 10)+
+  coord_flip()+
+  labs(x = "", y = "", caption = "data from https://pudding.cool/2019/10/pubs/")
+```
+
+<details> <summary> 📋 list of hints ➡ </summary> 
+
+<details> <summary> 👁 How to get this counts? ➡ </summary>
+Use the `count` function. <br>
+</details>
+
+<details> <summary> 👁 Why there are so many values? ➡ </summary>
+In the task I asked you to take only 30 of them. May be you need the `slice()` function in order to do it. <br>
+</details> 
+
+<details> <summary> 👁 Why there are pubs with count 1 on my graph?. ➡ </summary>
+By default the `count` function does not sort anything, so you get only pubs with frequency 1 from the `slice()` function. In order to sort your values you need to use the `arrange()` function or use an additional `sort = TRUE` argument in the `count()` function. <br>
+</details> 
+
+<details> <summary> 👁 It looks like I've finished. ➡ </summary>
+Have you removed your x and y axes' annotation? Have you added the caption?
+<br>
+</details>
+</details>
+
+
+
+## Faceting
+
+
+Faceting -- is a really powerfull tool for data exploration. This function splits visualisations into subplots using some variable.
+
+```{r, fig.width=9, fig.height=12}
+misspelling %>% 
+  filter(count > 500) %>% 
+  ggplot(aes(fct_reorder(spelling, count), count))+
+  geom_col()+
+  coord_flip()
+misspelling %>% 
+  filter(count > 500) %>% 
+  ggplot(aes(fct_reorder(spelling, count), count))+
+  geom_col()+
+  coord_flip()+
+  facet_wrap(~correct)
+```
+
+By default `facet_wrap()` creates the same scale for all facets. This could be changed by argument `scales`:
+
+```{r, fig.width=9, fig.height=12}
+misspelling %>% 
+  filter(count > 500) %>% 
+  ggplot(aes(fct_reorder(spelling, count), count))+
+  geom_col()+
+  coord_flip()+
+  facet_wrap(~correct, scales = "free")
+```
+
+It is also possible to add multiple variables:
+
+```{r facet_wrap, fig.width=9, fig.height=12, cache=TRUE}
+diamonds %>% 
+  ggplot(aes(carat, price))+
+  geom_point(size = 0.3)+
+  facet_wrap(~color+cut, scales = "free")
+```
+
+There is a way to make it more compact using the `facet_grid()` function instead of the `facet_wrap()` function:
+
+```{r facet_grid, fig.width=9, fig.height=12, cache=TRUE}
+diamonds %>% 
+  ggplot(aes(carat, price))+
+  geom_point(size = 0.3)+
+  facet_grid(cut~color, scales = "free")
+```
+
+It is also possible to create a marginal summary with the `margins` argument of the `facet_grid()` function :
+
+```{r facet_margins, fig.width=9, fig.height=12, cache=TRUE}
+diamonds %>% 
+  ggplot(aes(carat, price))+
+  geom_point(size = 0.3)+
+  facet_grid(cut~color, scales = "free", margins = TRUE)
+```
+
+```{block, type = "rmdtask"}
+Use the `polish_dictionary` and reproduce the following graph.
+```
+
+```{r polish_facet, cache = TRUE, echo=FALSE, fig.width=9, fig.height=12}
+polish_dictionary %>% 
+  ggplot(aes(n_char, n_vowels))+
+  geom_point(alpha = 0.1)+
+  facet_wrap(~first_letter)+
+  labs(x = "number of characters",
+       y = "number of vowels",
+       caption = "data from sjp.pl")
+```
+
