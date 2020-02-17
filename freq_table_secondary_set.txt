@@ -1,0 +1,14 @@
+"hamlet_sample2" "polonius_sample2" "uncertain_1"
+"am" 0 0 0
+"i" 0 0 0
+"what" 0 0 0
+"a" 0 0 0
+"alone" 0 0 0
+"do" 0 0 0
+"lord" 0 0 0
+"my" 0 0 0
+"now" 0 0 0
+"o" 0 0 0
+"read" 0 0 0
+"slave" 0 0 0
+"you" 0 0 0

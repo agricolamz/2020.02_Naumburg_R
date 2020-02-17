@@ -1,0 +1,251 @@
+Source,Target,Weight,Type
+Błękit duszy.,Sonety X.,2,undirected
+Błękit duszy.,Sonety VII.,3,undirected
+Błękit duszy.,Nowe życie.,1,undirected
+Co mi się marzy?,Sonety X.,2,undirected
+Co mi się marzy?,Sonety VII.,3,undirected
+Co mi się marzy?,Nowe życie.,1,undirected
+Niewymarzona, a cudowna.,Sonety X.,2,undirected
+Niewymarzona, a cudowna.,Sonety VII.,3,undirected
+Niewymarzona, a cudowna.,Nowe życie.,1,undirected
+Do Duchów.,Sonety X.,2,undirected
+Do Duchów.,Sonety VII.,3,undirected
+Do Duchów.,Nowe życie.,1,undirected
+Do Pani D. P.[*],Sonety X.,2,undirected
+Do Pani D. P.[*],Sonety VII.,3,undirected
+Do Pani D. P.[*],Nowe życie.,1,undirected
+Sonety X.,Błękit duszy.,2,undirected
+Sonety X.,Co mi się marzy?,2,undirected
+Sonety X.,Niewymarzona, a cudowna.,2,undirected
+Sonety X.,Do Duchów.,2,undirected
+Sonety X.,Do Pani D. P.[*],2,undirected
+Sonety X.,Czas i wieczność.,2,undirected
+Sonety X.,Postanowienie.,2,undirected
+Sonety X.,Miłość ideału.,2,undirected
+Sonety X.,Sonety VII.,4,undirected
+Sonety X.,Sonety XVI.,1,undirected
+Sonety X.,Pożegnanie Italii.,2,undirected
+Sonety X.,Boleść rozłączenia.,2,undirected
+Sonety X.,Sonety krymskie XV.,1,undirected
+Sonety X.,Sonety krymskie IV.,2,undirected
+Sonety X.,Sonety XV.,1,undirected
+Sonety X.,Sonety XX.,2,undirected
+Sonety X.,Sonety III.,1,undirected
+Sonety X.,Sonety krymskie V.,1,undirected
+Sonety X.,Sonety IV.,2,undirected
+Sonety X.,Sonety krymskie II.,5,undirected
+Sonety X.,Sonety V.,1,undirected
+Sonety X.,Sonety XIII.,1,undirected
+Sonety X.,Gdzie cisza?,4,undirected
+Sonety X.,Sonety krymskie XIII.,2,undirected
+Sonety X.,Sonety VIII.,1,undirected
+Sonety X.,Sonety XVIII.,2,undirected
+Sonety X.,Sonety XXI.,2,undirected
+Czas i wieczność.,Sonety X.,2,undirected
+Czas i wieczność.,Sonety VII.,3,undirected
+Czas i wieczność.,Nowe życie.,1,undirected
+Postanowienie.,Sonety X.,2,undirected
+Postanowienie.,Sonety VII.,3,undirected
+Postanowienie.,Nowe życie.,1,undirected
+Miłość ideału.,Sonety X.,2,undirected
+Miłość ideału.,Sonety VII.,3,undirected
+Miłość ideału.,Nowe życie.,1,undirected
+Sonety VII.,Błękit duszy.,3,undirected
+Sonety VII.,Co mi się marzy?,3,undirected
+Sonety VII.,Niewymarzona, a cudowna.,3,undirected
+Sonety VII.,Do Duchów.,3,undirected
+Sonety VII.,Do Pani D. P.[*],3,undirected
+Sonety VII.,Sonety X.,4,undirected
+Sonety VII.,Czas i wieczność.,3,undirected
+Sonety VII.,Postanowienie.,3,undirected
+Sonety VII.,Miłość ideału.,3,undirected
+Sonety VII.,Sonety XVI.,2,undirected
+Sonety VII.,Pożegnanie Italii.,3,undirected
+Sonety VII.,Boleść rozłączenia.,3,undirected
+Sonety VII.,Sonety krymskie XV.,2,undirected
+Sonety VII.,Sonety krymskie IV.,3,undirected
+Sonety VII.,Sonety krymskie X.,1,undirected
+Sonety VII.,Sonety XV.,2,undirected
+Sonety VII.,Sonety XX.,3,undirected
+Sonety VII.,Sonety II.,1,undirected
+Sonety VII.,Sonety III.,2,undirected
+Sonety VII.,Sonety krymskie V.,2,undirected
+Sonety VII.,Sonety krymskie XI.,1,undirected
+Sonety VII.,Sonety XI.,1,undirected
+Sonety VII.,Sonety XIV.,4,undirected
+Sonety VII.,Nie wrócę już!,4,undirected
+Sonety VII.,Nowe życie.,1,undirected
+Sonety VII.,Sonety IV.,3,undirected
+Sonety VII.,Sonety krymskie VIII.,1,undirected
+Sonety VII.,Sonety krymskie XVII.,1,undirected
+Sonety VII.,Sonety V.,2,undirected
+Sonety VII.,Sonety XIII.,2,undirected
+Sonety VII.,Sonety XIX.,1,undirected
+Sonety VII.,Sonety XXII.,1,undirected
+Sonety VII.,Sonety krymskie IX.,1,undirected
+Sonety VII.,Sonety krymskie XII.,1,undirected
+Sonety VII.,Sonety krymskie XIII.,3,undirected
+Sonety VII.,Sonety VIII.,2,undirected
+Sonety VII.,Sonety XVIII.,3,undirected
+Sonety VII.,Sonety XXI.,3,undirected
+Sonety XVI.,Sonety X.,1,undirected
+Sonety XVI.,Sonety VII.,2,undirected
+Sonety XVI.,Sonety krymskie XV.,6,undirected
+Pożegnanie Italii.,Sonety X.,2,undirected
+Pożegnanie Italii.,Sonety VII.,3,undirected
+Pożegnanie Italii.,Nowe życie.,1,undirected
+Sonety krymskie III.,Sonety krymskie VI.,2,undirected
+Sonety krymskie III.,Sonety XII.,1,undirected
+Sonety krymskie III.,Sonety krymskie I.,5,undirected
+Boleść rozłączenia.,Sonety X.,2,undirected
+Boleść rozłączenia.,Sonety VII.,3,undirected
+Boleść rozłączenia.,Nowe życie.,1,undirected
+Sonety krymskie XV.,Sonety X.,1,undirected
+Sonety krymskie XV.,Sonety VII.,2,undirected
+Sonety krymskie XV.,Sonety XVI.,6,undirected
+Sonety krymskie IV.,Sonety X.,2,undirected
+Sonety krymskie IV.,Sonety VII.,3,undirected
+Sonety krymskie IV.,Nowe życie.,1,undirected
+Sonety krymskie X.,Sonety VII.,1,undirected
+Sonety krymskie X.,Sonety II.,6,undirected
+Sonety krymskie X.,Sonety krymskie XI.,4,undirected
+Sonety XV.,Sonety X.,1,undirected
+Sonety XV.,Sonety VII.,2,undirected
+Sonety XV.,Sonety VIII.,6,undirected
+Sonety XX.,Sonety X.,2,undirected
+Sonety XX.,Sonety VII.,3,undirected
+Sonety XX.,Sonety krymskie IX.,1,undirected
+Sonety I.,Sonety IX.,6,undirected
+Sonety I.,Sonety VI.,2,undirected
+Sonety I.,Sonety krymskie XVI.,3,undirected
+Sonety I.,Sonety krymskie XVIII.,2,undirected
+Sonety II.,Sonety VII.,1,undirected
+Sonety II.,Sonety krymskie X.,6,undirected
+Sonety II.,Sonety krymskie XI.,5,undirected
+Sonety III.,Sonety X.,1,undirected
+Sonety III.,Sonety VII.,2,undirected
+Sonety III.,Sonety krymskie V.,6,undirected
+Sonety IX.,Sonety I.,6,undirected
+Sonety IX.,Sonety VI.,4,undirected
+Sonety IX.,Sonety krymskie I.,5,undirected
+Sonety krymskie V.,Sonety X.,1,undirected
+Sonety krymskie V.,Sonety VII.,2,undirected
+Sonety krymskie V.,Sonety III.,6,undirected
+Sonety krymskie VI.,Sonety krymskie III.,2,undirected
+Sonety krymskie VI.,Sonety krymskie VII.,4,undirected
+Sonety krymskie VI.,Sonety XII.,3,undirected
+Sonety krymskie VI.,Sonety XVII.,5,undirected
+Sonety krymskie VII.,Sonety krymskie VI.,4,undirected
+Sonety krymskie VII.,Sonety XII.,3,undirected
+Sonety krymskie VII.,Sonety XVII.,2,undirected
+Sonety krymskie XI.,Sonety VII.,1,undirected
+Sonety krymskie XI.,Sonety krymskie X.,4,undirected
+Sonety krymskie XI.,Sonety II.,5,undirected
+Sonety VI.,Sonety I.,2,undirected
+Sonety VI.,Sonety IX.,4,undirected
+Sonety VI.,Sonety krymskie I.,1,undirected
+Sonety XI.,Sonety VII.,1,undirected
+Sonety XI.,Sonety XIV.,1,undirected
+Sonety XI.,Nie wrócę już!,6,undirected
+Sonety XI.,Sonety XIX.,5,undirected
+Sonety XII.,Sonety krymskie III.,1,undirected
+Sonety XII.,Sonety krymskie VI.,3,undirected
+Sonety XII.,Sonety krymskie VII.,3,undirected
+Sonety XII.,Sonety XII.,6,undirected
+Sonety XII.,Sonety XVII.,4,undirected
+Sonety XIV.,Sonety VII.,4,undirected
+Sonety XIV.,Sonety XI.,1,undirected
+Sonety XIV.,Nie wrócę już!,2,undirected
+Sonety XIV.,Sonety XXII.,2,undirected
+Nie wrócę już!,Sonety VII.,4,undirected
+Nie wrócę już!,Sonety XI.,6,undirected
+Nie wrócę już!,Sonety XIV.,2,undirected
+Nie wrócę już!,Sonety XIX.,3,undirected
+Nowe życie.,Błękit duszy.,1,undirected
+Nowe życie.,Co mi się marzy?,1,undirected
+Nowe życie.,Niewymarzona, a cudowna.,1,undirected
+Nowe życie.,Do Duchów.,1,undirected
+Nowe życie.,Do Pani D. P.[*],1,undirected
+Nowe życie.,Czas i wieczność.,1,undirected
+Nowe życie.,Postanowienie.,1,undirected
+Nowe życie.,Miłość ideału.,1,undirected
+Nowe życie.,Sonety VII.,1,undirected
+Nowe życie.,Pożegnanie Italii.,1,undirected
+Nowe życie.,Boleść rozłączenia.,1,undirected
+Nowe życie.,Sonety krymskie IV.,1,undirected
+Nowe życie.,Sonety IV.,1,undirected
+Nowe życie.,Sonety krymskie II.,3,undirected
+Nowe życie.,Gdzie cisza?,1,undirected
+Nowe życie.,Sonety krymskie XIII.,1,undirected
+Nowe życie.,Sonety krymskie XIV.,6,undirected
+Nowe życie.,Sonety XVIII.,1,undirected
+Nowe życie.,Sonety XXI.,1,undirected
+Sonety IV.,Sonety X.,2,undirected
+Sonety IV.,Sonety VII.,3,undirected
+Sonety IV.,Nowe życie.,1,undirected
+Sonety krymskie II.,Sonety X.,5,undirected
+Sonety krymskie II.,Nowe życie.,3,undirected
+Sonety krymskie II.,Gdzie cisza?,6,undirected
+Sonety krymskie II.,Sonety krymskie XIV.,1,undirected
+Sonety krymskie VIII.,Sonety VII.,1,undirected
+Sonety krymskie VIII.,Sonety krymskie XVII.,5,undirected
+Sonety krymskie VIII.,Sonety krymskie XII.,4,undirected
+Sonety krymskie XVI.,Sonety I.,3,undirected
+Sonety krymskie XVI.,Sonety krymskie XVIII.,6,undirected
+Sonety krymskie XVI.,Sonety krymskie I.,3,undirected
+Sonety krymskie XVI.,Sonety krymskie XIV.,2,undirected
+Sonety krymskie XVII.,Sonety VII.,1,undirected
+Sonety krymskie XVII.,Sonety krymskie VIII.,5,undirected
+Sonety krymskie XVII.,Sonety krymskie XII.,6,undirected
+Sonety krymskie XVIII.,Sonety I.,2,undirected
+Sonety krymskie XVIII.,Sonety krymskie XVI.,6,undirected
+Sonety krymskie XVIII.,Sonety krymskie I.,2,undirected
+Sonety krymskie XVIII.,Sonety krymskie IX.,3,undirected
+Sonety V.,Sonety X.,1,undirected
+Sonety V.,Sonety VII.,2,undirected
+Sonety V.,Sonety XIII.,3,undirected
+Sonety XIII.,Sonety X.,1,undirected
+Sonety XIII.,Sonety VII.,2,undirected
+Sonety XIII.,Sonety V.,3,undirected
+Sonety XIII.,Sonety XIII.,6,undirected
+Sonety XIX.,Sonety VII.,1,undirected
+Sonety XIX.,Sonety XI.,5,undirected
+Sonety XIX.,Nie wrócę już!,3,undirected
+Sonety XXII.,Sonety VII.,1,undirected
+Sonety XXII.,Sonety XIV.,2,undirected
+Sonety XXII.,Sonety XVII.,3,undirected
+Gdzie cisza?,Sonety X.,4,undirected
+Gdzie cisza?,Nowe życie.,1,undirected
+Gdzie cisza?,Sonety krymskie II.,6,undirected
+Sonety krymskie I.,Sonety krymskie III.,5,undirected
+Sonety krymskie I.,Sonety IX.,5,undirected
+Sonety krymskie I.,Sonety VI.,1,undirected
+Sonety krymskie I.,Sonety krymskie XVI.,3,undirected
+Sonety krymskie I.,Sonety krymskie XVIII.,2,undirected
+Sonety krymskie I.,Sonety krymskie IX.,2,undirected
+Sonety krymskie IX.,Sonety VII.,1,undirected
+Sonety krymskie IX.,Sonety XX.,1,undirected
+Sonety krymskie IX.,Sonety krymskie XVIII.,3,undirected
+Sonety krymskie IX.,Sonety krymskie I.,2,undirected
+Sonety krymskie XII.,Sonety VII.,1,undirected
+Sonety krymskie XII.,Sonety krymskie VIII.,4,undirected
+Sonety krymskie XII.,Sonety krymskie XVII.,6,undirected
+Sonety krymskie XIII.,Sonety X.,2,undirected
+Sonety krymskie XIII.,Sonety VII.,3,undirected
+Sonety krymskie XIII.,Nowe życie.,1,undirected
+Sonety krymskie XIV.,Nowe życie.,6,undirected
+Sonety krymskie XIV.,Sonety krymskie II.,1,undirected
+Sonety krymskie XIV.,Sonety krymskie XVI.,2,undirected
+Sonety VIII.,Sonety X.,1,undirected
+Sonety VIII.,Sonety VII.,2,undirected
+Sonety VIII.,Sonety XV.,6,undirected
+Sonety XVII.,Sonety krymskie VI.,5,undirected
+Sonety XVII.,Sonety krymskie VII.,2,undirected
+Sonety XVII.,Sonety XII.,4,undirected
+Sonety XVII.,Sonety XXII.,3,undirected
+Sonety XVIII.,Sonety X.,2,undirected
+Sonety XVIII.,Sonety VII.,3,undirected
+Sonety XVIII.,Nowe życie.,1,undirected
+Sonety XXI.,Sonety X.,2,undirected
+Sonety XXI.,Sonety VII.,3,undirected
+Sonety XXI.,Nowe życie.,1,undirected
