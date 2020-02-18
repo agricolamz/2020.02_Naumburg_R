@@ -1,2 +1,10 @@
-# Text manipulation: `gutenbergr`, `tidytext`, `udpipe` {#texts}
+# Text manipulations {#texts}
+
+## `gutenbergr`
+
+## `tidytext`
+
+## `udpipe`
+
+## `stylo` 
 

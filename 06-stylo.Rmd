@@ -1,2 +1,0 @@
-# Stylometric analysis: `stylo` {#stylo}
-
