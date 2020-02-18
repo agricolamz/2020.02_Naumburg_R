@@ -347,11 +347,11 @@ misspelling %>%
 ```
 
 ```{block, type = "rmdtask"}
-There is an [article](https://pudding.cool/2019/10/pubs/) on Pudding about English pubs. [Here](https://raw.githubusercontent.com/agricolamz/DS_for_DH/master/data/UK_pubs.csv) is an aggregated dataset, that they used. Visualise the 30 most popular pub's names in Great Britain. 
+There is an [article](https://pudding.cool/2019/10/pubs/) on Pudding about English pubs. [Here](https://raw.githubusercontent.com/agricolamz/DS_for_DH/master/data/UK_pubs.csv) is an aggregated dataset, that they used. Visualise the 30 most popular pub's names in UK. 
 ```
 
 ```{r, echo=FALSE, message = FALSE}
-read_csv("https://raw.githubusercontent.com/agricolamz/DS_for_DH/master/data/UK_pubs.csv") %>% 
+read_csv("https://raw.githubusercontent.com/agricolamz/2020.02_Naumburg_R/master/data/UK_pubs.csv") %>% 
   count(pub_name, sort = TRUE) %>% 
   mutate(pub_name = reorder(pub_name, n)) %>% 
   slice(1:30) %>% 

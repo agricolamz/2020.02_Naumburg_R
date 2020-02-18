@@ -1,2 +1,107 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
 # Strings manipulation: `stringr` {#stringr}
+
+We will use `stringr` package (in `tidyverse`) for string manipulation, so do not forget to load the `tidyverse` library.
+
+```{r, message = FALSE}
+library(tidyverse)
+```
+
+## How to create a string?
+
+In order to create a string you need to keep an eye on quotes:
+```{r}
+"the quick brown fox jumps over the lazy dog"
+'the quick brown fox jumps over the lazy dog'
+"the quick 'brown' fox jumps over the lazy dog"
+'the quick "brown" fox jumps over the lazy dog'
+"the quick \"brown\" fox jumps over the lazy dog"
+```
+
+There is also an empty string (it is not the same as `NA`):
+```{r}
+""
+''
+character(3)
+```
+
+It is possible to convert somthing to string:
+```{r}
+typeof(4:7)
+as.character(4:7)
+```
+
+In this section I will show all examples using build-in datasets:
+```{r}
+letters
+LETTERS
+month.name
+month.abb
+```
+
+## Merge strings
+
+The function `str_c()` joins two or more vectors element-wise into a single character vector:
+```{r}
+tibble(upper = rev(LETTERS), smaller = letters) %>% 
+  mutate(merge = str_c(upper, smaller))
+```
+
+It is possible to specify string, that will be inserted between input vectors.
+
+```{r}
+tibble(upper = rev(LETTERS), smaller = letters) %>% 
+  mutate(merge = str_c(upper, smaller, sep = "_"))
+```
+
+The `separate()` function turns a single character column into multiple columns using some pattern. This function has three arguments:
+
+* `col` -- column with vectors that should be separated
+* `into` -- vector of names of new columns
+* `sep` -- pattern that shoul be used as a separator
+
+```{r}
+tibble(mn = month.name) %>% 
+  separate(col = mn, into = c("column_1", "column_2"), sep = "r")
+```
+
+## Number of symbols
+
+![](images/5.01_str_length.png)
+
+```{r}
+tibble(mn = month.name) %>% 
+  mutate(n_charactars = str_count(mn))
+```
+
+There is an additional argument in the `str_count()` function that define a sting for counting: 
+
+```{r}
+tibble(mn = month.name) %>% 
+  mutate(n_r = str_count(mn, pattern = "r"))
+```
+
+```{block, type = "rmdtask"}
+There is an [article](https://pudding.cool/2019/10/pubs/) on Pudding about English pubs. [Here](https://raw.githubusercontent.com/agricolamz/DS_for_DH/master/data/UK_pubs.csv) is an aggregated dataset, that they used. Visualise the 30 most popular pub's names in UK. Visualise 40 most popular pub names in UK: number of symbols on x axis and number of pubs with this name on y axis.
+```
+
+```{r, echo=FALSE, message = FALSE}
+read_csv("https://raw.githubusercontent.com/agricolamz/2020.02_Naumburg_R/master/data/UK_pubs.csv") %>% 
+  count(pub_name, sort = TRUE) %>% 
+  mutate(nchar = str_length(pub_name)) %>% 
+  slice(1:40) %>% 
+  ggplot(aes(nchar, n, label = pub_name))+
+  geom_point()+
+  ggrepel::geom_text_repel()+
+  labs(x = "number of symbols",
+       y = "number of bars",
+       titles = "40 most popular bar names in UK",
+       caption = "data from https://pudding.cool/2019/10/pubs/")
+```
+
+
 
