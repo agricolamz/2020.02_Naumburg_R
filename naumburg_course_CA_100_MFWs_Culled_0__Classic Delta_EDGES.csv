@@ -1,260 +1,413 @@
 Source,Target,Weight,Type
-krasiński_Błękit duszy.,krasiński_Nowe życie.,3,undirected
-krasiński_Błękit duszy.,mickiewicz_Sonety krymskie III.,1,undirected
-krasiński_Błękit duszy.,mickiewicz_Sonety XVII.,2,undirected
-krasiński_Boleść rozłączenia.,krasiński_Nowe życie.,3,undirected
-krasiński_Boleść rozłączenia.,mickiewicz_Sonety krymskie III.,1,undirected
-krasiński_Boleść rozłączenia.,mickiewicz_Sonety XVII.,2,undirected
-krasiński_Co mi się marzy?,krasiński_Nowe życie.,3,undirected
-krasiński_Co mi się marzy?,mickiewicz_Sonety XIII.,2,undirected
-krasiński_Co mi się marzy?,mickiewicz_Sonety XVI.,1,undirected
-krasiński_Czas i wieczność.,krasiński_Nowe życie.,3,undirected
-krasiński_Czas i wieczność.,mickiewicz_Sonety krymskie III.,1,undirected
-krasiński_Czas i wieczność.,mickiewicz_Sonety XVII.,2,undirected
-krasiński_Do Duchów.,krasiński_Nowe życie.,3,undirected
-krasiński_Do Duchów.,mickiewicz_Sonety krymskie III.,1,undirected
-krasiński_Do Duchów.,mickiewicz_Sonety XVII.,2,undirected
-krasiński_Do Pani D. P.[*],krasiński_Nowe życie.,3,undirected
-krasiński_Do Pani D. P.[*],mickiewicz_Sonety krymskie III.,1,undirected
-krasiński_Do Pani D. P.[*],mickiewicz_Sonety XVII.,2,undirected
-krasiński_Gdzie cisza?,krasiński_Nowe życie.,2,undirected
-krasiński_Gdzie cisza?,mickiewicz_Sonety XVII.,1,undirected
-krasiński_Gdzie cisza?,mickiewicz_Sonety XXI.,6,undirected
-krasiński_Miłość ideału.,krasiński_Nowe życie.,3,undirected
-krasiński_Miłość ideału.,mickiewicz_Sonety krymskie III.,1,undirected
-krasiński_Miłość ideału.,mickiewicz_Sonety XVII.,2,undirected
-krasiński_Nie wrócę już!,krasiński_Nowe życie.,3,undirected
-krasiński_Nie wrócę już!,mickiewicz_Sonety krymskie III.,1,undirected
-krasiński_Nie wrócę już!,mickiewicz_Sonety XVII.,2,undirected
-krasiński_Niewymarzona, a cudowna.,krasiński_Nowe życie.,3,undirected
-krasiński_Niewymarzona, a cudowna.,mickiewicz_Sonety krymskie III.,1,undirected
-krasiński_Niewymarzona, a cudowna.,mickiewicz_Sonety XVII.,2,undirected
-krasiński_Nowe życie.,krasiński_Błękit duszy.,3,undirected
-krasiński_Nowe życie.,krasiński_Boleść rozłączenia.,3,undirected
-krasiński_Nowe życie.,krasiński_Co mi się marzy?,3,undirected
-krasiński_Nowe życie.,krasiński_Czas i wieczność.,3,undirected
-krasiński_Nowe życie.,krasiński_Do Duchów.,3,undirected
-krasiński_Nowe życie.,krasiński_Do Pani D. P.[*],3,undirected
-krasiński_Nowe życie.,krasiński_Gdzie cisza?,2,undirected
-krasiński_Nowe życie.,krasiński_Miłość ideału.,3,undirected
-krasiński_Nowe życie.,krasiński_Nie wrócę już!,3,undirected
-krasiński_Nowe życie.,krasiński_Niewymarzona, a cudowna.,3,undirected
-krasiński_Nowe życie.,krasiński_Postanowienie.,3,undirected
-krasiński_Nowe życie.,krasiński_Pożegnanie Italii.,2,undirected
-krasiński_Nowe życie.,mickiewicz_Sonety I.,3,undirected
-krasiński_Nowe życie.,mickiewicz_Sonety II.,2,undirected
-krasiński_Nowe życie.,mickiewicz_Sonety III.,1,undirected
-krasiński_Nowe życie.,mickiewicz_Sonety IX.,3,undirected
-krasiński_Nowe życie.,mickiewicz_Sonety krymskie I.,3,undirected
-krasiński_Nowe życie.,mickiewicz_Sonety krymskie III.,4,undirected
-krasiński_Nowe życie.,mickiewicz_Sonety krymskie IV.,1,undirected
-krasiński_Nowe życie.,mickiewicz_Sonety krymskie V.,1,undirected
-krasiński_Nowe życie.,mickiewicz_Sonety krymskie VI.,4,undirected
-krasiński_Nowe życie.,mickiewicz_Sonety krymskie VII.,2,undirected
-krasiński_Nowe życie.,mickiewicz_Sonety krymskie VIII.,1,undirected
-krasiński_Nowe życie.,mickiewicz_Sonety krymskie XI.,1,undirected
-krasiński_Nowe życie.,mickiewicz_Sonety krymskie XII.,1,undirected
-krasiński_Nowe życie.,mickiewicz_Sonety krymskie XIII.,2,undirected
-krasiński_Nowe życie.,mickiewicz_Sonety krymskie XIV.,2,undirected
-krasiński_Nowe życie.,mickiewicz_Sonety krymskie XVI.,1,undirected
-krasiński_Nowe życie.,mickiewicz_Sonety krymskie XVII.,2,undirected
-krasiński_Nowe życie.,mickiewicz_Sonety krymskie XVIII.,1,undirected
-krasiński_Nowe życie.,mickiewicz_Sonety VI.,1,undirected
-krasiński_Nowe życie.,mickiewicz_Sonety VII.,2,undirected
-krasiński_Nowe życie.,mickiewicz_Sonety VIII.,3,undirected
-krasiński_Nowe życie.,mickiewicz_Sonety X.,2,undirected
-krasiński_Nowe życie.,mickiewicz_Sonety XI.,1,undirected
-krasiński_Nowe życie.,mickiewicz_Sonety XII.,1,undirected
-krasiński_Nowe życie.,mickiewicz_Sonety XIII.,2,undirected
-krasiński_Nowe życie.,mickiewicz_Sonety XIV.,1,undirected
-krasiński_Nowe życie.,mickiewicz_Sonety XV.,2,undirected
-krasiński_Nowe życie.,mickiewicz_Sonety XVI.,2,undirected
-krasiński_Nowe życie.,mickiewicz_Sonety XVII.,6,undirected
-krasiński_Nowe życie.,mickiewicz_Sonety XVIII.,1,undirected
-krasiński_Nowe życie.,mickiewicz_Sonety XX.,3,undirected
-krasiński_Nowe życie.,mickiewicz_Sonety XXI.,2,undirected
-krasiński_Postanowienie.,krasiński_Nowe życie.,3,undirected
-krasiński_Postanowienie.,mickiewicz_Sonety krymskie III.,1,undirected
-krasiński_Postanowienie.,mickiewicz_Sonety XVII.,2,undirected
-krasiński_Pożegnanie Italii.,krasiński_Nowe życie.,2,undirected
-krasiński_Pożegnanie Italii.,mickiewicz_Sonety I.,3,undirected
-krasiński_Pożegnanie Italii.,mickiewicz_Sonety XVII.,1,undirected
-mickiewicz_Sonety I.,krasiński_Nowe życie.,3,undirected
-mickiewicz_Sonety I.,krasiński_Pożegnanie Italii.,3,undirected
-mickiewicz_Sonety I.,mickiewicz_Sonety krymskie VII.,2,undirected
-mickiewicz_Sonety I.,mickiewicz_Sonety XVII.,1,undirected
-mickiewicz_Sonety II.,krasiński_Nowe życie.,2,undirected
-mickiewicz_Sonety II.,mickiewicz_Sonety krymskie IX.,2,undirected
-mickiewicz_Sonety II.,mickiewicz_Sonety krymskie V.,2,undirected
-mickiewicz_Sonety II.,mickiewicz_Sonety krymskie XIV.,6,undirected
-mickiewicz_Sonety II.,mickiewicz_Sonety XXII.,1,undirected
-mickiewicz_Sonety III.,krasiński_Nowe życie.,1,undirected
-mickiewicz_Sonety III.,mickiewicz_Sonety krymskie XVIII.,5,undirected
-mickiewicz_Sonety III.,mickiewicz_Sonety XVIII.,3,undirected
-mickiewicz_Sonety IV.,mickiewicz_Sonety krymskie II.,2,undirected
-mickiewicz_Sonety IV.,mickiewicz_Sonety krymskie XV.,6,undirected
-mickiewicz_Sonety IV.,mickiewicz_Sonety V.,4,undirected
-mickiewicz_Sonety IX.,krasiński_Nowe życie.,3,undirected
-mickiewicz_Sonety IX.,mickiewicz_Sonety krymskie III.,1,undirected
-mickiewicz_Sonety IX.,mickiewicz_Sonety XVII.,2,undirected
-mickiewicz_Sonety krymskie I.,krasiński_Nowe życie.,3,undirected
-mickiewicz_Sonety krymskie I.,mickiewicz_Sonety krymskie III.,1,undirected
-mickiewicz_Sonety krymskie I.,mickiewicz_Sonety XVII.,2,undirected
-mickiewicz_Sonety krymskie II.,mickiewicz_Sonety IV.,2,undirected
-mickiewicz_Sonety krymskie II.,mickiewicz_Sonety krymskie III.,6,undirected
-mickiewicz_Sonety krymskie II.,mickiewicz_Sonety krymskie XV.,3,undirected
-mickiewicz_Sonety krymskie III.,krasiński_Błękit duszy.,1,undirected
-mickiewicz_Sonety krymskie III.,krasiński_Boleść rozłączenia.,1,undirected
-mickiewicz_Sonety krymskie III.,krasiński_Czas i wieczność.,1,undirected
-mickiewicz_Sonety krymskie III.,krasiński_Do Duchów.,1,undirected
-mickiewicz_Sonety krymskie III.,krasiński_Do Pani D. P.[*],1,undirected
-mickiewicz_Sonety krymskie III.,krasiński_Miłość ideału.,1,undirected
-mickiewicz_Sonety krymskie III.,krasiński_Nie wrócę już!,1,undirected
-mickiewicz_Sonety krymskie III.,krasiński_Niewymarzona, a cudowna.,1,undirected
-mickiewicz_Sonety krymskie III.,krasiński_Nowe życie.,4,undirected
-mickiewicz_Sonety krymskie III.,krasiński_Postanowienie.,1,undirected
-mickiewicz_Sonety krymskie III.,mickiewicz_Sonety IX.,1,undirected
-mickiewicz_Sonety krymskie III.,mickiewicz_Sonety krymskie I.,1,undirected
-mickiewicz_Sonety krymskie III.,mickiewicz_Sonety krymskie II.,6,undirected
-mickiewicz_Sonety krymskie III.,mickiewicz_Sonety krymskie VI.,1,undirected
-mickiewicz_Sonety krymskie III.,mickiewicz_Sonety krymskie XV.,1,undirected
-mickiewicz_Sonety krymskie III.,mickiewicz_Sonety V.,1,undirected
-mickiewicz_Sonety krymskie III.,mickiewicz_Sonety VIII.,1,undirected
-mickiewicz_Sonety krymskie III.,mickiewicz_Sonety XVII.,2,undirected
-mickiewicz_Sonety krymskie III.,mickiewicz_Sonety XX.,1,undirected
-mickiewicz_Sonety krymskie IV.,krasiński_Nowe życie.,1,undirected
-mickiewicz_Sonety krymskie IV.,mickiewicz_Sonety krymskie XI.,5,undirected
-mickiewicz_Sonety krymskie IV.,mickiewicz_Sonety krymskie XVI.,6,undirected
-mickiewicz_Sonety krymskie IX.,mickiewicz_Sonety II.,2,undirected
-mickiewicz_Sonety krymskie IX.,mickiewicz_Sonety XII.,5,undirected
-mickiewicz_Sonety krymskie IX.,mickiewicz_Sonety XXII.,3,undirected
-mickiewicz_Sonety krymskie V.,krasiński_Nowe życie.,1,undirected
-mickiewicz_Sonety krymskie V.,mickiewicz_Sonety II.,2,undirected
-mickiewicz_Sonety krymskie V.,mickiewicz_Sonety X.,6,undirected
-mickiewicz_Sonety krymskie VI.,krasiński_Nowe życie.,4,undirected
-mickiewicz_Sonety krymskie VI.,mickiewicz_Sonety krymskie III.,1,undirected
-mickiewicz_Sonety krymskie VI.,mickiewicz_Sonety XI.,3,undirected
-mickiewicz_Sonety krymskie VI.,mickiewicz_Sonety XVII.,3,undirected
-mickiewicz_Sonety krymskie VII.,krasiński_Nowe życie.,2,undirected
-mickiewicz_Sonety krymskie VII.,mickiewicz_Sonety I.,2,undirected
-mickiewicz_Sonety krymskie VII.,mickiewicz_Sonety krymskie XIII.,6,undirected
-mickiewicz_Sonety krymskie VII.,mickiewicz_Sonety XVII.,1,undirected
-mickiewicz_Sonety krymskie VIII.,krasiński_Nowe życie.,1,undirected
-mickiewicz_Sonety krymskie VIII.,mickiewicz_Sonety krymskie XII.,6,undirected
-mickiewicz_Sonety krymskie VIII.,mickiewicz_Sonety V.,2,undirected
-mickiewicz_Sonety krymskie X.,mickiewicz_Sonety VI.,4,undirected
-mickiewicz_Sonety krymskie X.,mickiewicz_Sonety XIV.,3,undirected
-mickiewicz_Sonety krymskie X.,mickiewicz_Sonety XIX.,6,undirected
-mickiewicz_Sonety krymskie XI.,krasiński_Nowe życie.,1,undirected
-mickiewicz_Sonety krymskie XI.,mickiewicz_Sonety krymskie IV.,5,undirected
-mickiewicz_Sonety krymskie XI.,mickiewicz_Sonety krymskie XVI.,4,undirected
-mickiewicz_Sonety krymskie XII.,krasiński_Nowe życie.,1,undirected
-mickiewicz_Sonety krymskie XII.,mickiewicz_Sonety krymskie VIII.,6,undirected
-mickiewicz_Sonety krymskie XII.,mickiewicz_Sonety krymskie XVII.,3,undirected
-mickiewicz_Sonety krymskie XII.,mickiewicz_Sonety V.,2,undirected
-mickiewicz_Sonety krymskie XIII.,krasiński_Nowe życie.,2,undirected
-mickiewicz_Sonety krymskie XIII.,mickiewicz_Sonety krymskie VII.,6,undirected
-mickiewicz_Sonety krymskie XIII.,mickiewicz_Sonety XVII.,1,undirected
-mickiewicz_Sonety krymskie XIV.,krasiński_Nowe życie.,2,undirected
-mickiewicz_Sonety krymskie XIV.,mickiewicz_Sonety II.,6,undirected
-mickiewicz_Sonety krymskie XIV.,mickiewicz_Sonety XVII.,1,undirected
-mickiewicz_Sonety krymskie XV.,mickiewicz_Sonety IV.,6,undirected
-mickiewicz_Sonety krymskie XV.,mickiewicz_Sonety krymskie II.,3,undirected
-mickiewicz_Sonety krymskie XV.,mickiewicz_Sonety krymskie III.,1,undirected
-mickiewicz_Sonety krymskie XV.,mickiewicz_Sonety V.,5,undirected
-mickiewicz_Sonety krymskie XVI.,krasiński_Nowe życie.,1,undirected
-mickiewicz_Sonety krymskie XVI.,mickiewicz_Sonety krymskie IV.,6,undirected
-mickiewicz_Sonety krymskie XVI.,mickiewicz_Sonety krymskie XI.,4,undirected
-mickiewicz_Sonety krymskie XVII.,krasiński_Nowe życie.,2,undirected
-mickiewicz_Sonety krymskie XVII.,mickiewicz_Sonety krymskie XII.,3,undirected
-mickiewicz_Sonety krymskie XVII.,mickiewicz_Sonety VII.,1,undirected
-mickiewicz_Sonety krymskie XVIII.,krasiński_Nowe życie.,1,undirected
-mickiewicz_Sonety krymskie XVIII.,mickiewicz_Sonety III.,5,undirected
-mickiewicz_Sonety krymskie XVIII.,mickiewicz_Sonety XVIII.,4,undirected
-mickiewicz_Sonety V.,mickiewicz_Sonety IV.,4,undirected
-mickiewicz_Sonety V.,mickiewicz_Sonety krymskie III.,1,undirected
-mickiewicz_Sonety V.,mickiewicz_Sonety krymskie VIII.,2,undirected
-mickiewicz_Sonety V.,mickiewicz_Sonety krymskie XII.,2,undirected
-mickiewicz_Sonety V.,mickiewicz_Sonety krymskie XV.,5,undirected
-mickiewicz_Sonety VI.,krasiński_Nowe życie.,1,undirected
-mickiewicz_Sonety VI.,mickiewicz_Sonety krymskie X.,4,undirected
-mickiewicz_Sonety VI.,mickiewicz_Sonety XIV.,3,undirected
-mickiewicz_Sonety VI.,mickiewicz_Sonety XIX.,2,undirected
-mickiewicz_Sonety VII.,krasiński_Nowe życie.,2,undirected
-mickiewicz_Sonety VII.,mickiewicz_Sonety krymskie XVII.,1,undirected
-mickiewicz_Sonety VII.,mickiewicz_Sonety XV.,6,undirected
-mickiewicz_Sonety VII.,mickiewicz_Sonety XVII.,1,undirected
-mickiewicz_Sonety VIII.,krasiński_Nowe życie.,3,undirected
-mickiewicz_Sonety VIII.,mickiewicz_Sonety krymskie III.,1,undirected
-mickiewicz_Sonety VIII.,mickiewicz_Sonety XVII.,2,undirected
-mickiewicz_Sonety X.,krasiński_Nowe życie.,2,undirected
-mickiewicz_Sonety X.,mickiewicz_Sonety krymskie V.,6,undirected
-mickiewicz_Sonety X.,mickiewicz_Sonety XVII.,1,undirected
-mickiewicz_Sonety XI.,krasiński_Nowe życie.,1,undirected
-mickiewicz_Sonety XI.,mickiewicz_Sonety krymskie VI.,3,undirected
-mickiewicz_Sonety XI.,mickiewicz_Sonety XII.,2,undirected
-mickiewicz_Sonety XII.,krasiński_Nowe życie.,1,undirected
-mickiewicz_Sonety XII.,mickiewicz_Sonety krymskie IX.,5,undirected
-mickiewicz_Sonety XII.,mickiewicz_Sonety XI.,2,undirected
-mickiewicz_Sonety XII.,mickiewicz_Sonety XXII.,4,undirected
-mickiewicz_Sonety XIII.,krasiński_Co mi się marzy?,2,undirected
-mickiewicz_Sonety XIII.,krasiński_Nowe życie.,2,undirected
-mickiewicz_Sonety XIII.,mickiewicz_Sonety XVI.,6,undirected
-mickiewicz_Sonety XIII.,mickiewicz_Sonety XVII.,1,undirected
-mickiewicz_Sonety XIV.,krasiński_Nowe życie.,1,undirected
-mickiewicz_Sonety XIV.,mickiewicz_Sonety krymskie X.,3,undirected
-mickiewicz_Sonety XIV.,mickiewicz_Sonety VI.,3,undirected
-mickiewicz_Sonety XIV.,mickiewicz_Sonety XIV.,6,undirected
-mickiewicz_Sonety XIV.,mickiewicz_Sonety XIX.,1,undirected
-mickiewicz_Sonety XIX.,mickiewicz_Sonety krymskie X.,6,undirected
-mickiewicz_Sonety XIX.,mickiewicz_Sonety VI.,2,undirected
-mickiewicz_Sonety XIX.,mickiewicz_Sonety XIV.,1,undirected
-mickiewicz_Sonety XV.,krasiński_Nowe życie.,2,undirected
-mickiewicz_Sonety XV.,mickiewicz_Sonety VII.,6,undirected
-mickiewicz_Sonety XV.,mickiewicz_Sonety XVII.,1,undirected
-mickiewicz_Sonety XVI.,krasiński_Co mi się marzy?,1,undirected
-mickiewicz_Sonety XVI.,krasiński_Nowe życie.,2,undirected
-mickiewicz_Sonety XVI.,mickiewicz_Sonety XIII.,6,undirected
-mickiewicz_Sonety XVI.,mickiewicz_Sonety XVII.,1,undirected
-mickiewicz_Sonety XVII.,krasiński_Błękit duszy.,2,undirected
-mickiewicz_Sonety XVII.,krasiński_Boleść rozłączenia.,2,undirected
-mickiewicz_Sonety XVII.,krasiński_Czas i wieczność.,2,undirected
-mickiewicz_Sonety XVII.,krasiński_Do Duchów.,2,undirected
-mickiewicz_Sonety XVII.,krasiński_Do Pani D. P.[*],2,undirected
-mickiewicz_Sonety XVII.,krasiński_Gdzie cisza?,1,undirected
-mickiewicz_Sonety XVII.,krasiński_Miłość ideału.,2,undirected
-mickiewicz_Sonety XVII.,krasiński_Nie wrócę już!,2,undirected
-mickiewicz_Sonety XVII.,krasiński_Niewymarzona, a cudowna.,2,undirected
-mickiewicz_Sonety XVII.,krasiński_Nowe życie.,6,undirected
-mickiewicz_Sonety XVII.,krasiński_Postanowienie.,2,undirected
-mickiewicz_Sonety XVII.,krasiński_Pożegnanie Italii.,1,undirected
-mickiewicz_Sonety XVII.,mickiewicz_Sonety I.,1,undirected
-mickiewicz_Sonety XVII.,mickiewicz_Sonety IX.,2,undirected
-mickiewicz_Sonety XVII.,mickiewicz_Sonety krymskie I.,2,undirected
-mickiewicz_Sonety XVII.,mickiewicz_Sonety krymskie III.,2,undirected
-mickiewicz_Sonety XVII.,mickiewicz_Sonety krymskie VI.,3,undirected
-mickiewicz_Sonety XVII.,mickiewicz_Sonety krymskie VII.,1,undirected
-mickiewicz_Sonety XVII.,mickiewicz_Sonety krymskie XIII.,1,undirected
-mickiewicz_Sonety XVII.,mickiewicz_Sonety krymskie XIV.,1,undirected
-mickiewicz_Sonety XVII.,mickiewicz_Sonety VII.,1,undirected
-mickiewicz_Sonety XVII.,mickiewicz_Sonety VIII.,2,undirected
-mickiewicz_Sonety XVII.,mickiewicz_Sonety X.,1,undirected
-mickiewicz_Sonety XVII.,mickiewicz_Sonety XIII.,1,undirected
-mickiewicz_Sonety XVII.,mickiewicz_Sonety XV.,1,undirected
-mickiewicz_Sonety XVII.,mickiewicz_Sonety XVI.,1,undirected
-mickiewicz_Sonety XVII.,mickiewicz_Sonety XX.,2,undirected
-mickiewicz_Sonety XVII.,mickiewicz_Sonety XXI.,1,undirected
-mickiewicz_Sonety XVIII.,krasiński_Nowe życie.,1,undirected
-mickiewicz_Sonety XVIII.,mickiewicz_Sonety III.,3,undirected
-mickiewicz_Sonety XVIII.,mickiewicz_Sonety krymskie XVIII.,4,undirected
-mickiewicz_Sonety XVIII.,mickiewicz_Sonety XVIII.,6,undirected
-mickiewicz_Sonety XX.,krasiński_Nowe życie.,3,undirected
-mickiewicz_Sonety XX.,mickiewicz_Sonety krymskie III.,1,undirected
-mickiewicz_Sonety XX.,mickiewicz_Sonety XVII.,2,undirected
-mickiewicz_Sonety XXI.,krasiński_Gdzie cisza?,6,undirected
-mickiewicz_Sonety XXI.,krasiński_Nowe życie.,2,undirected
-mickiewicz_Sonety XXI.,mickiewicz_Sonety XVII.,1,undirected
-mickiewicz_Sonety XXII.,mickiewicz_Sonety II.,1,undirected
-mickiewicz_Sonety XXII.,mickiewicz_Sonety krymskie IX.,3,undirected
-mickiewicz_Sonety XXII.,mickiewicz_Sonety XII.,4,undirected
-mickiewicz_Sonety XXII.,mickiewicz_Sonety XXII.,6,undirected
+Krasiński_Błękit duszy.,Mickiewicz_Sonety X.,2,undirected
+Krasiński_Błękit duszy.,Mickiewicz_Sonety VII.,3,undirected
+Krasiński_Błękit duszy.,Mickiewicz_Sonety krymskie VIII.,1,undirected
+Kochanowski_THREN XIX.,Mickiewicz_Sonety X.,2,undirected
+Kochanowski_THREN XIX.,Mickiewicz_Sonety VII.,3,undirected
+Kochanowski_THREN XIX.,Mickiewicz_Sonety krymskie VIII.,1,undirected
+Krasiński_Co mi się marzy?,Mickiewicz_Sonety X.,1,undirected
+Krasiński_Co mi się marzy?,Mickiewicz_Sonety VII.,2,undirected
+Krasiński_Co mi się marzy?,Oppman_SZOPKA.,3,undirected
+Krasiński_Niewymarzona, a cudowna.,Mickiewicz_Sonety X.,2,undirected
+Krasiński_Niewymarzona, a cudowna.,Mickiewicz_Sonety VII.,3,undirected
+Krasiński_Niewymarzona, a cudowna.,Mickiewicz_Sonety krymskie VIII.,1,undirected
+Krasiński_Do Duchów.,Mickiewicz_Sonety X.,2,undirected
+Krasiński_Do Duchów.,Mickiewicz_Sonety VII.,3,undirected
+Krasiński_Do Duchów.,Mickiewicz_Sonety krymskie VIII.,1,undirected
+Krasiński_Do Pani D. P.[*],Mickiewicz_Sonety X.,2,undirected
+Krasiński_Do Pani D. P.[*],Mickiewicz_Sonety VII.,3,undirected
+Krasiński_Do Pani D. P.[*],Mickiewicz_Sonety krymskie VIII.,1,undirected
+Mickiewicz_Sonety X.,Krasiński_Błękit duszy.,2,undirected
+Mickiewicz_Sonety X.,Kochanowski_THREN XIX.,2,undirected
+Mickiewicz_Sonety X.,Krasiński_Co mi się marzy?,1,undirected
+Mickiewicz_Sonety X.,Krasiński_Niewymarzona, a cudowna.,2,undirected
+Mickiewicz_Sonety X.,Krasiński_Do Duchów.,2,undirected
+Mickiewicz_Sonety X.,Krasiński_Do Pani D. P.[*],2,undirected
+Mickiewicz_Sonety X.,Kochanowski_THREN XV.,1,undirected
+Mickiewicz_Sonety X.,Krasiński_Czas i wieczność.,2,undirected
+Mickiewicz_Sonety X.,Krasiński_Postanowienie.,2,undirected
+Mickiewicz_Sonety X.,Krasiński_Miłość ideału.,2,undirected
+Mickiewicz_Sonety X.,Mickiewicz_Sonety VII.,2,undirected
+Mickiewicz_Sonety X.,Mickiewicz_Sonety XVI.,2,undirected
+Mickiewicz_Sonety X.,Oppman_PRZEWOŹNIK.,2,undirected
+Mickiewicz_Sonety X.,Kochanowski_THREN XVII.,2,undirected
+Mickiewicz_Sonety X.,Krasiński_Pożegnanie Italii.,2,undirected
+Mickiewicz_Sonety X.,Oppman_PIASKARZ.,2,undirected
+Mickiewicz_Sonety X.,Oppman_PRZEKUPKA MARCINOWA,1,undirected
+Mickiewicz_Sonety X.,Oppman_SZOPKA.,2,undirected
+Mickiewicz_Sonety X.,Kochanowski_THREN IX.,2,undirected
+Mickiewicz_Sonety X.,Kochanowski_THREN XII.,2,undirected
+Mickiewicz_Sonety X.,Krasiński_Boleść rozłączenia.,2,undirected
+Mickiewicz_Sonety X.,Kochanowski_THREN XVI.,1,undirected
+Mickiewicz_Sonety X.,Mickiewicz_Sonety XX.,1,undirected
+Mickiewicz_Sonety X.,Oppman_DZIADEK.,2,undirected
+Mickiewicz_Sonety X.,Oppman_KRAKOWIACZEK SKUBA.,2,undirected
+Mickiewicz_Sonety X.,Oppman_SIEROTKA.,1,undirected
+Mickiewicz_Sonety X.,Kochanowski_THREN IIII.,2,undirected
+Mickiewicz_Sonety X.,Kochanowski_THREN XIII.,1,undirected
+Mickiewicz_Sonety X.,Mickiewicz_Sonety IV.,1,undirected
+Mickiewicz_Sonety X.,Mickiewicz_Sonety krymskie II.,2,undirected
+Mickiewicz_Sonety X.,Oppman_STRAŻAK.,1,undirected
+Mickiewicz_Sonety X.,Krasiński_Gdzie cisza?,6,undirected
+Mickiewicz_Sonety X.,Mickiewicz_Sonety krymskie XIII.,1,undirected
+Mickiewicz_Sonety X.,Mickiewicz_Sonety XVIII.,2,undirected
+Mickiewicz_Sonety X.,Kochanowski_THREN XIIII.,1,undirected
+Kochanowski_THREN XV.,Mickiewicz_Sonety X.,1,undirected
+Kochanowski_THREN XV.,Mickiewicz_Sonety VII.,2,undirected
+Kochanowski_THREN XV.,Kochanowski_THREN XVI.,6,undirected
+Krasiński_Czas i wieczność.,Mickiewicz_Sonety X.,2,undirected
+Krasiński_Czas i wieczność.,Mickiewicz_Sonety VII.,3,undirected
+Krasiński_Czas i wieczność.,Mickiewicz_Sonety krymskie VIII.,1,undirected
+Krasiński_Postanowienie.,Mickiewicz_Sonety X.,2,undirected
+Krasiński_Postanowienie.,Mickiewicz_Sonety VII.,3,undirected
+Krasiński_Postanowienie.,Mickiewicz_Sonety krymskie VIII.,1,undirected
+Krasiński_Miłość ideału.,Mickiewicz_Sonety X.,2,undirected
+Krasiński_Miłość ideału.,Mickiewicz_Sonety VII.,3,undirected
+Krasiński_Miłość ideału.,Mickiewicz_Sonety krymskie VIII.,1,undirected
+Mickiewicz_Sonety VII.,Krasiński_Błękit duszy.,3,undirected
+Mickiewicz_Sonety VII.,Kochanowski_THREN XIX.,3,undirected
+Mickiewicz_Sonety VII.,Krasiński_Co mi się marzy?,2,undirected
+Mickiewicz_Sonety VII.,Krasiński_Niewymarzona, a cudowna.,3,undirected
+Mickiewicz_Sonety VII.,Krasiński_Do Duchów.,3,undirected
+Mickiewicz_Sonety VII.,Krasiński_Do Pani D. P.[*],3,undirected
+Mickiewicz_Sonety VII.,Mickiewicz_Sonety X.,2,undirected
+Mickiewicz_Sonety VII.,Kochanowski_THREN XV.,2,undirected
+Mickiewicz_Sonety VII.,Krasiński_Czas i wieczność.,3,undirected
+Mickiewicz_Sonety VII.,Krasiński_Postanowienie.,3,undirected
+Mickiewicz_Sonety VII.,Krasiński_Miłość ideału.,3,undirected
+Mickiewicz_Sonety VII.,Mickiewicz_Sonety XVI.,3,undirected
+Mickiewicz_Sonety VII.,Oppman_PRZEWOŹNIK.,3,undirected
+Mickiewicz_Sonety VII.,Kochanowski_THREN XVII.,3,undirected
+Mickiewicz_Sonety VII.,Krasiński_Pożegnanie Italii.,3,undirected
+Mickiewicz_Sonety VII.,Oppman_PIASKARZ.,3,undirected
+Mickiewicz_Sonety VII.,Oppman_PRZEKUPKA MARCINOWA,1,undirected
+Mickiewicz_Sonety VII.,Oppman_SZOPKA.,3,undirected
+Mickiewicz_Sonety VII.,Kochanowski_THREN XII.,3,undirected
+Mickiewicz_Sonety VII.,Krasiński_Boleść rozłączenia.,3,undirected
+Mickiewicz_Sonety VII.,Mickiewicz_Sonety krymskie XV.,1,undirected
+Mickiewicz_Sonety VII.,Kochanowski_THREN XVI.,2,undirected
+Mickiewicz_Sonety VII.,Mickiewicz_Sonety krymskie IV.,1,undirected
+Mickiewicz_Sonety VII.,Mickiewicz_Sonety krymskie X.,1,undirected
+Mickiewicz_Sonety VII.,Mickiewicz_Sonety XX.,2,undirected
+Mickiewicz_Sonety VII.,Kochanowski_THREN XVIII.,1,undirected
+Mickiewicz_Sonety VII.,Mickiewicz_Sonety II.,1,undirected
+Mickiewicz_Sonety VII.,Mickiewicz_Sonety krymskie V.,2,undirected
+Mickiewicz_Sonety VII.,Mickiewicz_Sonety krymskie XI.,1,undirected
+Mickiewicz_Sonety VII.,Mickiewicz_Sonety XI.,1,undirected
+Mickiewicz_Sonety VII.,Mickiewicz_Sonety XIV.,3,undirected
+Mickiewicz_Sonety VII.,Oppman_DZIADEK.,3,undirected
+Mickiewicz_Sonety VII.,Oppman_KRAKOWIACZEK SKUBA.,3,undirected
+Mickiewicz_Sonety VII.,Oppman_SIEROTKA.,2,undirected
+Mickiewicz_Sonety VII.,Kochanowski_THREN IIII.,3,undirected
+Mickiewicz_Sonety VII.,Kochanowski_THREN VI.,1,undirected
+Mickiewicz_Sonety VII.,Kochanowski_THREN XIII.,2,undirected
+Mickiewicz_Sonety VII.,Krasiński_Nie wrócę już!,2,undirected
+Mickiewicz_Sonety VII.,Mickiewicz_Sonety IV.,2,undirected
+Mickiewicz_Sonety VII.,Mickiewicz_Sonety krymskie VIII.,3,undirected
+Mickiewicz_Sonety VII.,Mickiewicz_Sonety XIX.,1,undirected
+Mickiewicz_Sonety VII.,Mickiewicz_Sonety XXII.,1,undirected
+Mickiewicz_Sonety VII.,Oppman_CZAROWNICA.,1,undirected
+Mickiewicz_Sonety VII.,Oppman_EMIGRANT.,1,undirected
+Mickiewicz_Sonety VII.,Oppman_MYŚLIWY.,1,undirected
+Mickiewicz_Sonety VII.,Oppman_SZEWC.,1,undirected
+Mickiewicz_Sonety VII.,Oppman_TWARDOWSKI.,1,undirected
+Mickiewicz_Sonety VII.,Mickiewicz_Sonety krymskie XIII.,3,undirected
+Mickiewicz_Sonety VII.,Mickiewicz_Sonety XVIII.,3,undirected
+Mickiewicz_Sonety VII.,Mickiewicz_Sonety XXI.,1,undirected
+Mickiewicz_Sonety VII.,Oppman_ŻAK.,1,undirected
+Mickiewicz_Sonety VII.,Kochanowski_THREN XIIII.,3,undirected
+Mickiewicz_Sonety XVI.,Mickiewicz_Sonety X.,2,undirected
+Mickiewicz_Sonety XVI.,Mickiewicz_Sonety VII.,3,undirected
+Mickiewicz_Sonety XVI.,Mickiewicz_Sonety krymskie XV.,2,undirected
+Mickiewicz_Sonety XVI.,Mickiewicz_Sonety krymskie VIII.,1,undirected
+Mickiewicz_Sonety XVI.,Oppman_CZAROWNICA.,3,undirected
+Oppman_PRZEWOŹNIK.,Mickiewicz_Sonety X.,2,undirected
+Oppman_PRZEWOŹNIK.,Mickiewicz_Sonety VII.,3,undirected
+Oppman_PRZEWOŹNIK.,Mickiewicz_Sonety krymskie VIII.,1,undirected
+Kochanowski_THREN XVII.,Mickiewicz_Sonety X.,2,undirected
+Kochanowski_THREN XVII.,Mickiewicz_Sonety VII.,3,undirected
+Kochanowski_THREN XVII.,Mickiewicz_Sonety krymskie VIII.,1,undirected
+Krasiński_Pożegnanie Italii.,Mickiewicz_Sonety X.,2,undirected
+Krasiński_Pożegnanie Italii.,Mickiewicz_Sonety VII.,3,undirected
+Krasiński_Pożegnanie Italii.,Mickiewicz_Sonety krymskie VIII.,1,undirected
+Mickiewicz_Sonety krymskie III.,Kochanowski_THREN XI.,2,undirected
+Mickiewicz_Sonety krymskie III.,Mickiewicz_Sonety krymskie XVI.,1,undirected
+Mickiewicz_Sonety krymskie III.,Mickiewicz_Sonety krymskie I.,5,undirected
+Mickiewicz_Sonety krymskie III.,Mickiewicz_Sonety krymskie IX.,1,undirected
+Mickiewicz_Sonety krymskie III.,Kochanowski_THREN V.,1,undirected
+Oppman_PIASKARZ.,Mickiewicz_Sonety X.,2,undirected
+Oppman_PIASKARZ.,Mickiewicz_Sonety VII.,3,undirected
+Oppman_PIASKARZ.,Mickiewicz_Sonety krymskie VIII.,1,undirected
+Oppman_PRZEKUPKA MARCINOWA,Mickiewicz_Sonety X.,1,undirected
+Oppman_PRZEKUPKA MARCINOWA,Mickiewicz_Sonety VII.,1,undirected
+Oppman_PRZEKUPKA MARCINOWA,Oppman_KOMINIARCZYK.,1,undirected
+Oppman_PRZEKUPKA MARCINOWA,Krasiński_Nowe życie.,6,undirected
+Oppman_PRZEKUPKA MARCINOWA,Kochanowski_THREN VIII.,1,undirected
+Oppman_PRZEKUPKA MARCINOWA,Krasiński_Gdzie cisza?,3,undirected
+Oppman_PRZEKUPKA MARCINOWA,Mickiewicz_Sonety krymskie XIV.,1,undirected
+Oppman_SZOPKA.,Krasiński_Co mi się marzy?,3,undirected
+Oppman_SZOPKA.,Mickiewicz_Sonety X.,2,undirected
+Oppman_SZOPKA.,Mickiewicz_Sonety VII.,3,undirected
+Oppman_SZOPKA.,Mickiewicz_Sonety krymskie VIII.,1,undirected
+Kochanowski_THREN I.,Kochanowski_THREN XVIII.,3,undirected
+Kochanowski_THREN I.,Oppman_KOMINIARCZYK.,2,undirected
+Kochanowski_THREN I.,Kochanowski_THREN XI.,3,undirected
+Kochanowski_THREN I.,Mickiewicz_Sonety krymskie XVI.,2,undirected
+Kochanowski_THREN I.,Mickiewicz_Sonety krymskie XVIII.,1,undirected
+Kochanowski_THREN IX.,Mickiewicz_Sonety X.,2,undirected
+Kochanowski_THREN IX.,Mickiewicz_Sonety krymskie II.,6,undirected
+Kochanowski_THREN IX.,Oppman_STRAŻAK.,4,undirected
+Kochanowski_THREN XII.,Mickiewicz_Sonety X.,2,undirected
+Kochanowski_THREN XII.,Mickiewicz_Sonety VII.,3,undirected
+Kochanowski_THREN XII.,Mickiewicz_Sonety krymskie VIII.,1,undirected
+Krasiński_Boleść rozłączenia.,Mickiewicz_Sonety X.,2,undirected
+Krasiński_Boleść rozłączenia.,Mickiewicz_Sonety VII.,3,undirected
+Krasiński_Boleść rozłączenia.,Mickiewicz_Sonety krymskie VIII.,1,undirected
+Mickiewicz_Sonety krymskie XV.,Mickiewicz_Sonety VII.,1,undirected
+Mickiewicz_Sonety krymskie XV.,Mickiewicz_Sonety XVI.,2,undirected
+Mickiewicz_Sonety krymskie XV.,Oppman_CZAROWNICA.,5,undirected
+Kochanowski_THREN II.,Mickiewicz_Sonety krymskie VIII.,3,undirected
+Kochanowski_THREN II.,Mickiewicz_Sonety V.,2,undirected
+Kochanowski_THREN II.,Mickiewicz_Sonety XIII.,1,undirected
+Kochanowski_THREN XVI.,Mickiewicz_Sonety X.,1,undirected
+Kochanowski_THREN XVI.,Kochanowski_THREN XV.,6,undirected
+Kochanowski_THREN XVI.,Mickiewicz_Sonety VII.,2,undirected
+Mickiewicz_Sonety krymskie IV.,Mickiewicz_Sonety VII.,1,undirected
+Mickiewicz_Sonety krymskie IV.,Kochanowski_THREN VI.,5,undirected
+Mickiewicz_Sonety krymskie IV.,Oppman_SZEWC.,4,undirected
+Mickiewicz_Sonety krymskie X.,Mickiewicz_Sonety VII.,1,undirected
+Mickiewicz_Sonety krymskie X.,Mickiewicz_Sonety II.,6,undirected
+Mickiewicz_Sonety krymskie X.,Mickiewicz_Sonety krymskie XI.,4,undirected
+Mickiewicz_Sonety XV.,Kochanowski_THREN X.,6,undirected
+Mickiewicz_Sonety XV.,Oppman_TWARDOWSKI.,3,undirected
+Mickiewicz_Sonety XV.,Mickiewicz_Sonety VIII.,4,undirected
+Mickiewicz_Sonety XX.,Mickiewicz_Sonety X.,1,undirected
+Mickiewicz_Sonety XX.,Mickiewicz_Sonety VII.,2,undirected
+Mickiewicz_Sonety XX.,Kochanowski_THREN XIII.,6,undirected
+Kochanowski_THREN III.,Mickiewicz_Sonety V.,4,undirected
+Kochanowski_THREN III.,Mickiewicz_Sonety XIII.,3,undirected
+Kochanowski_THREN III.,Oppman_OWCZAREK.,2,undirected
+Kochanowski_THREN X.,Mickiewicz_Sonety XV.,6,undirected
+Kochanowski_THREN X.,Oppman_TWARDOWSKI.,1,undirected
+Kochanowski_THREN X.,Mickiewicz_Sonety VIII.,3,undirected
+Kochanowski_THREN XVIII.,Mickiewicz_Sonety VII.,1,undirected
+Kochanowski_THREN XVIII.,Kochanowski_THREN I.,3,undirected
+Kochanowski_THREN XVIII.,Oppman_KOMINIARCZYK.,5,undirected
+Mickiewicz_Sonety I.,Mickiewicz_Sonety IX.,6,undirected
+Mickiewicz_Sonety I.,Mickiewicz_Sonety VI.,2,undirected
+Mickiewicz_Sonety I.,Kochanowski_THREN XI.,2,undirected
+Mickiewicz_Sonety I.,Mickiewicz_Sonety krymskie XVI.,1,undirected
+Mickiewicz_Sonety II.,Mickiewicz_Sonety VII.,1,undirected
+Mickiewicz_Sonety II.,Mickiewicz_Sonety krymskie X.,6,undirected
+Mickiewicz_Sonety II.,Mickiewicz_Sonety krymskie XI.,5,undirected
+Mickiewicz_Sonety III.,Mickiewicz_Sonety krymskie V.,6,undirected
+Mickiewicz_Sonety III.,Mickiewicz_Sonety krymskie VIII.,2,undirected
+Mickiewicz_Sonety III.,Mickiewicz_Sonety krymskie XVII.,1,undirected
+Mickiewicz_Sonety IX.,Mickiewicz_Sonety I.,6,undirected
+Mickiewicz_Sonety IX.,Mickiewicz_Sonety VI.,4,undirected
+Mickiewicz_Sonety IX.,Mickiewicz_Sonety krymskie I.,3,undirected
+Mickiewicz_Sonety krymskie V.,Mickiewicz_Sonety VII.,2,undirected
+Mickiewicz_Sonety krymskie V.,Mickiewicz_Sonety III.,6,undirected
+Mickiewicz_Sonety krymskie V.,Mickiewicz_Sonety krymskie VIII.,1,undirected
+Mickiewicz_Sonety krymskie VI.,Mickiewicz_Sonety krymskie VII.,4,undirected
+Mickiewicz_Sonety krymskie VI.,Mickiewicz_Sonety XII.,3,undirected
+Mickiewicz_Sonety krymskie VI.,Mickiewicz_Sonety XVII.,5,undirected
+Mickiewicz_Sonety krymskie VI.,Kochanowski_THREN V.,3,undirected
+Mickiewicz_Sonety krymskie VII.,Mickiewicz_Sonety krymskie VI.,4,undirected
+Mickiewicz_Sonety krymskie VII.,Mickiewicz_Sonety XII.,3,undirected
+Mickiewicz_Sonety krymskie VII.,Mickiewicz_Sonety XVII.,2,undirected
+Mickiewicz_Sonety krymskie XI.,Mickiewicz_Sonety VII.,1,undirected
+Mickiewicz_Sonety krymskie XI.,Mickiewicz_Sonety krymskie X.,4,undirected
+Mickiewicz_Sonety krymskie XI.,Mickiewicz_Sonety II.,5,undirected
+Mickiewicz_Sonety VI.,Mickiewicz_Sonety I.,2,undirected
+Mickiewicz_Sonety VI.,Mickiewicz_Sonety IX.,4,undirected
+Mickiewicz_Sonety VI.,Mickiewicz_Sonety krymskie I.,1,undirected
+Mickiewicz_Sonety XI.,Mickiewicz_Sonety VII.,1,undirected
+Mickiewicz_Sonety XI.,Mickiewicz_Sonety XIV.,1,undirected
+Mickiewicz_Sonety XI.,Krasiński_Nie wrócę już!,6,undirected
+Mickiewicz_Sonety XI.,Mickiewicz_Sonety XIX.,5,undirected
+Mickiewicz_Sonety XII.,Mickiewicz_Sonety krymskie VI.,3,undirected
+Mickiewicz_Sonety XII.,Mickiewicz_Sonety krymskie VII.,3,undirected
+Mickiewicz_Sonety XII.,Mickiewicz_Sonety XII.,6,undirected
+Mickiewicz_Sonety XII.,Mickiewicz_Sonety XVII.,4,undirected
+Mickiewicz_Sonety XII.,Kochanowski_THREN V.,2,undirected
+Mickiewicz_Sonety XIV.,Mickiewicz_Sonety VII.,3,undirected
+Mickiewicz_Sonety XIV.,Mickiewicz_Sonety XI.,1,undirected
+Mickiewicz_Sonety XIV.,Krasiński_Nie wrócę już!,2,undirected
+Mickiewicz_Sonety XIV.,Mickiewicz_Sonety XXII.,2,undirected
+Oppman_DZIADEK.,Mickiewicz_Sonety X.,2,undirected
+Oppman_DZIADEK.,Mickiewicz_Sonety VII.,3,undirected
+Oppman_DZIADEK.,Mickiewicz_Sonety krymskie VIII.,1,undirected
+Oppman_KOMINIARCZYK.,Oppman_PRZEKUPKA MARCINOWA,1,undirected
+Oppman_KOMINIARCZYK.,Kochanowski_THREN I.,2,undirected
+Oppman_KOMINIARCZYK.,Kochanowski_THREN XVIII.,5,undirected
+Oppman_KRAKOWIACZEK SKUBA.,Mickiewicz_Sonety X.,2,undirected
+Oppman_KRAKOWIACZEK SKUBA.,Mickiewicz_Sonety VII.,3,undirected
+Oppman_KRAKOWIACZEK SKUBA.,Mickiewicz_Sonety krymskie VIII.,1,undirected
+Oppman_SIEROTKA.,Mickiewicz_Sonety X.,1,undirected
+Oppman_SIEROTKA.,Mickiewicz_Sonety VII.,2,undirected
+Oppman_SIEROTKA.,Oppman_EMIGRANT.,6,undirected
+Kochanowski_THREN IIII.,Mickiewicz_Sonety X.,2,undirected
+Kochanowski_THREN IIII.,Mickiewicz_Sonety VII.,3,undirected
+Kochanowski_THREN IIII.,Mickiewicz_Sonety krymskie VIII.,1,undirected
+Kochanowski_THREN VI.,Mickiewicz_Sonety VII.,1,undirected
+Kochanowski_THREN VI.,Mickiewicz_Sonety krymskie IV.,5,undirected
+Kochanowski_THREN VI.,Oppman_SZEWC.,3,undirected
+Kochanowski_THREN XI.,Mickiewicz_Sonety krymskie III.,2,undirected
+Kochanowski_THREN XI.,Kochanowski_THREN I.,3,undirected
+Kochanowski_THREN XI.,Mickiewicz_Sonety I.,2,undirected
+Kochanowski_THREN XI.,Mickiewicz_Sonety krymskie XVI.,6,undirected
+Kochanowski_THREN XI.,Mickiewicz_Sonety krymskie XVIII.,4,undirected
+Kochanowski_THREN XI.,Mickiewicz_Sonety krymskie I.,5,undirected
+Kochanowski_THREN XIII.,Mickiewicz_Sonety X.,1,undirected
+Kochanowski_THREN XIII.,Mickiewicz_Sonety VII.,2,undirected
+Kochanowski_THREN XIII.,Mickiewicz_Sonety XX.,6,undirected
+Krasiński_Nie wrócę już!,Mickiewicz_Sonety VII.,2,undirected
+Krasiński_Nie wrócę już!,Mickiewicz_Sonety XI.,6,undirected
+Krasiński_Nie wrócę już!,Mickiewicz_Sonety XIV.,2,undirected
+Krasiński_Nie wrócę już!,Mickiewicz_Sonety XIX.,3,undirected
+Krasiński_Nowe życie.,Oppman_PRZEKUPKA MARCINOWA,6,undirected
+Krasiński_Nowe życie.,Kochanowski_THREN VIII.,4,undirected
+Krasiński_Nowe życie.,Mickiewicz_Sonety krymskie XIV.,3,undirected
+Mickiewicz_Sonety IV.,Mickiewicz_Sonety X.,1,undirected
+Mickiewicz_Sonety IV.,Mickiewicz_Sonety VII.,2,undirected
+Mickiewicz_Sonety IV.,Kochanowski_THREN XIIII.,3,undirected
+Mickiewicz_Sonety krymskie II.,Mickiewicz_Sonety X.,2,undirected
+Mickiewicz_Sonety krymskie II.,Kochanowski_THREN IX.,6,undirected
+Mickiewicz_Sonety krymskie II.,Oppman_STRAŻAK.,4,undirected
+Mickiewicz_Sonety krymskie II.,Krasiński_Gdzie cisza?,4,undirected
+Mickiewicz_Sonety krymskie VIII.,Krasiński_Błękit duszy.,1,undirected
+Mickiewicz_Sonety krymskie VIII.,Kochanowski_THREN XIX.,1,undirected
+Mickiewicz_Sonety krymskie VIII.,Krasiński_Niewymarzona, a cudowna.,1,undirected
+Mickiewicz_Sonety krymskie VIII.,Krasiński_Do Duchów.,1,undirected
+Mickiewicz_Sonety krymskie VIII.,Krasiński_Do Pani D. P.[*],1,undirected
+Mickiewicz_Sonety krymskie VIII.,Krasiński_Czas i wieczność.,1,undirected
+Mickiewicz_Sonety krymskie VIII.,Krasiński_Postanowienie.,1,undirected
+Mickiewicz_Sonety krymskie VIII.,Krasiński_Miłość ideału.,1,undirected
+Mickiewicz_Sonety krymskie VIII.,Mickiewicz_Sonety VII.,3,undirected
+Mickiewicz_Sonety krymskie VIII.,Mickiewicz_Sonety XVI.,1,undirected
+Mickiewicz_Sonety krymskie VIII.,Oppman_PRZEWOŹNIK.,1,undirected
+Mickiewicz_Sonety krymskie VIII.,Kochanowski_THREN XVII.,1,undirected
+Mickiewicz_Sonety krymskie VIII.,Krasiński_Pożegnanie Italii.,1,undirected
+Mickiewicz_Sonety krymskie VIII.,Oppman_PIASKARZ.,1,undirected
+Mickiewicz_Sonety krymskie VIII.,Oppman_SZOPKA.,1,undirected
+Mickiewicz_Sonety krymskie VIII.,Kochanowski_THREN XII.,1,undirected
+Mickiewicz_Sonety krymskie VIII.,Krasiński_Boleść rozłączenia.,1,undirected
+Mickiewicz_Sonety krymskie VIII.,Kochanowski_THREN II.,3,undirected
+Mickiewicz_Sonety krymskie VIII.,Mickiewicz_Sonety III.,2,undirected
+Mickiewicz_Sonety krymskie VIII.,Mickiewicz_Sonety krymskie V.,1,undirected
+Mickiewicz_Sonety krymskie VIII.,Oppman_DZIADEK.,1,undirected
+Mickiewicz_Sonety krymskie VIII.,Oppman_KRAKOWIACZEK SKUBA.,1,undirected
+Mickiewicz_Sonety krymskie VIII.,Kochanowski_THREN IIII.,1,undirected
+Mickiewicz_Sonety krymskie VIII.,Mickiewicz_Sonety krymskie XVII.,4,undirected
+Mickiewicz_Sonety krymskie VIII.,Kochanowski_THREN VII.,3,undirected
+Mickiewicz_Sonety krymskie VIII.,Mickiewicz_Sonety krymskie XII.,2,undirected
+Mickiewicz_Sonety krymskie VIII.,Mickiewicz_Sonety krymskie XIII.,2,undirected
+Mickiewicz_Sonety krymskie VIII.,Mickiewicz_Sonety XVIII.,1,undirected
+Mickiewicz_Sonety krymskie XVI.,Mickiewicz_Sonety krymskie III.,1,undirected
+Mickiewicz_Sonety krymskie XVI.,Kochanowski_THREN I.,2,undirected
+Mickiewicz_Sonety krymskie XVI.,Mickiewicz_Sonety I.,1,undirected
+Mickiewicz_Sonety krymskie XVI.,Kochanowski_THREN XI.,6,undirected
+Mickiewicz_Sonety krymskie XVI.,Mickiewicz_Sonety krymskie XVIII.,4,undirected
+Mickiewicz_Sonety krymskie XVI.,Mickiewicz_Sonety krymskie I.,1,undirected
+Mickiewicz_Sonety krymskie XVII.,Mickiewicz_Sonety III.,1,undirected
+Mickiewicz_Sonety krymskie XVII.,Mickiewicz_Sonety krymskie VIII.,4,undirected
+Mickiewicz_Sonety krymskie XVII.,Kochanowski_THREN VII.,5,undirected
+Mickiewicz_Sonety krymskie XVII.,Mickiewicz_Sonety krymskie XII.,4,undirected
+Mickiewicz_Sonety krymskie XVIII.,Kochanowski_THREN I.,1,undirected
+Mickiewicz_Sonety krymskie XVIII.,Kochanowski_THREN XI.,4,undirected
+Mickiewicz_Sonety krymskie XVIII.,Mickiewicz_Sonety krymskie XVI.,4,undirected
+Mickiewicz_Sonety krymskie XVIII.,Mickiewicz_Sonety krymskie I.,1,undirected
+Mickiewicz_Sonety krymskie XVIII.,Mickiewicz_Sonety krymskie IX.,3,undirected
+Mickiewicz_Sonety V.,Kochanowski_THREN II.,2,undirected
+Mickiewicz_Sonety V.,Kochanowski_THREN III.,4,undirected
+Mickiewicz_Sonety V.,Mickiewicz_Sonety XIII.,3,undirected
+Mickiewicz_Sonety V.,Oppman_OWCZAREK.,5,undirected
+Mickiewicz_Sonety XIII.,Kochanowski_THREN II.,1,undirected
+Mickiewicz_Sonety XIII.,Kochanowski_THREN III.,3,undirected
+Mickiewicz_Sonety XIII.,Mickiewicz_Sonety V.,3,undirected
+Mickiewicz_Sonety XIII.,Mickiewicz_Sonety XIII.,6,undirected
+Mickiewicz_Sonety XIII.,Oppman_OWCZAREK.,4,undirected
+Mickiewicz_Sonety XIX.,Mickiewicz_Sonety VII.,1,undirected
+Mickiewicz_Sonety XIX.,Mickiewicz_Sonety XI.,5,undirected
+Mickiewicz_Sonety XIX.,Krasiński_Nie wrócę już!,3,undirected
+Mickiewicz_Sonety XXII.,Mickiewicz_Sonety VII.,1,undirected
+Mickiewicz_Sonety XXII.,Mickiewicz_Sonety XIV.,2,undirected
+Mickiewicz_Sonety XXII.,Mickiewicz_Sonety XVII.,3,undirected
+Oppman_CZAROWNICA.,Mickiewicz_Sonety VII.,1,undirected
+Oppman_CZAROWNICA.,Mickiewicz_Sonety XVI.,3,undirected
+Oppman_CZAROWNICA.,Mickiewicz_Sonety krymskie XV.,5,undirected
+Oppman_EMIGRANT.,Mickiewicz_Sonety VII.,1,undirected
+Oppman_EMIGRANT.,Oppman_SIEROTKA.,6,undirected
+Oppman_EMIGRANT.,Kochanowski_THREN XIIII.,4,undirected
+Oppman_MYŚLIWY.,Mickiewicz_Sonety VII.,1,undirected
+Oppman_MYŚLIWY.,Mickiewicz_Sonety XXI.,5,undirected
+Oppman_MYŚLIWY.,Oppman_ŻAK.,4,undirected
+Oppman_STRAŻAK.,Mickiewicz_Sonety X.,1,undirected
+Oppman_STRAŻAK.,Kochanowski_THREN IX.,4,undirected
+Oppman_STRAŻAK.,Mickiewicz_Sonety krymskie II.,4,undirected
+Oppman_SZEWC.,Mickiewicz_Sonety VII.,1,undirected
+Oppman_SZEWC.,Mickiewicz_Sonety krymskie IV.,4,undirected
+Oppman_SZEWC.,Kochanowski_THREN VI.,3,undirected
+Oppman_SZEWC.,Oppman_SZEWC.,6,undirected
+Oppman_TWARDOWSKI.,Mickiewicz_Sonety VII.,1,undirected
+Oppman_TWARDOWSKI.,Mickiewicz_Sonety XV.,3,undirected
+Oppman_TWARDOWSKI.,Kochanowski_THREN X.,1,undirected
+Oppman_TWARDOWSKI.,Mickiewicz_Sonety VIII.,6,undirected
+Kochanowski_THREN VII.,Mickiewicz_Sonety krymskie VIII.,3,undirected
+Kochanowski_THREN VII.,Mickiewicz_Sonety krymskie XVII.,5,undirected
+Kochanowski_THREN VII.,Mickiewicz_Sonety krymskie XII.,3,undirected
+Kochanowski_THREN VIII.,Oppman_PRZEKUPKA MARCINOWA,1,undirected
+Kochanowski_THREN VIII.,Krasiński_Nowe życie.,4,undirected
+Kochanowski_THREN VIII.,Mickiewicz_Sonety krymskie XIV.,3,undirected
+Krasiński_Gdzie cisza?,Mickiewicz_Sonety X.,6,undirected
+Krasiński_Gdzie cisza?,Oppman_PRZEKUPKA MARCINOWA,3,undirected
+Krasiński_Gdzie cisza?,Mickiewicz_Sonety krymskie II.,4,undirected
+Mickiewicz_Sonety krymskie I.,Mickiewicz_Sonety krymskie III.,5,undirected
+Mickiewicz_Sonety krymskie I.,Mickiewicz_Sonety IX.,3,undirected
+Mickiewicz_Sonety krymskie I.,Mickiewicz_Sonety VI.,1,undirected
+Mickiewicz_Sonety krymskie I.,Kochanowski_THREN XI.,5,undirected
+Mickiewicz_Sonety krymskie I.,Mickiewicz_Sonety krymskie XVI.,1,undirected
+Mickiewicz_Sonety krymskie I.,Mickiewicz_Sonety krymskie XVIII.,1,undirected
+Mickiewicz_Sonety krymskie I.,Mickiewicz_Sonety krymskie IX.,2,undirected
+Mickiewicz_Sonety krymskie IX.,Mickiewicz_Sonety krymskie III.,1,undirected
+Mickiewicz_Sonety krymskie IX.,Mickiewicz_Sonety krymskie XVIII.,3,undirected
+Mickiewicz_Sonety krymskie IX.,Mickiewicz_Sonety krymskie I.,2,undirected
+Mickiewicz_Sonety krymskie XII.,Mickiewicz_Sonety krymskie VIII.,2,undirected
+Mickiewicz_Sonety krymskie XII.,Mickiewicz_Sonety krymskie XVII.,4,undirected
+Mickiewicz_Sonety krymskie XII.,Kochanowski_THREN VII.,3,undirected
+Mickiewicz_Sonety krymskie XII.,Mickiewicz_Sonety krymskie XII.,6,undirected
+Mickiewicz_Sonety krymskie XIII.,Mickiewicz_Sonety X.,1,undirected
+Mickiewicz_Sonety krymskie XIII.,Mickiewicz_Sonety VII.,3,undirected
+Mickiewicz_Sonety krymskie XIII.,Mickiewicz_Sonety krymskie VIII.,2,undirected
+Mickiewicz_Sonety krymskie XIV.,Oppman_PRZEKUPKA MARCINOWA,1,undirected
+Mickiewicz_Sonety krymskie XIV.,Krasiński_Nowe życie.,3,undirected
+Mickiewicz_Sonety krymskie XIV.,Kochanowski_THREN VIII.,3,undirected
+Mickiewicz_Sonety krymskie XIV.,Mickiewicz_Sonety krymskie XIV.,6,undirected
+Mickiewicz_Sonety VIII.,Mickiewicz_Sonety XV.,4,undirected
+Mickiewicz_Sonety VIII.,Kochanowski_THREN X.,3,undirected
+Mickiewicz_Sonety VIII.,Oppman_TWARDOWSKI.,6,undirected
+Mickiewicz_Sonety XVII.,Mickiewicz_Sonety krymskie VI.,5,undirected
+Mickiewicz_Sonety XVII.,Mickiewicz_Sonety krymskie VII.,2,undirected
+Mickiewicz_Sonety XVII.,Mickiewicz_Sonety XII.,4,undirected
+Mickiewicz_Sonety XVII.,Mickiewicz_Sonety XXII.,3,undirected
+Mickiewicz_Sonety XVIII.,Mickiewicz_Sonety X.,2,undirected
+Mickiewicz_Sonety XVIII.,Mickiewicz_Sonety VII.,3,undirected
+Mickiewicz_Sonety XVIII.,Mickiewicz_Sonety krymskie VIII.,1,undirected
+Mickiewicz_Sonety XXI.,Mickiewicz_Sonety VII.,1,undirected
+Mickiewicz_Sonety XXI.,Oppman_MYŚLIWY.,5,undirected
+Mickiewicz_Sonety XXI.,Oppman_ŻAK.,3,undirected
+Oppman_OWCZAREK.,Kochanowski_THREN III.,2,undirected
+Oppman_OWCZAREK.,Mickiewicz_Sonety V.,5,undirected
+Oppman_OWCZAREK.,Mickiewicz_Sonety XIII.,4,undirected
+Oppman_ŻAK.,Mickiewicz_Sonety VII.,1,undirected
+Oppman_ŻAK.,Oppman_MYŚLIWY.,4,undirected
+Oppman_ŻAK.,Mickiewicz_Sonety XXI.,3,undirected
+Oppman_ŻAK.,Oppman_ŻAK.,6,undirected
+Kochanowski_THREN V.,Mickiewicz_Sonety krymskie III.,1,undirected
+Kochanowski_THREN V.,Mickiewicz_Sonety krymskie VI.,3,undirected
+Kochanowski_THREN V.,Mickiewicz_Sonety XII.,2,undirected
+Kochanowski_THREN XIIII.,Mickiewicz_Sonety X.,1,undirected
+Kochanowski_THREN XIIII.,Mickiewicz_Sonety VII.,3,undirected
+Kochanowski_THREN XIIII.,Mickiewicz_Sonety IV.,3,undirected
+Kochanowski_THREN XIIII.,Oppman_EMIGRANT.,4,undirected
