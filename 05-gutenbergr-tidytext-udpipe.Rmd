@@ -1,6 +1,76 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
 # Text manipulations {#texts}
 
+I will still use a lot of `tidyverse`:
+
+```{r, message=FALSE}
+library(tidyverse)
+```
+
 ## `gutenbergr`
+The `gutenbergr` package is an API for a very old [project Guttenberg](http://www.gutenberg.org/), that is a library of over 60,000 free eBooks. 
+
+```{r}
+library(gutenbergr)
+```
+
+The most important part of this package is `gutenberg_metadata` dataset -- that is a catalogue of everything in the Guttenberg library.
+
+```{r}
+str(gutenberg_metadata)
+```
+
+How many languages are presented in the Gutenberg library?
+
+```{r}
+gutenberg_metadata %>% 
+  count(language, sort = TRUE)
+```
+
+How many authors are availible?
+
+```{r}
+gutenberg_metadata %>% 
+  count(author, sort = TRUE)
+```
+
+How many Polish texts are availible?
+
+```{r}
+gutenberg_metadata %>% 
+  filter(language == "pl") %>% 
+  count(author, sort = TRUE)
+```
+
+```{block, type = "rmdtask"}
+Whose texts are the most numerous in German part of the Gutenberg library? Put his/her last name in the form.
+```
+
+```{r, results='asis', echo = FALSE, eval = knitr::is_html_output()}
+library(checkdown)
+
+checkdown::autocheck_question(question_id = "2_3", answer =  "Goethe", wrong = "Without umlaut, please")
+```
+
+Lets have a look at the Polish part of Gutenberg library:
+
+```{r}
+gutenberg_metadata %>% 
+  filter(author == "Mickiewicz, Adam",
+         language == "pl")
+```
+
+Lets download Adam Mickiewicz's sonets:
+
+```{r, cache=TRUE}
+text <- gutenberg_download(27081)
+text
+```
+
 
 ## `tidytext`
 
