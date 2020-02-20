@@ -308,9 +308,11 @@ texts_parsed
 ```
 
 ```{block, type = "rmdtask"}
-What is the most popular part of speach in Mickiewicz's texts accoring the model?
+What is the most frequent part of speech (`upos` variable) in our corpora accoring to the model?
 ```
 
 ```{r, results='asis', echo = FALSE, eval = knitr::is_html_output()}
-checkdown::autocheck_question(question_id = "5_3", answer =  "chuj")
+checkdown::autocheck_question(question_id = "5_4", answer =  "NOUN")
 ```
+
+## `stylo`
