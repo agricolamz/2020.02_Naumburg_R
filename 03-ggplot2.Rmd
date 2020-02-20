@@ -301,6 +301,31 @@ misspelling %>%
   uncount(count)
 ```
 
+Coloring bars actually should be done with `fill` argument. Compare:
+
+```{r}
+misspelling %>% 
+  ggplot(aes(correct))+
+  geom_bar(color = "navy")+
+  coord_flip()
+
+misspelling %>% 
+  ggplot(aes(correct))+
+  geom_bar(fill = "navy")+
+  coord_flip()
+```
+
+The same argument could be use in the `aes()` function:
+
+```{r}
+misspelling %>% 
+  ggplot(aes(correct, fill = correct))+
+  geom_bar()+
+  coord_flip()
+```
+
+
+
 #### Factors
 
 All variables in the previous section are ordered alphabetically. In order to create your own orders we need to look at factors:
