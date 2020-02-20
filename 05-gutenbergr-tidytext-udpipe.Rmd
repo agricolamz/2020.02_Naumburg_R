@@ -67,7 +67,7 @@ Whose texts are the most numerous in German part of the Gutenberg library? Put h
 ```{r, results='asis', echo = FALSE, eval = knitr::is_html_output()}
 library(checkdown)
 
-checkdown::autocheck_question(question_id = "2_3", answer =  "Goethe", wrong = "Without umlaut, please")
+checkdown::autocheck_question(question_id = "5_1", answer =  "Goethe", wrong = "Without umlaut, please")
 ```
 
 Lets have a look at the Polish part of Gutenberg library:
@@ -85,11 +85,11 @@ text <- gutenberg_download(27081)
 text
 ```
 
-It is possible to use multiple ids. Lets also download some poems by Mickiewicz, Kochanowski, Krasinski, and Oppman:
+It is possible to use multiple ids. Lets also download some poems by [A. Mickiewicz (1798--1855)](https://en.wikipedia.org/wiki/Adam_Mickiewicz), [J. Kochanowski (1530--1584)](https://en.wikipedia.org/wiki/Jan_Kochanowski), [Z. Krasinski (1812--1859)](https://en.wikipedia.org/wiki/Zygmunt_Krasi%C5%84ski), and [A. Oppman (1867--1931)](https://en.wikipedia.org/wiki/Artur_Oppman):
 
 ```{r, cache=TRUE}
-text <- gutenberg_download(c(27081, 27871, 28009, 27208))
-text
+texts <- gutenberg_download(c(27081, 27871, 28009, 27208))
+texts
 ```
 
 Be aware:
@@ -98,21 +98,176 @@ Be aware:
 * texts could be stored with normolised orthography (e. g. Kochanowski, look at rows 99 and 100);
 
 ```{r}
-text %>% 
+texts %>% 
   filter(gutenberg_id == 28009)
 ```
 
 * there are a lot of empty characters;
 * and probably a lot of other problems.
 
-I annotated this texts:
+I annotated those texts:
 
 ```{r}
-text <- read_csv("")
+texts <- read_csv("https://raw.githubusercontent.com/agricolamz/2020.02_Naumburg_R/master/data/mickiewicz_kochanowski_krasinski_oppman.csv")
+```
+
+Now it is possible to remove some non-important lines:
+
+```{r}
+texts %>% 
+  filter(title != "remove") ->
+  texts
+texts
+```
+
+```{block, type = "rmdtask"}
+Calculate how many rows per author do we have in our dataset. Who has the largest amount?
+```
+
+```{r, results='asis', echo = FALSE, eval = knitr::is_html_output()}
+checkdown::autocheck_question(question_id = "5_2", answer =  "Krasiński", wrong = "you can copy ń from here")
+```
+
+## `tidytext`
+
+The `tidytext` [@silge17] (this book is availible [online](https://www.tidytextmining.com/)) allows to work with texts in tidy ideology, hat make it esear to manipulate, summarize, and visualize the characteristics of text easily and integrate natural language processing tools (sentiment analysis, tf-idf metric, n-gram analysis, topic modeling etc.).
+
+```{r}
+library(tidytext)
+
+texts %>% 
+  unnest_tokens(output = "word", input = text)
 ```
 
 
-## `tidytext`
+```{r}
+texts %>% 
+  unnest_tokens(output = "word", input = text) %>% 
+  group_by(author) %>% 
+  count(word, sort = TRUE) %>% 
+  top_n(10) %>% 
+  ggplot(aes(word, n))+
+  geom_col()+
+  coord_flip()+
+  facet_wrap(~author, scales = "free")
+```
+
+As you see the sorting is bad. Sorting within different facets is possible with `reorder_within()` function:
+
+```{r}
+texts %>% 
+  unnest_tokens(output = "word", input = text) %>% 
+  group_by(author) %>% 
+  count(word, sort = TRUE) %>% 
+  top_n(10) %>% 
+  ggplot(aes(reorder_within(x = word, by = n, within = author), n))+
+  geom_col()+
+  coord_flip()+
+  facet_wrap(~author, scales = "free")
+```
+
+In order to remove the author name you also need to add `scale_x_reordered()` layer to your ggplot:
+
+```{r}
+texts %>% 
+  unnest_tokens(output = "word", input = text) %>% 
+  group_by(author) %>% 
+  count(word, sort = TRUE) %>% 
+  top_n(10) %>% 
+  ggplot(aes(reorder_within(word, n, author), n))+
+  geom_col()+
+  scale_x_reordered()+
+  coord_flip()+
+  facet_wrap(~author, scales = "free")
+```
+
+Often in text analysis, it is useful to remove stop words. Stop words are frequent words that mostly contain grammatic information. I will use polish stopword list from this [repository](https://github.com/stopwords-iso/stopwords-pl), but you can use any other.
+
+```{r}
+stopwords <- read_lines("https://raw.githubusercontent.com/stopwords-iso/stopwords-pl/master/stopwords-pl.txt")
+stopwords
+```
+
+So now we are ready to remove stopwords using the `antijoin()` function:
+
+```{r}
+texts %>% 
+  unnest_tokens(output = "word", input = text) %>% 
+  anti_join(tibble(word = stopwords)) %>% # here is the stopwords removal
+  group_by(author) %>% 
+  count(word, sort = TRUE) %>% 
+  top_n(10) %>% 
+  ggplot(aes(reorder_within(word, n, author), n))+
+  geom_col()+
+  scale_x_reordered()+
+  coord_flip()+
+  facet_wrap(~author, scales = "free")
+```
+
+It is also possible to analise bigrams
+
+```{r}
+texts %>% 
+  unnest_tokens(output = "bigrams", input = text, token = "ngrams", n = 2) %>% 
+  # separate into two seperate columns each part of bigram
+  separate(bigrams, into = c("word_1", "word_2"), sep = " ") %>%
+  # filter out those that have stopwords
+  anti_join(tibble(word_1 = stopwords)) %>% 
+  anti_join(tibble(word_2 = stopwords)) %>% 
+  # merge separate columns into one
+  mutate(bigrams = str_c(word_1, word_2, sep = " ")) %>% 
+  group_by(author) %>% 
+  count(bigrams) %>% 
+  top_n(4) %>% 
+  ggplot(aes(reorder_within(bigrams, n, author), n))+
+  geom_col()+
+  scale_x_reordered()+
+  coord_flip()+
+  facet_wrap(~author, scales = "free")
+```
+
+Since our corpora for each outhor is really small we can't see much (e. g. Mickiewicz no repetitions). If the text will be longer (e. g. long novels), you will be able to get the most important. Lets analyze "Tajemnicę Baskerville'ów":
+
+```{r, cache=TRUE}
+tajemnica <- gutenberg_download(34079)
+
+tajemnica %>% 
+  unnest_tokens(output = "bigrams", input = text, token = "ngrams", n = 2) %>% 
+  # separate into two seperate columns each part of bigram
+  separate(bigrams, into = c("word_1", "word_2"), sep = " ") %>%
+  # filter out those that have stopwords
+  anti_join(tibble(word_1 = stopwords)) %>% 
+  anti_join(tibble(word_2 = stopwords)) %>% 
+  # merge separate columns into one
+  mutate(bigrams = str_c(word_1, word_2, sep = " ")) %>% 
+  count(bigrams, sort = TRUE) %>% 
+  top_n(20) %>% 
+  ggplot(aes(fct_reorder(bigrams, n), n))+
+  geom_col()+
+  coord_flip()
+```
+
+```{block, type = "rmdtask"}
+Analyse "Pan Tadeusz Czyli Ostatni Zajazd na Litwie" by A. Mickiewicz. What is the most frequent bigram in this text?
+```
+
+```{r, include=FALSE, eval=FALSE}
+gutenberg_download(31536) %>% 
+  unnest_tokens(output = "bigrams", input = text, token = "ngrams", n = 2) %>% 
+  # separate into two seperate columns each part of bigram
+  separate(bigrams, into = c("word_1", "word_2"), sep = " ") %>%
+  # filter out those that have stopwords
+  anti_join(tibble(word_1 = stopwords)) %>% 
+  anti_join(tibble(word_2 = stopwords)) %>% 
+  # merge separate columns into one
+  mutate(bigrams = str_c(word_1, word_2, sep = " ")) %>% 
+  count(bigrams, sort = TRUE) %>% 
+  top_n(5)
+```
+
+```{r, results='asis', echo = FALSE, eval = knitr::is_html_output()}
+checkdown::autocheck_question(question_id = "5_3", answer =  "s tyłu", wrong = "you can copy ł from here")
+```
 
 ## `udpipe`
 
