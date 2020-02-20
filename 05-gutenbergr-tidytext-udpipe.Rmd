@@ -11,6 +11,20 @@ I will still use a lot of `tidyverse`:
 library(tidyverse)
 ```
 
+## `read_lines()`
+
+If you want to read text in R you can use the `read_lines()` function:
+
+```{r}
+romeo_i_julia <- read_lines("https://raw.githubusercontent.com/agricolamz/2020.02_Naumburg_R/master/data/romeo_i_julia.txt")
+```
+
+As a result you will get a vector with characters. It is easy to convert it to dataframe:
+
+```{r}
+tibble(text = romeo_i_julia)
+```
+
 ## `gutenbergr`
 The `gutenbergr` package is an API for a very old [project Guttenberg](http://www.gutenberg.org/), that is a library of over 60,000 free eBooks. 
 
@@ -69,6 +83,32 @@ Lets download Adam Mickiewicz's sonets:
 ```{r, cache=TRUE}
 text <- gutenberg_download(27081)
 text
+```
+
+It is possible to use multiple ids. Lets also download some poems by Mickiewicz, Kochanowski, Krasinski, and Oppman:
+
+```{r, cache=TRUE}
+text <- gutenberg_download(c(27081, 27871, 28009, 27208))
+text
+```
+
+Be aware:
+
+* texts could be stored with the wrong encoding;
+* texts could be stored with normolised orthography (e. g. Kochanowski, look at rows 99 and 100);
+
+```{r}
+text %>% 
+  filter(gutenberg_id == 28009)
+```
+
+* there are a lot of empty characters;
+* and probably a lot of other problems.
+
+I annotated this texts:
+
+```{r}
+text <- read_csv("")
 ```
 
 
