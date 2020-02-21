@@ -43,7 +43,7 @@ month.name
 month.abb
 ```
 
-## Merge strings
+## Merging strings
 
 The function `str_c()` joins two or more vectors element-wise into a single character vector:
 ```{r}
