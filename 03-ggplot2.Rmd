@@ -85,7 +85,7 @@ Every `ggplot2` plot has three key components:
 * At least one layer which describes how to render each observation. Layers
 are usually created with a `geom_...()` function.
 
-### Scaterplot
+### Scatterplot
 
 I downloaded a Polish dictionary from [here](https://sjp.pl/slownik/odmiany/). I removed all abbreviations and proper names and took only one form from the paradigm. After all this I calculated the number of syllables (simply by counting vowels, combinations of *i* and other vowels I counted as one), number of symbols in each word and extracted the first letter. Here is the [result dataset](https://raw.githubusercontent.com/agricolamz/2020.02_Naumburg_R/master/data/polish_dictionary.csv).
 
