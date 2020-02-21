@@ -118,7 +118,7 @@ polish_dictionary %>%
 
 #### Layers
 
-All commands in `ggplot2` are separated by `+` sign (author of the package, Hadley Wickham, [is deeply regrets that it is not `%>%`](https://www.youtube.com/watch?v=vYwXMnC03I4)), but their order matters:
+All commands in `ggplot2` are separated by `+` sign (author of the package, Hadley Wickham, [deeply regrets that it is not `%>%`](https://www.youtube.com/watch?v=vYwXMnC03I4)), but their order matters:
 
 ```{r layers_1, cache=TRUE}
 polish_dictionary %>%
@@ -136,7 +136,7 @@ polish_dictionary %>%
 
 #### `aes()`
 
-Since every `ggplot2` plot has data as a key components there is a function `aes()` that maps variables from dataframe onto visual properties of the graph. There is a simple rule:
+Since every `ggplot2` plot has data as a key component there is a function `aes()` that maps variables from dataframe into visual properties of the graph. There is a simple rule:
 
 **If values are from dataframe put them into `aes()`, otherwise --- don't.**
 
