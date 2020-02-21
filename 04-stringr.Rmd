@@ -29,7 +29,7 @@ There is also an empty string (it is not the same as `NA`):
 character(3)
 ```
 
-It is possible to convert somthing to string:
+It is possible to convert something to a string:
 ```{r}
 typeof(4:7)
 as.character(4:7)
@@ -43,7 +43,7 @@ month.name
 month.abb
 ```
 
-## Merge strings
+## Merging strings
 
 The function `str_c()` joins two or more vectors element-wise into a single character vector:
 ```{r}
@@ -51,14 +51,14 @@ tibble(upper = rev(LETTERS), smaller = letters) %>%
   mutate(merge = str_c(upper, smaller))
 ```
 
-It is possible to specify string, that will be inserted between input vectors.
+It is possible to specify a string, that will be inserted between input vectors.
 
 ```{r}
 tibble(upper = rev(LETTERS), smaller = letters) %>% 
   mutate(merge = str_c(upper, smaller, sep = "_"))
 ```
 
-The `str_c()` function is vectorised, so it returns the number of strings that it got to the input. It is possible to merge all merged strings into one biger string using the `collapse` argument.
+The `str_c()` function is vectorised, so it returns the number of strings that it got to the input. It is possible to merge all merged strings into one bigger string using the `collapse` argument.
 
 ```{r}
 str_c(rev(LETTERS), letters, sep = "_") # results 26 strings
@@ -67,7 +67,7 @@ str_c(rev(LETTERS), letters, sep = "_", collapse = "-") # results 1 string
 
 The `separate()` function turns a single character column into multiple columns using some pattern. This function has three arguments:
 
-* `col` -- column with vectors that should be separated
+* `col` -- column with vectors, that should be separated
 * `into` -- vector of names of new columns
 * `sep` -- pattern that should be used as a separator
 
@@ -76,8 +76,8 @@ tibble(mn = month.name) %>%
   separate(col = mn, into = c("column_1", "column_2"), sep = "r")
 ```
 
-## Analyse strings
-In order to calculate number of symbols in a string you can use the `str_count()` function.
+## Analysing strings
+In order to calculate the number of symbols in a string you can use the `str_count()` function.
 
 ![](images/5.01_str_length.png)
 
@@ -86,7 +86,7 @@ tibble(mn = month.name) %>%
   mutate(number_charactars = str_count(mn))
 ```
 
-There is an additional argument in the `str_count()` function that define a sting for counting: 
+There is an additional argument in the `str_count()` function that defines a string for counting: 
 
 ![](images/5.02_str_count.png)
 
@@ -114,7 +114,7 @@ read_csv("https://raw.githubusercontent.com/agricolamz/2020.02_Naumburg_R/master
        caption = "data from https://pudding.cool/2019/10/pubs/")
 ```
 
-There is also a useful function `str_detect()`, that returns `TRUE`, when substring is found in a greater string, or `FALSE`, when substring is absent.
+There is also a useful function `str_detect()`, that returns `TRUE`, when a substring is found in a greater string, or `FALSE`, when a substring is absent.
 
 ![](images/5.03_str_detect.png)
 
@@ -123,7 +123,7 @@ tibble(mn = month.name) %>%
   mutate(is_there_r = str_detect(mn, pattern = "r"))
 ```
 
-## Change strings
+## Changing strings
 ### Convert case
 ```{r}
 latin <- "tHe QuIcK BrOwN fOx JuMpS OvEr ThE lAzY dOg"
@@ -132,8 +132,8 @@ str_to_lower(latin)
 str_to_title(latin)
 ```
 
-### Extract substring from a string
-Extract substring from a string: по индексам функцией `str_sub()`, и по подстроке функцией `str_extract()`.
+### Extracting a substring from a string
+Extract the substring from a string: по индексам функцией `str_sub()`, и по подстроке функцией `str_extract()`.
 
 ![](images/5.04_str_sub.png)
 
@@ -149,16 +149,16 @@ tibble(mn = month.name) %>%
   mutate(mutate = str_extract(mn, "r"))
 ```
 
-By default the `str_extract()` function returns first instances of substring. It is possible to use the `str_extract_all()` function in order to extract all instances of substring, but the result need to be converted to the `tibble` format.
+By default the `str_extract()` function returns first instances of substrings. It is possible to use the `str_extract_all()` function in order to extract all instances of a substring, but the result needs to be converted to the `tibble` format.
 
 ```{r}
 str_extract_all(month.name, "r", simplify = TRUE) %>% 
   as_tibble()
 ```
 
-### Replace substring
+### Replacing a substring
 
-There is a function `str_replace()`, that will replace substring in a string with another string:
+There is a function `str_replace()`, that will replace a substring in a string with another string:
 
 ![](images/5.06_str_replace.png)
 
@@ -167,7 +167,7 @@ tibble(mn = month.name) %>%
   mutate(mutate = str_replace(mn, "r", "R"))
 ```
 
-As other functions the `str_replace()` function makes only one replacement. If you need to change multiple all substrings in a string you can use the `str_replace_all()` function:
+As other functions the `str_replace()` function makes only one replacement. If you need to change multiple substrings in a string you can use the `str_replace_all()` function:
 
 ![](images/5.07_str_replace_all.png)
 
@@ -176,8 +176,8 @@ tibble(mn = month.name) %>%
   mutate(mutate = str_replace_all(mn, "r", "R"))
 ```
 
-### Remove substrings
-The `str_remove()` and `str_remove_all()` functions removes matched patterns in a string.
+### Removing substrings
+The `str_remove()` and `str_remove_all()` functions remove matched patterns in a string.
 
 ```{r}
 tibble(month.name) %>% 
@@ -185,4 +185,5 @@ tibble(month.name) %>%
 tibble(month.name) %>% 
   mutate(mutate = str_remove_all(month.name, "r"))
 ```
+
 

@@ -32,7 +32,7 @@ quartet %>%
   round(2)
 ```
 
-Lets visualise those datasets:
+Let's visualise those datasets:
 
 ```{r, echo = FALSE}
 quartet %>% 
@@ -85,7 +85,7 @@ Every `ggplot2` plot has three key components:
 * At least one layer which describes how to render each observation. Layers
 are usually created with a `geom_...()` function.
 
-### Scaterplot
+### Scatterplot
 
 I downloaded a Polish dictionary from [here](https://sjp.pl/slownik/odmiany/). I removed all abbreviations and proper names and took only one form from the paradigm. After all this I calculated the number of syllables (simply by counting vowels, combinations of *i* and other vowels I counted as one), number of symbols in each word and extracted the first letter. Here is the [result dataset](https://raw.githubusercontent.com/agricolamz/2020.02_Naumburg_R/master/data/polish_dictionary.csv).
 
@@ -118,7 +118,7 @@ polish_dictionary %>%
 
 #### Layers
 
-All commands in `ggplot2` are separated by `+` sign (author of the package, Hadley Wickham, [is deeply regrets that it is not `%>%`](https://www.youtube.com/watch?v=vYwXMnC03I4)), but their order matters:
+All commands in `ggplot2` are separated by `+` sign (author of the package, Hadley Wickham, [deeply regrets that it is not `%>%`](https://www.youtube.com/watch?v=vYwXMnC03I4)), but their order matters:
 
 ```{r layers_1, cache=TRUE}
 polish_dictionary %>%
@@ -136,7 +136,7 @@ polish_dictionary %>%
 
 #### `aes()`
 
-Since every `ggplot2` plot has data as a key components there is a function `aes()` that maps variables from dataframe onto visual properties of the graph. There is a simple rule:
+Since every `ggplot2` plot has data as a key component there is a function `aes()` that maps variables from dataframe into visual properties of the graph. There is a simple rule:
 
 **If values are from dataframe put them into `aes()`, otherwise --- don't.**
 
@@ -253,7 +253,7 @@ misspelling <- read_csv("https://raw.githubusercontent.com/agricolamz/DS_for_DH/
 misspelling
 ```
 
-* variable `spelling` is **aggregated**: for each value of `speeling` variable there is a corresponging value in `count` variable.
+* variable `spelling` is **aggregated**: for each value of `speeling` variable there is a corresponding value in `count` variable.
 * variable `correct` is **non-aggregated**: there is no any variable associated with counts of `correct` variable
 
 In order to create a bar plot from aggregated data you need to use `geom_col()`:
@@ -289,13 +289,13 @@ misspelling %>%
   coord_flip()
 ```
 
-Non-aggregated data could be transform into aggregated
+Non-aggregated data could be transformed into aggregated
 ```{r}
 misspelling %>% 
   count(correct)
 ```
 
-Aggregated data could be transform into non-aggregated
+Aggregated data could be transformed into non-aggregated
 ```{r, eval = knitr::is_html_output()}
 misspelling %>% 
   uncount(count)
@@ -358,7 +358,7 @@ misspelling %>%
   coord_flip()
 ```
 
-There is a package `forcats` for factors (it in `tidyverse`, [here is a cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/factors.pdf)). There are a lot of useful functions in `forcats`, but the one I use the most is the `fct_reorder()` function:
+There is a package `forcats` for factors (it is in `tidyverse`, [here is a cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/factors.pdf)). There are a lot of useful functions in `forcats`, but the one I use the most is the `fct_reorder()` function:
 
 ```{r}
 misspelling %>% 
@@ -394,7 +394,7 @@ Use the `count` function. <br>
 </details>
 
 <details> <summary> 👁 Why there are so many values? ➡ </summary>
-In the task I asked you to take only 30 of them. May be you need the `slice()` function in order to do it. <br>
+In the task I asked you to take only 30 of them. Maybe you need the `slice()` function in order to do it. <br>
 </details> 
 
 <details> <summary> 👁 Why there are pubs with count 1 on my graph?. ➡ </summary>
@@ -412,7 +412,7 @@ Have you removed your x and y axes' annotation? Have you added the caption?
 ## Faceting
 
 
-Faceting -- is a really powerfull tool for data exploration. This function splits visualisations into subplots using some variable.
+Faceting -- is a really powerful tool for data exploration. This function splits visualisations into subplots using some variables.
 
 ```{r, fig.width=9, fig.height=12}
 misspelling %>% 
