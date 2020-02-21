@@ -212,10 +212,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="texts.html"><a href="texts.html"><i class="fa fa-check"></i><b>6</b> Text manipulations</a><ul>
-<li class="chapter" data-level="6.1" data-path="texts.html"><a href="texts.html#gutenbergr"><i class="fa fa-check"></i><b>6.1</b> <code>gutenbergr</code></a></li>
-<li class="chapter" data-level="6.2" data-path="texts.html"><a href="texts.html#tidytext"><i class="fa fa-check"></i><b>6.2</b> <code>tidytext</code></a></li>
-<li class="chapter" data-level="6.3" data-path="texts.html"><a href="texts.html#udpipe"><i class="fa fa-check"></i><b>6.3</b> <code>udpipe</code></a></li>
-<li class="chapter" data-level="6.4" data-path="texts.html"><a href="texts.html#stylo"><i class="fa fa-check"></i><b>6.4</b> <code>stylo</code></a></li>
+<li class="chapter" data-level="6.1" data-path="texts.html"><a href="texts.html#read_lines"><i class="fa fa-check"></i><b>6.1</b> <code>read_lines()</code></a></li>
+<li class="chapter" data-level="6.2" data-path="texts.html"><a href="texts.html#gutenbergr"><i class="fa fa-check"></i><b>6.2</b> <code>gutenbergr</code></a></li>
+<li class="chapter" data-level="6.3" data-path="texts.html"><a href="texts.html#tidytext"><i class="fa fa-check"></i><b>6.3</b> <code>tidytext</code></a></li>
+<li class="chapter" data-level="6.4" data-path="texts.html"><a href="texts.html#udpipe"><i class="fa fa-check"></i><b>6.4</b> <code>udpipe</code></a></li>
+<li class="chapter" data-level="6.5" data-path="texts.html"><a href="texts.html#stylo"><i class="fa fa-check"></i><b>6.5</b> <code>stylo</code></a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 </ul>
@@ -387,11 +388,11 @@ Even though there isn’t any brackets in the mathematical notation, you need to
 <pre><code>## [1] 2</code></pre>
 <p>There are some functions without any arguments, but you still should use parenthesis:</p>
 <div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="intro.html#cb51-1"></a><span class="kw">Sys.Date</span>() <span class="co"># correct</span></span></code></pre></div>
-<pre><code>## [1] &quot;2020-02-20&quot;</code></pre>
+<pre><code>## [1] &quot;2020-02-21&quot;</code></pre>
 <div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="intro.html#cb53-1"></a>Sys.Date <span class="co"># wrong</span></span></code></pre></div>
 <pre><code>## function () 
 ## as.Date(as.POSIXlt(Sys.time()))
-## &lt;bytecode: 0x5c0c32efab60&gt;
+## &lt;bytecode: 0x5b665e275178&gt;
 ## &lt;environment: namespace:base&gt;</code></pre>
 <p>Each function in R is documented. You can read its documentation typing a question mark before the function name:</p>
 <div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="intro.html#cb55-1"></a>?Sys.Date</span></code></pre></div>

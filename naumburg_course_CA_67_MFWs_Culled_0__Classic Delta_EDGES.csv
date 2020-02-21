@@ -1,0 +1,177 @@
+Source,Target,Weight,Type
+Kochanowski_THREN I.,Kochanowski_THREN II.,2,undirected
+Kochanowski_THREN I.,Kochanowski_THREN IX.,1,undirected
+Kochanowski_THREN I.,Kochanowski_THREN XII.,3,undirected
+Kochanowski_THREN II.,Kochanowski_THREN I.,2,undirected
+Kochanowski_THREN II.,Kochanowski_THREN IX.,3,undirected
+Kochanowski_THREN II.,Kochanowski_THREN XII.,2,undirected
+Kochanowski_THREN II.,Kochanowski_THREN XIX.,3,undirected
+Kochanowski_THREN II.,Kochanowski_THREN XV.,3,undirected
+Kochanowski_THREN II.,Kochanowski_THREN XVI.,2,undirected
+Kochanowski_THREN II.,Kochanowski_THREN XVII.,2,undirected
+Kochanowski_THREN II.,Krasiński_Błękit duszy.,3,undirected
+Kochanowski_THREN II.,Krasiński_Boleść rozłączenia.,3,undirected
+Kochanowski_THREN II.,Krasiński_Co mi się marzy?,3,undirected
+Kochanowski_THREN II.,Krasiński_Czas i wieczność.,3,undirected
+Kochanowski_THREN II.,Krasiński_Do Duchów.,3,undirected
+Kochanowski_THREN II.,Krasiński_Do Pani D. P.[*],3,undirected
+Kochanowski_THREN II.,Krasiński_Miłość ideału.,1,undirected
+Kochanowski_THREN II.,Krasiński_Niewymarzona, a cudowna.,3,undirected
+Kochanowski_THREN II.,Krasiński_Postanowienie.,3,undirected
+Kochanowski_THREN II.,Krasiński_Pożegnanie Italii.,3,undirected
+Kochanowski_THREN II.,Mickiewicz_Sonety VII.,3,undirected
+Kochanowski_THREN II.,Oppman_PIASKARZ.,3,undirected
+Kochanowski_THREN II.,Oppman_SZOPKA.,3,undirected
+Kochanowski_THREN IX.,Kochanowski_THREN I.,1,undirected
+Kochanowski_THREN IX.,Kochanowski_THREN II.,3,undirected
+Kochanowski_THREN IX.,Kochanowski_THREN IX.,6,undirected
+Kochanowski_THREN IX.,Kochanowski_THREN XII.,1,undirected
+Kochanowski_THREN IX.,Kochanowski_THREN XIX.,2,undirected
+Kochanowski_THREN IX.,Kochanowski_THREN XV.,2,undirected
+Kochanowski_THREN IX.,Kochanowski_THREN XVI.,5,undirected
+Kochanowski_THREN IX.,Kochanowski_THREN XVII.,1,undirected
+Kochanowski_THREN IX.,Krasiński_Błękit duszy.,2,undirected
+Kochanowski_THREN IX.,Krasiński_Boleść rozłączenia.,2,undirected
+Kochanowski_THREN IX.,Krasiński_Co mi się marzy?,2,undirected
+Kochanowski_THREN IX.,Krasiński_Czas i wieczność.,2,undirected
+Kochanowski_THREN IX.,Krasiński_Do Duchów.,2,undirected
+Kochanowski_THREN IX.,Krasiński_Do Pani D. P.[*],2,undirected
+Kochanowski_THREN IX.,Krasiński_Miłość ideału.,4,undirected
+Kochanowski_THREN IX.,Krasiński_Niewymarzona, a cudowna.,2,undirected
+Kochanowski_THREN IX.,Krasiński_Postanowienie.,2,undirected
+Kochanowski_THREN IX.,Krasiński_Pożegnanie Italii.,2,undirected
+Kochanowski_THREN IX.,Mickiewicz_Sonety krymskie III.,3,undirected
+Kochanowski_THREN IX.,Mickiewicz_Sonety krymskie IV.,3,undirected
+Kochanowski_THREN IX.,Mickiewicz_Sonety krymskie X.,3,undirected
+Kochanowski_THREN IX.,Mickiewicz_Sonety krymskie XV.,3,undirected
+Kochanowski_THREN IX.,Mickiewicz_Sonety VII.,2,undirected
+Kochanowski_THREN IX.,Mickiewicz_Sonety X.,3,undirected
+Kochanowski_THREN IX.,Mickiewicz_Sonety XV.,3,undirected
+Kochanowski_THREN IX.,Mickiewicz_Sonety XVI.,3,undirected
+Kochanowski_THREN IX.,Mickiewicz_Sonety XX.,3,undirected
+Kochanowski_THREN IX.,Oppman_PIASKARZ.,2,undirected
+Kochanowski_THREN IX.,Oppman_PRZEKUPKA MARCINOWA,3,undirected
+Kochanowski_THREN IX.,Oppman_PRZEWOŹNIK.,3,undirected
+Kochanowski_THREN IX.,Oppman_SZOPKA.,2,undirected
+Kochanowski_THREN XII.,Kochanowski_THREN I.,3,undirected
+Kochanowski_THREN XII.,Kochanowski_THREN II.,2,undirected
+Kochanowski_THREN XII.,Kochanowski_THREN IX.,1,undirected
+Kochanowski_THREN XII.,Kochanowski_THREN XII.,6,undirected
+Kochanowski_THREN XIX.,Kochanowski_THREN II.,3,undirected
+Kochanowski_THREN XIX.,Kochanowski_THREN IX.,2,undirected
+Kochanowski_THREN XIX.,Kochanowski_THREN XVI.,1,undirected
+Kochanowski_THREN XV.,Kochanowski_THREN II.,3,undirected
+Kochanowski_THREN XV.,Kochanowski_THREN IX.,2,undirected
+Kochanowski_THREN XV.,Kochanowski_THREN XVI.,1,undirected
+Kochanowski_THREN XVI.,Kochanowski_THREN II.,2,undirected
+Kochanowski_THREN XVI.,Kochanowski_THREN IX.,5,undirected
+Kochanowski_THREN XVI.,Kochanowski_THREN XIX.,1,undirected
+Kochanowski_THREN XVI.,Kochanowski_THREN XV.,1,undirected
+Kochanowski_THREN XVI.,Kochanowski_THREN XVI.,4,undirected
+Kochanowski_THREN XVI.,Krasiński_Błękit duszy.,1,undirected
+Kochanowski_THREN XVI.,Krasiński_Boleść rozłączenia.,1,undirected
+Kochanowski_THREN XVI.,Krasiński_Co mi się marzy?,1,undirected
+Kochanowski_THREN XVI.,Krasiński_Czas i wieczność.,1,undirected
+Kochanowski_THREN XVI.,Krasiński_Do Duchów.,1,undirected
+Kochanowski_THREN XVI.,Krasiński_Do Pani D. P.[*],1,undirected
+Kochanowski_THREN XVI.,Krasiński_Miłość ideału.,3,undirected
+Kochanowski_THREN XVI.,Krasiński_Niewymarzona, a cudowna.,1,undirected
+Kochanowski_THREN XVI.,Krasiński_Postanowienie.,1,undirected
+Kochanowski_THREN XVI.,Krasiński_Pożegnanie Italii.,1,undirected
+Kochanowski_THREN XVI.,Mickiewicz_Sonety krymskie III.,2,undirected
+Kochanowski_THREN XVI.,Mickiewicz_Sonety krymskie IV.,2,undirected
+Kochanowski_THREN XVI.,Mickiewicz_Sonety krymskie X.,2,undirected
+Kochanowski_THREN XVI.,Mickiewicz_Sonety krymskie XV.,2,undirected
+Kochanowski_THREN XVI.,Mickiewicz_Sonety VII.,1,undirected
+Kochanowski_THREN XVI.,Mickiewicz_Sonety X.,2,undirected
+Kochanowski_THREN XVI.,Mickiewicz_Sonety XV.,2,undirected
+Kochanowski_THREN XVI.,Mickiewicz_Sonety XVI.,2,undirected
+Kochanowski_THREN XVI.,Mickiewicz_Sonety XX.,2,undirected
+Kochanowski_THREN XVI.,Oppman_PIASKARZ.,1,undirected
+Kochanowski_THREN XVI.,Oppman_PRZEKUPKA MARCINOWA,2,undirected
+Kochanowski_THREN XVI.,Oppman_PRZEWOŹNIK.,2,undirected
+Kochanowski_THREN XVI.,Oppman_SZOPKA.,1,undirected
+Kochanowski_THREN XVII.,Kochanowski_THREN II.,2,undirected
+Kochanowski_THREN XVII.,Kochanowski_THREN IX.,1,undirected
+Kochanowski_THREN XVII.,Krasiński_Boleść rozłączenia.,3,undirected
+Krasiński_Błękit duszy.,Kochanowski_THREN II.,3,undirected
+Krasiński_Błękit duszy.,Kochanowski_THREN IX.,2,undirected
+Krasiński_Błękit duszy.,Kochanowski_THREN XVI.,1,undirected
+Krasiński_Boleść rozłączenia.,Kochanowski_THREN II.,3,undirected
+Krasiński_Boleść rozłączenia.,Kochanowski_THREN IX.,2,undirected
+Krasiński_Boleść rozłączenia.,Kochanowski_THREN XVI.,1,undirected
+Krasiński_Boleść rozłączenia.,Kochanowski_THREN XVII.,3,undirected
+Krasiński_Co mi się marzy?,Kochanowski_THREN II.,3,undirected
+Krasiński_Co mi się marzy?,Kochanowski_THREN IX.,2,undirected
+Krasiński_Co mi się marzy?,Kochanowski_THREN XVI.,1,undirected
+Krasiński_Czas i wieczność.,Kochanowski_THREN II.,3,undirected
+Krasiński_Czas i wieczność.,Kochanowski_THREN IX.,2,undirected
+Krasiński_Czas i wieczność.,Kochanowski_THREN XVI.,1,undirected
+Krasiński_Do Duchów.,Kochanowski_THREN II.,3,undirected
+Krasiński_Do Duchów.,Kochanowski_THREN IX.,2,undirected
+Krasiński_Do Duchów.,Kochanowski_THREN XVI.,1,undirected
+Krasiński_Do Pani D. P.[*],Kochanowski_THREN II.,3,undirected
+Krasiński_Do Pani D. P.[*],Kochanowski_THREN IX.,2,undirected
+Krasiński_Do Pani D. P.[*],Kochanowski_THREN XVI.,1,undirected
+Krasiński_Miłość ideału.,Kochanowski_THREN II.,1,undirected
+Krasiński_Miłość ideału.,Kochanowski_THREN IX.,4,undirected
+Krasiński_Miłość ideału.,Kochanowski_THREN XVI.,3,undirected
+Krasiński_Miłość ideału.,Krasiński_Miłość ideału.,2,undirected
+Krasiński_Miłość ideału.,Mickiewicz_Sonety krymskie III.,1,undirected
+Krasiński_Miłość ideału.,Mickiewicz_Sonety krymskie IV.,1,undirected
+Krasiński_Miłość ideału.,Mickiewicz_Sonety krymskie X.,1,undirected
+Krasiński_Miłość ideału.,Mickiewicz_Sonety krymskie XV.,1,undirected
+Krasiński_Miłość ideału.,Mickiewicz_Sonety X.,1,undirected
+Krasiński_Miłość ideału.,Mickiewicz_Sonety XV.,1,undirected
+Krasiński_Miłość ideału.,Mickiewicz_Sonety XVI.,1,undirected
+Krasiński_Miłość ideału.,Mickiewicz_Sonety XX.,1,undirected
+Krasiński_Miłość ideału.,Oppman_PRZEKUPKA MARCINOWA,1,undirected
+Krasiński_Miłość ideału.,Oppman_PRZEWOŹNIK.,1,undirected
+Krasiński_Niewymarzona, a cudowna.,Kochanowski_THREN II.,3,undirected
+Krasiński_Niewymarzona, a cudowna.,Kochanowski_THREN IX.,2,undirected
+Krasiński_Niewymarzona, a cudowna.,Kochanowski_THREN XVI.,1,undirected
+Krasiński_Postanowienie.,Kochanowski_THREN II.,3,undirected
+Krasiński_Postanowienie.,Kochanowski_THREN IX.,2,undirected
+Krasiński_Postanowienie.,Kochanowski_THREN XVI.,1,undirected
+Krasiński_Pożegnanie Italii.,Kochanowski_THREN II.,3,undirected
+Krasiński_Pożegnanie Italii.,Kochanowski_THREN IX.,2,undirected
+Krasiński_Pożegnanie Italii.,Kochanowski_THREN XVI.,1,undirected
+Mickiewicz_Sonety krymskie III.,Kochanowski_THREN IX.,3,undirected
+Mickiewicz_Sonety krymskie III.,Kochanowski_THREN XVI.,2,undirected
+Mickiewicz_Sonety krymskie III.,Krasiński_Miłość ideału.,1,undirected
+Mickiewicz_Sonety krymskie IV.,Kochanowski_THREN IX.,3,undirected
+Mickiewicz_Sonety krymskie IV.,Kochanowski_THREN XVI.,2,undirected
+Mickiewicz_Sonety krymskie IV.,Krasiński_Miłość ideału.,1,undirected
+Mickiewicz_Sonety krymskie X.,Kochanowski_THREN IX.,3,undirected
+Mickiewicz_Sonety krymskie X.,Kochanowski_THREN XVI.,2,undirected
+Mickiewicz_Sonety krymskie X.,Krasiński_Miłość ideału.,1,undirected
+Mickiewicz_Sonety krymskie XV.,Kochanowski_THREN IX.,3,undirected
+Mickiewicz_Sonety krymskie XV.,Kochanowski_THREN XVI.,2,undirected
+Mickiewicz_Sonety krymskie XV.,Krasiński_Miłość ideału.,1,undirected
+Mickiewicz_Sonety VII.,Kochanowski_THREN II.,3,undirected
+Mickiewicz_Sonety VII.,Kochanowski_THREN IX.,2,undirected
+Mickiewicz_Sonety VII.,Kochanowski_THREN XVI.,1,undirected
+Mickiewicz_Sonety X.,Kochanowski_THREN IX.,3,undirected
+Mickiewicz_Sonety X.,Kochanowski_THREN XVI.,2,undirected
+Mickiewicz_Sonety X.,Krasiński_Miłość ideału.,1,undirected
+Mickiewicz_Sonety XV.,Kochanowski_THREN IX.,3,undirected
+Mickiewicz_Sonety XV.,Kochanowski_THREN XVI.,2,undirected
+Mickiewicz_Sonety XV.,Krasiński_Miłość ideału.,1,undirected
+Mickiewicz_Sonety XVI.,Kochanowski_THREN IX.,3,undirected
+Mickiewicz_Sonety XVI.,Kochanowski_THREN XVI.,2,undirected
+Mickiewicz_Sonety XVI.,Krasiński_Miłość ideału.,1,undirected
+Mickiewicz_Sonety XX.,Kochanowski_THREN IX.,3,undirected
+Mickiewicz_Sonety XX.,Kochanowski_THREN XVI.,2,undirected
+Mickiewicz_Sonety XX.,Krasiński_Miłość ideału.,1,undirected
+Oppman_PIASKARZ.,Kochanowski_THREN II.,3,undirected
+Oppman_PIASKARZ.,Kochanowski_THREN IX.,2,undirected
+Oppman_PIASKARZ.,Kochanowski_THREN XVI.,1,undirected
+Oppman_PRZEKUPKA MARCINOWA,Kochanowski_THREN IX.,3,undirected
+Oppman_PRZEKUPKA MARCINOWA,Kochanowski_THREN XVI.,2,undirected
+Oppman_PRZEKUPKA MARCINOWA,Krasiński_Miłość ideału.,1,undirected
+Oppman_PRZEWOŹNIK.,Kochanowski_THREN IX.,3,undirected
+Oppman_PRZEWOŹNIK.,Kochanowski_THREN XVI.,2,undirected
+Oppman_PRZEWOŹNIK.,Krasiński_Miłość ideału.,1,undirected
+Oppman_SZOPKA.,Kochanowski_THREN II.,3,undirected
+Oppman_SZOPKA.,Kochanowski_THREN IX.,2,undirected
+Oppman_SZOPKA.,Kochanowski_THREN XVI.,1,undirected

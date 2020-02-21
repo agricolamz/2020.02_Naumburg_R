@@ -70,7 +70,7 @@ library(checkdown)
 checkdown::autocheck_question(question_id = "5_1", answer =  "Goethe", wrong = "Without umlaut, please")
 ```
 
-Lets have a look at the Polish part of Gutenberg library:
+Lets have a look at Mickiewicz's texts in Polish from the Gutenberg library:
 
 ```{r}
 gutenberg_metadata %>% 
@@ -94,6 +94,7 @@ texts
 
 Be aware:
 
+* texts could have something from the real book: introduction or last word written by other people, publication details, etc.
 * texts could be stored with the wrong encoding;
 * texts could be stored with normolised orthography (e. g. Kochanowski, look at rows 99 and 100);
 
@@ -271,19 +272,17 @@ checkdown::autocheck_question(question_id = "5_3", answer =  "s tyłu", wrong = 
 
 ## `udpipe`
 
-The `udpipe` package give you an ability to get lemmatisation, morphological and syntactic analysus for multiple languages. Tutorial and list of availible languages can be found [here](https://bnosac.github.io/udpipe/docs/doc1.html).
+The `udpipe` package give you an ability to get lemmatisation, morphological and syntactic analysis for multiple languages. Tutorial and list of availible languages can be found [here](https://bnosac.github.io/udpipe/docs/doc1.html).
 
 All models are long to download:
+```{r}
+library(udpipe)
+```
+
 ```{r, eval=FALSE}
-library(udpipe)
-model <- udpipe_download_model(language = "polish-pdb")
+udpipe_download_model(language = "polish-pdb")
 ```
-
-```{r udipipe_model, cache=TRUE, echo=FALSE}
-library(udpipe)
-model <- udpipe_download_model(language = "polish-pdb", model_dir = "data/")
-```
-
+    
 Texts for udpipe analyser should have variables named `text` and `doc_id`:
 
 ```{r}
@@ -316,3 +315,106 @@ checkdown::autocheck_question(question_id = "5_4", answer =  "NOUN")
 ```
 
 ## `stylo`
+[The `stylo` package](https://github.com/computationalstylistics/stylo) [@eder16] is a package for computational stylistics, authorship attribution, etc.
+
+
+First of all it is possible to use pure frequencies as a features for clustarisation:
+
+```{r}
+library(stylo)
+
+texts %>% 
+  mutate(doc_id = str_c(author, title, sep = "_")) %>% 
+  unnest_tokens(text, output = "word") %>% 
+  count(doc_id, word) %>% 
+  group_by(doc_id) %>% 
+  mutate(ratio = n/sum(n)) %>% 
+  pivot_wider(names_from = doc_id, values_from = ratio, values_fill = list(ratio = 0)) %>% 
+  select(-word, -n) ->
+  for_stylo
+for_stylo
+```
+
+Then you can run a clustarisation analysis.
+
+```{r, fig.height=12}
+stylo(parsed.corpus = for_stylo, gui = FALSE, analysis.type = "CA")
+```
+
+You can run with argumment `gui = TRUE`, then you will see a graphical interface.
+
+It is also possible to use lemmatized via `udpipe` representation.
+
+```{r, fig.height=12}
+texts_parsed %>% 
+  count(doc_id, lemma) %>% 
+  group_by(doc_id) %>% 
+  mutate(ratio = n/sum(n)) %>% 
+  pivot_wider(names_from = doc_id, values_from = ratio, values_fill = list(ratio = 0)) %>% 
+  select(-lemma, -n) ->
+  for_stylo_2
+
+stylo(parsed.corpus = for_stylo_2, gui = FALSE, analysis.type = "CA")
+```
+
+Authorship Verification Classifier:
+
+```{r}
+texts %>% 
+  mutate(author = ifelse(title == "Sonety I.", "test_mickiewicz", author),
+         author = ifelse(title == "Sonety VI.", "test_mickiewicz", author),
+         author = ifelse(title == "Sonety XX.", "test_mickiewicz", author),
+         author = ifelse(title == "Sonety krymskie XV.", "test_mickiewicz", author),
+         author = ifelse(title == "Sonety krymskie III.", "test_mickiewicz", author),
+         author = ifelse(title == "THREN XIX.", "test_kochanowski", author),
+         author = ifelse(title == "Niewymarzona, a cudowna.", "test_krasinski", author),
+         author = ifelse(title == "OWCZAREK.", "test_oppman", author),
+         author = ifelse(title == "EMIGRANT.", "test_oppman", author)) %>% 
+  unnest_tokens(output = "word", input = text) %>% 
+  count(author, word, sort = TRUE) %>% 
+  filter(n > 1) %>% 
+  group_by(author) %>% 
+  mutate(ratio = n/sum(n)) %>% 
+  select(-n) %>% 
+  pivot_wider(names_from = word, values_from = ratio, values_fill = list(ratio = 0)) %>% 
+  as.data.frame() -> # stylo package doesn't work with tibble
+  for_imposter
+
+for_imposter
+```
+
+Lets choose Krasiński:
+```{r krasinski, cache = TRUE}
+imposters(reference.set = for_imposter[-c(5:8), -c(1:2)],
+# for some reason this function demands minimum 2 rows in dataframe (contra docs)
+          test = for_imposter[c(5, 5), -c(1:2)],
+          classes.reference.set = for_imposter[-c(5:8), 1])
+```
+
+Lets choose Kochanowski:
+```{r kochanowski, cache = TRUE}
+imposters(reference.set = for_imposter[-c(5:8), -c(1:2)],
+# for some reason this function demands minimum 2 rows in dataframe (contra docs)
+          test = for_imposter[c(6, 6), -c(1:2)],
+          classes.reference.set = for_imposter[-c(5:8), 1])
+```
+
+Lets choose Mickiewicz:
+
+```{r mickiewicz, cache = TRUE}
+imposters(reference.set = for_imposter[-c(5:8), -c(1:2)],
+# for some reason this function demands minimum 2 rows in dataframe (contra docs) 
+          test = for_imposter[c(7, 7), -c(1:2)],
+          classes.reference.set = for_imposter[-c(5:8), 1])
+```
+
+Lets choose Oppman:
+
+```{r oppman, cache = TRUE}
+imposters(reference.set = for_imposter[-c(5:8), -c(1:2)],
+# for some reason this function demands minimum 2 rows in dataframe (contra docs)
+          test = for_imposter[c(8, 8), -c(1:2)],
+          classes.reference.set = for_imposter[-c(5:8), 1])
+```
+
+As you see, this algorithm did not work on this verse dataset, but in docs you can find an example of analysis of the novel "Cuckoo's Calling" by a mysterious Robert Galbraith that turned out to be J.K. Rowling.
