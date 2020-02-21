@@ -29,7 +29,7 @@ There is also an empty string (it is not the same as `NA`):
 character(3)
 ```
 
-It is possible to convert something to string:
+It is possible to convert something to a string:
 ```{r}
 typeof(4:7)
 as.character(4:7)
@@ -51,7 +51,7 @@ tibble(upper = rev(LETTERS), smaller = letters) %>%
   mutate(merge = str_c(upper, smaller))
 ```
 
-It is possible to specify string, that will be inserted between input vectors.
+It is possible to specify a string, that will be inserted between input vectors.
 
 ```{r}
 tibble(upper = rev(LETTERS), smaller = letters) %>% 
@@ -123,7 +123,7 @@ tibble(mn = month.name) %>%
   mutate(is_there_r = str_detect(mn, pattern = "r"))
 ```
 
-## Change strings
+## Changing strings
 ### Convert case
 ```{r}
 latin <- "tHe QuIcK BrOwN fOx JuMpS OvEr ThE lAzY dOg"
