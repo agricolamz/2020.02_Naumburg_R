@@ -249,7 +249,7 @@ tajemnica %>%
 ```
 
 ```{block, type = "rmdtask"}
-Analyse "Pan Tadeusz Czyli Ostatni Zajazd na Litwie" by A. Mickiewicz. What is the most frequent bigram in this text?
+Analyse "Pan Tadeusz Czyli Ostatni Zajazd na Litwie" by A. Mickiewicz. What is the most frequent bigram in this text (remove stopwords)?
 ```
 
 ```{r, include=FALSE, eval=FALSE}
