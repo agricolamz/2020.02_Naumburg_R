@@ -195,20 +195,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.1.2" data-path="ggplot2.html"><a href="ggplot2.html#the-datasaurus"><i class="fa fa-check"></i><b>4.1.2</b> The DataSaurus</a></li>
 </ul></li>
 <li class="chapter" data-level="4.2" data-path="ggplot2.html"><a href="ggplot2.html#basic-ggplot2"><i class="fa fa-check"></i><b>4.2</b> Basic <code>ggplot2</code></a><ul>
-<li class="chapter" data-level="4.2.1" data-path="ggplot2.html"><a href="ggplot2.html#scaterplot"><i class="fa fa-check"></i><b>4.2.1</b> Scaterplot</a></li>
+<li class="chapter" data-level="4.2.1" data-path="ggplot2.html"><a href="ggplot2.html#scatterplot"><i class="fa fa-check"></i><b>4.2.1</b> Scatterplot</a></li>
 <li class="chapter" data-level="4.2.2" data-path="ggplot2.html"><a href="ggplot2.html#barplots"><i class="fa fa-check"></i><b>4.2.2</b> Barplots</a></li>
 </ul></li>
 <li class="chapter" data-level="4.3" data-path="ggplot2.html"><a href="ggplot2.html#faceting"><i class="fa fa-check"></i><b>4.3</b> Faceting</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="stringr.html"><a href="stringr.html"><i class="fa fa-check"></i><b>5</b> Strings manipulation: <code>stringr</code></a><ul>
 <li class="chapter" data-level="5.1" data-path="stringr.html"><a href="stringr.html#how-to-create-a-string"><i class="fa fa-check"></i><b>5.1</b> How to create a string?</a></li>
-<li class="chapter" data-level="5.2" data-path="stringr.html"><a href="stringr.html#merge-strings"><i class="fa fa-check"></i><b>5.2</b> Merge strings</a></li>
-<li class="chapter" data-level="5.3" data-path="stringr.html"><a href="stringr.html#analyse-strings"><i class="fa fa-check"></i><b>5.3</b> Analyse strings</a></li>
-<li class="chapter" data-level="5.4" data-path="stringr.html"><a href="stringr.html#change-strings"><i class="fa fa-check"></i><b>5.4</b> Change strings</a><ul>
+<li class="chapter" data-level="5.2" data-path="stringr.html"><a href="stringr.html#merging-strings"><i class="fa fa-check"></i><b>5.2</b> Merging strings</a></li>
+<li class="chapter" data-level="5.3" data-path="stringr.html"><a href="stringr.html#analysing-strings"><i class="fa fa-check"></i><b>5.3</b> Analysing strings</a></li>
+<li class="chapter" data-level="5.4" data-path="stringr.html"><a href="stringr.html#changing-strings"><i class="fa fa-check"></i><b>5.4</b> Changing strings</a><ul>
 <li class="chapter" data-level="5.4.1" data-path="stringr.html"><a href="stringr.html#convert-case"><i class="fa fa-check"></i><b>5.4.1</b> Convert case</a></li>
-<li class="chapter" data-level="5.4.2" data-path="stringr.html"><a href="stringr.html#extract-substring-from-a-string"><i class="fa fa-check"></i><b>5.4.2</b> Extract substring from a string</a></li>
-<li class="chapter" data-level="5.4.3" data-path="stringr.html"><a href="stringr.html#replace-substring"><i class="fa fa-check"></i><b>5.4.3</b> Replace substring</a></li>
-<li class="chapter" data-level="5.4.4" data-path="stringr.html"><a href="stringr.html#remove-substrings"><i class="fa fa-check"></i><b>5.4.4</b> Remove substrings</a></li>
+<li class="chapter" data-level="5.4.2" data-path="stringr.html"><a href="stringr.html#extracting-a-substring-from-a-string"><i class="fa fa-check"></i><b>5.4.2</b> Extracting a substring from a string</a></li>
+<li class="chapter" data-level="5.4.3" data-path="stringr.html"><a href="stringr.html#replacing-a-substring"><i class="fa fa-check"></i><b>5.4.3</b> Replacing a substring</a></li>
+<li class="chapter" data-level="5.4.4" data-path="stringr.html"><a href="stringr.html#removing-substrings"><i class="fa fa-check"></i><b>5.4.4</b> Removing substrings</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="texts.html"><a href="texts.html"><i class="fa fa-check"></i><b>6</b> Text manipulations</a><ul>
@@ -260,7 +260,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <pre><code>## [1] &quot;&quot;</code></pre>
 <div class="sourceCode" id="cb358"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb358-1"><a href="stringr.html#cb358-1"></a><span class="kw">character</span>(<span class="dv">3</span>)</span></code></pre></div>
 <pre><code>## [1] &quot;&quot; &quot;&quot; &quot;&quot;</code></pre>
-<p>It is possible to convert somthing to string:</p>
+<p>It is possible to convert something to a string:</p>
 <div class="sourceCode" id="cb360"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb360-1"><a href="stringr.html#cb360-1"></a><span class="kw">typeof</span>(<span class="dv">4</span><span class="op">:</span><span class="dv">7</span>)</span></code></pre></div>
 <pre><code>## [1] &quot;integer&quot;</code></pre>
 <div class="sourceCode" id="cb362"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb362-1"><a href="stringr.html#cb362-1"></a><span class="kw">as.character</span>(<span class="dv">4</span><span class="op">:</span><span class="dv">7</span>)</span></code></pre></div>
@@ -278,8 +278,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb370"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb370-1"><a href="stringr.html#cb370-1"></a>month.abb</span></code></pre></div>
 <pre><code>##  [1] &quot;Jan&quot; &quot;Feb&quot; &quot;Mar&quot; &quot;Apr&quot; &quot;May&quot; &quot;Jun&quot; &quot;Jul&quot; &quot;Aug&quot; &quot;Sep&quot; &quot;Oct&quot; &quot;Nov&quot; &quot;Dec&quot;</code></pre>
 </div>
-<div id="merge-strings" class="section level2">
-<h2><span class="header-section-number">5.2</span> Merge strings</h2>
+<div id="merging-strings" class="section level2">
+<h2><span class="header-section-number">5.2</span> Merging strings</h2>
 <p>The function <code>str_c()</code> joins two or more vectors element-wise into a single character vector:</p>
 <div class="sourceCode" id="cb372"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb372-1"><a href="stringr.html#cb372-1"></a><span class="kw">tibble</span>(<span class="dt">upper =</span> <span class="kw">rev</span>(LETTERS), <span class="dt">smaller =</span> letters) <span class="op">%&gt;%</span><span class="st"> </span></span>
 <span id="cb372-2"><a href="stringr.html#cb372-2"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">merge =</span> <span class="kw">str_c</span>(upper, smaller))</span></code></pre></div>
@@ -288,7 +288,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 {"columns":[{"label":["upper"],"name":[1],"type":["chr"],"align":["left"]},{"label":["smaller"],"name":[2],"type":["chr"],"align":["left"]},{"label":["merge"],"name":[3],"type":["chr"],"align":["left"]}],"data":[{"1":"Z","2":"a","3":"Za"},{"1":"Y","2":"b","3":"Yb"},{"1":"X","2":"c","3":"Xc"},{"1":"W","2":"d","3":"Wd"},{"1":"V","2":"e","3":"Ve"},{"1":"U","2":"f","3":"Uf"},{"1":"T","2":"g","3":"Tg"},{"1":"S","2":"h","3":"Sh"},{"1":"R","2":"i","3":"Ri"},{"1":"Q","2":"j","3":"Qj"},{"1":"P","2":"k","3":"Pk"},{"1":"O","2":"l","3":"Ol"},{"1":"N","2":"m","3":"Nm"},{"1":"M","2":"n","3":"Mn"},{"1":"L","2":"o","3":"Lo"},{"1":"K","2":"p","3":"Kp"},{"1":"J","2":"q","3":"Jq"},{"1":"I","2":"r","3":"Ir"},{"1":"H","2":"s","3":"Hs"},{"1":"G","2":"t","3":"Gt"},{"1":"F","2":"u","3":"Fu"},{"1":"E","2":"v","3":"Ev"},{"1":"D","2":"w","3":"Dw"},{"1":"C","2":"x","3":"Cx"},{"1":"B","2":"y","3":"By"},{"1":"A","2":"z","3":"Az"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
-<p>It is possible to specify string, that will be inserted between input vectors.</p>
+<p>It is possible to specify a string, that will be inserted between input vectors.</p>
 <div class="sourceCode" id="cb373"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb373-1"><a href="stringr.html#cb373-1"></a><span class="kw">tibble</span>(<span class="dt">upper =</span> <span class="kw">rev</span>(LETTERS), <span class="dt">smaller =</span> letters) <span class="op">%&gt;%</span><span class="st"> </span></span>
 <span id="cb373-2"><a href="stringr.html#cb373-2"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">merge =</span> <span class="kw">str_c</span>(upper, smaller, <span class="dt">sep =</span> <span class="st">&quot;_&quot;</span>))</span></code></pre></div>
 <div data-pagedtable="false">
@@ -296,7 +296,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 {"columns":[{"label":["upper"],"name":[1],"type":["chr"],"align":["left"]},{"label":["smaller"],"name":[2],"type":["chr"],"align":["left"]},{"label":["merge"],"name":[3],"type":["chr"],"align":["left"]}],"data":[{"1":"Z","2":"a","3":"Z_a"},{"1":"Y","2":"b","3":"Y_b"},{"1":"X","2":"c","3":"X_c"},{"1":"W","2":"d","3":"W_d"},{"1":"V","2":"e","3":"V_e"},{"1":"U","2":"f","3":"U_f"},{"1":"T","2":"g","3":"T_g"},{"1":"S","2":"h","3":"S_h"},{"1":"R","2":"i","3":"R_i"},{"1":"Q","2":"j","3":"Q_j"},{"1":"P","2":"k","3":"P_k"},{"1":"O","2":"l","3":"O_l"},{"1":"N","2":"m","3":"N_m"},{"1":"M","2":"n","3":"M_n"},{"1":"L","2":"o","3":"L_o"},{"1":"K","2":"p","3":"K_p"},{"1":"J","2":"q","3":"J_q"},{"1":"I","2":"r","3":"I_r"},{"1":"H","2":"s","3":"H_s"},{"1":"G","2":"t","3":"G_t"},{"1":"F","2":"u","3":"F_u"},{"1":"E","2":"v","3":"E_v"},{"1":"D","2":"w","3":"D_w"},{"1":"C","2":"x","3":"C_x"},{"1":"B","2":"y","3":"B_y"},{"1":"A","2":"z","3":"A_z"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
-<p>The <code>str_c()</code> function is vectorised, so it returns the number of strings that it got to the input. It is possible to merge all merged strings into one biger string using the <code>collapse</code> argument.</p>
+<p>The <code>str_c()</code> function is vectorised, so it returns the number of strings that it got to the input. It is possible to merge all merged strings into one bigger string using the <code>collapse</code> argument.</p>
 <div class="sourceCode" id="cb374"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb374-1"><a href="stringr.html#cb374-1"></a><span class="kw">str_c</span>(<span class="kw">rev</span>(LETTERS), letters, <span class="dt">sep =</span> <span class="st">&quot;_&quot;</span>) <span class="co"># results 26 strings</span></span></code></pre></div>
 <pre><code>##  [1] &quot;Z_a&quot; &quot;Y_b&quot; &quot;X_c&quot; &quot;W_d&quot; &quot;V_e&quot; &quot;U_f&quot; &quot;T_g&quot; &quot;S_h&quot; &quot;R_i&quot; &quot;Q_j&quot; &quot;P_k&quot; &quot;O_l&quot;
 ## [13] &quot;N_m&quot; &quot;M_n&quot; &quot;L_o&quot; &quot;K_p&quot; &quot;J_q&quot; &quot;I_r&quot; &quot;H_s&quot; &quot;G_t&quot; &quot;F_u&quot; &quot;E_v&quot; &quot;D_w&quot; &quot;C_x&quot;
@@ -305,7 +305,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <pre><code>## [1] &quot;Z_a-Y_b-X_c-W_d-V_e-U_f-T_g-S_h-R_i-Q_j-P_k-O_l-N_m-M_n-L_o-K_p-J_q-I_r-H_s-G_t-F_u-E_v-D_w-C_x-B_y-A_z&quot;</code></pre>
 <p>The <code>separate()</code> function turns a single character column into multiple columns using some pattern. This function has three arguments:</p>
 <ul>
-<li><code>col</code> – column with vectors that should be separated</li>
+<li><code>col</code> – column with vectors, that should be separated</li>
 <li><code>into</code> – vector of names of new columns</li>
 <li><code>sep</code> – pattern that should be used as a separator</li>
 </ul>
@@ -317,9 +317,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   </script>
 </div>
 </div>
-<div id="analyse-strings" class="section level2">
-<h2><span class="header-section-number">5.3</span> Analyse strings</h2>
-<p>In order to calculate number of symbols in a string you can use the <code>str_count()</code> function.</p>
+<div id="analysing-strings" class="section level2">
+<h2><span class="header-section-number">5.3</span> Analysing strings</h2>
+<p>In order to calculate the number of symbols in a string you can use the <code>str_count()</code> function.</p>
 <p><img src="images/5.01_str_length.png" /></p>
 <div class="sourceCode" id="cb379"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb379-1"><a href="stringr.html#cb379-1"></a><span class="kw">tibble</span>(<span class="dt">mn =</span> month.name) <span class="op">%&gt;%</span><span class="st"> </span></span>
 <span id="cb379-2"><a href="stringr.html#cb379-2"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">number_charactars =</span> <span class="kw">str_count</span>(mn))</span></code></pre></div>
@@ -328,7 +328,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 {"columns":[{"label":["mn"],"name":[1],"type":["chr"],"align":["left"]},{"label":["number_charactars"],"name":[2],"type":["int"],"align":["right"]}],"data":[{"1":"January","2":"7"},{"1":"February","2":"8"},{"1":"March","2":"5"},{"1":"April","2":"5"},{"1":"May","2":"3"},{"1":"June","2":"4"},{"1":"July","2":"4"},{"1":"August","2":"6"},{"1":"September","2":"9"},{"1":"October","2":"7"},{"1":"November","2":"8"},{"1":"December","2":"8"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
-<p>There is an additional argument in the <code>str_count()</code> function that define a sting for counting:</p>
+<p>There is an additional argument in the <code>str_count()</code> function that defines a string for counting:</p>
 <p><img src="images/5.02_str_count.png" /></p>
 <div class="sourceCode" id="cb380"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb380-1"><a href="stringr.html#cb380-1"></a><span class="kw">tibble</span>(<span class="dt">mn =</span> month.name) <span class="op">%&gt;%</span><span class="st"> </span></span>
 <span id="cb380-2"><a href="stringr.html#cb380-2"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">number_r =</span> <span class="kw">str_count</span>(mn, <span class="dt">pattern =</span> <span class="st">&quot;r&quot;</span>))</span></code></pre></div>
@@ -343,7 +343,7 @@ There is an <a href="https://pudding.cool/2019/10/pubs/">article</a> on Pudding 
 </p>
 </div>
 <p><img src="moroz-2020-Polish-Language-and-Digital-Humanities-Using-R_files/figure-html/unnamed-chunk-164-1.png" width="672" /></p>
-<p>There is also a useful function <code>str_detect()</code>, that returns <code>TRUE</code>, when substring is found in a greater string, or <code>FALSE</code>, when substring is absent.</p>
+<p>There is also a useful function <code>str_detect()</code>, that returns <code>TRUE</code>, when a substring is found in a greater string, or <code>FALSE</code>, when a substring is absent.</p>
 <p><img src="images/5.03_str_detect.png" /></p>
 <div class="sourceCode" id="cb381"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb381-1"><a href="stringr.html#cb381-1"></a><span class="kw">tibble</span>(<span class="dt">mn =</span> month.name) <span class="op">%&gt;%</span><span class="st"> </span></span>
 <span id="cb381-2"><a href="stringr.html#cb381-2"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">is_there_r =</span> <span class="kw">str_detect</span>(mn, <span class="dt">pattern =</span> <span class="st">&quot;r&quot;</span>))</span></code></pre></div>
@@ -353,8 +353,8 @@ There is an <a href="https://pudding.cool/2019/10/pubs/">article</a> on Pudding 
   </script>
 </div>
 </div>
-<div id="change-strings" class="section level2">
-<h2><span class="header-section-number">5.4</span> Change strings</h2>
+<div id="changing-strings" class="section level2">
+<h2><span class="header-section-number">5.4</span> Changing strings</h2>
 <div id="convert-case" class="section level3">
 <h3><span class="header-section-number">5.4.1</span> Convert case</h3>
 <div class="sourceCode" id="cb382"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb382-1"><a href="stringr.html#cb382-1"></a>latin &lt;-<span class="st"> &quot;tHe QuIcK BrOwN fOx JuMpS OvEr ThE lAzY dOg&quot;</span></span>
@@ -365,9 +365,9 @@ There is an <a href="https://pudding.cool/2019/10/pubs/">article</a> on Pudding 
 <div class="sourceCode" id="cb386"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb386-1"><a href="stringr.html#cb386-1"></a><span class="kw">str_to_title</span>(latin)</span></code></pre></div>
 <pre><code>## [1] &quot;The Quick Brown Fox Jumps Over The Lazy Dog&quot;</code></pre>
 </div>
-<div id="extract-substring-from-a-string" class="section level3">
-<h3><span class="header-section-number">5.4.2</span> Extract substring from a string</h3>
-<p>Extract substring from a string: по индексам функцией <code>str_sub()</code>, и по подстроке функцией <code>str_extract()</code>.</p>
+<div id="extracting-a-substring-from-a-string" class="section level3">
+<h3><span class="header-section-number">5.4.2</span> Extracting a substring from a string</h3>
+<p>Extract the substring from a string: по индексам функцией <code>str_sub()</code>, и по подстроке функцией <code>str_extract()</code>.</p>
 <p><img src="images/5.04_str_sub.png" /></p>
 <div class="sourceCode" id="cb388"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb388-1"><a href="stringr.html#cb388-1"></a><span class="kw">tibble</span>(<span class="dt">mn =</span> month.name) <span class="op">%&gt;%</span><span class="st"> </span></span>
 <span id="cb388-2"><a href="stringr.html#cb388-2"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">mutate =</span> <span class="kw">str_sub</span>(mn, <span class="dt">start =</span> <span class="dv">1</span>, <span class="dt">end =</span> <span class="dv">2</span>))</span></code></pre></div>
@@ -384,7 +384,7 @@ There is an <a href="https://pudding.cool/2019/10/pubs/">article</a> on Pudding 
 {"columns":[{"label":["mn"],"name":[1],"type":["chr"],"align":["left"]},{"label":["mutate"],"name":[2],"type":["chr"],"align":["left"]}],"data":[{"1":"January","2":"r"},{"1":"February","2":"r"},{"1":"March","2":"r"},{"1":"April","2":"r"},{"1":"May","2":"NA"},{"1":"June","2":"NA"},{"1":"July","2":"NA"},{"1":"August","2":"NA"},{"1":"September","2":"r"},{"1":"October","2":"r"},{"1":"November","2":"r"},{"1":"December","2":"r"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
-<p>By default the <code>str_extract()</code> function returns first instances of substring. It is possible to use the <code>str_extract_all()</code> function in order to extract all instances of substring, but the result need to be converted to the <code>tibble</code> format.</p>
+<p>By default the <code>str_extract()</code> function returns first instances of substrings. It is possible to use the <code>str_extract_all()</code> function in order to extract all instances of a substring, but the result needs to be converted to the <code>tibble</code> format.</p>
 <div class="sourceCode" id="cb390"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb390-1"><a href="stringr.html#cb390-1"></a><span class="kw">str_extract_all</span>(month.name, <span class="st">&quot;r&quot;</span>, <span class="dt">simplify =</span> <span class="ot">TRUE</span>) <span class="op">%&gt;%</span><span class="st"> </span></span>
 <span id="cb390-2"><a href="stringr.html#cb390-2"></a><span class="st">  </span><span class="kw">as_tibble</span>()</span></code></pre></div>
 <div data-pagedtable="false">
@@ -393,9 +393,9 @@ There is an <a href="https://pudding.cool/2019/10/pubs/">article</a> on Pudding 
   </script>
 </div>
 </div>
-<div id="replace-substring" class="section level3">
-<h3><span class="header-section-number">5.4.3</span> Replace substring</h3>
-<p>There is a function <code>str_replace()</code>, that will replace substring in a string with another string:</p>
+<div id="replacing-a-substring" class="section level3">
+<h3><span class="header-section-number">5.4.3</span> Replacing a substring</h3>
+<p>There is a function <code>str_replace()</code>, that will replace a substring in a string with another string:</p>
 <p><img src="images/5.06_str_replace.png" /></p>
 <div class="sourceCode" id="cb391"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb391-1"><a href="stringr.html#cb391-1"></a><span class="kw">tibble</span>(<span class="dt">mn =</span> month.name) <span class="op">%&gt;%</span><span class="st"> </span></span>
 <span id="cb391-2"><a href="stringr.html#cb391-2"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">mutate =</span> <span class="kw">str_replace</span>(mn, <span class="st">&quot;r&quot;</span>, <span class="st">&quot;R&quot;</span>))</span></code></pre></div>
@@ -404,7 +404,7 @@ There is an <a href="https://pudding.cool/2019/10/pubs/">article</a> on Pudding 
 {"columns":[{"label":["mn"],"name":[1],"type":["chr"],"align":["left"]},{"label":["mutate"],"name":[2],"type":["chr"],"align":["left"]}],"data":[{"1":"January","2":"JanuaRy"},{"1":"February","2":"FebRuary"},{"1":"March","2":"MaRch"},{"1":"April","2":"ApRil"},{"1":"May","2":"May"},{"1":"June","2":"June"},{"1":"July","2":"July"},{"1":"August","2":"August"},{"1":"September","2":"SeptembeR"},{"1":"October","2":"OctobeR"},{"1":"November","2":"NovembeR"},{"1":"December","2":"DecembeR"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
-<p>As other functions the <code>str_replace()</code> function makes only one replacement. If you need to change multiple all substrings in a string you can use the <code>str_replace_all()</code> function:</p>
+<p>As other functions the <code>str_replace()</code> function makes only one replacement. If you need to change multiple substrings in a string you can use the <code>str_replace_all()</code> function:</p>
 <p><img src="images/5.07_str_replace_all.png" /></p>
 <div class="sourceCode" id="cb392"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb392-1"><a href="stringr.html#cb392-1"></a><span class="kw">tibble</span>(<span class="dt">mn =</span> month.name) <span class="op">%&gt;%</span><span class="st"> </span></span>
 <span id="cb392-2"><a href="stringr.html#cb392-2"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">mutate =</span> <span class="kw">str_replace_all</span>(mn, <span class="st">&quot;r&quot;</span>, <span class="st">&quot;R&quot;</span>))</span></code></pre></div>
@@ -414,9 +414,9 @@ There is an <a href="https://pudding.cool/2019/10/pubs/">article</a> on Pudding 
   </script>
 </div>
 </div>
-<div id="remove-substrings" class="section level3">
-<h3><span class="header-section-number">5.4.4</span> Remove substrings</h3>
-<p>The <code>str_remove()</code> and <code>str_remove_all()</code> functions removes matched patterns in a string.</p>
+<div id="removing-substrings" class="section level3">
+<h3><span class="header-section-number">5.4.4</span> Removing substrings</h3>
+<p>The <code>str_remove()</code> and <code>str_remove_all()</code> functions remove matched patterns in a string.</p>
 <div class="sourceCode" id="cb393"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb393-1"><a href="stringr.html#cb393-1"></a><span class="kw">tibble</span>(month.name) <span class="op">%&gt;%</span><span class="st"> </span></span>
 <span id="cb393-2"><a href="stringr.html#cb393-2"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">mutate =</span> <span class="kw">str_remove</span>(month.name, <span class="st">&quot;r&quot;</span>))</span></code></pre></div>
 <div data-pagedtable="false">
