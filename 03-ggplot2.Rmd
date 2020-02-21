@@ -32,7 +32,7 @@ quartet %>%
   round(2)
 ```
 
-Lets visualise those datasets:
+Let's visualise those datasets:
 
 ```{r, echo = FALSE}
 quartet %>% 
