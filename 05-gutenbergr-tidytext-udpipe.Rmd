@@ -100,7 +100,7 @@ Be aware:
 
 ```{r}
 texts %>% 
-  filter(gutenberg_id == 28009)
+  filter(gutenberg_id == 27208)
 ```
 
 * there are a lot of empty characters;

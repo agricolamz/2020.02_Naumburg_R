@@ -69,7 +69,7 @@ The `separate()` function turns a single character column into multiple columns 
 
 * `col` -- column with vectors that should be separated
 * `into` -- vector of names of new columns
-* `sep` -- pattern that shoul be used as a separator
+* `sep` -- pattern that should be used as a separator
 
 ```{r}
 tibble(mn = month.name) %>% 
@@ -97,7 +97,7 @@ tibble(mn = month.name) %>%
 ```
 
 ```{block, type = "rmdtask"}
-There is an [article](https://pudding.cool/2019/10/pubs/) on Pudding about English pubs. [Here](https://raw.githubusercontent.com/agricolamz/DS_for_DH/master/data/UK_pubs.csv) is an aggregated dataset, that they used. Visualise the 30 most popular pub's names in UK. Visualise 40 most popular pub names in UK: number of symbols on *x* axis and number of pubs with this name on *y* axis.
+There is an [article](https://pudding.cool/2019/10/pubs/) on Pudding about English pubs. [Here](https://raw.githubusercontent.com/agricolamz/DS_for_DH/master/data/UK_pubs.csv) is an aggregated dataset, that they used. Visualise 40 most popular pub names in UK: number of symbols on *x* axis and number of pubs with this name on *y* axis.
 ```
 
 ```{r, echo=FALSE, message = FALSE, fig.height=6}
