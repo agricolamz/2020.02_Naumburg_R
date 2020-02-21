@@ -76,7 +76,7 @@ tibble(mn = month.name) %>%
   separate(col = mn, into = c("column_1", "column_2"), sep = "r")
 ```
 
-## Analyse strings
+## Analysing strings
 In order to calculate the number of symbols in a string you can use the `str_count()` function.
 
 ![](images/5.01_str_length.png)
