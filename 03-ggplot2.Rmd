@@ -289,13 +289,13 @@ misspelling %>%
   coord_flip()
 ```
 
-Non-aggregated data could be transform into aggregated
+Non-aggregated data could be transformed into aggregated
 ```{r}
 misspelling %>% 
   count(correct)
 ```
 
-Aggregated data could be transform into non-aggregated
+Aggregated data could be transformed into non-aggregated
 ```{r, eval = knitr::is_html_output()}
 misspelling %>% 
   uncount(count)
@@ -358,7 +358,7 @@ misspelling %>%
   coord_flip()
 ```
 
-There is a package `forcats` for factors (it in `tidyverse`, [here is a cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/factors.pdf)). There are a lot of useful functions in `forcats`, but the one I use the most is the `fct_reorder()` function:
+There is a package `forcats` for factors (it is in `tidyverse`, [here is a cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/factors.pdf)). There are a lot of useful functions in `forcats`, but the one I use the most is the `fct_reorder()` function:
 
 ```{r}
 misspelling %>% 
@@ -394,7 +394,7 @@ Use the `count` function. <br>
 </details>
 
 <details> <summary> 👁 Why there are so many values? ➡ </summary>
-In the task I asked you to take only 30 of them. May be you need the `slice()` function in order to do it. <br>
+In the task I asked you to take only 30 of them. Maybe you need the `slice()` function in order to do it. <br>
 </details> 
 
 <details> <summary> 👁 Why there are pubs with count 1 on my graph?. ➡ </summary>
@@ -412,7 +412,7 @@ Have you removed your x and y axes' annotation? Have you added the caption?
 ## Faceting
 
 
-Faceting -- is a really powerfull tool for data exploration. This function splits visualisations into subplots using some variable.
+Faceting -- is a really powerful tool for data exploration. This function splits visualisations into subplots using some variables.
 
 ```{r, fig.width=9, fig.height=12}
 misspelling %>% 
