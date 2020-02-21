@@ -26,13 +26,13 @@ tibble(text = tajemnica_baskerville)
 ```
 
 ## `gutenbergr`
-The `gutenbergr` package is an API for a very old [project Guttenberg](http://www.gutenberg.org/), that is a library of over 60,000 free eBooks. 
+The `gutenbergr` package is an API for a very old [project Gutenberg](http://www.gutenberg.org/), that is a library of over 60,000 free eBooks. 
 
 ```{r}
 library(gutenbergr)
 ```
 
-The most important part of this package is `gutenberg_metadata` dataset -- that is a catalogue of everything in the Guttenberg library.
+The most important part of this package is the `gutenberg_metadata` dataset -- that is a catalogue of everything in the Gutenberg library.
 
 ```{r}
 str(gutenberg_metadata)
@@ -61,7 +61,7 @@ gutenberg_metadata %>%
 ```
 
 ```{block, type = "rmdtask"}
-Whose texts are the most numerous in German part of the Gutenberg library? Put his/her last name in the form.
+Whose texts are the most numerous in the German part of the Gutenberg library? Put his/her last name in the form.
 ```
 
 ```{r, results='asis', echo = FALSE, eval = knitr::is_html_output()}
@@ -70,7 +70,7 @@ library(checkdown)
 checkdown::autocheck_question(question_id = "5_1", answer =  "Goethe", wrong = "Without umlaut, please")
 ```
 
-Lets have a look at Mickiewicz's texts in Polish from the Gutenberg library:
+Let's have a look at Mickiewicz's texts in the Polish part of the Gutenberg library:
 
 ```{r}
 gutenberg_metadata %>% 
@@ -78,14 +78,14 @@ gutenberg_metadata %>%
          language == "pl")
 ```
 
-Lets download Adam Mickiewicz's sonets:
+Let's download Adam Mickiewicz's sonnets:
 
 ```{r gutenberg_1, cache=TRUE}
 text <- gutenberg_download(27081)
 text
 ```
 
-It is possible to use multiple ids. Lets also download some poems by [A. Mickiewicz (1798--1855)](https://en.wikipedia.org/wiki/Adam_Mickiewicz), [J. Kochanowski (1530--1584)](https://en.wikipedia.org/wiki/Jan_Kochanowski), [Z. Krasinski (1812--1859)](https://en.wikipedia.org/wiki/Zygmunt_Krasi%C5%84ski), and [A. Oppman (1867--1931)](https://en.wikipedia.org/wiki/Artur_Oppman):
+It is possible to use multiple ids. Let's also download some poems by [A. Mickiewicz (1798--1855)](https://en.wikipedia.org/wiki/Adam_Mickiewicz), [J. Kochanowski (1530--1584)](https://en.wikipedia.org/wiki/Jan_Kochanowski), [Z. Krasinski (1812--1859)](https://en.wikipedia.org/wiki/Zygmunt_Krasi%C5%84ski), and [A. Oppman (1867--1931)](https://en.wikipedia.org/wiki/Artur_Oppman):
 
 ```{r gutenberg_2, cache=TRUE}
 texts <- gutenberg_download(c(27081, 27871, 28009, 27208))
@@ -94,9 +94,9 @@ texts
 
 Be aware:
 
-* texts could have something from the real book: introduction or last word written by other people, publication details, etc.
+* texts could include something from the real book: introduction or last word written by other people, publication details, etc.
 * texts could be stored with the wrong encoding;
-* texts could be stored with normolised orthography (e. g. Kochanowski, look at rows 99 and 100);
+* texts could be stored with normalised orthography (e. g. Kochanowski, look at rows 99 and 100);
 
 ```{r}
 texts %>% 
@@ -122,7 +122,7 @@ texts
 ```
 
 ```{block, type = "rmdtask"}
-Calculate how many rows per author do we have in our dataset. Who has the largest amount?
+Calculate how many rows per author we do have in our dataset. Who has the largest amount?
 ```
 
 ```{r, results='asis', echo = FALSE, eval = knitr::is_html_output()}
@@ -131,7 +131,7 @@ checkdown::autocheck_question(question_id = "5_2", answer =  "Krasiński", wrong
 
 ## `tidytext`
 
-The `tidytext` [@silge17] (this book is availible [online](https://www.tidytextmining.com/)) allows to work with texts in tidy ideology, hat make it esear to manipulate, summarize, and visualize the characteristics of text easily and integrate natural language processing tools (sentiment analysis, tf-idf metric, n-gram analysis, topic modeling etc.).
+The `tidytext` [@silge17] (this book is available [online](https://www.tidytextmining.com/)) allows you to work with texts in tidy ideology, that makes it easier to manipulate, summarize, and visualize the characteristics of texts easily and integrate natural language processing tools (sentiment analysis, tf-idf metric, n-gram analysis, topic modeling etc.).
 
 ```{r}
 library(tidytext)
