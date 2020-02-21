@@ -255,7 +255,7 @@ Analyse "Pan Tadeusz Czyli Ostatni Zajazd na Litwie" by A. Mickiewicz. What is t
 ```{r, include=FALSE, eval=FALSE}
 gutenberg_download(31536) %>% 
   unnest_tokens(output = "bigrams", input = text, token = "ngrams", n = 2) %>% 
-  # separate into two seperate columns each part of bigram
+  # separate into two seperate columns each part of the bigram
   separate(bigrams, into = c("word_1", "word_2"), sep = " ") %>%
   # filter out those that have stopwords
   anti_join(tibble(word_1 = stopwords)) %>% 
