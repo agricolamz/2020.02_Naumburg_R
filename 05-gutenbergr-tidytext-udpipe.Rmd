@@ -82,15 +82,23 @@ Let's download Adam Mickiewicz's sonnets:
 
 ```{r gutenberg_1, cache=TRUE}
 text <- gutenberg_download(27081)
+```
+
+```{r, eval = knitr::is_html_output()}
 text
 ```
+
 
 It is possible to use multiple ids. Let's also download some poems by [A. Mickiewicz (1798--1855)](https://en.wikipedia.org/wiki/Adam_Mickiewicz), [J. Kochanowski (1530--1584)](https://en.wikipedia.org/wiki/Jan_Kochanowski), [Z. Krasinski (1812--1859)](https://en.wikipedia.org/wiki/Zygmunt_Krasi%C5%84ski), and [A. Oppman (1867--1931)](https://en.wikipedia.org/wiki/Artur_Oppman):
 
 ```{r gutenberg_2, cache=TRUE}
 texts <- gutenberg_download(c(27081, 27871, 28009, 27208))
+```
+
+```{r, eval = knitr::is_html_output()}
 texts
 ```
+
 
 Be aware:
 
@@ -118,6 +126,9 @@ Now it is possible to remove some non-important lines:
 texts %>% 
   filter(title != "remove") ->
   texts
+```
+
+```{r, eval = knitr::is_html_output()}
 texts
 ```
 
@@ -182,7 +193,7 @@ texts %>%
   facet_wrap(~author, scales = "free")
 ```
 
-Often in text analysis, it is useful to remove stop words. Stop words are frequent words that mostly contain grammatic information. I will use a polish stopword list from this [repository](https://github.com/stopwords-iso/stopwords-pl), but you can use any other.
+Often in text analysis, it is useful to remove stop words. Stop words are frequent words that mostly contain grammatic information. I will use a polish stopword list from this [repository](https://github.com/stopwords-iso/stopwords-pl), but you can use any other list or modify the existing one.
 
 ```{r}
 stopwords <- read_lines("https://raw.githubusercontent.com/stopwords-iso/stopwords-pl/master/stopwords-pl.txt")
@@ -289,6 +300,9 @@ Texts for udpipe analyser should have variables named `text` and `doc_id`:
 texts %>% 
   mutate(doc_id = str_c(author, "_", title)) ->
   texts_for_udpipe
+```
+
+```{r, eval = knitr::is_html_output()}
 texts_for_udpipe
 ```
 
@@ -303,13 +317,17 @@ texts_parsed
 ```{r udpipe, echo=FALSE, cache= TRUE}
 texts_parsed <- udpipe(x = texts_for_udpipe, 
                        object = udpipe_load_model("data/polish-pdb-ud-2.4-190531.udpipe"))
+```
+
+```{r, eval = knitr::is_html_output()}
 texts_parsed
 ```
 
-```{block, type = "rmdtask"}
-What is the most frequent part of speech (`upos` variable) in our corpora accoring to the model?
-```
 
+```{block, type = "rmdtask"}
+What is the most frequent part of speech (`upos` variable) in our corpora according to the model?
+```
+    
 ```{r, results='asis', echo = FALSE, eval = knitr::is_html_output()}
 checkdown::autocheck_question(question_id = "5_4", answer =  "NOUN")
 ```
@@ -332,8 +350,12 @@ texts %>%
   pivot_wider(names_from = doc_id, values_from = ratio, values_fill = list(ratio = 0)) %>% 
   select(-word, -n) ->
   for_stylo
+```
+
+```{r, eval = knitr::is_html_output()}
 for_stylo
 ```
+
 
 Then you can run a clustarisation analysis.
 
@@ -379,9 +401,12 @@ texts %>%
   pivot_wider(names_from = word, values_from = ratio, values_fill = list(ratio = 0)) %>% 
   as.data.frame() -> # stylo package doesn't work with tibble
   for_imposter
+```
 
+```{r, eval = knitr::is_html_output()}
 for_imposter
 ```
+
 
 Lets choose Krasiński:
 ```{r krasinski, cache = TRUE}
@@ -417,4 +442,4 @@ imposters(reference.set = for_imposter[-c(5:8), -c(1:2)],
           classes.reference.set = for_imposter[-c(5:8), 1])
 ```
 
-As you see, this algorithm did not work on this verse dataset, but in docs you can find an example of analysis of the novel "Cuckoo's Calling" by a mysterious Robert Galbraith that turned out to be J.K. Rowling.
+As you see, this algorithm did not work on this verse dataset, but in docs (`?imposters()`) you can find an example of analysis of the novel "Cuckoo's Calling" by a mysterious Robert Galbraith that turned out to be J.K. Rowling.
