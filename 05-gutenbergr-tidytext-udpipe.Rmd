@@ -45,14 +45,14 @@ gutenberg_metadata %>%
   count(language, sort = TRUE)
 ```
 
-How many authors are availible?
+How many authors are available?
 
 ```{r}
 gutenberg_metadata %>% 
   count(author, sort = TRUE)
 ```
 
-How many Polish texts are availible?
+How many Polish texts are available?
 
 ```{r}
 gutenberg_metadata %>% 
