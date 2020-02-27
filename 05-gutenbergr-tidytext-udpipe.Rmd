@@ -283,7 +283,7 @@ checkdown::autocheck_question(question_id = "5_3", answer =  "s tyłu", wrong = 
 
 ## `udpipe`
 
-The `udpipe` package gives you the ability to get lemmatisation, morphological and syntactic analysis for multiple languages. A tutorial and a list of availible languages can be found [here](https://bnosac.github.io/udpipe/docs/doc1.html).
+The `udpipe` package gives you the ability to get lemmatisation, morphological and syntactic analysis for multiple languages. A tutorial and a list of available languages can be found [here](https://bnosac.github.io/udpipe/docs/doc1.html).
 
 All models are long to download:
 ```{r}
@@ -306,7 +306,7 @@ texts %>%
 texts_for_udpipe
 ```
 
-After you downloaded a model and created correct dataframe it is possible to analyse our texts:
+After you downloaded a model and created a correct dataframe it is possible to analyse our texts:
 
 ```{r, eval = FALSE}
 texts_parsed <- udpipe(x = texts_for_udpipe, 
@@ -336,7 +336,7 @@ checkdown::autocheck_question(question_id = "5_4", answer =  "NOUN")
 [The `stylo` package](https://github.com/computationalstylistics/stylo) [@eder16] is a package for computational stylistics, authorship attribution, etc.
 
 
-First of all it is possible to use pure frequencies as a features for clustarisation:
+First of all it is possible to use pure frequencies as features for clustarisation:
 
 ```{r}
 library(stylo)
@@ -363,9 +363,9 @@ Then you can run a clustarisation analysis.
 stylo(parsed.corpus = for_stylo, gui = FALSE, analysis.type = "CA")
 ```
 
-You can run with argumment `gui = TRUE`, then you will see a graphical interface.
+You can run it with the argumment `gui = TRUE`, then you will see a graphical interface.
 
-It is also possible to use lemmatized via `udpipe` representation.
+It is also possible to use lemmatised via `udpipe` representation.
 
 ```{r, fig.height=12}
 texts_parsed %>% 
@@ -411,7 +411,7 @@ for_imposter
 Lets choose Krasiński:
 ```{r krasinski, cache = TRUE}
 imposters(reference.set = for_imposter[-c(5:8), -c(1:2)],
-# for some reason this function demands minimum 2 rows in dataframe (contra docs)
+# for some reason this function demands minimum 2 rows in the dataframe (contra docs)
           test = for_imposter[c(5, 5), -c(1:2)],
           classes.reference.set = for_imposter[-c(5:8), 1])
 ```
@@ -419,7 +419,7 @@ imposters(reference.set = for_imposter[-c(5:8), -c(1:2)],
 Lets choose Kochanowski:
 ```{r kochanowski, cache = TRUE}
 imposters(reference.set = for_imposter[-c(5:8), -c(1:2)],
-# for some reason this function demands minimum 2 rows in dataframe (contra docs)
+# for some reason this function demands minimum 2 rows in the dataframe (contra docs)
           test = for_imposter[c(6, 6), -c(1:2)],
           classes.reference.set = for_imposter[-c(5:8), 1])
 ```
@@ -428,7 +428,7 @@ Lets choose Mickiewicz:
 
 ```{r mickiewicz, cache = TRUE}
 imposters(reference.set = for_imposter[-c(5:8), -c(1:2)],
-# for some reason this function demands minimum 2 rows in dataframe (contra docs) 
+# for some reason this function demands minimum 2 rows in the dataframe (contra docs) 
           test = for_imposter[c(7, 7), -c(1:2)],
           classes.reference.set = for_imposter[-c(5:8), 1])
 ```
@@ -437,7 +437,7 @@ Lets choose Oppman:
 
 ```{r oppman, cache = TRUE}
 imposters(reference.set = for_imposter[-c(5:8), -c(1:2)],
-# for some reason this function demands minimum 2 rows in dataframe (contra docs)
+# for some reason this function demands minimum 2 rows in the dataframe (contra docs)
           test = for_imposter[c(8, 8), -c(1:2)],
           classes.reference.set = for_imposter[-c(5:8), 1])
 ```
