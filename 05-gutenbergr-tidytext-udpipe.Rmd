@@ -142,7 +142,7 @@ checkdown::autocheck_question(question_id = "5_2", answer =  "Krasiński", wrong
 
 ## `tidytext`
 
-The `tidytext` [@silge17] (this book is available [online](https://www.tidytextmining.com/)) allows you to work with texts in tidy ideology, that makes it easier to manipulate, summarize, and visualize the characteristics of texts easily and integrate natural language processing tools (sentiment analysis, tf-idf metric, n-gram analysis, topic modeling etc.).
+The `tidytext` [@silge17] (this book is available [online](https://www.tidytextmining.com/)) allows you to work with texts in tidy ideology, that makes it easier to manipulate, summarise, and visualise the characteristics of texts easily and integrate natural language processing tools (sentiment analysis, tf-idf metric, n-gram analysis, topic modeling etc.).
 
 ```{r}
 library(tidytext)
