@@ -254,7 +254,7 @@ misspelling
 ```
 
 * variable `spelling` is **aggregated**: for each value of `speeling` variable there is a corresponding value in `count` variable.
-* variable `correct` is **non-aggregated**: there is no any variable associated with counts of `correct` variable
+* variable `correct` is **non-aggregated**: there isn't any variable associated with counts of `correct` variable
 
 In order to create a bar plot from aggregated data you need to use `geom_col()`:
 ```{r}
@@ -315,7 +315,7 @@ misspelling %>%
   coord_flip()
 ```
 
-The same argument could be use in the `aes()` function:
+The same argument could be used in the `aes()` function:
 
 ```{r}
 misspelling %>% 
