@@ -178,7 +178,7 @@ texts %>%
   facet_wrap(~author, scales = "free")
 ```
 
-In order to remove the author name you also need to add `scale_x_reordered()` layer to your ggplot:
+In order to remove the authors name you also need to add `scale_x_reordered()` layer to your ggplot:
 
 ```{r}
 texts %>% 
@@ -193,7 +193,7 @@ texts %>%
   facet_wrap(~author, scales = "free")
 ```
 
-Often in text analysis, it is useful to remove stop words. Stop words are frequent words that mostly contain grammatic information. I will use a polish stopword list from this [repository](https://github.com/stopwords-iso/stopwords-pl), but you can use any other list or modify the existing one.
+Often in text analysis, it is useful to remove stopwords. Stop words are frequent words that mostly contain grammatic information. I will use a polish stopword-list from this [repository](https://github.com/stopwords-iso/stopwords-pl), but you can use any other list or modify the existing one.
 
 ```{r}
 stopwords <- read_lines("https://raw.githubusercontent.com/stopwords-iso/stopwords-pl/master/stopwords-pl.txt")
