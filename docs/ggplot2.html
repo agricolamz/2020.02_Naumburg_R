@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="" xml:lang="">
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>4 Data visualisation: ggplot2 | Polish Language(s) and Digital Humanities Using R</title>
   <meta name="description" content="4 Data visualisation: ggplot2 | Polish Language(s) and Digital Humanities Using R" />
-  <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
 
   <meta property="og:title" content="4 Data visualisation: ggplot2 | Polish Language(s) and Digital Humanities Using R" />
   <meta property="og:type" content="book" />
@@ -453,7 +453,7 @@ Download <a href="https://raw.githubusercontent.com/agricolamz/DS_for_DH/master/
 </div>
 <ul>
 <li>variable <code>spelling</code> is <strong>aggregated</strong>: for each value of <code>speeling</code> variable there is a corresponding value in <code>count</code> variable.</li>
-<li>variable <code>correct</code> is <strong>non-aggregated</strong>: there is no any variable associated with counts of <code>correct</code> variable</li>
+<li>variable <code>correct</code> is <strong>non-aggregated</strong>: there isn’t any variable associated with counts of <code>correct</code> variable</li>
 </ul>
 <p>In order to create a bar plot from aggregated data you need to use <code>geom_col()</code>:</p>
 <div class="sourceCode" id="cb319"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb319-1"><a href="ggplot2.html#cb319-1"></a>misspelling <span class="op">%&gt;%</span><span class="st"> </span></span>
@@ -506,7 +506,7 @@ Download <a href="https://raw.githubusercontent.com/agricolamz/DS_for_DH/master/
 <span id="cb326-3"><a href="ggplot2.html#cb326-3"></a><span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">fill =</span> <span class="st">&quot;navy&quot;</span>)<span class="op">+</span></span>
 <span id="cb326-4"><a href="ggplot2.html#cb326-4"></a><span class="st">  </span><span class="kw">coord_flip</span>()</span></code></pre></div>
 <p><img src="moroz-2020-Polish-Language-and-Digital-Humanities-Using-R_files/figure-html/unnamed-chunk-143-2.png" width="672" /></p>
-<p>The same argument could be use in the <code>aes()</code> function:</p>
+<p>The same argument could be used in the <code>aes()</code> function:</p>
 <div class="sourceCode" id="cb327"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb327-1"><a href="ggplot2.html#cb327-1"></a>misspelling <span class="op">%&gt;%</span><span class="st"> </span></span>
 <span id="cb327-2"><a href="ggplot2.html#cb327-2"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(correct, <span class="dt">fill =</span> correct))<span class="op">+</span></span>
 <span id="cb327-3"><a href="ggplot2.html#cb327-3"></a><span class="st">  </span><span class="kw">geom_bar</span>()<span class="op">+</span></span>
